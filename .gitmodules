@@ -1,3 +1,3 @@
-[submodule "marketplace_data"]
-	path = marketplace_data
+[submodule "data/gsa/marketplace-fedramp-gov-data"]
+	path = data/gsa/marketplace-fedramp-gov-data
 	url = https://github.com/GSA/marketplace-fedramp-gov-data.git
