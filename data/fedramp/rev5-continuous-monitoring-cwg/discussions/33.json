@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOK0ax84Afi73",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/33",
+  "title": "Machine Readable Significant Change Notification Process Ideas",
+  "body": "Team,\r\n\r\nWhile we do anticipate some changes to be made to the draft SCN guidance as part of the public comment process, we do not anticipate a change of high level intent.  \r\n\r\nWith that in mind the FedRAMP team is looking into what potential machine readable SCNs or an automated SCN process solutions would look like.  \r\n\r\nDo CSPs have tools and processes in place that they leverage with other partners for similar processes?  Are there best practices that exist in rolling this out? \r\n\r\n",
+  "author": "paulagosta",
+  "created_at": "2025-05-01T14:44:58Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84AxngH",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/33#discussioncomment-13006855",
+      "body": "Hi @paulagosta, I was hoping you could give me a sense of clarity when it comes to the phrase machine readable in the context of this thread.  I suspect what we are looking for is some type of data structure, preferably immutable, that could be iterated over programmatically.\n\nLooking forward to the response! ",
+      "author": "chrisjohnson1",
+      "created_at": "2025-05-01T19:20:40Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84Axn_c",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/33#discussioncomment-13008860",
+          "body": "Hi @paulagosta, I also wanted to [link this post](https://github.com/FedRAMP/automating-assessment-cwg/discussions/25#discussioncomment-13002082) as it seems relevant and in line with this thread.  I'm interested in your thoughts on this topic as there doesn't seem to be agreement on how data will be processed. ",
+          "author": "chrisjohnson1",
+          "created_at": "2025-05-01T23:43:32Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84Ax4dn",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/33#discussioncomment-13076327",
+      "body": "Just don\u2019t do it. Require end to end IaC, then require agency read only git access to the IaC repo. Problem solved. That will allow diffs and vuln scans, config scans, threat analysis in continuous PR triggered way.",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-05-08T13:37:19Z",
+      "replies": []
+    }
+  ]
+}

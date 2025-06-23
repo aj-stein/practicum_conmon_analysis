@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOxfoic4AgBnS",
+  "url": "https://github.com/FedRAMP/community/discussions/35",
+  "title": "FedRAMP 20x Final Pilot Submission (vanta.com)",
+  "body": "Vanta has posted our Final Submission for the FedRAMP 20x Pilot on our Trust Center (https://trust.vanta.com) under Resources. Looking forward to feedback!",
+  "author": "arpita-vanta",
+  "created_at": "2025-05-31T01:34:14Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Ay6jt",
+      "url": "https://github.com/FedRAMP/community/discussions/35#discussioncomment-13347053",
+      "body": "I see the signature but what's the method of validation around this?\r\n\r\n```\r\n\"attestations\": [\r\n            {\r\n              \"party-uuid\": \"6d6b4cf2-8455-4c45-a7b7-303b7e537e3f\",\r\n              \"statement\": \"Digitally signed by Matt Hungate on 2025-05-30T23:31:48.782Z. Digital Signature: 7054184fd57508265b01f610e040cfde171582041d65ae1a9e6ce1343675c929\"\r\n            }\r\n          ]\r\n```\r\n\r\nDoes the 3PAO give FedRAMP the pubkey and they validate that the signature is valid or something else?",
+      "author": "fortetroy",
+      "created_at": "2025-06-02T18:38:56Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ay9iC",
+          "url": "https://github.com/FedRAMP/community/discussions/35#discussioncomment-13359234",
+          "body": "We are also curious about this too. Would it be helpful if the public key was available on the dashboard/trust center or should it be included in the machine readable package? \r\n\r\nFrom my perspective it seems a digital signature within the machine-readable package can add two benefits:\r\n1. integrity check to assess that nothing has changed from the state when the evidence was reviewed\r\n2. identity verification to prove that the 3PAO is the one who signed the package\r\n\r\nThe example above seems to be benefit 2 provided there is a way to verify the signature as @fortetroy described. I envision an integrity digital signature (benefit 1) could live within each evidence object in the machine-readable file. \r\n\r\n-- Isaac Teuscher (Paramify)",
+          "author": "iteuscher",
+          "created_at": "2025-06-03T18:14:18Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay9-2",
+      "url": "https://github.com/FedRAMP/community/discussions/35#discussioncomment-13361078",
+      "body": "@fortetroy and @iteuscher, thank you for the thoughtful questions! These are placeholder values until we agree on a signing mechanism with our auditor, and get more formal details on the requirements from FedRAMP for the pilot. For our final submission packet, this was simply a hash of doc + time stamp + name of auditor.\r\n\r\nTo more accurately reflect this process, the two documents in our Trust Center referencing digital signatures have been renamed with \u201cdigital hash.\u201d",
+      "author": "arpita-vanta",
+      "created_at": "2025-06-03T22:48:42Z",
+      "replies": []
+    }
+  ]
+}

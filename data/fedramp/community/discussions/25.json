@@ -1,0 +1,160 @@
+{
+  "id": "D_kwDOOxfoic4AgALB",
+  "url": "https://github.com/FedRAMP/community/discussions/25",
+  "title": "Standards Development Support - FedRAMP Manage Repository Transition Discussion",
+  "body": "Team,\r\n\r\nAs discussed today, we are in the process of developing a standard to serve as the mechanism for CSPs to house their FedRAMP data in a secure, yet accessible manner, moving away from a centralized FedRAMP managed repo.  \r\n\r\nFor FedRAMP High package owners what are some of the best practices or lessons learned from establishing and maintaining your own repo?  Did you partner with your agency for an already approved Gov\u2019t owned repo?  Or did you leverage another Cloud Service Provider?\r\n\r\nFor those Moderate and Low package owners, what are concerns or pitfalls with transitioning ownership?  What key elements in  a standard need to be covered to support transition?\r\n",
+  "author": "paulagosta",
+  "created_at": "2025-04-28T17:23:35Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AxfOJ",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-12972937",
+      "body": "> For those Moderate and Low package owners, what are concerns or pitfalls with transitioning ownership?\r\n\r\nCost is the biggest concern.  For those CSPs who don't already have one, they now have to incorporate an external facing FedRAMP authorized document repository and maintain access for all current agencies, 3PAOs, and the PMO, along with ways (and resources) to manage any future package review requests and additional agency users.  And this will likely be a significant change, so there's the money that goes into the assessment as well. \r\n\r\nDepending on timelines, this could mean CSPs diverting resources away from new features/functionality this year to replace OMB Max with their own document repository, and then again in a near future time to replacing the document repository with APIs.  ",
+      "author": "kamamanh",
+      "created_at": "2025-04-28T18:07:00Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxlZK",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-12998218",
+          "body": "100% agree! Well said. Some additional points that concern me are: \r\n\r\n- Folder structure / consistency \r\n- Hard to keep track of multiple CSP repos for Agencies \r\n- Which approved tool will actually be accepted by each respective agency? We face existing issues where the agency won't use a specific repo and will require a native/chosen CSO that they use internally with everything else being blocked. This also applies to ConMon calls, they won't dial-in with one CSO and only use a specific CSO. ",
+          "author": "sfc-gh-schaudhry",
+          "created_at": "2025-04-30T19:58:26Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyDbN",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13121229",
+          "body": "Box, Google Drive, O365 and Github are all ATO'd.  That would imply these are all ok to use as-is? Presumably this wouldn't add *too* much cost in the scope of the much more expensive stuff like CSP hosting costs, security tools, and 3PAO audits?",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-12T17:20:19Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyDnD",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13121987",
+          "body": "This is further addressed by the RFC-0005 and minimum standard scope.  So a FedRAMP high package may (or may not, depending on the outcome of that RFC) require a repo at the same baseline.  Getting a high and/or JAB authorized repo was problematic in the past, depending on one's tech stack.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-12T18:44:01Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyJLu",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13144814",
+          "body": "@kamamanh .  Thanks for the feedback.  Cost (direct and indirect) is clearly a theme in this discussion forum.  While we are looking at avenues to minimize this without impacting risk, I would ask that as the RFC emerges, this be part of the feedback back to FedRAMP through the formal comment process as well.  ",
+          "author": "paulagosta",
+          "created_at": "2025-05-14T12:53:11Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AxlL9",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-12997373",
+      "body": "What types of repos would be approved for use? Would an internal SharePoint work?",
+      "author": "Chris-8658",
+      "created_at": "2025-04-30T18:10:17Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxlYg",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-12998176",
+          "body": "From my point of view and understanding of requirements....It would have to be a FedRAMP level equivalent authorized product since it'll be hosting FRL/FRM/FRH metadata/sensitive documentation. A self-hosted SharePoint in-boundary would work. ",
+          "author": "sfc-gh-schaudhry",
+          "created_at": "2025-04-30T19:54:18Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyQCm",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13172902",
+          "body": "You will have to intake and vet each request from each agency user for access. ",
+          "author": "kkettner",
+          "created_at": "2025-05-16T15:56:01Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AxlYM",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-12998156",
+      "body": "> For FedRAMP High package owners what are some of the best practices or lessons learned from establishing and maintaining your own repo? \r\n\r\nAs a High system owner, we found granting access to be additional overhead that can block/slow down the process. You will need a dedicated team to pay attention to the requests, review them, and then grant access. We followed the USDA Connect format for folder structure and thought that having visibility into who has access is great. Certain repos may also modify your file contents as they convert upon uploading. That is also a bit of a pain.\r\n\r\n> Did you partner with your agency for an already approved Gov\u2019t owned repo? Or did you leverage another Cloud Service Provider?\r\n\r\nWe are leveraging a FedRAMP High authorized CSO to host/provide our repository, which does incur a cost. However, this does bring the risk / constant issue in Govt of what tool is native or preferred per agency. The freedom of choice is a double edged sword. Some agencies may be a specific-CSO shop while others will only whitelist a specific CSO. This has also been an issue for setting up ConMon calls while using a conferencing our agencies can dial-in to. \r\n\r\n> For those Moderate and Low package owners, what are concerns or pitfalls with transitioning ownership? What key elements in a standard need to be covered to support transition?\r\n- Cost\r\n- Overhead\r\n- Need defined structure so each repo isn't severely different looking/organized \r\n- Will be hard for Agency customers to remember the link and location for each repo\r\n",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-04-30T19:52:55Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AxzOm",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13054886",
+      "body": "I agree with some above comments around cost. We have a number of small and medium sized businesses, and this would be a concern and barrier to serving the federal government.",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-05-06T21:04:41Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ax4Nm",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13075302",
+          "body": "Has GovRAMP considered standing up its own repo that could be used as an external third party service for this?",
+          "author": "Bscudera9",
+          "created_at": "2025-05-08T12:38:58Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8Dg",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13091040",
+          "body": "We already have it, and federal agencies are welcome to participate today to leverage this. Our PMO is centralized with a centralized repo.  Providers may grant access to their government customers for two types of viewing: 1) executive summary details or 2) full details (with artifacts). The PMO provides a monthly executive summary. We have a ConMon escalation process that is adopted by our governing committees/board so that certain events/scenarios trigger notification to the government customers who've been granted access with a note to log in for information -- this allows for proactive notification and proactive action for the government customers. Types of escalation that could trigger a notification include a change in ownership (that's happened a few times), a high vulnerability open for too long, or the infamous log4j as an example, etc.  The policies are all published on our website and evaluated annually by our Standards & Tech Committee. The PMO is in development stages of a more robust repo with dashboards -- but the current process has allowed us to serve all levels of members (SMBs and up) and our government members well, while building solid requirements for the enhanced repo.",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-05-09T13:31:02Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyDkN",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13121805",
+      "body": "From a CSP that has a High package managing a FedRAMP High Repository for ~2 years there are 3 main issues we have seen.  \r\n\r\n1. **Authentication** - We have had quite a few issues with different agencies authenticating to our FedRAMP High Repository as each agency has different rules and restrictions. We end up having to support a number of different options. It would be amazing if there could be a single Government IdP (e.g. Login.gov) that we could integrate with over like SAML2.0 that would provide Authentication (AuthN).   Then at the repository level we could then maybe control the Authorization (AuthZ), more on that below.   Idea here would be something that can easily handle CAC / PIV authentication for all government users.   I am not sure how this is set up today for \"OMB MAX\" but i would guess something has been figured out already. \r\n2. **Account Management** - Building off #1 it would be great to have a central Account Management tool.  In the years of managing a High repository we have never once been notified about offboarding\u2019s even though that is signed as part of the package access request form.    We only realize this once a user\u2019s access gets disabled for inactivity, and we follow up.  This presents a security risk given the documentation on this repository.  This could be solved to some level with a Government IdP providing Authentication that would be revoked if they are offboarded. \r\n3. **Whitelisting access** - So one of the other issues we have seen is when a FedRAMP High Repository is using a CSO (e.g. SharePoint, Box, Google Drive, etc) that domain could be blocked at the agency domain level as they don\u2019t approve the use of it for their own data, so to better control exfil they just block the entire domain.   Getting these domains allowlisted can prove difficult.    \r\n\r\nBonus comment\r\n**Folder structure** \u2013 We should update the standard folder structure; it is currently so unintuitive.  We were forced to use the \u201cOMB MAX\u201d style of folder during our high review, and it does nothing but confuse customers where to look.  A decent percentage of new users look at the \u201cInitial Assessment\u201d folder then ask why documents are years out of date rather than looking at current annual assessments folders.   There should be a dedicated main folder SSPs and a dedicated main folder for assessments. \r\n",
+      "author": "kcarr91",
+      "created_at": "2025-05-12T18:22:31Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyDm2",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13121974",
+          "body": "I concur with all of the above.  #3 is subtle, and you don't think about it, until it bites you, but it's a bigger deal that it seems.  Not just agencies, but also other CSPs.  \r\n\r\nI'd also add that former JAB offerings often had to use weird repositories:  i.e. S3 buckets, which is blob storage and not folder friendly (while I know there were workarounds, out of the box, you had to download each file/piece of evidence separately).  With the JAB going away, this may be moot, but it's worth noting that blob storage in general for this is not optimal.\r\n\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-12T18:41:06Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyG6K",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13135498",
+          "body": "@kcarr91.  Thanks for the feedback.  Our internal experience comes from managing access on a gov't site, so some of the issues unique to CSP managed are good to ensure we take into account, especially number 3.  \r\n\r\nAs for the current folder structure, what is non-intuitive and would be ideal?  I can tell you that the current draft has a slightly more condensed structure.   ",
+          "author": "paulagosta",
+          "created_at": "2025-05-13T19:21:15Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyHo6",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13138490",
+          "body": "> As for the current folder structure, what is non-intuitive and would be ideal? I can tell you that the current draft has a slightly more condensed structure.\r\n\r\nA more condensed structure would be welcomed. There are two main things I would change about the current set up.  1. It should be very intuitive how to find the most up to date documents.   2. The same document shouldn\u2019t be stored in multiple different folder locations. (e.g. POA&Ms).\r\n\r\nSo a few thoughts\r\n\r\n- \u201c[CSP] Initial ATO Assessment\u201d should not be a top-level folder as is the oldest assessment and not the most current.  There should be a top level \u201cAssessment\u201d folder or something similar for 3PAO testing.  You can then break down sub-folders by year for testing. \r\n- SSP should be a top-level folder and not included in annual assessment folders.   This also shouldn\u2019t be broken out by year, old copies SSP can be archived in that same folder.  SSP attachments can then be in a sub folder there. \r\n- There should only be one folder where POA&Ms are stored.  Right now, they are in annual folders and then in a ConMon folder.   This leads to an agency reviewer sometimes grabbing an older POA&M and asking why it hasn\u2019t been updated. \r\n- Most viewed documents (e.g. SSPs, SARs) should not be buried multiple sub folders deep.",
+          "author": "kcarr91",
+          "created_at": "2025-05-14T01:26:28Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyJC8",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13144252",
+          "body": "@kcarr91 Great feedback.  As a FedRAMP reviewer myself who lives a good portion of his life in these folders, most of this resonates.  I have made a few more updates to the latest draft based on your feedback.  Please note it is still in early  internal draft, so I make no promises on what makes it out of internal rounds/reviews.  ",
+          "author": "paulagosta",
+          "created_at": "2025-05-14T12:07:18Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyJUp",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13145385",
+          "body": "@kcarr91 I think your structure is dead on.  If I recall (it's been a while), but the 'conmon/AA/etc' thing got confusing.  I like the relatively flat structure with assessments, poa&ms, documentation, etc.\r\n\r\nI'd also recommend some sort of file naming convention so we don't get stuff like 'SSP v1.0 Acme Cloud FedRAMP Moderate 20220101-REVISED-FINAL-no really this one is final-signed.docx' ",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-14T13:38:27Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyKc-",
+          "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13150014",
+          "body": "@jsantore-cgc .  Good call. Naming conventions are currently slated to be added to the Technical Assistance (TA) that should follow the standard's release.  If the (TA) term doesn't resonate, we talked about the layered approach to standards in Tuesdays WG session and the video and slides are up.\r\n\r\nAlso any document that has \"FINAL-no really this one is final-signed.docx\" in their file name is guaranteed to either be missing signatures or that file is right next to \"FINAL-no really this one is final-signedV2.docx\" :) ",
+          "author": "paulagosta",
+          "created_at": "2025-05-14T20:49:25Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ayf-H",
+      "url": "https://github.com/FedRAMP/community/discussions/25#discussioncomment-13238151",
+      "body": "I realize the original question is not whether or not FedRAMP _should_ move away from centralized repo, but I don't think this shift best serves the program. Having 100s of individually managed repos across various tools will be problematic for both CSOs and agency users as stated in previous comments. This does not align well with the goals of streamlining processes and increases the barrier to entry and ongoing costs. A single centrally managed repo that supports both high and moderate packages provides better security, accessibility, and standardization across the program. \r\n\r\nThe cost to government of managing the repo is also a burden, so I understand the desire to move away from it. Is there possibility of having a fee-based government centrally managed repo? Or approving a handful of service providers to offer a standardized FedRAMP repo similar to having approved 3PAOs? ",
+      "author": "rvlaminckcgi",
+      "created_at": "2025-05-22T18:48:42Z",
+      "replies": []
+    }
+  ]
+}

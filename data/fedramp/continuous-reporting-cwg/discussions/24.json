@@ -1,0 +1,40 @@
+{
+  "id": "D_kwDOOKttEc4AfIGb",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/24",
+  "title": "FedRAMP Platform",
+  "body": "The FedRAMP \"Platform\" that was hyped last year seems like it was aimed at solving some of the goals these working groups are focused on.  I assume this project is dead, but can we get confirmation? And if so, is there the possibility of that codebase being made available for the community to build off of? ",
+  "author": "kamamanh",
+  "created_at": "2025-04-02T19:27:31Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4AweJa",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/24#discussioncomment-12706394",
+      "body": "> The FedRAMP \"Platform\" that was hyped last year seems like it was aimed at solving some of the goals these working groups are focused on. I assume this project is dead, but can we get confirmation? And if so, is there the possibility of that codebase being made available for the community to build off of?\r\n\r\nThe \"Platform\" was a contract for an existing COTS offering (not for open source code to be written for the government) so there are no related artifacts to share. FedRAMP is no longer implementing this type of centralized service ([see #3 and #4 here](https://www.fedramp.gov/2025-03-24-FedRAMP-in-2025/)). \r\n\r\n\r\n\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-04-02T20:54:08Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4AwgAi",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/24#discussioncomment-12714018",
+          "body": "@kamamanh just FYI I did create a [discussion](https://github.com/FedRAMP/continuous-reporting-cwg/discussions/26) to talk about how reporting can be accomplished effectively in a more decentralized manner.",
+          "author": "sam-aydlette",
+          "created_at": "2025-04-03T13:36:11Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Aw28P",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/24#discussioncomment-12807951",
+          "body": "@pete-gov Thanks for posting that link to the announcement.  Very exciting movement.  From that link, it says the backlog will be cleared; is that the backlog of those awaiting decisions on marketplace entry (Ready, ATO, etc)?   And, is FedRAMP continuing to accept new audits or is there a pause in effect?",
+          "author": "Christcpd",
+          "created_at": "2025-04-11T19:30:16Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Aw8H-",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/24#discussioncomment-12829182",
+          "body": "> @pete-gov Thanks for posting that link to the announcement. Very exciting movement. From that link, it says the backlog will be cleared; is that the backlog of those awaiting decisions on marketplace entry (Ready, ATO, etc)? And, is FedRAMP continuing to accept new audits or is there a pause in effect?\r\n\r\nThere is no pause on the acceptance of FedRAMP Ready or FedRAMP Agency Authorizations. :)\r\n\r\nOn clearing the \"backlog\" - in retrospect that was slightly confusing, we are shooting for clearing most/all \"quality\" submissions from before January (i.e. the \"old\" backlog).",
+          "author": "pete-gov",
+          "created_at": "2025-04-14T13:13:40Z"
+        }
+      ]
+    }
+  ]
+}

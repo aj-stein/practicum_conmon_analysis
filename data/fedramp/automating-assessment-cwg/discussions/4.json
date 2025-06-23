@@ -1,0 +1,212 @@
+{
+  "id": "D_kwDOOMDw3M4AfG9G",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4",
+  "title": "Automating FedRAMP Assessments (FedRAMP 20x)",
+  "body": "## Overview\r\nThis project is developing an open-source framework for automating FedRAMP assessments using:\r\n- Infrastructure as Code (IaC)\r\n- Policy-as-Code\r\n- OSCAL-based machine-readable reporting\r\n- DevSecOps and CI/CD pipeline integration\r\n\r\n---\r\n\r\n## Goals of This Working Group\r\n\r\nForming an implementation-focused community around three outcomes:\r\n\r\n---\r\n\r\n### 1. Define Key Security Indicators (KSIs)\r\n\r\n**KSIs are measurable, automatable translations of traditional FedRAMP/NIST controls.**\r\n\r\n#### Example KSIs:\r\n\r\n# \ud83d\udcca Key Security Indicators (KSIs) - FedRAMP 20x\r\n\r\nThis table provides a set of measurable and automatable Key Security Indicators (KSIs) that map directly to NIST 800-53 controls, reflecting the FedRAMP 20x goal of continuous, configuration-based compliance.\r\n\r\n| KSI ID   | Description                                                     | Mapped Control(s)                           | Frequency   | Evidence Source                                |\r\n|----------|-----------------------------------------------------------------|---------------------------------------------|-------------|------------------------------------------------|\r\n| KSI-001  | FIPS-validated encryption enabled                               | AC-17(2), SC-12, SC-13, SC-28, SC-28(1)     | Continuous  | Terraform plan, AWS API                       |\r\n| KSI-002  | MFA enabled for all users                                       | IA-2(1), IA-2(2), IA-5(1)                   | Daily       | IAM policy scan, AWS CLI                      |\r\n| KSI-003  | TLS 1.3 enforced on external endpoints                          | SC-08, SC-13                                | Continuous  | ALB listener, GCP/Azure configs               |\r\n| KSI-004  | Encryption at rest (S3/RDS/Blob/Disks)                          | SC-28, SC-28(1)                             | Continuous  | Terraform config, cloud API                   |\r\n| KSI-005  | IAM users must rotate access keys within 90 days                | IA-5(1), AC-2                               | Daily       | AWS IAM Credential Report                     |\r\n| KSI-006  | No default security groups allow inbound 0.0.0.0/0              | AC-4, SC-7                                  | Continuous  | Security group scan, Terraform config         |\r\n| KSI-007  | Only approved AMIs/images are used in EC2/VM deployments        | CM-6, CM-8, SI-7                            | Continuous  | EC2 image audit, Terraform module reference   |\r\n| KSI-008  | Logging enabled for all cloud storage and compute resources     | AU-2, AU-6, AU-12, SI-4                     | Continuous  | CloudTrail, GCP Audit Logs, Azure Monitor     |\r\n| KSI-009  | Backups are scheduled and encrypted                             | CP-9, CP-10, SC-28, SC-28(1)                | Daily       | Cloud backup config, Terraform state          |\r\n| KSI-010  | Root account login is disabled or protected by MFA              | AC-2, IA-2(1), IA-2(2)                      | Continuous  | IAM credential report, AWS config             |\r\n| KSI-011  | Containers must not run as root                                 | AC-6(10), CM-6, SI-7                        | Continuous  | Kubernetes policy, OPA, container scanner     |\r\n| KSI-012  | EBS volumes and Azure disks are encrypted by default            | SC-12, SC-28                                | Continuous  | Cloud config API, IaC                         |\r\n| KSI-013  | Ports and protocols restricted to minimum necessary             | SC-7, AC-4, CM-7                            | Continuous  | Network ACLs, firewall policy, Terraform plan |\r\n| KSI-014  | All user accounts mapped to active identity providers (SSO)     | AC-2, IA-4, IA-5                            | Weekly      | SSO sync audit, Identity Provider logs        |\r\n| KSI-015  | OS baseline hardening policies applied via automation           | CM-6, CM-7, SI-2, SI-7                      | Continuous  | Ansible playbooks, STIG scripts, agent logs   |\r\n\r\n\r\n#### What We'll Do:\r\n- Define a growing set of KSIs mapped to NIST 800-53 Rev5.\r\n- Write implementation guidance for each KSI.\r\n- Define frequency, automation method, and evidence format.\r\n\r\n---\r\n\r\n### 2. Create a Machine-Readable KSI Schema\r\n\r\nThis schema will express KSIs in a YAML/JSON format for automation tooling.\r\n\r\n#### Example `ksis.yaml`:\r\n```yaml\r\nksis:\r\n  - id: \"KSI-001\"\r\n    name: \"FIPS Encryption\"\r\n    controlMapping: [\"SC-12\", \"SC-13\"]\r\n    frequency: \"Continuous\"\r\n    evidenceType: \"Terraform/Cloud API\"\r\n```\r\n\r\n#### Usage:\r\n- Enables shared interpretation of controls across systems\r\n- Drives consistent reporting and tooling\r\n- Can be mapped to OSCAL components\r\n\r\n---\r\n\r\n### 3. Build a Machine-Readable Output Format (Validation Results)\r\n\r\nThese are the **responses to the KSIs** \u2014 the actual assessment outcomes.\r\n\r\n#### Example `validation.json`:\r\n```json\r\n{\r\n  \"KSI-001\": {\r\n    \"status\": \"passed\",\r\n    \"evidence\": \"aws_kms_key config meets FIPS\",\r\n    \"timestamp\": \"2025-03-31T10:00:00Z\"\r\n  },\r\n  \"KSI-002\": {\r\n    \"status\": \"failed\",\r\n    \"evidence\": \"user123 missing MFA\",\r\n    \"timestamp\": \"2025-03-31T10:00:01Z\"\r\n  }\r\n}\r\n```\r\n\r\nThis structure allows:\r\n- Integration with dashboards and reporting tools\r\n- Continuous evidence collection\r\n- OSCAL SSP generation\r\n\r\n---\r\n\r\n## Implementation Details\r\n\r\nWe are already implementing this with:\r\n\r\n### Infrastructure as Code\r\n- Terraform modules for AWS, Azure, and GCP\r\n- Example: `terraform/aws/kms.tf` checks FIPS via resource config\r\n\r\n### Policy as Code (OPA/Rego)\r\n- Rego rules validate runtime posture (TLS version, MFA enabled, etc.)\r\n- Output is evaluated inside pipelines or live environments\r\n\r\n### CI/CD Integration (GitHub Actions)\r\n- Run Terraform validation on push\r\n- Execute Rego and Python checks against cloud APIs\r\n- Build React dashboard and generate OSCAL output\r\n\r\n### Evidence Format\r\n- OSCAL JSON/YAML output for compliance audits\r\n- JSON/Markdown summaries for dashboards and documentation\r\n\r\n---\r\n\r\n##  Example: FIPS KSI in Action\r\n\r\n**Control:** SC-12., SC-13  \r\n**Check:** KMS key uses SYMMETRIC_DEFAULT with rotation enabled  \r\n**IaC:** Terraform plan  \r\n**OPA:** `input.fips_encryption_enabled == true`  \r\n**Output:** validation result stored in JSON + OSCAL\r\n\r\n---\r\n\r\n## How You Can Contribute/Work to be done\r\n\r\n- Help define and validate KSIs\r\n- Contribute Terraform or Rego examples\r\n- Test pipelines across AWS, Azure, GCP\r\n- Build dashboards or evidence exports\r\n- Map controls to OSCAL SSP components\r\n\r\n---\r\n\r\n## Questions for the Community\r\n\r\n- What other KSIs should we prioritize?\r\n- How should we structure evidence across cloud providers?\r\n- Should we bundle validation into a CLI tool or GitHub Action?\r\n- Should results feed into dashboards or SSP exports?\r\n\r\n---\r\n\r\n",
+  "author": "rgutwein",
+  "created_at": "2025-04-01T17:15:24Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwakD",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12691715",
+      "body": "Hi @rgutwein and thanks! I wanted to point you to a resource over at the Rev5 ConMon CWG, there is a[ draft report](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/blob/main/conmon_ksi_report.md) that we are using as a jumping off point for fostering discussion. Your approach goes much deeper into validating implementation though, I'm interested to see what folks think of this!",
+      "author": "sam-aydlette",
+      "created_at": "2025-04-01T17:51:50Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwtIq",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12767786",
+          "body": "Below is a quick mockup of \"OSCAL-based Validation\" where secrets are define, tests are defined showing what controls are validated by the tests, what api to call, and what assertions to make based on the response of the api. The 3PAO would validate the tests, assertions, and control mappings as well as indicating which controls are fully covered by one or more defined tests.\r\n\r\n```\r\n{ \"validation\" :\r\n\t\"secrets\": {\r\n\t\t\"db2-api-key\" : {\r\n\t\t\t\"type\":\"aws-secrets-manager\",\r\n\t\t\t\"secretName\": \"arn:aws:secretsmanager:us-east-1:db2-api-key\",\r\n\t\t\t\"region\":\"us-gov-east-1\",\r\n\t\t\t\"value\":\"\"\r\n\t\t}, \r\n\t\t\u2026\r\n\t},\r\n\t\"tests\": [\r\n\t\t{\r\n\t\t\t\"name\": \"test name\",\r\n\t\t\t\"type\": \"cloud-native-configured | auto-validation | agentic-enforcement |infra-as-code\",\r\n\t\t\t\"controls\": [\"ca-2_a\", \"ca-3_c\", \"si-2_a\", \"si-2_b\"],\r\n\t\t\t\"protocol\": \"https\",\r\n\t\t\t\"get\" : \"xxx.yyy.zzz/test1,\r\n\t\t\t\"headers\": {\r\n\t\t\t\t\"apiKey\": {path: \"#/validation/system/secrets/db2-api-key/value\"},\r\n\t\t\t\t\"Content-Type\": {value: \"xxx\"},\r\n\t\t\t\t\u2026\r\n\t\t\t},\r\n\t\t\t\"params\": {\r\n\t\t\t\t\"paramName\": \"param-value\",\r\n\t\t\t\t\u2026\r\n\t\t\t},\r\n\t\t\t\"assertions\": {\r\n\t\t\t\t\"_comments\": \"must support int, long, string, date/time plus a date function, basic math functions, and date add/subtract days\",\r\n\t\t\t\t\"assertTrue\": {path: \"#/response/status\"},\r\n\t\t\t\t\"assertEqual\": {path: \"\", value: \"\"},\r\n\t\t\t\t\"assertNotEqual\": {path: \"\", value: \"\"},\r\n\t\t\t\t\"assertGreaterThan\": {path: \"Date(#/response/body/modified-at\", value: \"Date('now)+365\"}\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n```",
+          "author": "dljenkins",
+          "created_at": "2025-04-08T17:10:42Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awalo",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12691816",
+      "body": "hey @rgutwein ,  I think there is interest in forming a community around an open source implementation.   The challenge will be to find people who can dedicate time after work or whose company would allow for contribution as part of their job.   I work full time for a CSP on the FedRAMP path, but would love to help as I can after-hours. ",
+      "author": "cybersechawk",
+      "created_at": "2025-04-01T18:00:49Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwbF8",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12693884",
+          "body": "[FedRAMP advocate hat \"off\"](https://datatracker.ietf.org/doc/html/draft-dusseault-consensus-00#autoid-10), I feel that is the blessing and curse of applied cybersecurity research (that may sound flippant, but it is not; I see ongoing CWG work and the long tail of FedRAMP work over time as a series of long-term applied research projects; we have to incrementally build prototypes to validate ideas and prototypes bring more hypotheses in a virtuous loop).\r\n\r\nI know there is a community of people to volunteer, me included, on and off the clock to do that (my role is different than yours), and I think people inside and outside FedRAMP intend to do so. Just my $0.02. I am not saying it is not a problem, but pretty consistent with the ideation and experimentation phase that is the sweet spot of fun environment like ours. \ud83d\ude04 ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-01T22:47:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwdNV",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12702549",
+          "body": "There would need to be a corporate owner for it to be successful in the long term.  Short term, there is enough interest because it is exciting right now.  Long term interest wanes.\r\n\r\nRather than re-invent the wheel, here are some open source, corporate backed tools available now.  It would be good to get them onboard with this and the ConMon group.\r\n\r\nSimpleRisk Core: A free and open-source platform that includes basic GRC capabilities needed for organizations launching a GRC program.\r\nGovReady-Q: An open-source GRC platform for highly automated, user-friendly compliance assessments and documentation, suitable for DevSecOps.\r\nOpenGRC: A comprehensive open-source GRC platform that offers a wide range of functionalities for managing risk, compliance, and governance activities.\r\nEramba: An open-source, web-based GRC tool designed to help organizations manage their security, risk, and compliance posture",
+          "author": "Christcpd",
+          "created_at": "2025-04-02T15:26:09Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwdRP",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12702799",
+          "body": "@Christcpd - thanks for the references, we have checked all of these mechanisms out and unfortunately these don't currently have the capability for FedRAMP or NIST 800-53 based assessments. They may cover the base control IDs, but do not cover the NIST 800-53A assessment procedures (APs), as one control ID could be multiple APs",
+          "author": "rgutwein",
+          "created_at": "2025-04-02T15:45:13Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwdWD",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12703107",
+          "body": "That is where a public/private partnership comes into the mix.  Helping them understand the need to build out that aspect.  I'm hoping they do see that need themselves because we'll need these tools on the market.",
+          "author": "Christcpd",
+          "created_at": "2025-04-02T16:05:49Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdbc",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12703452",
+          "body": "@Christcpd I don't think we necessarily need a fulltime corporate partner to drive something long term. [CNCF](https://www.cncf.io/) maintains a number of open-sourced projects in conjunction with corporate sponsors (many hands/lighter load).  I know for instance that [Compliance-Trestle](https://github.com/oscal-compass/compliance-trestle) is transitioning to being a CNCF project, which is open-sourced OSCAL tooling.",
+          "author": "jblaher",
+          "created_at": "2025-04-02T16:35:12Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdqi",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12704418",
+          "body": "@jblaher corporate was meant to distinguish between a community/people based approach as compared to a structured organization with dedicated staff augmented by volunteers.   CNCF is a great example.  Thanks for dropping that link.",
+          "author": "Christcpd",
+          "created_at": "2025-04-02T17:40:54Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdvw",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12704752",
+          "body": "> Rather than re-invent the wheel, here are some open source, corporate backed tools available now. It would be good to get them onboard with this and the ConMon group.\r\n> GovReady-Q: An open-source GRC platform for highly automated, user-friendly compliance assessments and documentation, suitable for DevSecOps.\r\n\r\nWith [FedRAMP hat off](https://datatracker.ietf.org/doc/html/draft-dusseault-consensus-00#autoid-10) (advocate from one of the CWGs, personal opinions my own), I had tried to contribute to this one open source project over the years. After the staff moved from GovReady company to Regscale as part of acquisition, it appears it is no longer maintained. The last activity was 4 months or so ago and then it was just minor touchups. After December 2024, activity appears to have stopped and technically EOLed in 2023 per https://github.com/GovReady/govready-q/issues/1799#issuecomment-1508525550.\r\n\r\nAs someone who dabbles in OSCAL (if I can be cute about that in the forum, I am one of the FedRAMP OSCAL people and a community contributors to the models and tools for some time \ud83d\udc4b ), I have evaluated those with OSCAL import/export support in spare time over the years. To varying degrees there are some real challenges to scaling complex, multi-faceted assessment participants in this WG need but, from CLI tools to full end-user applications, fall short in real-world use cases. Existing community-maintained projects and commercial solutions benefit from experiences and approaches from this WG. One person gave a great example I have seen with all tools I tested:\r\n\r\n> @Christcpd - thanks for the references, we have checked all of these mechanisms out and unfortunately these don't currently have the capability for FedRAMP or NIST 800-53 based assessments. They may cover the base control IDs, but do not cover the NIST 800-53A assessment procedures (APs), as one control ID could be multiple APs\r\n\r\nSo what most excites me about these CWGs is the opportunity to breath new life into the existing solutions and give life to new ones, community, commercial, or hybrid. Real-world deployment for GRC solutions is rarely one-size-fits-all, and there is probably much room for improvement in FedRAMP assessment, present and future. It is a very complex beast. So I hope to see what changes _you all think industry needs_ in existing solutions, or new ones altogether. Just my $0.02.",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-02T18:03:56Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awd1P",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12705103",
+          "body": "@Christcpd  / @rgutwein   I am thinking we start simple and gradually build.   I feel that as a north star or primary mission, we should focus on what small to medium size businesses need in order to get started with FedRAMP with minimal investment.   This would address I feel one of the biggest problems which is the high cost for entry for FedRAMP.   Large business and hyperscalers have plenty of people to develop something custom or plenty of budget to buy all the latest tools.   However, for small to medium size businesses, there is no simple open source way to get started.  \r\n\r\nFedRAMP is different than many traditional compliance programs in that your customers (the agencies) are required to review your security posture every month which starts with your full inventory and includes details of your vulnerability management and in recent years, hardening.   Typical GRC tools are not geared for this and are usually very inadequate.\r\n\r\nGetting ready to expose that level of detail to your customers about your security operations every month to me is the primary challenge with FedRAMP.   Most other compliance programs, you can show the auditor one clean report, check the box and not have to worry about it for a year.   FedRAMP is not a check-the-box compliance program but requires you to prove every month that you are managing your security risks within the required parameters.\r\n\r\nMake sense?   \r\n\r\nTo make it easy, I think the simplest place to start is with a solid inventory in FedRAMP accepted format.   There was [one project by AWS that produced something close](https://github.com/aws-samples/fedramp-integrated-inventory-workbook), but it has not been updated in awhile, but might be a good project to build on.   \r\n\r\n\r\n\r\n",
+          "author": "cybersechawk",
+          "created_at": "2025-04-02T18:28:00Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awd1u",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12705134",
+          "body": "> To make it easy, I think the simplest place to start is with a solid inventory in FedRAMP accepted format. There was one project by AWS that produced something close, but it has not been updated in awhile, but might be a good project to build on.\r\n\r\nLink?\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-02T18:31:16Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwefS",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12707794",
+          "body": "@cybersechawk I've been building out these different related projects focused on FedRAMP work. I have a couple big pushes that will be released next week. I enjoy building out my own stuff when possible.\r\n\r\n- https://github.com/Elevated-Standards/RampScout\r\n- https://github.com/Elevated-Standards/Cloudits\r\n- https://github.com/Elevated-Standards/TenableTrawler\r\n- https://github.com/Elevated-Standards/InspectorGadget\r\n- https://github.com/Elevated-Standards/Common_Controls\r\n\r\n@rgutwein @atfurman @Christcpd @au-der @sam-aydlette ",
+          "author": "austinsonger",
+          "created_at": "2025-04-03T01:20:57Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwdpQ",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12704336",
+      "body": "For the question, \"How should we structure evidence across cloud providers?\", I think that the answer lies with OSCAL. There is some work that needs to be done, but a few folks are already working together under CNCF to begin figuring this out. \r\n\r\nI would invite everyone here who is interested in automating compliance in a consistent way for all CSPs to join us in the OSCAL COMPASS working group under CNCF. This is an open source working group, open to all to contribute ideas and solutions.\r\n\r\nhttps://clomonitor.io/projects/cncf/oscal-compass\r\n\r\nThe goals of this open source community includes the following:\r\nDrive adoption of the OSCAL standard using Trestle, Agile Authoring, and C2P tools for end-to-end compliance automation.\r\nCome up with use-cases for automating compliance processes in an organization and the required tooling support.\r\nInfluence the OSCAL standard based on the requirements and use-cases identified.\r\n\r\nWe want to enable the ability for any CSP to produce automated compliance information that any authorizing entity or auditor could use in pursuit of any security framework, from ISO 27001 or SOC 2 Type 2, to FedRAMP, to IRAP, etc.",
+      "author": "au-der",
+      "created_at": "2025-04-02T17:35:52Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw29q",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12808042",
+          "body": "thanks for the shout out :)  COMPASS the project has a project call open to the public and we also have a CNCF WG call every other Wed 10A pacific (if F/R folks are ok I can link here, else if bad mojo folks can Google it)",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T19:42:51Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awdt-",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12704638",
+      "body": "I find it interesting that this working group is siloed from the ConMon working group, as I see the fundamental problem space to be the same- the difference being that ConMon is typically only concerned with a subset of the total requirements. The core goal however is the same to my mind `prove to me that what everything which exists is configured, monitored and managed in accordance with requirements`. I would hope that the approach to achieve this would be fundamentally similar between contexts. \r\n\r\n@kyhu65867 @rgutwein what is the intended pattern for cross linking between https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions and this discussion forum? If one working group has an active discussion on a topic and is proposing solutions is the intention to steer discussion from the other repos there, or is the intention to pursue (hopefully) parallel paths?",
+      "author": "atfurman",
+      "created_at": "2025-04-02T17:54:04Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awdxg",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12704864",
+          "body": "I love this question! We definitely need to coordinate closely with the continuous reporting working group, although we have not worked out the specifics of how that might look. For now, I plan to be active on both automating assessment and continuous reporting, and cross-pollinate relevant discussion items to both. If it becomes a bigger issue we can problem-solve how to better coordinate and converge. ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-02T18:13:09Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awd1f",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12705119",
+          "body": "There is this working group (Automated Assessments), Rev 5 Continuous Monitoring CWG, _and even_ the [Continuous Reporting CWG](https://github.com/FedRAMP/continuous-reporting-cwg) that has not spun up yet, but will next week. I know, another one!? Yes, they approach related topics from different angles, and I think we all agree that's ok and beneficial. I am a FR advocate for the latter one, but we lurk in all of the discussion boards. I think if you, Asa et. al, follow your instincts we will get the messages and follow the signal where even it starts or end up. \ud83d\ude04 ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-02T18:29:59Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AweE_",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12706111",
+          "body": "I completely agree with the sentiment that we don\u2019t need to reinvent the wheel, but rather build on and integrate with what already exists, including OSCAL, Compliance-Trestle, and other CNCF-supported tools. The idea of aligning with CNCF for long-term governance and community sustainability is a great one, and I think it provides the right balance between corporate backing and open collaboration. I also appreciate the reminder that tools like GovReady, while visionary, have faded, and there\u2019s now a real opportunity for this group to fill that gap with something modular, modern, and DevSecOps-native.\r\n\r\nThere\u2019s clear energy around making this practical and accessible, especially for small to medium businesses that often struggle with the cost and complexity of FedRAMP. I wholeheartedly agree that we should focus on lowering that barrier to entry. A starter project with a solid inventory of KSIs, IaC patterns, and policy-as-code is a great way to enable immediate value. We're already working on templates for Terraform, OPA, and OSCAL with GitHub Actions to produce machine-readable evidence: https://github.com/rgutwein/fedramp-ksi-validation\r\n\r\nI'm also aligned with the idea that we need to coordinate across working groups. While this group may take a more implementation-focused lens, the foundational vision of \u201ceverything configured, monitored, and managed in accordance with requirements\u201d applies broadly across the ConMon and Continuous Reporting CWGs. Let\u2019s ensure we\u2019re cross-pollinating schemas, definitions, and reporting models to avoid fragmentation and create shared building blocks.",
+          "author": "rgutwein",
+          "created_at": "2025-04-02T20:17:35Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw3AQ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12808208",
+          "body": "> we should focus on lowering that barrier to entry. \r\n\r\nActually I would disagree - we should lower the toil across the board - large and small - but *not* increase risk tolerance just cuz someone is small.  The attacks always go after the weakest link.  So when I hear that - I say - if the data at risk is low risk - great, adjust the threat model and risk tolerance accordingly.  But if it's 2 kids and a dog in a garage managing nuclear reactors...well they still have to defend against nation state actors, so they have to overachieve on security regardless of size because the risk is high.\r\n\r\nTailor the strength of the defenses to the risk level.  Make the toil ALWAYS LOW for everyone. That what computers do best! (when things are automated).  ",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T20:04:19Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxApD",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12847683",
+          "body": "Although the working groups are looking at things from a slightly different lens, the fundamental tooling and approaches seem to be similar if not almost the same.\n\nAgreed on having a way for cross working group collaboration if not consolidation.\n\nI'd be interested to see the membership difference across working groups,  I'd guess they are very similar.",
+          "author": "ajay-stratus",
+          "created_at": "2025-04-15T23:00:46Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awefj",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12707811",
+      "body": "@rgutwein @aj-stein-gsa @cybersechawk @kyhu65867 @atfurman @Christcpd @au-der @sam-aydlette @jblaher \r\n\r\n### **Proposed Enhancements & Recommendations:**\r\n\r\n1. **Expanding Key Security Indicators (KSIs):**\r\n   - The current set of KSIs provides a great foundation, but we could further enhance coverage by including additional NIST 800-53 Rev5 controls.  \r\n   - Prioritizing controls related to **Access Control (AC), Configuration Management (CM), Incident Response (IR), and Risk Assessment (RA)** would provide significant value.\r\n   - Adding specific KSIs for common cloud-native security controls (e.g., IAM, networking, data protection) could make the framework more applicable across CSPs like AWS, Azure, GCP.\r\n\r\n2. **Defining a Standardized Evidence Format:**\r\n   - Developing a consistent, machine-readable schema for KSI validation results is critical for interoperability.  \r\n   - Utilizing a **JSON/YAML schema** aligned with OSCAL will allow seamless integration with existing FedRAMP tooling and reporting mechanisms.\r\n   - Providing open-source libraries or modules to facilitate the generation of OSCAL-compliant outputs could accelerate adoption.\r\n\r\n3. **Infrastructure as Code (IaC) & Policy-as-Code Integration:**\r\n   - Integrating IaC tools like **Terraform, Ansible, and CloudFormation** with KSI validation processes can streamline evidence collection.  \r\n   - Embedding Policy-as-Code tools such as **OPA/Rego** directly within CI/CD pipelines provides continuous validation of cloud resources.\r\n   - Developing IaC modules or Rego rules that specifically align with NIST 800-53 Rev5 controls could make compliance automation simpler for CSPs.\r\n\r\n4. **Cross-Group Coordination:**\r\n   - As @atfurman pointed out, the fundamental problem space overlaps with the **Rev5 Continuous Monitoring CWG** and the upcoming **Continuous Reporting CWG**.  \r\n   - Establishing shared definitions and schemas will prevent fragmentation and improve efficiency.  \r\n   - Regularly synchronizing definitions and discussing outcomes across groups would help maintain alignment.  \r\n\r\n5. **Support for Small to Medium Businesses (SMBs):**\r\n   - As @cybersechawk mentioned, making this framework accessible to SMBs is critical.  \r\n   - Providing pre-built IaC templates, policy-as-code modules, and validation tools will lower the barrier to entry.  \r\n   - Developing a CLI-based tool that SMBs can integrate without extensive CI/CD infrastructure could be a valuable offering.\r\n\r\n6. **Proposed Roadmap:**\r\n   - **Phase 1:** Expand KSI definitions to cover a broader set of NIST 800-53 Rev5 controls, with a focus on critical areas such as Access Control, Incident Response, and Configuration Management.  \r\n   - **Phase 2:** Develop JSON/YAML schemas for validation results and integrate OSCAL as a standardized output format.  \r\n   - **Phase 3:** Build CLI tools and CI/CD integration modules for IaC and Policy-as-Code validation.  \r\n   - **Phase 4:** Coordinate with Rev5 ConMon and Continuous Reporting CWGs to ensure compatibility and alignment.  \r\n",
+      "author": "austinsonger",
+      "created_at": "2025-04-03T01:24:53Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwhM1",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12718901",
+      "body": "I like where this conversation is going, but I am finding myself asking a few questions.\r\n\r\nWhat sources can/will we use to cover the remainder of the scope? In the case of KSI-001, The offering itself may use CM's that are not tied to AWS in any way. Any external connections/integrations would also need to be vetted that they are FR auth'd and using validated CM's. Corporate policies will also need to be verified as including the required statements. Each of these are examples of additional areas of focus, and perhaps that's just it; I think I'll open a thread to determine scope of efforts regarding automated evidence collection and verification, given that we'll want a robust understanding of the task as a whole, then we'll be able to choose the areas with the best bang for the buck.",
+      "author": "JBockmann",
+      "created_at": "2025-04-03T21:14:33Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw3BO",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12808270",
+          "body": "> Any external connections/integrations would also need to be vetted that they are FR auth'd and using validated CM's.\r\n\r\nNot necessarily - see FedRAMP guidance [here](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_for_Cryptographic_Module_Selection_v1.1.0.pdf).\r\n\r\nBut you certainly should be able to assess which are and which are not validated CM data flows.  If you don't be assured the bad guys will!\r\n\r\n> Corporate policies will also need to be verified as including the required statements. \r\n\r\nSure - but even ignoring LLMs, that's quite doable with semantic search indices in all major open source and commercial data stores\r\n\r\nI can give you a number because we have the full suite of automated tests for all 800-53 controls in AWS, GCP and Azure and are actively working to open source those in CNCF.  there are ~3K tests.  That may seem like a lot - but really - not since most of them are using the same structure.  Now the CSO itself needs to expose more APIs/telemetry. We often see that as the problem.  Azure and AWS etc all have great and granular APIs and logging. CSOs do not.  Ever asked your CSO for the audit logs or SIEM integration? How did that go? :)\r\n\r\nI would rather see us spend $150K on augmenting the CSO APIs and telemetry *annually* vs spending that on a point in time manual documentation-heavy audit.",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T20:13:27Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw3DH",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12808391",
+          "body": "@JBockmann \u2014 your points are well taken. KSI-001 is a great example of how automation gets complicated fast when we move beyond the core IaaS layer. Many offerings use components and connection managers that aren\u2019t tied to AWS, and validating those, especially for FedRAMP equivalency, still requires traditional control mapping, documentation, and often policy review. Even if some telemetry exists, it\u2019s not always structured, signed, or complete enough to serve as standalone evidence.\n\n@sunstonesecure-robert \u2014 I think we\u2019re all aligned in wanting to push the envelope with automation. IaC testing, cryptographic log chaining, and CNCF-backed threat simulations are great ideas in theory. But in practice, CSPs often struggle to:\n\n- Prove parity between test IaC and production environments (drift detection is still nascent, even in tools like Terraform Cloud).\n- Get meaningful telemetry out of CSOs, especially those that weren\u2019t built with observability or policy-as-code in mind.\n- Convince agencies and 3PAOs that signed logs or hashed evidence chains meet FedRAMP \u201cobjectivity\u201d thresholds without independent verification.\n\nEven assuming we have 3,000 tests across AWS, GCP, and Azure, that doesn\u2019t solve for enterprise systems using legacy integrations, on-prem CMs, or unmanaged SaaS interdependencies. And it doesn\u2019t fully answer how we\u2019d automate control families like AT, PL, or IR, where qualitative evidence is still dominant.\n\nSo while I\u2019m supportive of open-sourcing these automation frameworks through CNCF, we\u2019ll need to be realistic:\n\n- Many KSIs will still require attestation or \u201csemi-automated\u201d evidence.\n- The cost-benefit of building telemetry pipelines across every control family isn\u2019t uniform.\n- Agencies and 3PAOs need to be part of this conversation early, otherwise, we risk building a technically elegant solution that isn\u2019t operationally accepted.\n\nI\u2019m in favor of mapping each control to a tiered assurance model:\n- Tier 1: Direct evidence through CSP-native APIs or logs.\n- Tier 2: Evidence derived from CSO telemetry with signed attestations.\n- Tier 3: Requires traditional assessment or 3PAO judgment.\n\nThat helps us be honest about what\u2019s possible today, while still charting a roadmap for tomorrow.\n",
+          "author": "rgutwein",
+          "created_at": "2025-04-11T20:30:24Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxAl6",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12847482",
+      "body": "Current KSI validation UI mapped to 800-53 control catalogue with configs provided in the \"update-readme\" branch: \n\nhttps://github.com/rgutwein/fedramp-ksi-validation/tree/update-readme\n\n![image](https://github.com/user-attachments/assets/487c1455-1275-4333-b3a4-4c75acb4f328)\n\n![image](https://github.com/user-attachments/assets/4e3f93fb-41f8-4de2-9965-59578acec988)\n\n![image](https://github.com/user-attachments/assets/5fa32846-b8a9-45f7-a600-1c25b34ca814)\n\n@aj-stein-gsa ",
+      "author": "rgutwein",
+      "created_at": "2025-04-15T22:19:53Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AxAog",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/4#discussioncomment-12847648",
+          "body": "Thanks for sharing! Will have to give this a spin. ",
+          "author": "ajay-stratus",
+          "created_at": "2025-04-15T22:53:15Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "D_kwDOOMfSVs4AfnLI",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/34",
+  "title": "Control and Control Enhancement Parameters",
+  "body": "Will the PMO be reviewing the current Rev 5 control baselines for parameters that were defined? This seems like a good opportunity to allow CSP's in coordination with Federal customers to define the control and enhancement parameters to better align with both internal CSP operations and federal customer requirements. Not all CSO's have the same requirements and not all leverage the same tooling with the exact same capabilities for configuration, so this would be an opportunity to allow CSP's to define the parameters based on what works best for the offering and also based upon customer requirements. The exceptions to this would obviously be Federal Mandates, Laws, etc., however, there are many parameters that have been defined that could be relaxed (Vuln Management, RA controls) or where a range of options are considered vs. a hard parameter.",
+  "author": "sfc-gh-ncahall",
+  "created_at": "2025-05-06T20:07:22Z",
+  "comments": []
+}

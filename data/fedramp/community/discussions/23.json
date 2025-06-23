@@ -1,0 +1,78 @@
+{
+  "id": "D_kwDOOxfoic4AgAKF",
+  "url": "https://github.com/FedRAMP/community/discussions/23",
+  "title": "Automating Assessment for Cloud Native Architecture KSI Validations (KSI-CNA)",
+  "body": "## Context\r\nThe draft Key Security Indicators (KSIs) have been released! Week to week, we will focus on one security area and discuss automation ideas for the validations. \r\n\r\n### KSI-CNA for Cloud Native Architecture reads:\r\n\"A secure cloud service offering will use cloud native architecture and design principles to enforce and enhance the Confidentiality, Integrity and Availability of the system.\"\r\n\r\n### Validations include: \r\n1. Have denial of service (DoS) protection\r\n1. Configure firewalls/proxy servers to limit inbound and outbound traffic\r\n1. Use immutable containers and serverless functions with strictly defined functionality and privileges\r\n1. Design systems as logically segmented micro-services to minimize the attack surface and lateral movement if compromised\r\n1. Use cloud native virtual networks and related capabilities to enforce logical traffic flow controls\r\n1. Execute continuous scanning of cloud native system components\r\n1. Use high availability design principles to maximize uptime\r\n\r\n# Questions for the Community\r\n- **_Which validations are conducive to automation, and which ones are not?_**\r\n- **_What auto-generated evidence can be applied to each validation?_**\r\n- **_How might 3PAOs assess these validations/evidence?_**\r\n\r\n\r\n",
+  "author": "kyhu65867",
+  "created_at": "2025-04-30T15:48:12Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Axk94",
+      "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-12996472",
+      "body": "On a first pass, validations 1-5 seem most conducive to automation. Validation 6 seems related to the discussions in FedRAMP/automating-assessment-cwg#21 about change management specifically for new cloud components. \r\n\r\nValidations 6 and 7 feel the most vague to me. What kind of scans are intended by \"continuous scanning of cloud native system components\" is this configuration, vulnerability, or permissions scans? Similarly \"Use high availability design principles to maximize uptime\" feels quite general. More specifics would be helpful to clarify how this can be demonstrated and then automated. For example, is showing deployment into multiple availability zones or load balancers sufficient? If so then 7 becomes fairly easy to automate. (Side note: isn't DoS protection--validation 1--a high availability design principle to maximize uptime? Maybe validation 1 should be a subset of validation 7...)\r\n\r\nIn terms of how 3PAOs would perform assessment, I envision either API calls to the IaaS cloud provider using something like the [AWS SecurityAudit IAM role permissions](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SecurityAudit.html) (read configurations on everything but no permission to change). Or an analysis of the IaC (terraform, etc) used to declare the environment with a comparison of the IaC code to the deployed state (tfstate or equivalent) to ensure the code represents the actual production deployed state. Both methods would provide near real-time assessment/assurance.  \r\n\r\n-- Isaac Teuscher (Paramify)",
+      "author": "iteuscher",
+      "created_at": "2025-04-30T16:35:08Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxndZ",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13006681",
+          "body": "Great points, Isaac. I especially like the way you are thinking about using IaaS/PaaS provided APIs to expose validation data to the 3PAO.\r\n\r\nA few thoughts on providing specifics for validations 6 and 7, particularly regarding automation and evidence. This is in no way prescriptive and should be taken as just one possible approach for illustrative purposes only. Acceptance by FedRAMP is not guaranteed.\r\n\r\nLet's assume a CSP uses Kubernetes to deploy read-only, stateless containers from a secure image repository. Container images are built from officially maintained base images with additional customizations and security hardening applied.\r\n\r\n- Validation 6 (Continuous Scanning - Vulnerability): Container images are scanned daily using a tool like Trivy for new vulnerabilities. Findings automatically trigger a rebuild/redeploy pipeline if new patches affecting the image are available. The scan results and pipeline logs serve as evidence.\r\n- Validation 6 (Continuous Scanning - Integrity/Config): Deployed containers are monitored for configuration drift or unexpected changes (e.g., using file integrity monitoring or comparing runtime hashes to expected values). Deviations trigger automated deletion and redeployment of a known-good container instance from the secure repository. Kubernetes admission controllers could also enforce configuration policies (like disallowing privileged containers) at deploy time.\r\n- Validation 7 (High Availability): Since the containers are stateless, Kubernetes is configured for automatic horizontal scaling based on load and self-healing (automatic restarts of hung or failed instances via liveness/readiness probes). This provides application-level resilience. To meet the broader intent of Validation 7, this Kubernetes configuration would typically be deployed across multiple Availability Zones and leverage cloud provider load balancers for infrastructure-level HA. (Optional addition regarding DoS: \r\n\r\nYour point about DoS protection (#1) being related is valid; ensuring the system scales and resists resource exhaustion attacks is definitely a component of maintaining availability under load or attack, fitting under the HA umbrella. You may want to add that as a comment on the KSI RFC (https://www.fedramp.gov/rfcs/0006/).\r\n\r\nEvidence and Automation:\r\nAll these items can be largely configured declaratively (e.g., in Kubernetes manifests, Helm charts). A 3PAO could assess this via:\r\n\r\n- API Calls: As you suggested, querying the Kubernetes API (potentially proxied/managed by the IaaS provider) to verify deployment configurations (replica counts, update strategies, probe settings, resource limits, security contexts), scaling settings, and image sources in near real-time. Status data from integrated scanning tools (like Trivy) could also be exposed via API.\r\n- IaC Analysis: Analyzing the IaC (Helm, Kustomize, Terraform Kubernetes provider definitions) and comparing it against the deployed state (queried via API or kubectl commands like kubectl get deployment -o yaml) ensures the code accurately represents the production environment.\r\n\r\nThis approach provides machine-readable evidence tied directly to the automated controls.\r\n\r\n",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-01T18:52:37Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AxwPD",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13042627",
+          "body": "Thanks Dan! Appreciate your feedback and helping clarify what evidence could look like for Validation 6 and 7. Those make sense to me. I added a comment to the KSI RFC about DoS protection being a component of high availability. I agree with you that both API Calls and IaC Analysis (when compared to the deployed state) would accomplish the goal of FedRAMP 20x evidence. Currently I'm planning to use both methods and see how they function in the pilot process but I'm open to feedback from the FedRAMP PMO team or 3PAOs on which of those options is preferred. \r\n\r\n-- Isaac Teuscher (Paramify)",
+          "author": "iteuscher",
+          "created_at": "2025-05-05T17:37:10Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AxmVi",
+      "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13002082",
+      "body": "Evaluation of all the current KSIs could be done via the official cloud mcp servers.\r\nNo need to invent a machine readable format when natural language is now machine readable.\r\nBenefits the non-technical as well, as they can simply ask questions. And they can ask for updates daily, weekly, etc\r\n\r\nSmall POC I threw together during the CWG call yesterday using Azure's MCP Server  - https://github.com/ethanolivertroy/azure-terminal-copilot-FR20X\r\n",
+      "author": "ethanolivertroy",
+      "created_at": "2025-05-01T08:12:53Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Axms8",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13003580",
+          "body": "Love this idea. Would it also show the detailed steps for each check it performed for each KSI to show why it passed, failed or needs manual review? ",
+          "author": "troyfine",
+          "created_at": "2025-05-01T12:04:29Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Axn6y",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13008562",
+          "body": "@ethanolivertroy \r\n\r\n> No need to invent a machine readable format when natural language is now machine readable.\r\n\r\nWhat do you mean by this? I suspect there is an assumption that AI will be used, but has that been agreed to as a standard? If so, I'd like to know how consistency is being proposed regarding sentiment and context of natural language. Moreover, I'd also be interested in knowing the qualitative standard that will be used to measure the outcomes based on natural language inputs.",
+          "author": "chrisjohnson1",
+          "created_at": "2025-05-01T22:59:20Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AxwQq",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13042730",
+          "body": "I agree with @ethanolivertroy that the official cloud MCP servers will be a great resource to leverage for KSI evidence generation. @chrisjohnson1 I can't answer all your questions but a main appeal of MCP (Model Context Protocol) is that your AI doesn't need to be trained on the latest data since it can communicate via MCP with an MCP server that has the latest data. For example, you can prompt the [AWS Labs' Documentation MCP server](https://github.com/awslabs/mcp/blob/main/src/aws-documentation-mcp-server/README.md) and ask it what commands to run in AWS CLI to show evidence of a specific KSI and it will reference the latest AWS documentation to provide the current commands. In this case AI is not providing the evidence directly, instead it is providing instructions on how to pull the evidence from the cloud API. The evidence is the json response of the cloud API (machine readable and not impacted by AI sentiment). The MCP AI is a middleware to help the user (CSP, 3PAO, etc) to quickly find the commands needed to pull the evidence. \r\n\r\n-- Isaac Teuscher (Paramify)",
+          "author": "iteuscher",
+          "created_at": "2025-05-05T17:48:32Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax4dE",
+          "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13076292",
+          "body": "Take it one step further\u2026white hat mcp with all the goodies for tools. Because the black hat one already exists!",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-08T13:33:07Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ayx_c",
+      "url": "https://github.com/FedRAMP/community/discussions/23#discussioncomment-13311964",
+      "body": "Closing this discussion as we move into the next phase of the pilot!",
+      "author": "pete-gov",
+      "created_at": "2025-05-29T16:40:24Z",
+      "replies": []
+    }
+  ]
+}

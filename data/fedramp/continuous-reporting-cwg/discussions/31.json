@@ -1,0 +1,33 @@
+{
+  "id": "D_kwDOOKttEc4AfOOm",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/31",
+  "title": "RET - Vuln Scans",
+  "body": "On the RET during an annual ConMon assessment should all vuln scan findings be included even if they will not be post remediation window until after the assessment is complete? All RET items must be POA&M'd but vuln scan findings that are not outside remediation window do not have to be POA&M'd so how do these work together. A risk on the RET should be something not meeting the control, but a low or medium vulnerability finding is not a control failure, in fact it's within the reporting and remediation window. ",
+  "author": "cschlientz",
+  "created_at": "2025-04-09T18:00:45Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4AwwvL",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/31#discussioncomment-12782539",
+      "body": "Thanks for posting this inquiry and categorizing it as a question, @cschlientz. From what I understand, you're asking about the current state of continuous monitoring and the process as it exists today. That is not really the focus of this CWG. You may want to ask the question through more formal channels for guidance on procedural question like this one.\r\n\r\n@sam-aydlette, thoughts?",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-04-09T18:57:06Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Awwwa",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/31#discussioncomment-12782618",
+          "body": "I have done that as well but as we are in flux, it seemed a good place to get feedback here too. ",
+          "author": "cschlientz",
+          "created_at": "2025-04-09T19:05:22Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Aww3e",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/31#discussioncomment-12783070",
+          "body": "Yes @cschlientz your observation is certainly noted but this isn't the right space for that conversation, this space is focused on future state FedRAMP 20x. Feel free to reach out via info@ and engage that way for your specific concerns.",
+          "author": "sam-aydlette",
+          "created_at": "2025-04-09T19:48:58Z"
+        }
+      ]
+    }
+  ]
+}

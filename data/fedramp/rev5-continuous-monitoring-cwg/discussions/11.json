@@ -1,0 +1,730 @@
+{
+  "id": "D_kwDOOK0ax84AfF2U",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11",
+  "title": "Q&A for Mar 31st Kickoff Meeting",
+  "body": "This thread will serve as the dedicated space for questions from the 3/31 kick-off meeting.  \r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond.  The FedRAMP PMO will work to answer these as we are able.\r\n",
+  "author": "ryan-hodges-gsa",
+  "created_at": "2025-03-31T16:09:05Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84AwXiv",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679343",
+      "body": "How long will this WG (and the other three) run? You just mentioned meeting \"every two weeks\"; when do you expect to arrive at outcomes/decisions/processes?",
+      "author": "mattconner2f",
+      "created_at": "2025-03-31T17:13:00Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXjE",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679364",
+          "body": "FedRAMP's intent is to continuously improve these processes; as the working group shares insights and information that lead us to incremental options for standards or technical assistance, we will release those through our formal guidance without stopping our interaction with these groups. There's no planned end of life for these groups at this time!",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:14:58Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXks",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679468",
+          "body": "Pete, What is not clear is the leading questions and issues that will be tackled by this working group on the legacy process. For example, SCRs...this is a legacy process, what are the questions we need answered?",
+          "author": "bajosephs",
+          "created_at": "2025-03-31T17:23:16Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXlR",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679505",
+          "body": "For example, the existing SCR process needs to change. Formerly JAB systems are required to do a SAR for every SCR which is not consistent with the Agency authorizations, which allow for assessing the SCRs at the annual. This inequality needs to be remedied, along with the amount of money CSPs spend on the SCR process. The Modernization Memo talked about giving the agency a \"heads up\" on changes - we should go towards this model and have the CSP's internal testing process assessed by the 3PAO at the annual rather than testing each change. Allows CSPs to go to market quicker and supports revenue. We never heard as a FR community what happened to the SCR working groups that were supposed to simplify this process.",
+          "author": "bajosephs",
+          "created_at": "2025-03-31T17:26:59Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXly",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679538",
+          "body": "> Pete, What is not clear is the leading questions and issues that will be tackled by this working group on the legacy process. For example, SCRs...this is a legacy process, what are the questions we need answered?\r\n\r\nThere are two relevant threads for discussion about this currently open, and you are welcome to create more focused discussions with the community as desired.\r\n\r\n- [Best Practices and Lessons Learned in Multi-Agency Continuous Monitoring](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/14)\r\n- [Rev5 ConMon Process Improvement](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/13)",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:29:01Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXpU",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679764",
+          "body": "@bajosephs Can you please repost your Q in either of those two communities @pete-gov mentioned since the SCR topic is also near and dear to my interests as well? Thanks",
+          "author": "wahlay5497",
+          "created_at": "2025-03-31T17:49:59Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXuQ",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680080",
+          "body": "To @bajosephs  point, I need to chime in on the SCR process, especially for an Iaas - previously JAB Authorization. The authorizations issued to our IaaS by the agencies are typically granted for applications running on the IaaS, rather than for the IaaS itself. The authorizing agencies have no interest in any SCR involving the IaaS, and the SCRs are not aligned with the agency's interest. I agree with @bajosephs that the changes should be tested by the CSP, go live and added to the ConMon, and assessed during the AA. ",
+          "author": "JeffWillis-MIS",
+          "created_at": "2025-03-31T18:25:26Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXi9",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679357",
+      "body": "I would suggest having a central list or even better, a calendar for CSPs to post a link to their ConMon meetings invites. ",
+      "author": "rebdave",
+      "created_at": "2025-03-31T17:14:10Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXkV",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679445",
+          "body": "Thanks Dave.  This is a compelling idea - do you think CSPs want that posted publicly or something they would want \"firewalled\" within their repositories? ",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T17:21:36Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXkq",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679466",
+          "body": "Firewalled.  ",
+          "author": "kamamanh",
+          "created_at": "2025-03-31T17:23:07Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXlO",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679502",
+          "body": "@rhoesing a thought - what if requesting the invite was as easy as/similar to making a package request? In theory this would make it easily accessible to any agency that has a vested interest in a service (using or thinking about using). A documentation package request gets you access to the same sensitivity of data that is presented during ConMon discussions anyway.  ",
+          "author": "rcooneyfigma",
+          "created_at": "2025-03-31T17:26:45Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXlP",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679503",
+          "body": "Anyone that would need access to this information should already be invited, right? ConMon content should only be presented to those that have a need to know. Allowing this information to get out could compromise the CSP's environment. As a CSP, I would prefer to control my invites internally. ",
+          "author": "jimbeckneriii",
+          "created_at": "2025-03-31T17:26:57Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXla",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679514",
+          "body": "Ok, fair enough. Lets add the link to the ConMon in the FedRAMP (max or otherwise) repo, so only folks that have access to the package can access the link. \r\n\r\n",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:27:30Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXmW",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679574",
+          "body": "One interesting thing we're struggling with is that a CSP often has better direct lines of information and communication to their customers than FedRAMP does - FedRAMP may know an agency is using a CSP because of an ATO letter, but not know who is responsible for it, which business unit is adopting it, etc. \r\n\r\nWe strongly encourage CSPs to use their additional insight into their own customer base to optimize communication with the folks at an agency that are directly using their products. FedRAMP would not mind being able to tap into this information from CSPs either, as sometimes coordinating with industry is easier in cases like this.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:31:35Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXnW",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679638",
+          "body": "To ensure all commenting are aware: FedRAMP does currently have [The Collaborative ConMon Quick Guide](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Collaborative_ConMon_Quick_Guide.pdf) to help CSPs set up collaborative ConMon with their customers. I have seen challenges with agencies and CSPs being able to comm ensure active communication with each other.  I'd love to know more about what is missing from this document (things like posting a link to Collaborative ConMon meetings) - maybe this is an entirely new discussion point though.",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T17:37:19Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXng",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679648",
+          "body": "I wish there was a point upwards emoji to Pete's discussion^^",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T17:38:11Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXp5",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679801",
+          "body": "I do know that often CSPs are dealing with the business units (sales folks selling the products) but not necessarily the security offices. Is there an idea anybody has that can help resolve this issue?",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T17:53:59Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXre",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679902",
+          "body": "@rhoesing \"... dealing with the business units... but not necessarily the security offices\"   This is a great comment.  In my 3PAO days, while advising customers, I'd recommend CSPs try to have the agency business team coordinate with the agency security team as much as possible.    I have found that the agencies don't always effectively communicate about this sort of thing internally.  Anything we could do to better facilitate would be, I think, of massive value.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-03-31T18:04:20Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXsL",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679947",
+          "body": "I would love to hear ideas from industry on this? What has worked - or hasn't?\r\n",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T18:08:46Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwX08",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680508",
+          "body": "Given this thread really relates to the current current best practices and improvement in current Rev5 Multi-Agency ConMon I am going to take this thread over there discuss in the https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/14",
+          "author": "rhoesing",
+          "created_at": "2025-03-31T19:17:57Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwX4A",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680704",
+          "body": "> @rhoesing a thought - what if requesting the invite was as easy as/similar to making a package request? In theory this would make it easily accessible to any agency that has a vested interest in a service (using or thinking about using). A documentation package request gets you access to the same sensitivity of data that is presented during ConMon discussions anyway.\r\n\r\n@rcooneyfigma I did just check MAX repo and it does contain the ability to insert a calendar within any folder or sub-folder.  It can be manually populated or imported (ICS).  With folder access already controlled for need to know this may be a way to ensure ConMon events are widely available, yet controlled.   ",
+          "author": "paulagosta",
+          "created_at": "2025-03-31T19:41:42Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXjN",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679373",
+      "body": "We as a cloud service provider are at the earliest stage of pursuing FedRAMP, trying to get Agency Sponsor before we initiate process. Do you recommend us waiting for the new process to establish or should be continue on the Rev 5 path?",
+      "author": "sshukla-nxt",
+      "created_at": "2025-03-31T17:16:11Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXjl",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679397",
+          "body": "GSA can't make recommendations that would be construed as business advice. Today, the only option available for FedRAMP authorization is the Agency Authorization path: https://www.fedramp.gov/rev5/agency-authorization/\r\n\r\nFedRAMP 20x improvements will be developed in public so everyone has fair and equal access to information and to make their own decisions based on that.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:17:39Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXkB",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679425",
+          "body": "Got it, thanks.",
+          "author": "sshukla-nxt",
+          "created_at": "2025-03-31T17:19:52Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXkS",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679442",
+          "body": "Not sure where you are at when you say \"before initiate process\", but there is so much you can do before you find a sponsor. See the FedRAMP package list. ",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:21:14Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXk4",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679480",
+          "body": "Your best way of starting is by understanding Federal requirements and be able to discuss your readiness as a part of Federal sales enablement. There's a rich FedRAMP advisory community (including us at InfusionPoints) that can help you with this. ",
+          "author": "shr0p",
+          "created_at": "2025-03-31T17:23:55Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXmY",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679576",
+          "body": "@sshukla-nxt: This is a potentially complicated question depending on your business goals, and where public sector sales fall into your strategy.  If you already have agency or federal adjacent customers, that's one thing.  If you are looking to expand an existing commercial offering into the public sector, and want to test the market, that's something else entirely.  \r\n\r\nAt a high level, I'd say work towards known 800-53 requirements moreso than the authorization path.  I'd also try and think of (but not necessarily formalize) automated mechanisms for compliance/assessment.  \r\n\r\nThen, when you get a nibble from a potential agency, start working towards the authorization process (whatever it is at that point in time).  If possible, partner with that agency them help shepherd you through the process and their specific requirements.  It may (or may not) also make sense to consider GovRAMP/StateRAMP in the mix, as their process is not (to the best of my knowledge), in as much flux at this time.  \r\n\r\nFor whatever that's worth.  Best of luck.  ",
+          "author": "jsantore-cgc",
+          "created_at": "2025-03-31T17:31:44Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXvN",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680141",
+          "body": "+100 to what @jsantore-cgc says - start with the sales strategy around Federal first.  Without C-level sustained support, you won't have the budgets, staffing, or capabilities to sustain the required controls...even after fully automated AI-supercharged 20x ATO+ConMon goodness :) \r\n\r\nThis isn't like other \"app marketplaces\" where build it and they will come.  Make sure you solve an Agency problem exceptionally well and can be fully compensated for that solution and are well informed to the business (and cyber) risks.  Otherwise - as a small business especially - you will not see an ROI.\r\n\r\nAfter that - there's not much in 800-53 you couldn't be doing today for your commercial offering(s).  Sure a bit more paperwork (hopefully THIS effort helps there), but even then we find that doing the paperwork is very helpful in keeping the team(s) aligned and surfacing assumptions and \"unknown unknowns\". \r\n\r\n(FWIW- happy to continue automation specific discussions on how to implement NIST 800-53 on the various security and compliance WGs for open source: CNCF is one I co-chair every other Wednesday, but CSA and others have similar community discussions on the HOW to implement 800-53 in a cloud-native world. There's a lot of help out there, more or less for free!! Take advantage of it first!!)",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-03-31T18:31:55Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXjc",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679388",
+      "body": "Does OSCAL have a role to play here, or is that going to be left to the agencies/communities on how they want to accept automated information?",
+      "author": "fkautz",
+      "created_at": "2025-03-31T17:17:01Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXlk",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679524",
+          "body": "Thanks for this question! I would recommend engaging in the [Automating Assessment](github.com/fedramp/automating-assessment-cwg) working group (kicking off on Wednesday) to be able to contribute to the conversation and updates around automation. The short answer is, we want your feedback and input on what role OSCAL should play in the future! ",
+          "author": "kyhu65867",
+          "created_at": "2025-03-31T17:28:09Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXnm",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679654",
+          "body": "[Automating Assessment](https://www.fedramp.gov/20x/working-groups/automation/) Community Working Group (on GitHub): https://github.com/FedRAMP/automating-assessment-cwg\r\n\r\nAlso, I'm thinking OSCAL has more of a role to play in the [Continuous Reporting](https://www.fedramp.gov/20x/working-groups/reporting/) aspect of FedRAMP 20x.",
+          "author": "tnnrjmsn-eit",
+          "created_at": "2025-03-31T17:39:07Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXje",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679390",
+      "body": "Does this change for ConMon mean that monthly documentation no longer needs to be uploaded to USDA Connect? ",
+      "author": "KHFedR",
+      "created_at": "2025-03-31T17:17:03Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXjs",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679404",
+          "body": "Clarify that monthly we provide documentation to our agency in their repository",
+          "author": "KHFedR",
+          "created_at": "2025-03-31T17:18:16Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXjt",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679405",
+          "body": "Nothing has yet changed; please continue to follow standard procedures until formal guidance has been updated. This working group will help FedRAMP inform good decisions in updating the standards.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:18:20Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXjr",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679403",
+      "body": "Re: turning over the review of ConMon packages; curious who the appropriate parties will be? Will it be agency review only?",
+      "author": "escummins",
+      "created_at": "2025-03-31T17:18:03Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXj6",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679418",
+          "body": "All agencies using a cloud service offering should be following continuous monitoring or accepting the risk of not doing so; we would like this process to be easier for agencies and CSPs, which is part of why this working group was begun to create a new standard.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:19:31Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXkZ",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679449",
+          "body": "> All agencies using a cloud service offering should be following continuous monitoring or accepting the risk of not doing so; we would like this process to be easier for agencies and CSPs, which is part of why this working group was begun to create a new standard.\r\n\r\nAgreed! Rephrasing question - is FR PMO getting out of the process chain of reviewing themselves? E.g. reviewing the vuln scans and DRs. Instead focusing on setting guidelines for agencies?",
+          "author": "escummins",
+          "created_at": "2025-03-31T17:21:49Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXk5",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679481",
+          "body": "Having a significant change process that works the same across CSPs and Agencies would be real nice. ",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:24:07Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXow",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679728",
+          "body": "> Agreed! Rephrasing question - is FR PMO getting out of the process chain of reviewing themselves? E.g. reviewing the vuln scans and DRs. Instead focusing on setting guidelines for agencies?\r\n\r\nThat's correct; the FedRAMP PMO does not make explicit risk decisions on behalf of other agencies and will no longer provide centralized services that create confusion around this. We'll be focused throughout this on setting a standard that lowers the burden for agencies and CSPs to review continuous monitoring reports without FedRAMP in the middle.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:46:05Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXj5",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679417",
+      "body": "Will you be using the same Zoom links for future WG meetings, and/or do we need to sign up for each and every future session individually?",
+      "author": "NoseyNick",
+      "created_at": "2025-03-31T17:19:31Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXms",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679596",
+          "body": "Future meetings will be recurring and there will be a separate sign up link for that recurring meeting, which will be posted on each working group's respective repository. \r\n\r\nThe goal is that if you register for our recurring meetings you won't have to separately register for each one. \r\n\r\nKeep in mind that for the most part, meetings will just be a recap of the things that are going on in GitHub Discussions, and they will be posted on the FedRAMP YouTube page to allow for asynchronous participation. We do not want the focus of these working groups to be meetings. ",
+          "author": "kyhu65867",
+          "created_at": "2025-03-31T17:33:35Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXj-",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679422",
+      "body": "Are we expected to start our own Discussion threads, or just comment on ones provided by FedRAMP?",
+      "author": "arijigarjiansf",
+      "created_at": "2025-03-31T17:19:46Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXkG",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679430",
+          "body": "You are welcome to post your own discussion threads!",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:20:08Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXkC",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679426",
+      "body": "Will small to medium size businesses have an equal voice as the hyperscalers?  ",
+      "author": "cybersechawk",
+      "created_at": "2025-03-31T17:19:54Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXkR",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679441",
+          "body": "There is certainly equal access to the forums",
+          "author": "trumant",
+          "created_at": "2025-03-31T17:21:08Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXkg",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679456",
+          "body": "> There is certainly equal access to the forums\r\n\r\nExactly. Our intent is not to favor any opinion or piece of information based on the company behind it.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:22:32Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXnJ",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679625",
+          "body": "@trumant  While there may be equal access to the forums, the large CSPs and certain other industry groups may find that they have more resource availability to be able to devote to actively engaging in the forums. ",
+          "author": "kamamanh",
+          "created_at": "2025-03-31T17:36:15Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXpO",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679758",
+          "body": "> @trumant While there may be equal access to the forums, the large CSPs and certain other industry groups may find that they have more resource availability to be able to devote to actively engaging in the forums.\r\n\r\nWe pay attention to all of our stakeholders. The loudest and most frequent voices won't win out by virtue of being the loudest or most frequent voices. ",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:49:31Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXkJ",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679433",
+      "body": "Will feedback/comments on Pull Requests be used for community discussion as well?",
+      "author": "trumant",
+      "created_at": "2025-03-31T17:20:26Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXmR",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679569",
+          "body": "As an example, discussion could have taken place on https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/pull/9, but looks to be taking place in https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/12",
+          "author": "trumant",
+          "created_at": "2025-03-31T17:31:15Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXot",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679725",
+          "body": "I think right now we want to keep all discussion on the Discussions forum. That may change in the future if/when we start building some demos and collaborating on code/documents. ",
+          "author": "ryan-hodges-gsa",
+          "created_at": "2025-03-31T17:45:53Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXkT",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679443",
+      "body": "Will agencies be required to sign and send an ATO letter before being allowed to access a FedRAMP SAAS i.e., how will FedRAMP be sure that agencies and CSPs are going through the authorization process?",
+      "author": "karenwallacefox",
+      "created_at": "2025-03-31T17:21:34Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXlF",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679493",
+          "body": "Great question but keep in mind that unless something is going to change to allow an AO from one department to accept the risk of an ATO for another AO, they will need to. ",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:25:37Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXlI",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679496",
+          "body": "FedRAMP creates standards for agencies to follow; the FedRAMP PMO is not an oversight body and is not charged with ensuring agencies follow the process. We coordinate with OMB for oversight of agencies.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:26:01Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXmV",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679573",
+          "body": "> FedRAMP creates standards for agencies to follow; the FedRAMP PMO is not an oversight body and is not charged with ensuring agencies follow the process. We coordinate with OMB for oversight of agencies.\r\n\r\nThis is exactly our experience in the past as well as we've had customers who have Agency cloud users who do not appropriately issue ATO letters. The PMO has not been able to force that in the past, and it sounds like they won't in the future.",
+          "author": "shr0p",
+          "created_at": "2025-03-31T17:31:34Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXm3",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679607",
+          "body": "We have not allowed agencies to access our FedRAMP authorized SAAS until they have signed and submitted the ATO letter. Based on the comments above, we will continue with that requirement.",
+          "author": "karenwallacefox",
+          "created_at": "2025-03-31T17:34:29Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXkX",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679447",
+      "body": "Since the packages do not have to be 100% correct, and there were \"show-stoppers\" mentioned.  Are these elements documented, so all CSPs ensure that the critical components are complete before submitting?  ",
+      "author": "Telos-sa",
+      "created_at": "2025-03-31T17:21:46Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXqI",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679816",
+          "body": "The agency review team and 3PAO document issues found during an assessment. FedRAMP's review is now focused on major security concerns that may have been missed by the first two reviews or risk-accepted by the authorizing agency. These are rare for reviews that have gone through a strong 3PAO assessment.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:55:54Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXko",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679464",
+      "body": "Can you post all of the links you went over in our kickoff within meeting chat",
+      "author": "memiwilson",
+      "created_at": "2025-03-31T17:23:04Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXkx",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679473",
+          "body": "https://www.fedramp.gov/20x/working-groups/",
+          "author": "klaugh00",
+          "created_at": "2025-03-31T17:23:39Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXkz",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679475",
+      "body": "When changes are adopted regarding the continuous monitoring process, how and where will those changes be communicated?",
+      "author": "djdertate",
+      "created_at": "2025-03-31T17:23:48Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXlS",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679506",
+          "body": "Formal changes will go through our Request for Comment process and be standardized as technical assistance or guidance on the FedRAMP website. ",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:27:01Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXlL",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679499",
+      "body": "With the Agency AOs being an integral part of the continuous monitoring process, would you say it is prudent for 3PAOs to understand each Agency AO's risk thresholds and expectations for continuous monitoring, and if so, can FedRAMP help facilitate discussions with the AOs and 3PAOs to build this understanding?",
+      "author": "JustinPadilla-Kratos",
+      "created_at": "2025-03-31T17:26:30Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXme",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679582",
+          "body": "I'm leaning towards 3PAOs remaining neutral. Report the findings and allow each agency to determine the risk to them. ",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:32:21Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXpQ",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679760",
+          "body": "Pros and Cons of non-standardized risk thresholds. Non-standardized means agencies can be custom in their approach to what risks are important to them. For the mature agencies with a clear outline of what risks matter most to them, this would be best for them. \r\n\r\nIt also means a slower and more costly process, similar to the one today, as 3PAOs and CSPs must tailor their environments and reports based on the agency end user. ",
+          "author": "escummins",
+          "created_at": "2025-03-31T17:49:46Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXqU",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679828",
+          "body": "For this to scale to thousands of apps, each cannot be custom to each agency.  It will die under the burden.",
+          "author": "WalterB-LEA",
+          "created_at": "2025-03-31T17:56:52Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXqv",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679855",
+          "body": "Concur with rebdave; no one should be making assumptions about risk thresholds amongst AOs, but instead be focused on a general clear watermark. AO risk threshold varies not just by AO but explicitly by _use case_ - one AO accepting the risk of something and not really worrying about continuous monitoring does not offset another AO who might be incredibly concerned about any reds in a scan due to their use case. \r\n\r\nOur standards should provide CSPs and 3PAOs and AOs all the information they need to monitor risk based on their individual use cases while encouraging risk acceptance based on real threats, likelihood, and potential impact rather than an agency's policy about how many reds are acceptable.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T17:59:49Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXrY",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679896",
+          "body": "Historically, 3PAOs have seen differences between what the Agencies have been willing to accept vs the FedRAMP PMO. We've also seen Agencies apply additional security controls, as well as define specific timelines for certain deliverable to be provided that differed from the FedRAMP timelines. While I do feel it valuable for the 3PAOs to operate as a neutral party, reporting Risk and letting the Agencies make their own decisions, I also agree that it would create more effective collaboration and reduce unneeded back and forth if there was at least a baseline understanding of each agency AO's expectations (which may just be, following the normal FedRAMP guidance).",
+          "author": "JustinPadilla-Kratos",
+          "created_at": "2025-03-31T18:03:24Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXlX",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679511",
+      "body": "As a CSP with an existing authorization - we have our annual 3PAO assessment occurring over the summer.  Will 3PAO assessments over the next 3-6 months be impacted by pending changes? ",
+      "author": "KHFedR",
+      "created_at": "2025-03-31T17:27:15Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXlz",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679539",
+          "body": "You should follow the traditional rev. 5 process until a new process is defined and officially announced by FedRAMP.  ",
+          "author": "klaugh00",
+          "created_at": "2025-03-31T17:29:04Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXoA",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679680",
+          "body": "FedRAMP PMO really needs to address this with specific policy / guidance and assurances on sunsetting, or we will see a stifling of existing momentum of in-flight projects that are on the current authorization glide-path. ",
+          "author": "shr0p",
+          "created_at": "2025-03-31T17:41:36Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXq9",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679869",
+          "body": "The answers above are correct - there is no guarantee of any formal guidance changes. Follow the existing process until/unless it is changed.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T18:01:00Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXlj",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679523",
+      "body": "Will there be a JAB authorization path again? Is there a timeline for that? Agencies seem reluctant to proceed with the current state of union. ",
+      "author": "Feldman31337",
+      "created_at": "2025-03-31T17:28:08Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXmH",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679559",
+          "body": "Not as of today...the only path is the agency authorization path.",
+          "author": "klaugh00",
+          "created_at": "2025-03-31T17:30:23Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXxK",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680266",
+          "body": "> Will there be a JAB authorization path again? Is there a timeline for that? Agencies seem reluctant to proceed with the current state of union.\r\n\r\nA major driver behind the FedRAMP 20x approach is creating a standard that improves security while making it easier for agencies to assess and review the security posture of cloud services to perform their own ATOs (which are required by government policy). There are no other alternatives to the Agency Authorization path in development at this time.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T18:49:14Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXlw",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679536",
+      "body": "Who will be approving changes to the guidance? Especially when there is disagreement? ",
+      "author": "robgil",
+      "created_at": "2025-03-31T17:28:53Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXne",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679646",
+          "body": "The FedRAMP PMO will ultimately be making decisions that will go through the traditional RFC process. These working groups are meant to serve as a channel for communication and input from industry to help inform the decisions that we (the PMO) will be making. ",
+          "author": "kyhu65867",
+          "created_at": "2025-03-31T17:37:46Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXxt",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680301",
+          "body": "As Kylie indicated, FedRAMP has a very complicated formal process to follow for guidance. For this particular working group, we even have explicit extra requirements in 44 USC \u00a7 3609 (a) (7): \"_coordinate with the FedRAMP Board, the Director of the Cybersecurity and Infrastructure Security Agency, and other entities identified by the Administrator, with the concurrence of the Director and the Secretary, to establish and regularly update a framework for continuous monitoring..._\"\r\n\r\nIt is ultimately our job to produce standards that all these parties align with.",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T18:52:37Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXmb",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679579",
+      "body": "Is one of the eventual goals to do away with connect.gov (former OMB Max) as a document repository for moderate CSPs?  \r\n\r\nMaintaining a repository for the package, and managing agency (and potential future agency) access, would be yet another cost that would be unwelcome for smaller CSPs. ",
+      "author": "kamamanh",
+      "created_at": "2025-03-31T17:32:04Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXmn",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679591",
+          "body": "Is there a reason why there is talk of getting rid of connect.gov? \r\n",
+          "author": "rebdave",
+          "created_at": "2025-03-31T17:33:20Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXnV",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679637",
+          "body": "The agency I work with has a stand alone repository and we use connect.gov to share with the FedRAMP PMO - so in my specific instance, I upload monthly information twice which is what led to my question earlier re:connect.gov.  ",
+          "author": "KHFedR",
+          "created_at": "2025-03-31T17:37:10Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXpE",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679748",
+          "body": "There isn't specific talk of getting rid of connect.gov, but there is the statement from the PMO that CSPs should no longer upload vuln data there and instead use \"normal channels\" to get the info to their agencies.  Our normal channel is connect.gov.  \r\n\r\nI think it's reasonable to ask if one of the end goals is for the government to get out of the doc/file hosting business entirely as part of the planned efficiency.  If it is, CSPs who utilize connect.gov will have to find alternatives and it would be helpful to know that far in advance so we can start planning for that eventuality. ",
+          "author": "kamamanh",
+          "created_at": "2025-03-31T17:48:42Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwXyV",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680341",
+          "body": "One of the goals of modernizing this process will be to enable agencies (and FedRAMP) to directly consume information from CSPs continuously or regularly via APIs or similar machine-based communications. If successful, there should come a point in time when management via document repository is no longer necessary; the current process has a huge amount of manual overhead for everyone that we'd like to significantly reduce or eliminate. \r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T18:57:29Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXsD",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679939",
+      "body": "Since we're talking about Continuous Monitoring here, I'd like to understand if there are anticipated changes to ConMon requirements moving forward? I think the 30/90/180 should change given a deployment strategy of DiD / 0-trust. Given how a CSP is structuring the environment, all publicly facing findings = 30/90/180 and then internal (not KEV's) would be automatically risk adjusted to 90/180.",
+      "author": "AnievesPANW",
+      "created_at": "2025-03-31T18:08:02Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXyf",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680351",
+          "body": "This is definitely worth highlighting as a pain point in the discussion on [Rev5 ConMon Process Improvement](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/13)!",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T18:58:49Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXsS",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679954",
+      "body": "Separate question. Under our current continuous monitoring guidelines, there is one threshold for overdue POAMs across the board and this simply does not scale to larger and more complex environments. Is there any plan on updating this threshold guidance from the PMO as opposed the one size fits all approach? ",
+      "author": "AnievesPANW",
+      "created_at": "2025-03-31T18:09:38Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwXyr",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680363",
+          "body": "I strongly agree that a one size fits all approach is not appropriate here. I think this concern would also be an excellent pain point to flag and discuss in the [Rev5 ConMon Process Improvement](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/13) thread or in its own discussion thread. ",
+          "author": "pete-gov",
+          "created_at": "2025-03-31T19:00:10Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwXsp",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12679977",
+      "body": "Wish: IaaSs should take the lead on inventory automation because the IaaS is in the best position to systematically generate inventory. This should be the responsibility of a FedRAMPed IaaS. SaaSs can then leverage that capability. This would lower risk to the Government because the IaaS can ensure the inventory is complete and not tampered with. So to the extent that a CSP allows the customer to configure what components are used, there needs to be a corresponding tool to generate an inventory. ",
+      "author": "kkettner",
+      "created_at": "2025-03-31T18:12:05Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwaXD",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12690883",
+          "body": "As an IaaS, I agree 100% with your wish. ",
+          "author": "JeffWillis-MIS",
+          "created_at": "2025-04-01T16:20:54Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwX46",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680762",
+      "body": "I am using a software called Oligo https://www.oligo.security. This software validates runtime libraries and what is loaded into memory. When CVEs are found in a library that is not loaded or leveraged, I would like to downgrade the CVE automotically or even eliminate the CVEs on the POA&M more based on risk. Will there be support from evidence that is showing risk adjustments base on the CVE is not an issue and exploitable? ",
+      "author": "Feldman31337",
+      "created_at": "2025-03-31T19:48:57Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AwX5l",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680805",
+          "body": "The existing Deviation Request process should handle this. Many years ago (May 19, 2019) there was a FedRAMP \"Tips & Cues\" blog posted by the PMO which detailed that CVEs effecting disabled services on a Windows system could be labeled as False Positives. I know that some CSPs still use this same logic today including for libraries that are not loaded.\r\n\r\nYou would likely need to detail why there is ZERO risk (very little risk would be a Risk Adjustment) and then detail how over time (monthly) you can ensure that these items remain a False Positive (that your software continuously validates). \r\n\r\nIt would be fantastic to get updated guidance from FedRAMP on this as referencing a blog from nearly 6 years ago doesn't really provide much comfort..",
+          "author": "Bscudera9",
+          "created_at": "2025-03-31T19:53:50Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwX7a",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12680922",
+          "body": "@Feldman31337 This is a great way to mitigate/risk reduce findings as a false positive.   generally, I've seen those rationales be accepted as reasons for FP/Risk Reductions.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-03-31T20:09:45Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AwYDF",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12681413",
+          "body": "Thanks everyone, \r\n\r\nThis use case is not really a false positive (FP). The library does have the CVE. However, it is not loaded in memory and not used in the boundary. I guess you are treating that like a FP and gaining agency acceptance there? It does not feel like a DR or an OR. The CVE will continue to pop until it is patched. With my use case, a high CVE was to show up, I would technically only be able to downgrade to a moderate instead of a low. This goes toward risk-based assessment and mitigations to lower exploitable CVEs. ",
+          "author": "Feldman31337",
+          "created_at": "2025-03-31T21:15:43Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AxfbJ",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12973769",
+          "body": "Here is an example of a CVE that identifies a weakness in the source code distribution of zlib. The weakness is in the minizip sample code, not in zlib itself. Many scanners flag this CVE if older versions of zlib are detected on a system, even if the only code used from the zlib source code is the widely used libz shared library.\r\n\r\nThis isn't even more sophisticated reachability analysis to determine if defects in libraries are reachable in the context of a particular application's use. The identified defect isn't present in the executable code *at all*.\r\n\r\nhttps://github.com/madler/zlib/issues/868",
+          "author": "mswilson",
+          "created_at": "2025-04-28T19:55:29Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AwYIv",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12681775",
+      "body": "Securing systems starts with a complete inventory. I reviewed your sample ConMon KSI report, and as expected, inventory is a foundational element.  A common challenge for CSPs is finding a tool that can both produce a complete inventory and convert it into the FedRAMP Inventory Template format. Depending on their cloud environments and CMDBs, many resort to custom scripts or manual Excel work.\r\n\r\nThere was one open-source attempt to address this: https://github.com/aws-samples/fedramp-integrated-inventory-workbook   .  However, it\u2019s outdated, AWS-specific, and no longer maintained.\r\n\r\nIf there\u2019s enough community interest, a basic open-source solution could be possible. \r\n\r\nWhat\u2019s the PMO\u2019s view on this kind of approach? I would assume participation in development isn't feasible, especially with recent changes\u2014but once the KSI data model is finalized through the RFC process, automation seems like a logical next step.",
+      "author": "cybersechawk",
+      "created_at": "2025-03-31T22:15:55Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84Awa5b",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/11#discussioncomment-12693083",
+          "body": "@cybersechawk did you mean to post a link to an existing open source project? ",
+          "author": "sam-aydlette",
+          "created_at": "2025-04-01T20:33:37Z"
+        }
+      ]
+    }
+  ]
+}

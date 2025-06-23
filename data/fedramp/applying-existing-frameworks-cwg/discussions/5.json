@@ -1,0 +1,328 @@
+{
+  "id": "D_kwDOOMfSVs4AfDxm",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5",
+  "title": "Frameworks Not To Consider",
+  "body": "Is it worth discussing frameworks that should not be considered in future discussions?  I would think a framework like SOC 2, not being prescriptive, would be one of those.",
+  "author": "Christcpd",
+  "created_at": "2025-03-28T18:40:34Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AwSN_",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12657535",
+      "body": "> Is it worth discussing frameworks that should not be considered in future discussions? I would think a framework like SOC 2, not being prescriptive, would be one of those.\r\n\r\nThat could be an interesting discussion to have, with reasons about how and why. The underlying idea isn't to simply say \"if you use framework X then you can have FedRAMP\" though, the idea is more to identify \"what _things_ produced when using an existing framework have value to potentially short cut some aspects of FedRAMP's documentation requirements?\" \r\n\r\nIs there absolutely nothing in a SOC 2 report that is worth reading to understand a company's security posture?",
+      "author": "pete-gov",
+      "created_at": "2025-03-28T19:22:57Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwZs-",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12688190",
+          "body": "@pete-gov When it comes to FedRAMP documentation requirements, it's important to distinguish between what's required on paper versus what's validated in practice. FedRAMP places a heavy emphasis on documentation (System Security Plan, policies, procedures, etc.), but during a 3PAO assessment, the majority of the effort is focused on verifying how controls are actually implemented and operating. Documentation is important, but ultimately, what matters most is whether the described security controls are actually implemented, operating as intended, and producing effective results.\r\n\r\nIt\u2019s also worth noting that the vast majority of FedRAMP-authorized systems are separate from their commercial counterparts, and as such, many FedRAMP environments don\u2019t even undergo a SOC 2 or other commercial assessment. This separation often stems from the fact that commercial customers are generally unwilling to bear the cost of CSPs implementing certain federal requirements\u2014like FIPS 140-2 validated encryption or specific agency-driven controls like US only persons\u2014that are expensive for CSPs to maintain. As a result, providers typically isolate their federal environments to meet these obligations without impacting their broader commercial offerings. While the vision of FedRAMP 20x is signaling an interest in moving toward a model where the federal system is less isolated\u2014in the hopes of reducing cost and complexity\u2014the current posture from agencies still strongly favors separation, making commercial frameworks like SOC 2 less directly relevant in many FedRAMP contexts (I hope FedRAMP 20x is able to drive this change, but it is not going to happen overnight).\r\n\r\nSo to your question: no, it\u2019s not that a SOC 2 report has zero value. But we probably need to be clear-eyed about what types of outputs from other frameworks are actually useful in the context of FedRAMP\u2014and which aren't. There\u2019s definitely room for a broader conversation about which frameworks offer the most leverage, and why some may be less helpful based on how FedRAMP systems are structured in practice.",
+          "author": "mhungate-schellman",
+          "created_at": "2025-04-01T12:40:51Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AweOF",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12706693",
+          "body": "Your second paragraph explains an enduring friction point between the OMB and CSPs that this working group and FedRAMP will need to reconcile. As you mention, cloud providers tend to develop government-specific offerings instead of implementing FedRAMP standards and processes across their entire company because these additional investments are expensive to maintain and unnecessary in many (most?) commercial applications. \r\n\r\nBut the [July 2024 OMB instruction](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) that sparked these working groups was _very_ specific that \"Within one year of the issuance of this memorandum, GSA will produce a plan, approved by the FedRAMP Board and developed in consultation with industry, to structure FedRAMP to encourage the transition of Federal agencies away from the use of Government-specific cloud infrastructure.\" In the best-case scenario, nearly all commercial products offered by a FedRAMP-approved vendor will become available for federal agency use, and nearly all FedRAMP standards will be integrated into CSP's \"core\" services, \"benefiting all customers.\" [page 4.]\r\n\r\nThe only way I see this working is if New FedRAMP (1) aligns very closely to an existing commercial framework or (2) comprises only the barest minimum standards and lightest-lift processes that _should_ apply to all commercial cloud offerings (regardless of whether they are reflected in current frameworks). These approaches, however, fail to address the biggest issue with FedRAMP currently: Agencies will still require any policies and procedures they feel they need, and CSOs will need to meet those demands (or convince the agencies otherwise) regardless of how much money or time they\u2019ve already spent on FedRAMP authorization.\r\n\r\nThis is a very broad generalization, and there are undoubtedly other options I am not considering. I would appreciate hearing from CSPs that have chosen to make all (or most) of their commercial offerings align with FedRAMP what frameworks they find most useful and have the most overlap with current requirements. Or perhaps, in the spirit of the question, what frameworks have the least overlap/utility.",
+          "author": "cmanningasp",
+          "created_at": "2025-04-02T21:41:54Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwhIj",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12718627",
+          "body": "> I would appreciate hearing from CSPs that have chosen to make all (or most) of their commercial offerings align with FedRAMP what frameworks they find most useful and have the most overlap with current requirements. Or perhaps, in the spirit of the question, what frameworks have the least overlap/utility.\r\n\r\nThat is a _great_ framing - @emu-gov & @audreamichellewhite IMO this would be a great scope for a specific discussion, asking to hear directly from folks use got FedRAMP authorized using their existing commercial infrastructure over the past few years about alignment with commercial offerings.\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-04-03T20:36:09Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtNy",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768114",
+          "body": "> Agencies will still require any policies and procedures they feel they need, and CSOs will need to meet those demands (or convince the agencies otherwise) regardless of how much money or time they\u2019ve already spent on FedRAMP authorization.\r\n\r\nAs you mentioned, this is the biggest problem agencies face as they are beholden to many federally mandated requirements through FISMA and various OMB Memos, DHS CISA BOD/ED/C-CAR, and Executive Orders. All of these mean there are a minimum set of standards that have to be met and if CSPs are to provide services to the federal government, so will they. Unless there is a change in federal law and the approach the executive branch has towards securing government systems, this is a tough place to be.\r\n\r\nI believe a conjunction of the various WG efforts are what will be necessary to answer the framework approach.  The automated assessments and reporting will go a long way in validating implementation, reducing burdens on CSPs and increasing visibility. Pair this with the updates to con mon and continuous reporting, can potentially define what that FedRAMP 20x baseline will be and bring some parity to the commercial and government environments.",
+          "author": "TWeikle",
+          "created_at": "2025-04-08T17:37:53Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwSS-",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12657854",
+      "body": "@Christcpd I know SOC2 is a bit weird compared to FedRAMP for a number of reasons: period of time vs point in time+conmon, leverage COSO principles and create your own controls, rather than 'use IA-5' or whatever.  That said, a colleague of mine (@troyfine) and I did a [rev 4] mapping, him with a SOC2 background, me as a FedRAMP 3PAO at the time, and we were able to map the controls about 80% or so of the way.  \r\n\r\nYes, you'd want to 'select IA-5' as the control for CC 2.1 (or whatever it was.  I remember the NIST controls, not so much the SOC 2 ones), but it's doable, and to Pete's point, if we define the delta from a SOC2 to FedRAMP, you might able to say:\r\n1) If you defined your SOC controls based on NIST, apply delta 1 to get you there\r\n2) If you DIDN'T define your SOC controls based on NIST, evaluate gaps from your control definitions to the NIST, and then apply delta 1 PLUS your gap.\r\n\r\nSomething like that.",
+      "author": "jsantore-cgc",
+      "created_at": "2025-03-28T20:01:22Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwSUw",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12657968",
+          "body": "@Christcpd I get where you are coming from, but this could also be an opportunity for FedRAMP to leverage other commercial frameworks. Since the framework isn\u2019t prescriptive, FedRAMP could prescribe the controls that are required in order to rely on a SOC 2 report. \r\n\r\nThe SOC 2 standards allow for additional subject matter to be audited against. They call it a \u201cSOC2+ Report\u201d. In this case, there could be a SOC2+FedRAMP (low/moderate/high) report that uses the FedRAMP baselines as the control requirements. There could be an endorsed mapping from FedRAMP that maps the FedRAMP controls to the SOC 2 criteria. The report could show the NIST 800-53 controls IDs, so it easy to review.\r\n\r\nAs @jsantore-cgc mentioned, it won\u2019t be perfect 1:1, but it could be 80%.",
+          "author": "troyfine",
+          "created_at": "2025-03-28T20:15:47Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwSXC",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12658114",
+          "body": "@troyfine Do you have that Rev 4 mapping we worked on?  I need to see if I can track it down, but if you have it handy, can you upload it?  I'm going to try and find it and upload myself, but you might be able to beat me to it.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-03-28T20:38:17Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwSZW",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12658262",
+          "body": "I appreciate the early commentary.  I think the overarching goal of \"FedRAMP X\" is the proverbial \"Keep It Simple\" philosophy.  At least, that is how I would approach this.  What is easier for the business while maintaining a secure posture for Federal agencies.  To me, that would remove SOC 2+ from the mix.  Using something like CIS, PCI DSS, or ISO 27001 makes it quick for those orgs to understand and implement.  The community support is already there and new audit procedures are not needed.  \r\n\r\n\"FedRAMP X\" gives us that chance to revolutionize how we think about Federal compliance and send a strong message to frameworks like SOC 2 that change is needed.  I've advocated for a replacement of SOC 2 for a long time.  It has just become a token framework; it doesn't even call itself a certification.\r\n\r\nI may be seen as picking on SOC 2, but trust me, there are other frameworks out there that match its lack of controls.  Those can be inserted here as well.  \r\n\r\nDare I say it but maybe \"FedRAMP X\" goes the CMMC path and just chooses SP800-171 as the core?  The vendor community can easily measure 171 today through automation.  Perhaps not at the 80% stated goal but close.  ",
+          "author": "Christcpd",
+          "created_at": "2025-03-28T21:00:16Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwTcm",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12662566",
+          "body": "@Christcpd absolutely, use other frameworks as well. I am not saying SOC 2+ is the only answer, but I don\u2019t think SOC 2 should be ignored and thrown out. Many cloud service providers already have SOC 2 because their commercial customers require it. Not as many have the other frameworks in place. But if they have ISO 27001 or PCI DSS, then they should be allowed to leverage those too.",
+          "author": "troyfine",
+          "created_at": "2025-03-29T14:45:57Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwXpe",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12679774",
+          "body": "If nothing else, the service description can be pulled from a SOC 2 Report, right?",
+          "author": "tnnrjmsn-eit",
+          "created_at": "2025-03-31T17:51:12Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwXrL",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12679883",
+          "body": "> If nothing else, the service description can be pulled from a SOC 2 Report, right?\r\n\r\nNot sure the service description will give you any evidence of controls being in place or effective.  Just what the controls were attempting to secure.\r\n\r\nHowever, that is another major concern with how SOC attestations are misused.  \"Do you have a SOC 2?\"  \"Yes, here it is.\"   Check.   Sadly, I would guess that 95% of those receiving a SOC 2 report don't read scope and just accept it.  I've seen people \"check that box\" for a SaaS application when the SOC 2 report was for their corporate environment and never mentioned their AWS hosted SaaS application.  Something we should factor in somehow...",
+          "author": "Christcpd",
+          "created_at": "2025-03-31T18:02:01Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwXxF",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12680261",
+          "body": "Oh, I just meant to say the service description from a SOC 2 could apply to the base SSP, at the very least.\r\n\r\nThink Section 3 (System Information), perhaps it can also cover Sections 4 (System Owner) and Section 5 (Assignment of Security Responsibility).",
+          "author": "tnnrjmsn-eit",
+          "created_at": "2025-03-31T18:48:27Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwZsA",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12688128",
+          "body": "@Christcpd I think this answered the question posed by @pete-gov - As long as the reader understands the SOC2 process and what it is that the reader is looking at, then yes. Checking the box, \"is there a SOC2\" then there is very limited value. If you know how to read a SOC2, there is information about whether a service provider is actually meeting its stated security goals. Outcomes to scope tells a story. Scope must be tied to the CSO pretty tightly. ",
+          "author": "markeden-hhs",
+          "created_at": "2025-04-01T12:35:36Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwZ0s",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12688684",
+      "body": "The following table from [Milan Chauhan et al.](https://www.mdpi.com/2673-8732/3/3/18) proposes a basic taxonomy on evaluating frameworks. Is it helpful for identifying which framework should be excluded? Should we exclude a framework entirely or should we reuse certain components of a framework?\r\n<img width=\"1137\" alt=\"Screenshot 2025-04-01 at 9 17 45\u202fAM\" src=\"https://github.com/user-attachments/assets/43383cb9-f241-4b9b-917c-9be07fd4f84b\" />\r\n",
+      "author": "Cybonto",
+      "created_at": "2025-04-01T13:21:44Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AweeI",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12707720",
+      "body": "@Christcpd @pete-gov @troyfine @mhungate-schellman @cmanningasp\r\n\r\nWhile it\u2019s true that SOC 2 is not prescriptive and does not align perfectly with NIST 800-53, it can still provide value when used as a complementary tool. For instance:\r\n\r\n- Service Description and Scope: As mentioned earlier, the service description in a SOC 2 report can be useful when developing the base SSP, particularly when detailing system components, ownership, and security responsibilities.\r\n\r\n- Leveraging Control Frameworks: Many organizations have tailored their SOC 2 controls to align with NIST 800-53. Creating a SOC2+FedRAMP mapping could help establish clear deltas between frameworks and identify areas where control coverage is sufficient or needs augmentation.\r\n\r\n- Evidence of Implementation: Even if SOC 2 reports are not comprehensive for FedRAMP, they can provide evidence of how certain security controls are operating over time, especially for controls related to availability, confidentiality, and integrity.",
+      "author": "austinsonger",
+      "created_at": "2025-04-03T01:05:37Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awp7I",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12754632",
+          "body": "@austinsonger It would be interesting to map what additional activities would be required for NIST800-53 if a company has already achieved SOC 2.",
+          "author": "audreamichellewhite",
+          "created_at": "2025-04-07T18:02:02Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AweeO",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12707726",
+      "body": "@Christcpd @pete-gov @troyfine @mhungate-schellman @cmanningasp\r\n\r\nRather than excluding SOC 2 outright, it may be more practical to encourage organizations to leverage their existing SOC 2 controls where applicable, mapping them against FedRAMP requirements. \r\n\r\n**For example:**\r\n\r\n- If an organization has developed a robust SOC 2 program aligned with NIST 800-53, they could apply a structured delta analysis to cover gaps (e.g., requirements like FIPS 140-2 validated encryption, which may not be covered by SOC 2).\r\n- A structured SOC2+FedRAMP assessment model could streamline the authorization process, especially for organizations with mature commercial frameworks.\r\n\r\n\r\n",
+      "author": "austinsonger",
+      "created_at": "2025-04-03T01:06:32Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwtL8",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12767996",
+          "body": "I agree here. An organization executing SOC 2 controls does not seem well positioned to align with FedRAMP at the outset: the CCs are very broad. However, adopting a NIST 800-53 baseline at the outset and executing a SOC using those controls seems like a better path. ",
+          "author": "rjburke1",
+          "created_at": "2025-04-08T17:28:02Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AweeP",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12707727",
+      "body": "@Christcpd @pete-gov @troyfine @mhungate-schellman @cmanningasp\r\n\r\nIf FedRAMP X aims to reduce complexity and align more closely with existing commercial frameworks, allowing for partial use of SOC 2 (or other frameworks like ISO 27001) could lower the barrier for CSPs. \r\n\r\nThis would encourage broader participation without compromising on security rigor.",
+      "author": "austinsonger",
+      "created_at": "2025-04-03T01:07:24Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awj-a",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12730266",
+          "body": "The challenge with SOC 2 specifically is that the audit quality varies greatly plus the control selection is up to the entity being audited - so are all SOC 2 reports the same? With that said, I'm a firm believer in reciprocity and reducing the redundancy of doing multiple audits against the same controls.",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-04T20:23:44Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtK4",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12767928",
+          "body": "What do you mean the audit quality varies greatly? Each 3PAO that provides SOC 2 certification is certified by an audit standards body to do so. At some point, we get to trust the work of professionals, and don't have to \"check the checker\". This is one of the problems that has plagued old FedRAMP, causing backlogs, lack of trust, etc. It's why, in the past, even though agencies offered ATOs following the FedRAMP standard, other agencies would say, \"but I need a JAB because I just cannot trust anything else.\" We must move forward through this old way of thinking if we are going to be able to embrace framework reuse that is intended to lower the barrier to achieving a FR authorization, as well as decrease overall costs. I'd bet that for a lot of CSPs, they use the same 3PAO for their commercial activity as they do for their FR activity, so providing a pathway for reuse between commercial certification frameworks and FedRAMP, i.e. the 800-53 controls, should be fairly straightforward. ",
+          "author": "au-der",
+          "created_at": "2025-04-08T17:23:15Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtXj",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768739",
+          "body": "I appreciate your perspective but it is possible to get a SOC 2 report for $5k. I'm not confident in the rigor/time spent to conduct that audit is sufficient at that price point. The quality of those firms is in question by their peers in the AICPA. Peer reviews are not comprehensive. SOC 2 is not a certification either. You can received a SOC 2 report littered with exceptions/issues. There is no minimum bar to received a SOC 2. Ingesting/reviewing those low quality reports would increase the workload of due diligence.",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-08T18:26:25Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AxQog",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12913184",
+          "body": "Agreed with @ryantpatrick . \r\nI would also add ISO, including 27001, to the list as well of lowering the bar too low. ISO is prescriptive yet too high level to be useful for FedRAMP. Solutions exist now that automate ISO certifications completely with AI even. ",
+          "author": "abr-cf",
+          "created_at": "2025-04-22T17:30:11Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwhSw",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12719280",
+      "body": "Trying to include other frameworks sounds like scope creep to me. Fedramp requires NIST 800-53 (and I could see an argument for Executive Order 14028 inclusion though not a framework)  outside that I feel that the best approach is to limit the scope to only what is necessary to achieve Fedramp and once that is accomplished then it could expand to encompass additional frameworks. \r\n",
+      "author": "osteth",
+      "created_at": "2025-04-03T22:11:42Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awj-L",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12730251",
+          "body": "I don't think the intent is to include other framework but rather utilize the work against other frameworks or standards to satisfy the FedRAMP 800-53 requirements. There is normally a considerable amount of controls overlap from one to the next. It doesn't make sense to have to do a unique audit for FedRAMP, HITRUST, SOC 2, ISO when there is overlap. Most CSPs are in a multi-regulated or multi-reporting environment where they are subject to multiple frameworks.",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-04T20:21:10Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awkc5",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12732217",
+          "body": "> Trying to include other frameworks sounds like scope creep to me. Fedramp requires NIST 800-53 (and I could see an argument for Executive Order 14028 inclusion though not a framework) outside that I feel that the best approach is to limit the scope to only what is necessary to achieve Fedramp and once that is accomplished then it could expand to encompass additional frameworks.\r\n\r\nI beleve the purpose is to make it easier for smaller organizations that already has different framework certifications able to fill the gap with the fedramp baselines easier and quicker.",
+          "author": "austinsonger",
+          "created_at": "2025-04-05T05:04:27Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awkhk",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12732516",
+          "body": "I agree that most CSPs are multi-reporting. I have never had an issue submitting a FedRAMP security plan to satisfy other frameworks so I am assuming we are talking about mapping other frameworks to fill out your FedRAMP security plan controls. As much as I love automation most CSPs are still operating on .docx files if they have an 800-53 security plan it's Rev4 and automatedly parsing and mapping semi-standardized .docx files from a different framework to a standardized and structured dataset is a bit of a programming nightmare. There is also the gap analysis that should be conducted so this automated mapping either ignores that or additionally extends the scope. I am not saying that automated mapping of other frameworks isn't a cool or good idea, but I am far more interested in a standardized machine-readable security plan and all of the benefits that it would enable. If I have to do a one-time manual mapping into that format it is well worth the time and effort. ",
+          "author": "osteth",
+          "created_at": "2025-04-05T06:45:07Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awp7p",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12754665",
+          "body": "FedRAMP is trying to idenitfy existing frameworks that can be leveraged to meet some of the standards.  We would love feedback on the most utilized frameworks and those parts of the frameworks that can meet some of the FedRAMP's requirements.   ",
+          "author": "audreamichellewhite",
+          "created_at": "2025-04-07T18:06:43Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwqYj",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12756515",
+          "body": "> FedRAMP is trying to idenitfy existing frameworks that can be leveraged to meet some of the standards.  We would love feedback on the most utilized frameworks and those parts of the frameworks that can meet some of the FedRAMP's requirements.   \n\nI submit HITRUST for consideration. The FedRAMP rev5 baselines are already mapped to the CSF. HITRUST already has a reciprocal program with StateRAMP with an ongoing pilot that would look very similar to what this working group is looking to accomplish. HITRUST also has based its controls on threat intelligence which is being updated every 90 days. ",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-07T21:22:00Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awqhf",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12757087",
+          "body": "> FedRAMP is trying to idenitfy existing frameworks that can be leveraged to meet some of the standards. We would love feedback on the most utilized frameworks and those parts of the frameworks that can meet some of the FedRAMP's requirements.\r\n\r\nUnderstood, As this discussion is \"Frameworks Not to Consider\" I am putting forth the idea that no frameworks should be considered. Instead, a FedRAMP-only approach allows the program to set the standard, and provide an example for how automated compliance can be achieved and other frameworks can elevate themselves to meet the new watermark. \r\n\r\n Additionally, it is a program risk because of the technical complexity required to include other frameworks. ",
+          "author": "osteth",
+          "created_at": "2025-04-07T22:55:05Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtNi",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768098",
+          "body": "@osteth , I strongly disagree with your position. Here's why:\r\n1. control mapping is not really that technically complex. We do it all the time. It is a hallmark of many GRC tools already. \r\n2. as @ryantpatrick pointed out, there are already existing, published mappings out there. Some of them are even on the NIST website. \r\n3. As I interpret the intent regarding reuse from @pete-gov 's presentation to CSPs, it is meant to allow CSPs to reuse the investment that they have already put into commercial security certifications, many of which are required by other industry customers, in order to speed FedRAMP achievement and potentially decrease overall cost to achieve (which is empowering to small businesses and startups). (don't mean to put words in Pete's mouth, so tagged here to clarify if this is not the intent).\r\n4. WHEN we move to an automated authorization model, it will be straightforward to reuse test data between frameworks, too. \r\n\r\nThere are some challenges to reciprocity between frameworks, that is true, but I do not see any of these challenges as insurmountable. \r\n-Scope of assessment. A commercial control could only be reused if indeed the commercial system scope and the federal system scope were the same. This is unlikely for any FedRAMP High authorization (hello, GovCloud), but is certainly possible at the FR Moderate level, and I would argue even likely at the FedRAMP Low level. \r\n-Control granularity. The 800-53 has so much granularity at the control level that commercial framework controls often cover more than one 800-53 control. This can make mapping a little bit messy, especially if you are new to the 800-53.  I think that commercial certifications, and this is a generalization, speak more to the \"key security indicators\" that have been brought up as part of FR 20X.\r\n-auditor certification. FedRAMP would need to agree that certified auditors who created certified audit reports for ISO 27001, 27017, 27018, SOC 2 Type 2, IRAP, PCI DSS 4.0, etc. can be 'accepted', and that there is no hang up on \"the work was not completed by a FedRAMP auditor\". ",
+          "author": "au-der",
+          "created_at": "2025-04-08T17:36:17Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtP9",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768253",
+          "body": "I think we can outright exclude PCI-DSS. I think SOC 2, ISO 27001, CSA CCM, and HITRUST all have overlapping controls with FedRAMP. ",
+          "author": "SecurityConsultantsOU",
+          "created_at": "2025-04-08T17:48:43Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtlH",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12769607",
+          "body": "@au-der, I appreciate your take on this. Please allow me to offer some counterpoints: \r\nMapping Controls manually is time-consuming but not technically complex. when we enter the world of automation the complexity goes up exponentially. Let's look at an in my experience fairly standard CSP entering into FedRAMP for the first time who has ISO27001 and SOC2 building their FedRAMP security plan for the first time. They have their SOC2 and ISO27001 controls documents in a .docx file so first we need a method to take in these two documents that are not well constructed to be read by a machine and parse those documents. there is an infinite number of ways they could have formatted that document and we now have to write code that guesses what their formatting is and interpolate that into some standard let's use OSCAL for example because that makes sense here. \r\n\r\nNow we can get into mapping. You are correct this is an understood space within commercial GRC products, few resources are available under an open-source license or in the public domain so we either have to replicate that effort or pay some company to license for their mappings (essentially picking someone to win the competitive GRC landscape).  This isn't a thing that can't be overcome it's just extra effort. Tx-Ramp, GovRamp, CMMC, FedRAMP, NIST 800-171, NIST CSF, and CJIS are all subsets of NIST 800-53 so I take no issue with accepting these frameworks. I just think there is more value in producing and publishing a working standard as an example and allowing the market to fill in the gaps.\r\n\r\nSOC2 on the other hand does not have a baseline requirement like FedRAMP does. So instead of assessors assuring that a CSP has achieved any standard, they are assuring that the CSP is being honest about what they have stated they do. While the controls can be mapped there is no assurance of security. \r\n\r\nI have never experienced an issue when submitting a FedRAMP security plan to my SOC2 assessor so I feel that reciprocity already exists. but I would see bi-directional reciprocity for frameworks that are not a subset of NIST 800-53 to be a mistake. \r\n\r\nFinally, Why does FedRAMP have to be everything for everyone? Automation, as you correctly pointed out, will enable data reuse. We should let FedRAMP be great at being FedRAMP. ",
+          "author": "osteth",
+          "created_at": "2025-04-08T19:57:41Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwpAk",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12750884",
+      "body": "If the intention is to potentially use evidence which was provided for other assessment frameworks, wouldn't we first need to decide on whether evidence obtained not from a FedRAMP assessor is valid? In the past, I know CSPs have tried to offer their SOC2 assessment reports as evidence that they are compliant with the datacenter PE controls but we weren't able to use the report due to it being performed by non-FedRAMP assessors. Would we be moving to a model where that report would be potentially useable as long as the CSP provided the evidence for the 3PAO assessor to review?",
+      "author": "ChanceofClouds",
+      "created_at": "2025-04-07T13:09:39Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwqG0",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12755380",
+          "body": "This is a great point. In order for evidence to be viable, the source would need to be trusted.\r\n\r\nIf FedRAMP did allow acceptance of a SOC2 report performed by an auditor that was a non-FedRAMP assessor to meet certain requirements, would this be a concern?",
+          "author": "emu-gov",
+          "created_at": "2025-04-07T19:29:45Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwqZB",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12756545",
+          "body": "The way the pilot works between StateRAMP and HITRUST is the external assessor for the HITRUST assessment must be an approved StateRAMP 3PAO. There is a decent overlap between the two pools of audit firms. ",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-07T21:24:36Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwspY",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12765784",
+          "body": "R311 requirements would need to potentially be updated. Additionally, is there still an expectation that the HITRUST, testing/evidence, is within one year/6 months? Additionally, would we base the timing of that on the date the report was made or the day the evidence was taken?",
+          "author": "ChanceofClouds",
+          "created_at": "2025-04-08T14:33:23Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwtQM",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768268",
+          "body": "> This is a great point. In order for evidence to be viable, the source would need to be trusted.\r\n> \r\n> If FedRAMP did allow acceptance of a SOC2 report performed by an auditor that was a non-FedRAMP assessor to meet certain requirements, would this be a concern?\r\n\r\nSOC2 reports are generally accepted for FISMA/FSA audits by IGs to meet some metrics, so there should be some form of overlap that can be leveraged. It would be nice to have a vetting process or other certification in place that shows competency for the specifics of re-use in the federal space. This could be the same for any certification that PMO and this WG determines meet a minimum standard for compliance with federal guidance.",
+          "author": "TWeikle",
+          "created_at": "2025-04-08T17:50:10Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Ax15v",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-13065839",
+          "body": "> This is a great point. In order for evidence to be viable, the source would need to be trusted.\r\n> \r\n> If FedRAMP did allow acceptance of a SOC2 report performed by an auditor that was a non-FedRAMP assessor to meet certain requirements, would this be a concern?\r\n\r\n@emu-gov I don\u2019t think it would be a concern, but the 3PAO should have to determine if they trust the audit firm that issued the report. I imagine in many cases, the same firm performed a SOC 2 and FedRAMP audit, so trust is inherently there, but when its not the same firm, the 3PAO should have to make a determination on whether they will rely on the SOC 2 Type 2 report. In addition, the 3PAO would have to confirm the scope covered by the SOC 2 Type 2 report aligned with the FedRAMP scope. I would also think the 3PAO would want to make a determination based on timing. If the audit period covered by the SOC 2 Type 2 report is from nine months ago, they may not want to rely on the report.",
+          "author": "troyfine",
+          "created_at": "2025-05-07T16:49:19Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AyjK-",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-13251262",
+          "body": "> Additionally, is there still an expectation that the HITRUST, testing/evidence, is within one year/6 months?\r\n\r\nYep!\r\nHITRUST evidence must be current and cover the assessment period, typically within 90 days prior to fieldwork and not older than 365 days.",
+          "author": "tnnrjmsn-eit",
+          "created_at": "2025-05-23T21:24:59Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtFX",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12767575",
+      "body": "I have always tried to look at this from the opposite perspective in that if I have FedRAMP, which I consider the uber control set, then what industry framework controls are already been met by the FedRAMP controls. While there is value in that, we are trying to take the opposite approach.\r\n\r\nAs such, I suspect there is at least some value in nearly every industry framework. I think the goal should be to identify which frameworks are most commonly used and how the use of those frameworks has historically prepared a CSP for FedRAMP. Then we drill in to determine for a given industry framework does it demonstrate meeting in whole or part of one or more FedRAMP controls. Those FedRAMP controls/parts would then not need reviewed if the CSP has the industry framework certification.",
+      "author": "dljenkins",
+      "created_at": "2025-04-08T16:51:32Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwtP8",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/5#discussioncomment-12768252",
+          "body": "Viewed from that lens I'd say the most common issue I saw with CSPs going into FedRAMP and NIST 800-171 assessments was a lack of documentation (lack of tickets, lack of evidence to show reviews were performed and how (account, security, configuration management)), and the level of scrutiny each artifact is given. Not sure that helps but I am mentioning that as I'd refrain from using any controls and subsequent evidence gained from a different type of assessment related to those types of artifacts.",
+          "author": "ChanceofClouds",
+          "created_at": "2025-04-08T17:48:38Z"
+        }
+      ]
+    }
+  ]
+}

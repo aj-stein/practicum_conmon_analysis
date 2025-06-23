@@ -1,0 +1,247 @@
+{
+  "id": "D_kwDOOMDw3M4AfH3S",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5",
+  "title": "Q&A for April 2nd Kickoff Meeting",
+  "body": "This thread will serve as the dedicated space for questions from the 4/2 kick-off meeting. \r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond. The FedRAMP PMO will work to answer these as we are able.",
+  "author": "kyhu65867",
+  "created_at": "2025-04-02T14:36:12Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwdHs",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12702188",
+      "body": "What are the ideas for collecting this data related to the automated assessments? Access to our systems would be a big roadblock for us, even if we released a separate FedRAMP instance. How would this affect the 3PAO process for assessments?",
+      "author": "chaplekb",
+      "created_at": "2025-04-02T14:59:24Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwdYy",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12703282",
+          "body": "Definitely looking to explore the possibilities here - I don't expect the government to need direct access to an environment to directly verify configurations/etc. in real time, but would expect cloud service providers to use trusted tools to validate their configurations and generate reviewable output on it. Many IaaS and PaaS providers already provide this capability, both via their own tooling and via APIs they make available that can be used by third party tools.",
+          "author": "pete-gov",
+          "created_at": "2025-04-02T16:16:45Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdjd",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12703965",
+          "body": "@pete-gov Good point, we just need to ensure that there's a way to ensure a given tool is 'trusted' and what that means.\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-02T17:08:48Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdks",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704044",
+          "body": "@pete-gov Thanks for hosting. The \"Automation\" of assessment will require a framework on which controls are minimally acceptable through the Automation. I assume controls within the control families that are mapped to APIs and provide specific data mapped to a control is what's generally meant by Automated Assessment. Who will define those \"Accepted controls\" Per CSP..? Agencies? ",
+          "author": "Quzara",
+          "created_at": "2025-04-02T17:12:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwdlU",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704084",
+          "body": "> @pete-gov Thanks for hosting. The \"Automation\" of assessment will require a framework on which controls are minimally acceptable through the Automation. I assume controls within the control families that are mapped to APIs and provide specific data mapped to a control is what's generally meant by Automated Assessment. Who will define those \"Accepted controls\" Per CSP..? Agencies?\r\n\r\nFedRAMP will develop standards that are designed to create an abstraction layer between high quality commercial security requirements and explicit controls for the government side - that is the fundamental concept behind FedRAMP's Key Security Indicators (you can think of the goal as a unique baseline with special controls but we deliberately used new terminology to start from first principles, we don't necessarily want people thinking about this as baselines or controls).",
+          "author": "pete-gov",
+          "created_at": "2025-04-02T17:16:06Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwdlW",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704086",
+          "body": "@jsantore-cgc agree 100%. Let's not forget that even with \"trusted\" tools configuring them in the intended \"trusted\" configuration before testing an environment needs to be verified. \r\n ",
+          "author": "rebdave",
+          "created_at": "2025-04-02T17:16:13Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awdlr",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704107",
+      "body": "We use a FOG to DTN method for remote monitoring large environmental data that requires AI compute locally with Computer vision. We have a crypto type side chain to auth data is coming from our own sensors with an immutable ledger for audits of our data. If we upload from our sites to a FedRAMP structured cloud, do we need to pass a token to FedRAMP to auth?",
+      "author": "ADD12",
+      "created_at": "2025-04-02T17:18:04Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwduY",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704664",
+          "body": "We have not gotten to the \"upload to FedRAMP\" part yet, but I like the idea of a block chain type solution for verifying the integrity of security attestations and evidence. I'd be very interested to learn more about that side chain.",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-02T17:55:42Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awdlz",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704115",
+      "body": "Just thinking out loud here. Is there a plan to merge or orchestrate Q&As that run across working groups? I am already sensing that there will be a lot of overlap between this WG and the ConMon WG that kicked off on Monday. ",
+      "author": "rebdave",
+      "created_at": "2025-04-02T17:19:02Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwdmP",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704143",
+          "body": "> Just thinking out loud here. Is there a plan to merge or orchestrate Q&As that run across working groups? I am already sensing that there will be a lot of overlap between this WG and the ConMon WG that kicked off on Monday.\r\n\r\nWe'll monitor this to see how things go - we don't want to be policing things, but also want the Rev 5 ConMon WG to focus _explicitly_ on **Rev 5** Continuous Monitoring, which would be different from initial authorization and validation (here) vs continuous reporting in a new 20x model (a working group for next week). When in doubt, cross pollination is recommended though, as even at FedRAMP we'll have different folks focused on different areas!",
+          "author": "pete-gov",
+          "created_at": "2025-04-02T17:21:47Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awdmr",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704171",
+      "body": "I would invite everyone here who is interested in automating compliance for cloud native and cloud first workloads to join us in the OSCAL COMPASS working group under CNCF.  This is an open source working group, open to all to contribute ideas and solutions. \r\n\r\nhttps://clomonitor.io/projects/cncf/oscal-compass\r\n\r\nThe goals of this open source community includes the following:\r\nDrive adoption of the OSCAL standard using Trestle, Agile Authoring, and C2P tools for end-to-end compliance automation.\r\nCome up with use-cases for automating compliance processes in an organization and the required tooling support.\r\nInfluence the OSCAL standard based on the requirements and use-cases identified.\r\n\r\nWe want to enable the ability for any CSP to produce automated compliance information that any authorizing entity or auditor could use in pursuit of any security framework, from ISO 27001 or SOC 2 Type 2, to FedRAMP, to IRAP, etc.  \r\n",
+      "author": "au-der",
+      "created_at": "2025-04-02T17:23:53Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwdnC",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704194",
+      "body": "The [proposed ConMon Monthly \"1 Page Report\" Template](https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/blob/main/conmon_ksi_report.md) from the Rev. 5 ConMon working group described 8 potential KSIs to be reported each month for ConMon. \r\n\r\nIs this our starting point when defining KSIs for this 2nd working group? \r\n\r\nIs the idea that these KSIs will be leveraged for both monthly ConMon as well as annual assessments? Just looking to delineate between the ConMon KSIs and the assessment KSIs (if they are one and the same or different)",
+      "author": "arijigarjiansf",
+      "created_at": "2025-04-02T17:26:33Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awdnq",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704234",
+          "body": "> Is this our starting point when defining KSIs for this 2nd working group?\r\n> \r\n> Is the idea that these KSIs will be leveraged for both monthly ConMon as well as annual assessments?\r\n\r\nSee my comment [here](https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704143) for a bit more background, but effectively - this group is focused on KSIs and automated validation for _initial authorization_  in a new model. There's absolutely overlap and aligned goals in various areas, but we don't have to start from the same direction across these working groups.\r\n\r\nFedRAMP will continuously monitor conversations and develop standards that cut across all of these. \ud83d\ude80 \r\n",
+          "author": "pete-gov",
+          "created_at": "2025-04-02T17:29:59Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdqa",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704410",
+          "body": "I'll also add that our likely end state will have multiple sets of KSIs for different kinds of services. For example, a data storage service will likely have KSIs related to backup and recovery but an ephemeral service like a grammar checker that does not retain data might not.",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-02T17:40:16Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdqb",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704411",
+          "body": "Yes to add to Pete's comment, the future of ConMon will be discussed in depth in the [reporting continuously](https://github.com/FedRAMP/continuous-reporting-cwg) working group! But there will surely be overlap between different working groups as we converge on a vision for 20x. ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-02T17:40:22Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awds-",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704574",
+          "body": "Hi guys:  thanks for hosting the session.  I know the community is contributing as a whole to bring about a new approach to FedRAMP, and a common phrase I keep hearing on these calls and at the meeting a week ago Monday is \"Government doesn't care how it gets done.\"  The 'it' referring to patching or what not, but rather seeing that patching is done.   Will the PMO be setting standards for 3PAOs in terms of what will be accepted for legitimate patching or will that be an agency's responsibility?  If it's an agency responsibility, have the agencies been made aware that it will be their call?  ",
+          "author": "joksenhe",
+          "created_at": "2025-04-02T17:49:43Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdvu",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704750",
+          "body": "> Hi guys: thanks for hosting the session. I know the community is contributing as a whole to bring about a new approach to FedRAMP, and a common phrase I keep hearing on these calls and at the meeting a week ago Monday is \"Government doesn't care how it gets done.\" The 'it' referring to patching or what not, but rather seeing that patching is done. Will the PMO be setting standards for 3PAOs in terms of what will be accepted for legitimate patching or will that be an agency's responsibility? If it's an agency responsibility, have the agencies been made aware that it will be their call?\r\n\r\nThis is a great question, and I want to repeat that nothing has been decided yet, but the FedRAMP PMO in 20x currently plans on setting standards and guidelines for different stakeholder groups, including what evidence is acceptable for use in verifying a Key Security Indicator. A possible end goal is that an agency will be able to see true/false results for each KSI and **trust the derivation of those results** to be able to make well-informed risk-based decisions tailored to agency needs. Does that answer your question?",
+          "author": "kyhu65867",
+          "created_at": "2025-04-02T18:03:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awdx0",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12704884",
+          "body": "For now, yes.  Thanks for responding, Kylie.",
+          "author": "joksenhe",
+          "created_at": "2025-04-02T18:15:09Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awg3p",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12717545",
+          "body": "I would be careful with throwing the term \"Government doesn't care how it gets done\" around. The way I am seeing it is that the government still needs any \"solution\" to meet their needs  and work for them. So an element of \"doesn't care\" is correct but parameters and constraints will be driven by federal needs and capabilities.  ",
+          "author": "rebdave",
+          "created_at": "2025-04-03T18:21:12Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhIY",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12718616",
+          "body": "I used it in the context it was said.  Thank you.",
+          "author": "joksenhe",
+          "created_at": "2025-04-03T20:33:56Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhJa",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12718682",
+          "body": "It might be more accurate if we said that the Government doesn't need to know the details, rather than not care.  ",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-03T20:43:57Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awd0F",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12705029",
+      "body": "Some questions after today's call, get talk btw!!\r\n\r\n1. What are the most critical control metrics does FedRAMP consider the most important?  For example certain MFA controls, Encryption (secrets rotation, TLS, MFA)\r\n2. Is there a preferred machine readable scheme (like OSCAL)?\r\n3. Is there any preferred standard APIs between CSPs, 3PAO, and FedRAMP repositories\r\n4. Can we incorporate AI (scan and remediate configs)  or Blockchain technologies (ledgers)?\r\n5. Are we expecting 100% automation, with humans in the loop only for problems?  \n\nCollin Hogue-Spears \nCloudera",
+      "author": "CKHogueSpears",
+      "created_at": "2025-04-02T18:25:08Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awd2D",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12705155",
+          "body": "These are amazing questions, I'll take a crack at some of them, but I can't promise I won't answer a question with another question!!\r\n1. We have a few that we have thought about, but at this stage we want to hear from you-- what metrics do YOU care most about or see as the most relevant to risk management? Hence the question in discussion thread #7 . \r\n2. As of right now, we are opening it up to you all. What machine readable schemas do you use? Do you want to use? Is it worth reinventing the wheel?\r\n3. Right now, no, but you are getting at the heart of what it is we want to do here-- we want to bring security/compliance closer to the devs so that they can communicate not with big clunky word doc packages but with code and structured data via API. Stay tuned to work on exciting things like this here!\r\n4. leaving unanswered for now\r\n5. Based on what I know about security I don't think 100% automation is possible, but there are several security things that lend themselves well to automation and we want to identify those and leverage them as much as we can. ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-02T18:33:34Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AweWT",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12707219",
+          "body": "\r\n1. What controls?  Well I have some ideas...\r\n\r\n**A.** Encryption\r\n\r\nAt Rest: Validate volumes/databases use FIPS 140-2/3 encryption.\r\n\r\nIn Transit: Ensure TLS\u202f1.2+ for external endpoints.\r\n\r\nSecrets Management: Enforce rotation intervals (e.g., 90\u202fdays) and secure vaults.\r\n\r\n**B.** Phishing-Resistant MFA\r\n\r\nRequire MFA for privileged access and ideally all users, with a focus on FIDO2/WebAuthn or similarly robust methods.\r\n\r\n**C.** Zero-Trust Architecture\r\n\r\nCheck for micro-segmentation (no flat networks), dynamic per-request verifications, and strict least-privilege (role-based) access controls.\r\n\r\n**D.** High-Risk Event Logging & Auditing\r\n\r\nLog/admin changes, security group modifications, etc., in a SIEM or central aggregator.\r\n\r\nTrigger automated alerts for suspicious activity (e.g., repeated failed logins) and ensure an incident response workflow is in place.\r\n\r\nSounds like this wouldn't be too hard.\r\n\r\n**E:** CVEs\r\n\r\nWe can pull data from something like Heimdall, which my org uses, and use the data to pull back the number of Critical, High, Medium, and Low CVEs and send that to the 3PAO too. \r\n\r\nI want to see scores, not pass or fail but notional results, that say \"we are  X% compliant, and because different Federal Agencies likely have different risk tolerances let them decide  what % is good.  Maybe we can have a lower bar for all agencies.\r\n\r\n**2.**  We could just have a hypothetical endpoint, like get GET /fedramp-metrics that 3PAOs  can hit and get a JSON response:\r\n\r\n**a.** controlsChecked vs. controlsPassed vs. controlsFailed gives a quick overview.\r\n\r\n**b.** Each controlResults[] entry shows a short explanation of pass/fail.\r\n\r\n**c.** Linking to a remediationURL provides direct instructions or next steps in a code-friendly (not doc-heavy) manner.\r\n\r\n**d.** A separate POST /fedramp-metrics could let a 3PAO or auditor annotate official acceptance or provide comments.\r\n\nCollin Hogue-Spears \nCloudera\r\n",
+          "author": "CKHogueSpears",
+          "created_at": "2025-04-02T23:29:11Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwgFL",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12714315",
+          "body": "> I'm Collin Hogue-Spears from Cloudera btw.\r\n> \r\n> 1. What controls?  Well I have some ideas...\r\n\r\n> \r\n> **2.** We could just have a hypothetical endpoint, like get GET /fedramp-metrics that 3PAOs can hit and get a JSON response:\r\n> \r\n> **a.** controlsChecked vs. controlsPassed vs. controlsFailed gives a quick overview.\r\n> \r\n> **b.** Each controlResults[] entry shows a short explanation of pass/fail.\r\n> \r\n> **c.** Linking to a remediationURL provides direct instructions or next steps in a code-friendly (not doc-heavy) manner.\r\n> \r\n> **d.** A separate POST /fedramp-metrics could let a 3PAO or auditor annotate official acceptance or provide comments.\r\n\r\nReally interesting ideas Collin.  I am really interested in the idea of a system where 3PAOs. IaaS, and PaaS providers can digitally validate the accuracy of what a CSP is reporting. \r\n",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-03T14:03:15Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awz1e",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12795230",
+          "body": "@DragonHorse2019 : your number 4 is very interesting. I and others would love to see you share more of your ideas on that.",
+          "author": "Cybonto",
+          "created_at": "2025-04-10T18:26:45Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AweSm",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12706982",
+      "body": "@kyhu65867 and team,  I think many CSPs spend a lot of time perfecting the boundary diagram and making sure it aligns perfectly with the SSP and inventory.   There is a lot of time spent iterating back and forth between CSP and 3PAO and then with the FedRAMP PMO until the diagram is acceptable.   For us, this time alone added over a month and a half to the overall process due to all the many written requirements and often subjective unwritten requirements for the diagram.   \n\nIs this something we might be able to talk about addressing using technology such as cloud diagramming automation in this group or is that not in consideration ?",
+      "author": "cybersechawk",
+      "created_at": "2025-04-02T22:41:39Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AweeA",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12707712",
+          "body": "Absolutely! I can guarantee that on the PMO side we also spend a great deal of time reading boundary diagrams as well. One of the goals of this space is to identify modern, innovative methods for assessment that aren't as manually intensive. I would recommend opening a new discussion thread to talk specifically about this as I am sure it is of interest to a number of participants here!",
+          "author": "kyhu65867",
+          "created_at": "2025-04-03T01:03:56Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awfs6",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12712762",
+          "body": "Thanks Kylie, I will open a new thread.  I would be curious the percentage of overall review time spent addressing boundary diagram issues versus other issues.   In other words, I wonder if it could be quantified in some way.   For example, go back through the last ten reviews and categorize and quantify blockers that required the CSP to resolve:\r\n* Boundary diagram incompleteness\r\n* Insufficient evidence for a particular control or family\r\n* SSP incompleteness for a particular section\r\n\r\n",
+          "author": "cybersechawk",
+          "created_at": "2025-04-03T11:31:30Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwgV1",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12715381",
+          "body": "@kyhu65867 @cybersechawk Good call on boundary diagrams.\r\nThere are a bunch of concerns here:\r\na- As a 3PAO, I've gone through the FedRAMP gauntlet on boundaries for a RAR, taken my lumps, got the diagram approved (and this was tricky because the CSP has to do the diagram, not the 3PAO, but we have to 'vet it') and moved on.  There's a limit on how many iterations you can go between a 3PAO, CSP, and FedRAMP before everyone gets frustrated and it affects the business relationship.\r\nb- Then, during a full authorization review, the same diagram that passed before gets run through the wringer again.\r\nc- There's so much detail that it's almost impossible to 'pass' a diagram.  There are always updates required.\r\nd- Consistency is key, HOWEVER, it's *hard* to ensure that a given component is: named correctly, on the diagram, in the accompanying narrative, and in any appropriate services list.  In particular, getting a list of all IaaS services for a given offering isn't as obvious as it sounds and the naming is inconsistent.  Particularly when you've got multiple sources:  SSP, assessment interviews, evidence all of which is not always using the same name.  \r\ne- don't get me started on 'sub services' (e.g. VPC is the service, but then VPC peering is a subservice... there was an issue a year or two ago about VPC Peering not being deemed an 'authorized service' although there was no way to know/find that.  Everyone assumed it was under the VPC umbrella.  It got worked out, but not without some hoop jumping.\r\n\r\nI've created a boundary diagram checklist which has:  mandatory elements, and then generally scores things with 90% being a pass.  Is there such thing as a diagram markup language of sorts, where you enter in a standard set of components/structures and it generates the  diagram.  That would be easily parsable through automation, guarantee uniform look and feel, and have an objective standard without subjectivity applied.\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-03T15:29:23Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwgjR",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12716241",
+          "body": "Talk about opening a can of worms. Once we are in the automating mode, maybe we can come up with (or there is probably already one out there) a tool that can crawl through the network looking for the \"BD KSIs\". We could at least use that as a baseline. Also with most CSP living in one of the 3 big IaaSs starting with a trusted baseline architecture  may also be very helpful for those CSPs that are SaaS and  always and keep getting hung up on the build within the infrastructure. ",
+          "author": "rebdave",
+          "created_at": "2025-04-03T16:26:52Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awgvf",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/5#discussioncomment-12717023",
+          "body": "One of our main goals for FedRAMP 20x is to eliminate costly activities that provide little benefit. In any system or documentation, the purpose of diagrams should be to help clarify critical information. In my experience as both a CSP and an Agency CISO the boundary diagrams rarely meet this criteria. I'm interested to know if anyone who is already using Infrastructure/Compliance as Code has found ways to generate useful diagrams automatically based on the data?",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-03T17:17:02Z"
+        }
+      ]
+    }
+  ]
+}

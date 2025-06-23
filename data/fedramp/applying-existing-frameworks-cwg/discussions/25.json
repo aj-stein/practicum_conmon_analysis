@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOMfSVs4AfZlZ",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/25",
+  "title": "Do any CSPs have co-located commercial and federal environments?",
+  "body": "What federal requirements make having systems within the FedRAMP boundary shared with commercial services challenging?",
+  "author": "emu-gov",
+  "created_at": "2025-04-22T17:20:19Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AxT7-",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/25#discussioncomment-12926718",
+      "body": "The majority of the CSP clients I see (as a 3PAO) have independent boundaries and environments for even each federal authorization (FedRAMP v DISA v PBMM, etc), commercial environments aside. The independence extends beyond logical controls too, many of them have separate GRC teams covering federal v commercial systems, separate IAM RBAC duties, etc. \r\n\r\nWhat makes a shared boundary challenging?\r\nFor starters: \r\n- Data Sovereignty & Data Location Restrictions (Federal data must remain within specific jurisdictional boundaries, Commercial data may have wider residency requirements): PS/AC/IA\r\n- Personnel Security Requirements (Background check mandates, US citizenship requirements, etc may require an internationally based CSP to have a separate US local team to maintain the federal environment but the cost savings and time zone fluidity of an international team makes it more efficient for the commercial environments): SA/SC/MP\r\n- Supply Chain Risk Management: SA/CM/SR\r\n- Change Management Process (stricter for FedRAMP than ISO for example): CM/CA/SA\r\n\r\nAll of these things are expensive and complicated to build into network architecture. It's simpler to manage them separately and easier to get approved (especially in regards to DoD/DISA). ",
+      "author": "abr-cf",
+      "created_at": "2025-04-23T19:06:35Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxZbW",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/25#discussioncomment-12949206",
+      "body": "IMHO, it is:\r\n1. FIPS, FIPS, FIPS\r\n2. The fact that all third-party services used by the CSP must be FedRAMP-authorized\r\n3. Hardening everything against STIGs and CIS\r\n\r\nThose are the three biggest hurdles that keep most CSPs from FedRAMPing their commercial environment, and the biggest drivers of cost because CSPs end up swapping perfectly good third-party services and tools for new ones because the ones they currently use aren't FedRAMPed and/or can't do FIPS. Or the third-party images they use aren't STIGed and don't use FIPS. This is especially a problem for the big companies who are heavily invested in certain tools, services, and third-party images already.\r\n\r\nOther things that can be an issue for smaller CSPs include enabling identity federation so that federal users can log in with their PIV/CAC card, patching within the 30/90/180 day windows, and logging every little thing.  \r\n\r\nThe SIA and SCR processes are also frowned upon because they slow the CSP down too much. They are yet another reason why CSPs would rather pay hundreds of thousands of dollars to stand up a federal environment than pay millions to FedRAMP their existing solution and risk their commercial offering.",
+      "author": "cbiggsrun",
+      "created_at": "2025-04-25T16:11:34Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AxZdf",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/25#discussioncomment-12949343",
+          "body": "As a CSP, I agree with everything you said. Incorporating only third-party services that are also FedRAMP Authorized (# 2) has been the biggest challenge we have encountered from both financial and work effort perspectives. It can result not only in the need to create a dedicated federal environment but, in some cases, in completely re-engineering or removing core portions of the application/service. Additionally, alternative products that are FedRAMP Authorized are not always available, depending on the type of third-party service in question.",
+          "author": "psullivan-sprout",
+          "created_at": "2025-04-25T16:23:38Z"
+        }
+      ]
+    }
+  ]
+}

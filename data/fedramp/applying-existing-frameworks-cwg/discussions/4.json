@@ -1,0 +1,281 @@
+{
+  "id": "D_kwDOOMfSVs4AfBoV",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4",
+  "title": "Welcome to Applying Existing Frameworks CWG - Introduce Yourself",
+  "body": "This is a forum to discuss topics related to FedRAMP Applying Existing Frameworks Community Working Group.",
+  "author": "audreamichellewhite",
+  "created_at": "2025-03-26T19:05:24Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AwRN4",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12653432",
+      "body": "Good morning, all.  I'm Warner Sterling with Accenture Federal Services.",
+      "author": "wsterling",
+      "created_at": "2025-03-28T13:50:18Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwSAX",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12656663",
+      "body": "Hi everyone - Alex Nette from [Hive Systems](www.hivesystems.com) here. Looking forward to contributing to the future of FedRAMP!",
+      "author": "alexnette",
+      "created_at": "2025-03-28T18:08:49Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwSR_",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12657791",
+      "body": "John Santore from Constellation GovCloud.  Former 3PAO as well.",
+      "author": "jsantore-cgc",
+      "created_at": "2025-03-28T19:53:01Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwS06",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12660026",
+      "body": "Hello All - Irfan Nawaz from Salesforce! #FedRAMP20x",
+      "author": "i-nawaz",
+      "created_at": "2025-03-29T03:54:12Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwXnj",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12679651",
+      "body": "Hello everyone.  Susan Swanson with EY GPS.",
+      "author": "SusanSwanson",
+      "created_at": "2025-03-31T17:38:26Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awbde",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12695390",
+      "body": "Yo! Kenny with Paramify!",
+      "author": "kenny-paramify",
+      "created_at": "2025-04-02T03:23:08Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwdgS",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12703762",
+      "body": "Hello everyone. I am the Enterprise Security Cloud Lead at the Department of Education. I have been working with FedRAMP for the last 10+ years. Prior to my current role I have worked at CSPs, 3PAOs and as cloud support for a number of departments.",
+      "author": "rebdave",
+      "created_at": "2025-04-02T16:58:53Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AyfBV",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13234261",
+          "body": "Could I use this opportunity to ask for a quick call, at your convenience. Greg Nelson here, I handle the public sector at Egnyte. gnelson@egnyte.com",
+          "author": "greg-egnyte",
+          "created_at": "2025-05-22T12:41:33Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awdp2",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12704374",
+      "body": "Hello all! I'm Melina Barreca from Keyfactor. Happy to be part of these FedRAMP groups!",
+      "author": "MBarr-KF",
+      "created_at": "2025-04-02T17:38:29Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AweC1",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12705973",
+      "body": "I'm Shawn Olson, Foundation InfoSec Services, FedRAMP and CMMC Advisor/Consultant serving mainly SMBs in the DIB.",
+      "author": "locodarwin",
+      "created_at": "2025-04-02T20:00:35Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awg_z",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12718067",
+      "body": "Hi folks, I am Ryan Patrick from HITRUST.",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-03T19:18:41Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwkEJ",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12730633",
+      "body": "Hi all!  Michael Church from Salesforce.",
+      "author": "michael-church",
+      "created_at": "2025-04-04T21:24:38Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtMh",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12768033",
+      "body": "hello everyone, Rob Gutierrez here - former FedRAMP auditor now automating compliance @ Secureframe. At Secureframe we've mapped 40+ frameworks and counting across each other so there's nothing more we love more than framework efficiency :) Excited to work with you all! ",
+      "author": "Robgutierrez301",
+      "created_at": "2025-04-08T17:30:39Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtQq",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12768298",
+      "body": "Hi everyone! Attila Horvath from Security Consultants, we are supporting SMBs with security, privacy, and compliance efforts. ",
+      "author": "SecurityConsultantsOU",
+      "created_at": "2025-04-08T17:53:25Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtfW",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12769238",
+      "body": "Hello all Bryan Siegel from Rubrik.  Looking forward to contributing to the working group.  ",
+      "author": "RubrikSiegel",
+      "created_at": "2025-04-08T19:17:20Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awt28",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12770748",
+      "body": "Hello all, this is Vijay Gajula from Verily. I have 28 years in Software development. Last few years I was focused more on automation of FedRAMP and ConMon activities. Looking forward to supporting this working group. ",
+      "author": "vrgajula",
+      "created_at": "2025-04-08T22:32:32Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwwAD",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12779523",
+      "body": "Hello all. I'm Joseph Scarzone from Ask Sage, Inc. 34-year IT career, close to 23 years of which has been auditor/assessor/compliance roles. Looking forward to participating in this working group. ",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-09T14:41:58Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awwqi",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12782242",
+      "body": "Greetings all. Clai Collier from Fortreum, here. Looking forward to the collaboration! ",
+      "author": "PolicyAndPayload",
+      "created_at": "2025-04-09T18:28:13Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awzqd",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12794525",
+      "body": "Hello - I am Leah McGrath, Executive Director for StateRAMP (dba GovRAMP). I'm excited for this discussion and working group.",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-10T17:11:31Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AyfAy",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13234226",
+          "body": "Leah, we met some time ago at a show. I handle the Public Sector for Egnyte. Could we set aside a time to meet? gnelson@egnyte.com",
+          "author": "greg-egnyte",
+          "created_at": "2025-05-22T12:39:04Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AyfC-",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13234366",
+          "body": "You bet! I'll connect via email.  So you have it - my email is leah@govramp.org.  Thank you!",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-05-22T12:49:58Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw22_",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12807615",
+      "body": "Larry Hughes (VP of R&D) from Cloud Security Alliance (CSA) here. CSA works with some 15,000 global volunteers to define and raise awareness of best practices for cloud security. We believe that our STAR program (Security Trust Assurance and Risk) and Cloud Controls Matrix (CCM), which have played an proven role in the cloud security ecosystem since 2013, can play an important role in FedRAMP 20x. ",
+      "author": "csa-lhughes",
+      "created_at": "2025-04-11T18:46:46Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw86S",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12832402",
+      "body": "Tom Cornelius from the Secure Controls Framework (SCF). We currently have the low, moderate, high and LI-SaaS baselines from FedRAMP R4 & R5 mapped into the SCF, so we look forward to seeing how the SCF can be applied to FedRAMP. The SCF leverages Set Theory Relationship Mapping (STRM) from NIST IR 8477 to conduct the crosswalk mappings and that is free to download from the SCF website.",
+      "author": "t-cornelius",
+      "created_at": "2025-04-14T17:40:12Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw_pT",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12843603",
+      "body": "Hello all! I'm Rosette Kas from Data Analytics. Happy to be part of these FedRAMP groups!",
+      "author": "Kask253",
+      "created_at": "2025-04-15T15:13:13Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxDc0",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-12859188",
+      "body": "Hi everyone - I am Heidi.  Previously I was a 3PAO assessor and I am now a program lead at FDIC focused on authorizing some of our third-party systems and services.",
+      "author": "HT-FDIC",
+      "created_at": "2025-04-16T19:42:34Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Axt-c",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13033372",
+      "body": "Hi Everyone, I am Judge from AWS.   Looking forward to leveraging as much evidence as possible for our FedRAMP Cloud Authorizations!  For awareness, here is AWS's Services in Scope for each compliance program:  \r\n\r\nhttps://aws.amazon.com/compliance/services-in-scope/",
+      "author": "judgesma",
+      "created_at": "2025-05-04T21:46:25Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxynQ",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13052368",
+      "body": "Hello! I'm Vero from First Information Technology Services (FITS). We're a FedRAMP 3PAO and advisor.",
+      "author": "vanderson-fits",
+      "created_at": "2025-05-06T16:21:26Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Axyvp",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13052905",
+      "body": "Good day! I am Luke Holian and am a Customer Success Executive at ServiceNow.  I work a lot with my Federal and commercial customers in obtaining their ATO and in maintaining it.",
+      "author": "Luke-Holian",
+      "created_at": "2025-05-06T17:10:17Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Axy3q",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13053418",
+      "body": "Hello - Viren Kapadia from Gyrus System, where we provide the SAAS LMS product.",
+      "author": "Fedrampgyrus",
+      "created_at": "2025-05-06T17:55:56Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxzI9",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13054525",
+      "body": "Hi team! My name is Siddique and I oversee Snowflake's Public Sector Compliance program. Looking forward to working with the team here and seeing real change to the FedRAMP program.",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-05-06T20:15:33Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Ax35D",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13073987",
+      "body": "Hello, this is Daniele Catteddu, Chief Technology Officer at the Cloud Security Alliance. I am a co-founder of the STAR Program and am leading a new CSA initiative named CAR (Compliance Automation Revolution) on continuous assurance and compliance automation. I am looking forward to contributing to this community.",
+      "author": "dcatteddu",
+      "created_at": "2025-05-08T10:59:21Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AyG1e",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13135198",
+      "body": "Good morning and I am so glad to be here.  I'm Victoria McCann, Former USDA liaison to FedRAMP and looking to engage more on the new changes.  I have been in Security for over 15 years and am passionate for changes to the FedRAMP process and looking forward to working together.",
+      "author": "victoria1mccann",
+      "created_at": "2025-05-13T18:37:42Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AyJrj",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13146851",
+      "body": "Hello! \ud83d\udc4b Jeremy Sumner from Level Access - a CSP with an existing LI-SaaS ATO for a different CSO, seeking ATO for another CSO. Keenly interested in getting involved!",
+      "author": "jsumner-la",
+      "created_at": "2025-05-14T15:32:36Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AyZZW",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/4#discussioncomment-13211222",
+      "body": "Bernie Leung representing myself. Been putting together FedRAMP and FISMA systems for over 10 years. Sentiment in public is that FedRAMP is tough, which it is. But there are certainly ways to speed it up. Very happy to see this FedRAMP 20X effort, as I can always use authorized 3rd party SaaS in my systems.",
+      "author": "bernieleung",
+      "created_at": "2025-05-20T20:03:25Z",
+      "replies": []
+    }
+  ]
+}

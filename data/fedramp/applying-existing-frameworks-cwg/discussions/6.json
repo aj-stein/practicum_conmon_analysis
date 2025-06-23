@@ -1,0 +1,74 @@
+{
+  "id": "D_kwDOOMfSVs4AfH4b",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6",
+  "title": "GovRAMP, TX-RAMP, and other State RAMP Reciprocity",
+  "body": "If the current models don't change with the other RAMPs, it seems a foregone conclusion that they should have reciprocity to FedRAMP 20X.\r\n\r\nThoughts, comments, ideas...",
+  "author": "Christcpd",
+  "created_at": "2025-04-02T14:51:30Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4Awdd1",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12703605",
+      "body": "Amen.  And similarly account for any of the DoD CC SRG stuff as applicable.",
+      "author": "jsantore-cgc",
+      "created_at": "2025-04-02T16:51:10Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awg-0",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12718004",
+      "body": "This is a must. Both GovRAMP and TxRAMP have already built reciprocal programs with frameworks like HITRUST. They also accept FedRAMP so making bi-directional makes sense. The precedence is there.",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-03T19:08:43Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtGT",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12767635",
+      "body": "FedRAMP has demonstrated it is the standard to be judged by. The other xxRAMPs were created to give non-Federal Agencies something reciprocal to FedRAMP. If FedRAMP had allowed non-Federal agencies to grant an ATO with an approved 3PAO Security Assessment Report the others would likely not exist.\r\n\r\nBut we are way past that, so we should look at the other xxRAMPs and leverage them. StateRAMP is basically a clone of FedRAMP so fully reciprocity should be granted. TX-RAMP is a paired down version of FedRAMP, so we can eliminate a subset of FedRAMP controls from needed to be reviewed if a CSP is TX-RAMP. The same approach applies to really any industry framework.",
+      "author": "dljenkins",
+      "created_at": "2025-04-08T16:57:06Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtLz",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12767987",
+      "body": "Agreed with the above. TX-RAMP Level 1 and Level 2 align well with both GovRAMP & FedRAMP Low and Moderate respectively. I think reciprocity along the lows/moderates and 1 & 2 would make sense. ",
+      "author": "Robgutierrez301",
+      "created_at": "2025-04-08T17:27:05Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awz2j",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12795299",
+          "body": "Expanding on my comment below - I would recommend a conversation with TX-RAMP CISO before such reciprocity is considered.",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-04-10T18:35:53Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awzsh",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12794657",
+      "body": "Naturally, I fully agree reciprocity makes sense for GovRAMP.  The GovRAMP Ready, Authorized, and Provisionally Authorized statuses align with the current Rev. 5 FedRAMP requirements for Ready and Authorized.  The team is now developing a fast-track process for specific Hi-Trust certifications (thank you, @ryantpatrick!)  TX-RAMP has reciprocity for GovRAMP, but GovRAMP does not give reciprocity to TX-RAMP. I would caution reciprocity for TX-RAMP as the validation/verification process is not aligned with NIST SP 800-37r2.  A discussion with the Texas CISO may be prudent before making such a determination. \r\n",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-10T17:25:17Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Aw0NA",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12796736",
+          "body": "Tony Sauerhoff, here.  I'm Texas State CISO and I oversee the TX-RAMP program.  I agree with Leah.  TX-RAMP is not as comprehensive as GovRAMP and/or FedRAMP.  Additionally, while TX-RAMP does not charge CSPs for the assessment, the program is only for products used by Texas state agencies that do not already have a GovRAMP or FedRAMP authorization.  TX-RAMP cannot and will not support vendors seeking an easy/free path to a GovRAMP or FedRAMP authorization.  TX-RAMP has reciprocity for GovRAMP and FedRAMP because those programs exceed the requirements of the TX-RAMP program.",
+          "author": "Tony-TX236",
+          "created_at": "2025-04-10T21:42:35Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw0AT",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/6#discussioncomment-12795923",
+      "body": "@emu-gov and @audreamichellewhite, would it be helpful for me (and/or @Leah-GovRAMP) to give an overview of the reciprocity pilot between GovRAMP and HITRUST that is ongoing right now? It is likely in line with the intent of this working group.",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-10T19:54:36Z",
+      "replies": []
+    }
+  ]
+}

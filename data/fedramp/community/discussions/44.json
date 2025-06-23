@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOxfoic4AgSx6",
+  "url": "https://github.com/FedRAMP/community/discussions/44",
+  "title": "VILLA-TECH INC. -- FedRAMP 20x draft",
+  "body": "Dear FedRAMP Community,\r\n\r\nWe are excited to present Villa Tech Inc.'s draft submission for the FedRAMP 20x pilot program. Your feedback is invaluable to us as we aim to refine and enhance our approach. We welcome any and all suggestions to help shape our final submission. Thank you for your support and insights!\r\n\r\nPlease find our publicly accessible GitHub repo here: https://github.com/VILLA-TECH-Inc/VT-FedRAMP20x-Phase-One-Pilot-Draft",
+  "author": "dresendiz-villa-tech",
+  "created_at": "2025-06-17T22:23:44Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AzleW",
+      "url": "https://github.com/FedRAMP/community/discussions/44#discussioncomment-13522838",
+      "body": "Thanks for sharing.   Your input on \"KSI-CED: Cybersecurity Education:  A secure cloud service provider will continuously educate their employees on cybersecurity measures, testing them regularly to ensure their knowledge is satisfactory.\"   seems to show a check for crypto/encryption, this should be under KSI-SVC.",
+      "author": "judgesma",
+      "created_at": "2025-06-19T18:08:20Z",
+      "replies": []
+    }
+  ]
+}

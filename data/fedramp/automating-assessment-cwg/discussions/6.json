@@ -1,0 +1,78 @@
+{
+  "id": "D_kwDOOMDw3M4AfH3j",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6",
+  "title": "Showcase your automated validation capabilities for information security here!",
+  "body": "FedRAMP is interested in understanding the current state of automated assessment, so we can develop standards and mechanisms that are complimentary to existing tools. Showcase your automated validation capabilities for information security in this thread!",
+  "author": "kyhu65867",
+  "created_at": "2025-04-02T14:40:17Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwhM0",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12718900",
+      "body": "https://github.com/ethanolivertroy/mesh-config-analyzer - A web application for analyzing service mesh configurations against security best practices. Currently supports Istio, Consul, and Linkerd service meshes.",
+      "author": "ethanolivertroy",
+      "created_at": "2025-04-03T21:14:31Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwhPS",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12719058",
+          "body": "I put together a workshop here as well if anyone is looking to sandbox Istio- https://killercoda.com/ethanolivertroy/scenario/istio-fedramp-compliance\r\nStill trouble shooting the Linkerd one\r\n",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:37:37Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhPr",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12719083",
+          "body": "> I put together a workshop here as well if anyone is looking to sandbox Istio-\r\n\r\nDuuuuuude. I haven't seen killercoda in a while. Can community creators upload example workshops for free now!? If so, thanks for the heads up, this will be a game changer for in demos and prototype working for unofficial things. \ud83d\ude4f ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-03T21:40:30Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhP-",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12719102",
+          "body": "Yup! \r\n![image](https://github.com/user-attachments/assets/ca8fd57e-3910-44d7-8313-d95dd2503849)\r\n",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:43:26Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhQR",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12719121",
+          "body": "@aj-stein-gsa also check out https://labs.iximiuz.com/playgrounds, I'm trying to get some stuff going on there before KubeCon Tokyo \ud83e\udd42 ",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:45:33Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhRM",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12719180",
+          "body": "> @aj-stein-gsa also check out https://labs.iximiuz.com/playgrounds, I'm trying to get some stuff going on there before KubeCon Tokyo \ud83e\udd42\r\n\r\nDang, I need to level up on sandbox/lab environments. We could have done some super sweet stuff with more real-world OSCAL demos back in the day had I known I could have set this up. Ironically, last time I saw it was ~4 years ago when I used it for LFCS Linux and Kubernetes exams. I loved the hands on teaching keyboard method, I am glad that has evolved so nicely. Looking forward to playing with this iximiuz stuff as well.\r\n\r\nThanks again, and back to our scheduled programming on the showcase. \ud83d\ude04 ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-03T21:53:03Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awq_a",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12759002",
+      "body": "Our team is working on customizing https://github.com/prowler-cloud/prowler to do the following:\r\n\r\n- Support FedRAMP Rev5 controls\r\n- Allow for a subset of controls to be assessed in support of annual and/or SCR assessments.\r\n- Allow for specific checks for each control in scope to be included/excluded.\r\n- Allow for organization defined parameters to be used to override default FedRAMP values.",
+      "author": "gmengelberg",
+      "created_at": "2025-04-08T04:00:27Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awwz0",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12782836",
+      "body": "AWS Has multiple services that can support this. AWS Config records configurations for AWS resources used in an environment and creates new snapshots each time a change is made to a resource. Further it can process rules against those configuration items (CIs) to indicate whether or not any resource configuration is or is not in compliance with a specific rule. Those rules can be aligned to KSIs. For the reporting aspect, AWS Audit Manager can collect the state of the rules continuously and report on them. Some solutioning will need to take place on the format, target and cadence. AWS Control Tower and orchestrate an environment in AWS that has a wide variety of detective, corrective and proactive controls that can be tailored to align with FedRAMP KSIs as they emerge. Will there be an opportunity to demonstrate these capabilities?",
+      "author": "johnFischer-AWS",
+      "created_at": "2025-04-09T19:22:40Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw3Bp",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/6#discussioncomment-12808297",
+          "body": "I would much rather use 3x native cloud APIs - and do - than wait for another team who is not the cloud team to reinterpret and reimplement etc.  Nothing against prowler - we use it too for various use cases! Great tool! And...its better to be closer to the bare metal so to speak. \r\n\r\nIn the world of vibe coding - where even old dudes like me can code fast again - there's no reason to artificially overweight swiss army knives.\r\n\r\nDRY is dead. Don't Restrict Yourself instead.",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T20:19:09Z"
+        }
+      ]
+    }
+  ]
+}

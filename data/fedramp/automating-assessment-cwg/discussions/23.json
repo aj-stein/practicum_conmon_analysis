@@ -1,0 +1,42 @@
+{
+  "id": "D_kwDOOMDw3M4Affyf",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/23",
+  "title": "Post your questions here for Pete to answer at Wednesday's meeting!",
+  "body": "Hi all!\r\nReminder that there is a townhall happening this Wednesday, 4/30, at 1:00 PM ET. At this meeting, Dan and I will talk about the Key Security Indicators and the 20x Phase One Pilot. \r\n\r\n**We will also have our wonderful FedRAMP Director, Pete Waterman, on the call to answer any pilot or KSI related questions you may have.** Due to the Q&A portion, we will be extending this particular townhall to 1 hour. Please post your questions for Pete below in this thread! \r\n\r\nNote: Pete may not answer all of the below questions. Dan or I may use the questions you post here to inform what we discuss on Wednesday, so we can clear up confusion and meet the needs of this community. \r\n\r\n\r\n_**We are going to lock this thread one hour before the meeting starts. Any further questions can be asked in the Q&A live on the call, or posted on the [4/30 Q&A Discussion Thread](https://github.com/FedRAMP/automating-assessment-cwg/discussions/24)**_",
+  "author": "kyhu65867",
+  "created_at": "2025-04-28T18:13:09Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4Axhnm",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/23#discussioncomment-12982758",
+      "body": "What is the eligibility criteria for the 20x Phase One Pilot?  Our organization is actively preparing for FedRAMP Moderate (3PAO Advisory engaged for ABD definition and documentation) while still identifying supporting agency for authorization. Do we have the option to be part of the phase 1 pilot with FedRAMP low and then move to Moderate as we identify sponsoring agency. ",
+      "author": "ruchiv",
+      "created_at": "2025-04-29T15:46:15Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Axiee",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/23#discussioncomment-12986270",
+      "body": "How finalized are the KSIs? Are you still looking for input/feedback on the content or structure of the KSIs? ",
+      "author": "iteuscher",
+      "created_at": "2025-04-29T22:35:44Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Axku3",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/23#discussioncomment-12995511",
+      "body": "Since this is related to RFC 0006, I have the following questions:\r\n\r\n1. What will be the 3PAO\u2019s role in the pilot? Will they validate the KSIs?\r\n\r\n2. If yes, just want to confirm that the 3PAO only has to validate the KSIs and not the NIST controls.\r\n\r\n3. If yes, does the 3PAO have to generate a report attesting to the fact that they validated it?\r\n\r\n4. RFC 0006 states: \"To qualify for this authorization, cloud services must at minimum provide a machine readable package that demonstrates a continuous , automated validation approach for a significant portion of the FedRAMP Key Security Indicators (KSIs) outlined in this standard.\" What does the \u201cpackage\u201d consist of? Just evidence?\r\n\r\n6. What happens if KSI evidence cannot be provided in machine-readable format? Will the package be rejected?\r\n\r\n7. Will screenshots, tickets, SOC2 reports, etc., be accepted as evidence (because they are not machine-readable)?\r\n\r\n8. Will FedRAMP be publishing a data model that CSPs should follow for machine-readable evidence submission?\r\n\r\n9. How often is \"continuous\" in that statement? Every month, every week, every day? And does that mean evidence has to be uploaded to USDA Connect at that rate? Or just collected?\r\n\r\n10. There are new requirements/NIST controls introduced in RFC 0006 for the Low baseline (such as AC-23, AT-6). Was that the intention?\r\n\r\n11. Is this \u201cconditional authorization\u201d a new type of ATO that FedRAMP will be rolling out?",
+      "author": "cbiggsrun",
+      "created_at": "2025-04-30T15:09:28Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxlIq",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/23#discussioncomment-12997162",
+      "body": "Will FedRAMP offer reciprocity to other programs like StateRAMP, TexRAMP, etc.?",
+      "author": "ScottWmKnapper",
+      "created_at": "2025-04-30T17:44:45Z",
+      "replies": []
+    }
+  ]
+}

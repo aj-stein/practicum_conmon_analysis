@@ -1,0 +1,77 @@
+{
+  "id": "D_kwDOOKttEc4AfctC",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39",
+  "title": "Resources for building next-gen Continuous Reporting capabilities \ud83d\ude80\ud83d\ude80\ud83d\ude80",
+  "body": "Folks, please drop in links to scientific papers and technical posts that you think will support the next-gen Continuous Reporting capabilities. Please make sure you follow the community guidelines. Look forward to hearing from you!! \ud83d\ude4f\ud83d\ude4f\ud83d\ude4f",
+  "author": "Cybonto",
+  "created_at": "2025-04-25T17:12:25Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4AxywF",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13052933",
+      "body": "https://docs.asksage.ai/",
+      "author": "JosephScarzone",
+      "created_at": "2025-05-06T17:12:57Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Axy4l",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13053477",
+          "body": "Can you point specifically to what feature or offering Ask Sage provides to customers or tentative customers to evaluate Ask Sage for their use? For example, [this page explains how to customers will use the product after acquisition for themselves](https://docs.asksage.ai/docs/in-a-box/compliance-cyber/compliance-cyber.html), but I have not found concrete information about the platform itself for customers to evaluate.\r\n\r\nWe strongly prefer examples with details in the CWG boards. \ud83d\ude04 ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-06T18:03:30Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax1g6",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13064250",
+          "body": "@aj-stein-gsa Our documentation page describes Ask Sage functionality, which is how we automated 100% of the SSP package, and 95% of our ConMon deliverables. I replied with more detail on another thread, but yeah, it's so simple it's kind of crazy when you think about it. The use of AI through Ask Sage basically has increased our productivity probably by 150%. My CEO did it all by himself using Ask Sage. And I now manage our various ATOs by myself as well, and so yeah, for me, with all the other LLM options out there, I choose Ask Sage every time! The documentation link explains how, in essence. :-)",
+          "author": "JosephScarzone",
+          "created_at": "2025-05-07T14:31:04Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax1l_",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13064575",
+          "body": "> The use of AI through Ask Sage basically has increased our productivity probably by 150%. My CEO did it all by himself using Ask Sage. And I now manage our various ATOs by myself as well, and so yeah, for me, with all the other LLM options out there, I choose Ask Sage every time! The documentation link explains how, in essence. :-)\r\n\r\nSounds interesting, perhaps publish some more details about that 150% and it will pique the interest of people in the CWG? Again, we're nitty gritty details people. \ud83d\ude04 \r\n\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-07T14:58:11Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax1rm",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13064934",
+          "body": "@JosephScarzone, do you work for Nick and Ask Sage, or are you a consumer of the Ask Sage product and have an independent listing in the marketplace? This is important as it would speak towards a non-biased opinion on practical and real-world usage of a product, process, and industry adoption. \r\n\r\nAdditionally, do you have any repositories for public review? I am very interested in what you are proposing. ",
+          "author": "chrisjohnson1",
+          "created_at": "2025-05-07T15:26:57Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax1v5",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13065209",
+          "body": "> @JosephScarzone, do you work for Nick and Ask Sage, or are you a consumer of the Ask Sage product and have an independent listing in the marketplace? This is important as it would speak towards a non-biased opinion on practical and real-world usage of a product, process, and industry adoption.\r\n> \r\n> Additionally, do you have any repositories for public review? I am very interested in what you are proposing.\r\n\r\n@chrisjohnson1 Yes, I do. So, maybe a little biased, but in different way. Before coming to Ask Sage, I worked for a 3PAO and was assigned to lead and perform the Ask Sage Initial FedRAMP High + DoD IL5 assessment. I knew nothing of the product or CEO, and audited the hell out of the Ask Sage solution. I was pretty impressed to say the least. And so, I have formally provided an independent evaluation of the product before joining Ask Sage to lead their ATO compliance efforts. \r\n\r\nMy praise of the product by using it now is personal and would use Ask Sage whether I worked for Nic or not. I mean it when I say that out of all the LLM options out there, I choose Ask Sage every time. It's that good, it provides the most and best flexibility, and it's feature rich. In any case, learning how to use AI is all of our mandates to do. I can see and have witnessed how AI can be used in every industry to increase velocity of individual production. And so, the route we all are taking here should lead us to how AI can be leveraged to streamline implementing, maintaining and reporting on the security posture of a CSP (or any governance framework for that matter). \r\n\r\nRegarding your public review comment, what exactly are you looking for?",
+          "author": "JosephScarzone",
+          "created_at": "2025-05-07T15:51:52Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax1zN",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13065421",
+          "body": "Thanks for that, @JosephScarzone - I appreciate the transparency and background. \r\n\r\n> Regarding your public review comment, what exactly are you looking for?\r\n\r\nPresumably, AI or an agentic approach would be just a component of the process; however, information regarding vulnerabilities would need to be supplied using some type of ETL process. I suspect an API or some agent-based workflow has already been developed. It would be great to see how you all use the product for ConMon, what the inputs are, what the outputs are, and what the expectations are for usage. ",
+          "author": "chrisjohnson1",
+          "created_at": "2025-05-07T16:08:18Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOKttEc4Ax1oQ",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13064720",
+      "body": "Some papers I am reading because I have been curious what \"the literature\" (to be cute about it) says about the concepts of continuous reporting and monitoring as it applies to cloud security outside tools and cloud service offerings themselves. Interestingly enough, I found some familiar names among authors today, but need to chase down the graph of citations and see what has changed from 2010s to now.\r\n\r\nBelow is an export of papers I am looking at and seeing their related evidence and tools implemented.\r\n\r\nK. A. Torkura, M. I. H. Sukmana, F. Cheng and C. Meinel, \"CloudStrike: Chaos Engineering for Security and Resiliency in Cloud Infrastructure,\" in IEEE Access, vol. 8, pp. 123044-123060, 2020, doi: 10.1109/ACCESS.2020.3007338.\r\nkeywords: {Chaos;Resilience;Cloud computing security;Data breach;Tools;Cloud security;security chaos engineering;resilient architectures;security risk assessment},\r\n\r\nM. I. H. Sukmana, M. Petzolt, K. A. Torkura, H. Graupner, F. Cheng and C. Meinel, \"Secure and Scalable Multi-Company Management in Enterprise Cloud Storage Broker System,\" 2019 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom), Xiamen, China, 2019, pp. 847-856, doi: 10.1109/ISPA-BDCloud-SustainCom-SocialCom48970.2019.00125. keywords: {Cloud computing;Companies;Encryption;Access control;Multi authority attribute-based encryption, enterprise cloud storage broker system, CloudRAID for Business, key management system, scalability, security},\r\n\r\nK. A. Torkura, M. I. H. Sukmana, F. Cheng and C. Meinel, \"SlingShot - Automated Threat Detection and Incident Response in Multi Cloud Storage Systems,\" 2019 IEEE 18th International Symposium on Network Computing and Applications (NCA), Cambridge, MA, USA, 2019, pp. 1-5, doi: 10.1109/NCA.2019.8935040. keywords: {Cloud computing;Security;Correlation;Google;Chaos;Guidelines;Real-time systems;Cloud-Security;Threat Detection;Incident Response;Security Risk Assessment;Cloud storage security},\r\n\r\nK. A. Torkura, M. I. H. Sukmana, F. Cheng and C. Meinel, \"Security Chaos Engineering for Cloud Services: Work In Progress,\" 2019 IEEE 18th International Symposium on Network Computing and Applications (NCA), Cambridge, MA, USA, 2019, pp. 1-3, doi: 10.1109/NCA.2019.8935046. keywords: {Chaos;Cloud computing security;Testing;Fault tolerance;Fault tolerant systems;Cloud-Security;Security Chaos Engineering;Resilient Architectures;Security Risk Assessment},\r\n\r\nM. I. H. Sukmana, K. A. Torkura, H. Graupner, F. Cheng and C. Meinel, \"Unified Cloud Access Control Model for Cloud Storage Broker,\" 2019 International Conference on Information Networking (ICOIN), Kuala Lumpur, Malaysia, 2019, pp. 60-65, doi: 10.1109/ICOIN.2019.8717982. keywords: {Cloud computing;Access control;Stakeholders;Companies;Cryptography;Data models;Cloud Storage Broker;Cloud access control and resource management;Unified cloud model;Privilege separation concept;Least privilege principle;Role-based access control},\r\n\r\nK. A. Torkura, M. I. H. Sukmana, A. V. D. M. Kayem, F. Cheng and C. Meinel, \"A Cyber Risk Based Moving Target Defense Mechanism for Microservice Architectures,\" 2018 IEEE Intl Conf on Parallel & Distributed Processing with Applications, Ubiquitous Computing & Communications, Big Data & Cloud Computing, Social Computing & Networking, Sustainable Computing & Communications (ISPA/IUCC/BDCloud/SocialCom/SustainCom), Melbourne, VIC, Australia, 2018, pp. 932-939, doi: 10.1109/BDCloud.2018.00137. keywords: {Security;Risk analysis;Measurement;Software;Logic gates;Indexes;Transforms;Security Risk Assessment, Security Metrics, Moving Target Defense, Microservices Security, Application Container Security},\r\n\r\nK. A. Torkura, M. I. H. Sukmana, T. Strauss, H. Graupner, F. Cheng and C. Meinel, \"CSBAuditor: Proactive Security Risk Analysis for Cloud Storage Broker Systems,\" 2018 IEEE 17th International Symposium on Network Computing and Applications (NCA), Cambridge, MA, USA, 2018, pp. 1-10, doi: 10.1109/NCA.2018.8548329. keywords: {Cloud computing;Security;Cascading style sheets;Risk management;Measurement;Computational modeling;Cloud-Security;Cloud Audit;Security Metrics;Security Risk Assessment;Secure Configuration},\r\n\r\nM. I. H. Sukmana, K. A. Torkura, F. Cheng, C. Meinel and H. Graupner, \"Unified logging system for monitoring multiple cloud storage providers in cloud storage broker,\" 2018 International Conference on Information Networking (ICOIN), Chiang Mai, Thailand, 2018, pp. 44-49, doi: 10.1109/ICOIN.2018.8343081. keywords: {Cloud computing;Monitoring;Security;Tools;Quality of service;Servers;Navigation;Unified logging system;Cloud Service Provider;cloud monitoring;data integration;security analytics},\r\n\r\nK. A. Torkura, M. I. H. Sukmana, F. Cheng and C. Meinel, \"Leveraging Cloud Native Design Patterns for Security-as-a-Service Applications,\" 2017 IEEE International Conference on Smart Cloud (SmartCloud), New York, NY, USA, 2017, pp. 90-97, doi: 10.1109/SmartCloud.2017.21. keywords: {Cloud computing;Monitoring;Databases;Computer security;Resilience;Pipelines;Cloud-Security;Security-as-a-Service;Vulnerability Assessment;Cloud Native Applications},\r\n\r\nK. A. Torkura and C. Meinel, \"Towards Vulnerability Assessment as a Service in OpenStack Clouds,\" 2016 IEEE 41st Conference on Local Computer Networks Workshops (LCN Workshops), Dubai, United Arab Emirates, 2016, pp. 1-8, doi: 10.1109/LCN.2016.022. keywords: {Security;Cloud computing;Best practices;Linux;Google;Automation;Cloud-security;vulnerability assessment;Security-as-a-Service;cloud-specific vulnerabilities},\r\n\r\nK. A. Torkura, F. Cheng and C. Meinel, \"Application of quantitative security metrics in cloud computing,\" 2015 10th International Conference for Internet Technology and Secured Transactions (ICITST), London, UK, 2015, pp. 256-262, doi: 10.1109/ICITST.2015.7412101. keywords: {Security;Cloud computing;Measurement;Market research;Open source software;Cloud security;cloud vulnerabilities;vulnerability assessment;vulnerability lifecycle;security metrics},\r\n\r\nK. A. Torkura, F. Cheng and C. Meinel, \"A proposed framework for proactive vulnerability assessments in cloud deployments,\" 2015 10th International Conference for Internet Technology and Secured Transactions (ICITST), London, UK, 2015, pp. 51-57, doi: 10.1109/ICITST.2015.7412055. keywords: {Security;Cloud computing;Databases;Engines;Measurement;Cloud security;cloud vulnerabilities;vulnerability assessment;vulnerability lifecycle;security metrics;vulnerability signature;zero-days},\r\n\r\nK. A. Torkura and C. Meinel, \"Towards Cloud-Aware Vulnerability Assessments,\" 2015 11th International Conference on Signal-Image Technology & Internet-Based Systems (SITIS), Bangkok, Thailand, 2015, pp. 746-751, doi: 10.1109/SITIS.2015.63. keywords: {Cloud computing;Security;Databases;Linux;Monitoring;Virtualization;NIST;Cloud security;cloud vulnerabilities;vulnerability assessment;vulnerability information},\r\n\r\nH. Graupner, K. Torkura, P. Berger, C. Meinel and M. Schnjakin, \"Secure access control for multi-cloud resources,\" 2015 IEEE 40th Local Computer Networks Conference Workshops (LCN Workshops), Clearwater Beach, FL, USA, 2015, pp. 722-729, doi: 10.1109/LCNW.2015.7365920. keywords: {Cloud computing;Access control;Containers;Authentication;Google;Standards;Cloud storage;access control management;multi-cloud systems;data security},\r\n\r\n",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-05-07T15:07:50Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOKttEc4AyQaS",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13174418",
+      "body": "Some more interesting researching I discovered this week, in addition to what I posted in https://github.com/FedRAMP/continuous-reporting-cwg/discussions/39#discussioncomment-13064720 last week, I found on social media when some were discussing it: \"[Evidence-based cybersecurity policy? A meta-review of security control effectiveness](https://www.tandfonline.com/doi/full/10.1080/23738871.2024.2335461).\"",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-05-16T19:18:10Z",
+      "replies": []
+    }
+  ]
+}

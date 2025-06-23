@@ -1,0 +1,160 @@
+{
+  "id": "D_kwDOOxfoic4AgSWK",
+  "url": "https://github.com/FedRAMP/community/discussions/42",
+  "title": "Soft launch of the FedRAMP Public Roadmap, machine-readable docs, and initial Significant Change Notification Requirements",
+  "body": "Hey everyone! We've got some great early updates to share today - these are all public and we'll do more focused communications around this later in the month, but for folks who enjoy the firehose of FedRAMP updates, here you go!\r\n\r\n## [FedRAMP Public Roadmap](https://github.com/FedRAMP/roadmap)\r\n\r\nWe're using GitHub to organize our long-term plans and you can check out our current roadmap [here](https://github.com/FedRAMP/roadmap). This is a working roadmap, so things will change frequently as we make progress.\r\n\r\nThis new roadmap shows how we're focusing on simplicity and transparency. Instead of fancy reports, we're giving you direct access to our planning. We expect you'll want to dig in, but remember it will change often. You can see our first sprint's progress [here](https://github.com/FedRAMP/roadmap/blob/main/PROGRESS.md).\r\n\r\n## [FedRAMP Machine-Readable (FRMR) Docs](https://github.com/FedRAMP/docs)\r\n\r\nWe're making it easier to keep track of our requirements, too. Our official FedRAMP requirements will now be in a standardized, machine-readable format (FRMR) \u2013 think of it as the main source of truth for requirements that can be directly imported into other tools. We'll also provide simple, human-readable documents generated from these files.\r\n\r\nWe're excited to see what you do with these! We imagine an OSCAL port could be an early use case. I like how easily we can publish consistent and reproducible [combined definitions and requirements](https://www.fedramp.gov/20x/guidance/) for 20x without all the extra stuff.\r\n\r\n## [Significant Change Notification Requirements & Technical Assistance](https://www.fedramp.gov/20x/standards/scn/)\r\n\r\nThis release combines [a simplified approach to Significant Change Notifications, including simplified Technical Assistance](https://www.fedramp.gov/20x/standards/scn/), based on extensive public comment. We've tweaked things quite a bit to get a new foundation that makes sense and avoids a lot of the confusion from the approach in the original RFC.\r\n\r\n> These requirements will apply only to 20x authorizations at first, though you can expect a [Rev5 Balance Improvement Test for Significant Change Notifications](https://github.com/FedRAMP/community/discussions/38) to kick off soon.\r\n\r\nAll of these requirements and updates are heading straight to continuous testing and evaluation, especially in the Pilot and Beta phases; expect them to change prior to wide release based on real-world experiences. That's why your continued input and participation is so important!\r\n\r\n  -Pete // FedRAMP Director\r\n\r\n",
+  "author": "pete-gov",
+  "created_at": "2025-06-17T15:43:59Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Azfmh",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13498785",
+      "body": "Oh, and in case you missed it, our first cohort of 20x Phase One Pilot participants have moved to FedRAMP In Process!!\r\n\r\n<img width=\"1255\" alt=\"Screenshot 2025-06-17 at 11 51 54\u202fAM\" src=\"https://github.com/user-attachments/assets/262a54e4-618f-4d89-80e5-f7dce2492591\" />\r\n\r\n\r\n\r\n\r\n\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-17T15:52:49Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Azi_z",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13512691",
+      "body": "Important Note: The FRMR updated version of the KSIs released yesterday (25.05A) had a series of incorrect KSIs beginning about halfway through. The current version (25.05B) has been fixed. **There were no changes intended to KSIs from the May 30 release.**",
+      "author": "pete-gov",
+      "created_at": "2025-06-18T18:54:13Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzjDe",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13512926",
+          "body": "Thanks for the update on version 25.05B.\r\n\r\nIn the spirit of Who Moved My Cheese?, we spent the better part of the day enthusiastically chasing the \u201cnew cheese\u201d (those shiny updated KSIs from 25.05A), only to find out it was a mirage in the maze. While it\u2019s a bit disorienting to retrace our steps, we genuinely appreciated the improvements in the updated KSIs for 25.05A\u2014they were a big step in the right direction and we were happy to adapt.\r\n\r\nLooking forward to the next stable drop of cheese\u2014with fewer surprise relocations next time!",
+          "author": "mrieger31",
+          "created_at": "2025-06-18T19:26:44Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzjEe",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13512990",
+          "body": "Dude. I'm horrified that folks imagined we would drop a huge rewrite of KSIs without making a big deal out of it. \ud83d\ude2d  We're not that harsh! Very open to feedback on how to manage better communication around FRMR docs in the future, but at least as we move to this as a source of truth it's very easy to see the entire history, track releases, etc. Maybe we need to start formally tagging releases in the docs repo so folks can subscribe to notifications.",
+          "author": "pete-gov",
+          "created_at": "2025-06-18T19:36:36Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzjFx",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13513073",
+          "body": "It was in jest, but I digress. :pensive:",
+          "author": "mrieger31",
+          "created_at": "2025-06-18T19:50:22Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzjSP",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13513871",
+          "body": "I'm horrified that you would jest about something so serious Martin!!! (but whew, I'm glad my worst fear was not directly realized) \ud83d\udc96 ",
+          "author": "pete-gov",
+          "created_at": "2025-06-18T21:28:33Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzjOa",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13513626",
+      "body": "Question on the final SCN standard: It appears you removed the requirement for a 3PAO to assess transformative changes immediately after they\u2019re deployed (which was in the draft RFC007), although you do mention in FRR-SCN-TF-05 of the final SCN that a notice must go out 5 days after the change has been assessed/validated. Does this mean that 3PAOs will now assess transformative changes during the annual assessment? Or that the CSP will self-attest/assess? ",
+      "author": "cbiggsrun",
+      "created_at": "2025-06-18T21:06:46Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzjTN",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13513933",
+          "body": "_Disclaimer that this standard is intended for pilot and beta testing, so the current set of rules provides a general direction but are entirely likely to change._\r\n\r\n> Does this mean that 3PAOs will now assess transformative changes during the annual assessment? Or that the CSP will self-attest/assess?\r\n\r\nThe intent here was to provide a little bit of reasonable freedom for the CSP and 3PAO to negotiate on timing based on the complexity of the change, scheduling with the 3PAO, etc. Public comment was very clear that giving a specific time window (such as 5 days or 15 days or whatever) could trigger all sorts of edge cases so we removed the requirement to immediately begin assessment.\r\n\r\nTo balance this, we expanded the required information in the Transformative Change Notification to include the CSP's **plan and timeline for verification, assessment, and/or validation.** \r\n\r\nThis allows the CSP to plot a course based on all of the edge cases and make that information available to the agency customers. If a CSP is making a change directly before an annual assessment, they may elect to roll that into the annual. If they are planning two quick transformative changes in a row, they may elect to assess them together. Etc. And if they do not require human validation and instead can use automated validation, then they can explain that plan also.\r\n\r\nWe'll see how this works in practice with our tests; there is some concern that if we don't **mandate** an assessment begin at a certain time then CSPs will just go rogue and never bother to do assessments even when they are necessary, but considering they'd have to explicitly document and share this choice I don't think they'd have many happy customers.",
+          "author": "pete-gov",
+          "created_at": "2025-06-18T21:36:40Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Aznw_",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532223",
+          "body": "Without explicit instructions for 3PAO assessment, many CSPs will still seek such assessment in a timely manner to show their customers that security is taken seriously. But, having seen both passionate security teams and very much the opposite, it seems very likely that some CSPs will abuse this system if they can. I would recommend adding a maximum timeframe for assessment so that it's clear they must still be completed. A potential approach that still adds flexibility could be \"Prior to CSP's next monthly ConMon deliverables _or_ no more than 1 month post-SCN deployment, CSPs must complete a 3PAO assessment on any transformative changes\". Adding a caveat that new SCNs cannot be deployed prior to an assessment on previous SCNs would also help a little.\r\n\r\nA related question for the SCN updates: If non-agency ATOs are allowed through the pilot program, who would a CSP that has gone that route notify when it comes to performing SCNs? Likewise, who would be giving the thumbs up for the change and who is validating that the changes were tested?",
+          "author": "badgerinspace",
+          "created_at": "2025-06-20T16:04:38Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Azn3B",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532609",
+          "body": "> ...  it seems very likely that some CSPs will abuse this system if they can. \r\n\r\nThis is a philosophical approach, but in general people are more incentivized to abuse a system with onerous requirements than one without. The current process enables and encourages quite a bit of abuse and the fact that many CSPs do so is well known. The proposed new process aligns more closely with the way businesses tend to approach change already and is less likely to encourage abuse as a result. I expect intentional \"let's just make the change without saying anything\" to happen less often by providing a smoother path for it.\r\n\r\nBut again, this is not a thing that happens once in a vacuum and is never revisited for 10 years. We can easily adapt to actual results. Indications of abuse can and will be addressed.\r\n\r\n> A related question for the SCN updates: If non-agency ATOs are allowed through the pilot program, who would a CSP that has gone that route notify when it comes to performing SCNs?\r\n\r\nFRR-SCN-01 addresses this: \"Providers MUST notify all necessary parties when Significant Change Notifications are required, **including at least FedRAMP and all agency customers.** Providers MAY share Significant Change Notifications publicly or with other parties.\"\r\n\r\n>  Likewise, who would be giving the thumbs up for the change and who is validating that the changes were tested?\r\n\r\nFRR-SCN-04 and 05 require CSPs to maintain auditable records that would be reviewed by any potential agency customer during authorization, along with automated information available (or not) via the marketplace and their trust center.",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T16:48:30Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoFs",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13533548",
+          "body": "Appreciate the response Pete. I see it a bit differently\u2014I believe businesses naturally gravitate toward the most efficient and profitable paths, even if that means prioritizing profits over security. This plays out time and time again in the commercial market with data breaches often shrugged off, both by the company and by the shareholders. While having more stringent guidance is less open, it helps to add assurances to a system that can be (and is) abused.\r\n\r\nFor \"FRR-SCN-01\", is FedRAMP prepared to potentially have hundreds of SCNs coming in for CSOs without agency sponsors? Will FedRAMP have the capacity to review these and validate assessments of changes? This wouldn't happen all at once, but given enough time, a reasonable conclusion based on the data available on the Marketplace today points to this scenario.\r\n\r\nFurther explanation: If you look at the marketplace as it stands today, there are over 150 CSOs with 1 authorization listed. While this isn't a foolproof way to determine single-sponsor CSOs, it is a pretty good indicator of what could happen in the future as more CSPs onboard through the pilot program. As that program grows, the marketplace could end up with tens or hundreds of CSOs without sponsors, all trying to keep their FedRAMP product as up to date as their commercial product and issuing multiple SCNs a year. They're incentivized to do this to make their product as appealing as possible for agencies to bite. Given this potentiality, is FedRAMP prepared to be in a reviewer role until (and potentially even after) an agency buys in?",
+          "author": "badgerinspace",
+          "created_at": "2025-06-20T19:23:00Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoPF",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13534149",
+          "body": "> As that program grows, the marketplace could end up with tens or hundreds of CSOs without sponsors, all trying to keep their FedRAMP product as up to date as their commercial product and issuing multiple SCNs a year. They're incentivized to do this to make their product as appealing as possible for agencies to bite. Given this potentiality, is FedRAMP prepared to be in a reviewer role until (and potentially even after) an agency buys in?\r\n\r\nGoing to go back to an earlier talking point here - we're doing this in phases, with continuous testing and evaluation, and adjusting based on what we learn from real world impacts and real world problems. \r\n\r\nThe problem of having hundreds of 20x program authorized services is one I'm quite confident OMB, GSA leadership, and congressional stakeholders would love for FedRAMP to have. ;) It is not a problem we will have without significant warning, and it will only happen if we're successful, so I'm not worried about it right now.\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T20:57:09Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Aznx8",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532284",
+      "body": "Hey Pete, a few questions for you I haven't been able to figure out for myself despite some searching\r\n\r\n- I see that there is a FedRAMP 20x Panel on June 25th -- is there a registration link anywhere yet? Or is it just the standard zoom link?\r\n- Where can i find out information about how to participate in the Rev5 Beta program (R5.MAS.B1)?\r\n- What is the timeline for the initial set of KSIs to get flushed out in more detail? For example, KSI-IAM-05 states \"apply zero trust design principles\" -- this can mean many different things to different engineering & security organizations. ",
+      "author": "aj327",
+      "created_at": "2025-06-20T16:09:10Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Azn3s",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532652",
+          "body": "> * I see that there is a FedRAMP 20x Panel on June 25th -- is there a registration link anywhere yet? Or is it just the standard zoom link?\r\n\r\nCWG = Community Working Group. I've added a clarification there, but it's the standard 20x community working group meeting: https://www.fedramp.gov/community\r\n \r\n> * Where can i find out information about how to participate in the Rev5 Beta program (R5.MAS.B1)?\r\n\r\nWe haven't formally published any yet - if you click into the issue, you'll see a tentative timeline. Stay tuned to https://github.com/FedRAMP/community/discussions/categories/rev5-announcements and the Rev5 working group.\r\n\r\n> * What is the timeline for the initial set of KSIs to get flushed out in more detail? For example, KSI-IAM-05 states \"apply zero trust design principles\" -- this can mean many different things to different engineering & security organizations.\r\n\r\nThat's baked into the pilot process; the point of the pilot is to test, evaluate, and improve prior to wider release. \ud83d\ude80 But in general, considering we're the government talking about zero trust, [CISA and OMB's vibe on zero trust](https://zerotrust.cyber.gov/) is a pretty safe bet.\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T16:53:16Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Azn4M",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532684",
+          "body": "Awesome, thanks for the quick response. ",
+          "author": "aj327",
+          "created_at": "2025-06-20T16:56:39Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Azn39",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13532669",
+      "body": "Pete, separate from my questions above, I just went through RFC-0008 and all the comments on the public repo. I realize that I am past the deadlines for comments, but hope you'll excuse me dropping in some belated thoughts below. Most echo comments from others on the RFC-0008 board but I thought it might still be helpful for the FedRAMP PMO team. Appreciate all the work you all are doing, the care & time you're investing, and the public, open nature of execution & updates.\r\n\r\nDisclaimer for transparency: I work at Chainguard, which provides minimal, zero-CVE container images with FIPS validation and STIG-hardening out of the box, but the below comments are my independent views only. My comments below are driven entirely by: 1) my conversations with our customers, many of whom are FedRAMP authorized or seeking authorization, and 2) reflections based on comments already left by many other practitioners on the community boards.\r\n\r\n+++ Comments on RFC-0008 Continuous Reporting Standard +++\r\n\r\n_The reporting requirements are intended to be reasonable for both providers and agencies, facilitating innovation and informed risk analysis and acceptance. Do they strike the right balance between security oversight and operational efficiency?_\r\n\r\n>> For informed risk analysis, what stands out is the heavy emphasis on moment-in-time (though eventually continuous) vulnerability scanning and reporting as opposed to \"analysis\" based metrics like mean-time-to-detection (MTTD) and mean-time-to-remediation (MTTR). It would be ideal for the FedRAMP PMO to actually define these kinds of trend-level metrics that inform true effectiveness of security programs to complement the more granular vulnerability by vulnerability assessments. For example, we could define MTTR for CVEs as a the number of days between first detection on the NVD database and resolution date by the CSP. This could be tracked on an ongoing, continuous basis and then assigned a risk score to give agencies a true sense of risk exposure and acceptance. The PMO could also define various levels of acceptability (i.e., MTTR of 30+ days deemed unacceptable, 15-30 days deemed acceptable but with clear risk, and <15 days demeed recommended). Another metric worth tracking here is Patch Rate or Coverage, which essentially gives agencies better insight into questions like: of the CSPs total components, what % fall within tolerable risk acceptance as it relates to their ability to identify and remediate vulnerabilities. \r\n\r\n>> The guidance given in RFC-0008 says that false positives should not be included in reporting but also says that evidence for determinations of false positives must be documented. Isn't this contradictory? It seems like like the net of it is that you do actually have to document and report false positives somewhere. \r\n\r\n>> The guidance states \"Providers MAY carry mitigated vulnerabilities beyond FedRAMP remediation windows...\" -- just to clarify, is that the remediation window from Rev5 of 30/90/180 depending on assigned severity (or risk adjusted in this new guidance)?\r\n\r\n>> The guidance states \"Provides SHOULD mitigate vulnerability risk as quickly as possible\" -- to clarify this means that providers have to either 1) remediate that vuln, 2) assign it a new severity rating so the timeline shifts, or 3) labell it a false positive? It seems overly vague and having some sort of clear demarcation of \"quickly as possible\" would be very helpful. I think this is especially concerning because the vagueness leaves the door open for very old vulnerabilities to sit around unmitigated -- this is already very common in our industry and one of the biggest security risks we collectively face. \r\n\r\n_This standard explicitly encourages that mitigated vulnerabilities be reported and tracked at their estimated risk rating after mitigation rather than their original risk rating. Is this a change in the right direction?_\r\n\r\n>> There appears to be a lot of confusion around this change. I think generally everyone seems to agree that the assigned score at detection does not always take into account true exploitability, business context, and risk. And it certainly is true that many times, low or medium rated severity is actually more dangerous than a high rated vuln. But without some very clear guidelines from the PMO as to how one should adjust risk rating (and then determine the course of action for remediation) this creates a lot of uncertainty and confusion. In the best case, the CSP treats every vuln as risky and leverages automation and tooling to address this without creating additional overhead. But in the more realistic worse case scenarios, CSPs either re-class every vuln as low risk and never really get around to remediating them or re-class every vuln as high risk and spend all their time remediating them instead of building products to serve their agency customers. \r\n\r\n>> I also agree with the many comments that continually reporting already remediated vulnerabilities doesnt make much sense. Perhaps there is a cleaner way to report the closed vuln the first time it is remediated, have it added to a database of remediated risks, and then not require it to be continuously reported on. instead the agency of pmo can access that data base specific to each provider at any point programmatically. \r\n\r\n>> there were some questions about reporting should be limited to vulnerabilities that are past due (against the SLA) and vulns with exceptions (i.e., vendor dependency or false positive). In my view this is potentially dangerous for the agency customers. If a vuln is exploited but technically within the remediation SLA and so the CSP hasn't addressed it, how does the agency quickly react to risk? And while i agree that providing literal screenshots of scan results is silly, if we don't provide continuous access to complete and accurate underlying vuln data that is holistic, how do the agencies know they are protected?\r\n\r\n>> The guidance provided suggests that instead of listing each individual vuln, CSPs can group vulns by component or mitigation path. Can the PMO more clearly define acceptable groups by \"component\" (and define component) with some examples? \r\n\r\n_Standards will be supported separately by templates, best practices, technical assistance, and other materials. What materials might be prioritized for production to support this standard?_\r\n\r\n>> is there an updated POA&M template that could be publicly shared with clearly tracked changes? \r\n\r\n_This approach is intended to give agencies adequate visibility into the overall security posture of a cloud service offering. What additional information might agencies need to maintain their risk awareness?_\r\n\r\n>> Vendor dependencies were a frequent source of questions in the github board. I am curious how vendor deps will be treating as a source of vulns and if the PMO can provide further clarity there. Specifically, many CSPs often find it easy to mark most vulns as vendor deps as it alleviates the burden of remediation off their plate. This is understandable givenn how manual the ConMon process is today. But in the future, as we automate much of this workflow, should we let this be an easy out? \r\n\r\n>> Is it worth expanding the scope of the conmon process defined here beyond just vuln scanning, counting, and reporting to broader security posture? For example, where are we treating encryption and FIPS-validation? Or hardening itself (STIGs)?\r\n\r\n>> It seems like some of the early submissions in the 20x Pilot (which has moved incredibly fast, kudos to the team) have been more focused on status outputs vs. continuous technical validation. How do we move towards the latter under the currently defined ConMon program in RFC-0008\r\n\r\n\r\n\r\n\r\n",
+      "author": "aj327",
+      "created_at": "2025-06-20T16:54:57Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzoNw",
+      "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13534064",
+      "body": "Love the machine-readable (and versioned) release of KSIs.  Its making it it much easier to reference and work with as we build out our automations.  I did just notice there is a duplicative KSI block (see https://github.com/FedRAMP/docs/blob/177349397663cae511a8797f51d316d1a738e95c/FRMR.KSI.key-security-indicators.json#L439-L46).  Its only in the JSON KSI file, the other resources appear to be unimpacted.",
+      "author": "Rene2mt",
+      "created_at": "2025-06-20T20:47:05Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzoPc",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13534172",
+          "body": "Can you give me the line #'s of the duplicative block? There's an array for releases that may appear duplicative at first glance because this is the only FRMR JSON with two releases, but I'm not sure if you're referring to that or something else. \r\n\r\n(side note, I have collaboration disabled in that repo to avoid confusion but if it picks up in usage it would probably make sense to open it up for issues like this) \r\n\r\nedit - nm I see now, I didn't scroll down, 2x RPLs. Gotcha.",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T21:00:55Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoP-",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13534206",
+          "body": "Thanks for the super quick update.  Yes, I was going to submit a PR, but agree, best to keep GH collaboration controlled for now",
+          "author": "Rene2mt",
+          "created_at": "2025-06-20T21:07:16Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoQD",
+          "url": "https://github.com/FedRAMP/community/discussions/42#discussioncomment-13534211",
+          "body": "[Fixed](https://github.com/FedRAMP/docs/commit/f6abee1626f43b66074c67d2526a5a52d75e43f7), thank you!\r\n\r\nRCA: I was doing a lot of copy pasting while updating and likely pasted the RPL section twice when I was preparing to add the INR section and didn't notice. One good example of why having a community is nice to spread the load.",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T21:08:47Z"
+        }
+      ]
+    }
+  ]
+}

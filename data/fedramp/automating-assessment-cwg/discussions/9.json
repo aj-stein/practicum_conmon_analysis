@@ -1,0 +1,81 @@
+{
+  "id": "D_kwDOOMDw3M4AfJEp",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9",
+  "title": "Migrating from traditional control baselines to KSIs",
+  "body": "Just some food for thought related to controls and baselines. As an Agency CISO I was often... let's say frustrated, with the idea that there was a single baseline for all LOW/MEDIUM/HIGH systems.  A good example, at one point a recruitment team wanted to use a web service to search for qualified applicants for open positions.  Even though this particular web service was not going to process any non-public federal data it had the same requirements as a system we would use to collaborate on pre-decisional policy memos.  It would be an interesting exercise to consider what controls are \"important\" for what kind of system.  Could we have a more modular approach to creating \"control baselines\" such that if your service provides x function you should implement y controls?",
+  "author": "dan-fedramp",
+  "created_at": "2025-04-03T17:48:16Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwhHr",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12718571",
+      "body": "I love out-of-the-box thinking, and I would say, \"Why couldn't we?\"...LOL..the Control Domain approach I'm advocating can tailor nicely into further classifying KSIs to not only the Low/Medium/High concept but could also tailor to a risk-based approach to CSO services. I'm open to exploring that rabbit hole to see where it leads us. Now is the time. :-)",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-03T20:27:37Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwjmW",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12728726",
+      "body": "\"Could we have a more modular approach to creating \"control baselines\" such that if your service provides x function you should implement y controls?\"\r\n@dan-fedramp isn't that the basis for Li, Low, Mod, High today?  Depending on the type of data that is present, the control set changes.  \r\n\r\nUsing KSI are great.  Defining them outside of 53 is bad.  Creating a completely new framework that falls outside of the 53 control set will hamper implementation.  Organizations are not going to implement 20X on their own.  They are going to use the vendor community for GRC tools.  Right now, most GRC vendors support 53 pretty well.  \r\n\r\nIf the desire is to speed the adoption of 20X, sticking within the 53 Definitions (not the CSF or other framework) will speed adoption.  Remember, 53 is a dictionary and not a framework so you can pull whatever mix of controls from it to create a new framework.",
+      "author": "Christcpd",
+      "created_at": "2025-04-04T17:03:54Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwzXY",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12793304",
+      "body": "There are core controls that everyone looks at. Pulling those controls into KSIs is a good idea, but don't rewrite the control. We defined something internally we call Compliance Table Stakes. This is a small subset of controls that generally gauges the maturity of a product and it's ability to meet other controls. Using a similar approach for KSIs with mapping from KSI to the control(s) needed for Low/Mod/High puts a high level summary type view on the underlying large number of SP800-53 controls. This would be useful for rapid ATO desire where the security posture of a system can be reviewed in hours/days as opposed to weeks/months.",
+      "author": "dljenkins",
+      "created_at": "2025-04-10T15:24:32Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwzmR",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12794257",
+          "body": "@dljenkins, that sounds really interesting.  Would you be able to share the Compliance Table Stakes criteria?",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-10T16:44:31Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw2b1",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12805877",
+          "body": "I defined the following as the Compliance Table Stakes: Scans, FIPS, MFA/RBAC, Audit Logging, Section508, & IPv6. Typically a product that can meet these requirements is able to meet nearly all the FedRAMP Moderate requirements. \r\n\r\n**- Scans:** static code scans & vulnerability scans, all critical/high addressed and all mod/low tracked to closure.\r\n**- FIPS:** All data at-rest & in-motion must be encrypted use 140-x Validated and Active modules\r\n**- MFA/RBAC:** multi-factor authentication with ability to support PIV/CAC usually via SAML or OpenID Connect, also user access controls via role-based access controls\r\n**- Audit Logging:** primary focus is on AU-2, AU-3 & AU-12(1) with assurance that the right audit events are capture to support after that fact investigations, all the required data elements included in the event, and ability to compile audit events into system-wide audit trail. We also include M-21-31 requirements around what must be captured and how long it must be kept.\r\n**- Section508:** requirement here is to have VPAT with a roadmap to close gaps\r\n**- IPv6:** requirement for SaaS is external endpoints support IPv6",
+          "author": "dljenkins",
+          "created_at": "2025-04-11T15:42:17Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Aw2PJ",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12805065",
+      "body": ">  It would be an interesting exercise to consider what controls are \"important\" for what kind of system. Could we have a more modular approach to creating \"control baselines\" such that if your service provides x function you should implement y controls?\r\n\r\nMITRE already did this. Use the threat model to choose the controls that apply and focus on those for the specific system. I agree a baseline is not the end - it's the starting point.\r\n\r\n",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-04-11T14:38:36Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Aw2kS",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12806418",
+      "body": "GovRAMP leadership has had this conversation as well with public and private sector members alike. It led to the development of the GovRAMP (aka StateRAMP) Progressing Security Snapshot Program in 2023 and a new status we are launching this month: GovRAMP Core.  \r\n\r\nGovRAMP leveraged the MITRE ATT&CK Framework/FedRAMP study to develop the Snapshot Program and new Core Status. Using the MITRE ATT&CK Risk Protection Values \u2013 GovRAMP applied the top 40 NIST 800-53 Rev. 5 controls (highest Risk Protection Values) from the baseline Ready Requirements to make up the GovRAMP Security Snapshot criteria. \r\n\r\nBuilding on the Snapshot Program, the committee and Board approved a new status in February 2025, GovRAMP Core. GovRAMP Core Status requirements are comprised of 60 controls (top-scoring NIST 800-53 controls using MITRE ATT&CK Risk Protection Values from the baseline Ready requirements).  Thus -- Snapshot is a subset of Core requirements. Core is a subset of Ready requirements. Ready is a subset of Authorized.  There are still Impact Levels for Ready and Authorized available in the GovRAMP program - but the evolution of statuses has helped address this challenge of how to meet the security/risk need more appropriately. This approach provides a step approach that is aligned with NIST 800-53, balances compliance/cost burden with the potential risk impact. \r\n\r\nThere is a great opportunity for FedRAMP to embrace the MITRE ATT&CK Framework more fully. \r\n",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-11T16:29:57Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw3Q7",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12809275",
+          "body": "That's great @Leah-GovRAMP  I would only caution that the risk protection is different for different CSOs. So there has to be a CSO-specific threat model/protection value set.  Once you have that - then absolutely - rank sort the top N controls and proceeded accordingly and let the AO decide where the cutoff is based on the risk they are willing to accept or not. \r\n\r\nYour approach seems very rational!\r\n\r\nAs to cost though I will caution - the cost of any incident - even minor - often exceeds 6 figures in legal and compliance effort and staff time.  So - when companies cherry pick a specific control and say \"is there an ROI\" they rarely factor in the real cost of incidents when (not IF) they occur.  Expensive inside and outside counsel typically get involved, not to mention forensic teams, communications, etc.  So just make sure the cost burden represents the true cost.",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T23:12:03Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxDKO",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/9#discussioncomment-12857998",
+      "body": "We have been using \"categories\" (KPIs using this terminology) for years when assessing information systems using 800-53.  We have processes established, and assessing systems using this methodology is definitely a time saver.  ",
+      "author": "stacypburress",
+      "created_at": "2025-04-16T17:35:09Z",
+      "replies": []
+    }
+  ]
+}

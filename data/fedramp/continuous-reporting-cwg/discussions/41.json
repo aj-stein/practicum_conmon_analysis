@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOKttEc4Afm_j",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/41",
+  "title": "General Q&A for Participation and Submission in the 20x pilot",
+  "body": "This thread will serve as the dedicated space for questions related to the 20x Phase One Pilot.\r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond. The FedRAMP PMO will work to answer these as we are able.\r\n\r\nYou can also start new threads to discuss specific topics. Just be sure to use the \"20x Phase One Pilot\" Category so other pilot participants can find your question.",
+  "author": "dan-fedramp",
+  "created_at": "2025-05-06T16:19:09Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4Ax82n",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/41#discussioncomment-13094311",
+      "body": "Hello Working Group Members! We are working towards a Submission in the new Phase One 20x Pilot. \r\n\r\nWhere can I find more information on the machine readable requirements for submissions? Thank you!",
+      "author": "frederickjoi",
+      "created_at": "2025-05-09T17:30:36Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Ax83o",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/41#discussioncomment-13094376",
+          "body": "> Hello Working Group Members! We are working towards a Submission in the new Phase One 20x Pilot.\r\n\r\nWelcome!\r\n\r\n> Where can I find more information on the machine readable requirements for submissions? Thank you!\r\n\r\nWe are very flexible and the pilot is to evaluate different solutions with input from participants like you. Read [information about the pilot](https://www.fedramp.gov/20x/phase-one/) for more details.\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-09T17:42:20Z"
+        }
+      ]
+    }
+  ]
+}

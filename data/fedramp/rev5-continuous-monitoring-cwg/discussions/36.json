@@ -1,0 +1,9 @@
+{
+  "id": "D_kwDOOK0ax84AfyyQ",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/36",
+  "title": "Draft Technical Assistance (TA)-Significant Change Notification Released 5/15",
+  "body": "Team,\r\n\r\nDraft TA for the SCN in review was published last night.  If you missed Monday's meeting we went over the layered approach to standards release.\r\n\r\n**Standards** are base requirements that can be applied in any environment and will change rarely\r\n**Technical Assistance** supports standards with additional technical nuance to support decision making\r\n**Best Practices** support standards with methods, techniques, or examples and may change often\r\n\r\nWe went in some more nuance around these in Monday's meeting, so please go there before posting any question.  \r\n\r\nYou can find the latest draft TA here [RFC-0010](https://www.fedramp.gov/rfcs/0010/).",
+  "author": "paulagosta",
+  "created_at": "2025-05-16T11:30:42Z",
+  "comments": []
+}

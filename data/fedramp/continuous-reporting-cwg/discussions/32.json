@@ -1,0 +1,50 @@
+{
+  "id": "D_kwDOOKttEc4AfP-i",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32",
+  "title": "Continuous reporting on marketplace information for 3PAOs",
+  "body": "Outside of continuous reporting for CSPs, I'd like to open a discussion on how folks might benefit from FedRAMP adding continuous reporting options for marketplace information for 3PAOs.\r\n\r\n## Background\r\n\r\nCurrently the FedRAMP Marketplace contains limited information about 3PAOs: https://marketplace.fedramp.gov/assessors\r\n\r\n- Static: Contact information, descriptions, consulting services, additional cyber frameworks, and some other general information\r\n- Dynamic: Current clients and number of products assessed based on marketplace data\r\n\r\nProblems with the current approach include:\r\n\r\n- Not a great comparative experience (only way to compare is by # of assessed products)\r\n- Any updates require opening tickets with the FedRAMP PMO which adds friction that decreases updates\r\n- Contact information shared is just email address, not even websites\r\n\r\n## Possible 3PAO information standard\r\n\r\nAs FedRAMP moves towards a more dynamic marketplace it would make sense for us to also add more dynamic and continuous reporting capabilities for 3PAOs. This could be done by creating a simple machine readable standard for 3PAOs to make publicly available on their own websites (such as a \"fedramp.json\" file) which could be ingested by both the FedRAMP marketplace and other third party tools to provide more feature-rich comparative information.\r\n\r\nA standardized reporting file could include the information that is currently displayed on an assessor's marketplace page as well as additional information that would be of value to the community and that 3PAOs themselves find useful to share.\r\n\r\n## Outstanding questions and general thoughts\r\n\r\n- What additional information about 3PAOs would CSPs benefit from having in the marketplace?\r\n- What additional information would 3PAOs want to share in a comparative marketplace?\r\n- What type of comparatives for 3PAOs would be of value to build into the marketplace?\r\n- What else would be cool (or not cool) about this?\r\n",
+  "author": "pete-gov",
+  "created_at": "2025-04-11T12:39:12Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4Aw15K",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32#discussioncomment-12803658",
+      "body": "And to immediately seed some examples, optional things that I have heard in my own conversations that people would like to see in a 3PAO marketplace include:\r\n\r\n- direct links to web pages\r\n- engagement models and pricing\r\n- reference client contact information / links to public references\r\n- wait time / availability\r\n- typical team makeup, certifications of staff, etc.\r\n\r\n\r\n\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-04-11T12:43:38Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Aw3BX",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32#discussioncomment-12808279",
+          "body": "Preferred GRC Tool.  If they work with a tool regularly, the audit goes smoother.  That would help a CSP who already has GRCTool1 select their auditor and reduce friction.  Especially since we are talking automation.",
+          "author": "Christcpd",
+          "created_at": "2025-04-11T20:15:49Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOKttEc4Aw2AQ",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32#discussioncomment-12804112",
+      "body": "Hey Pete!\r\n\r\nAs a buyer in a 3pao whenever I am looking at a marketplace I try to focus on opportunities to:\r\n- do a direct compare of service providers in a single page in a multi-column fashion for all of the parameters you mentioned (think G2 head-to-head comparison for b2b software)\r\n- see what I can consolidate (ability to filter across other frameworks I might already be conducting)\r\n\r\nI like your fedramp json idea. I'm assuming there would be some sort of validation or expectations for the content in there as well if something like this were to be deployed?",
+      "author": "arthurlorente",
+      "created_at": "2025-04-11T13:27:40Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOKttEc4Aw3hZ",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32#discussioncomment-12810329",
+      "body": "This is a great topic but as we look to develop a governance model it is important to understand the consequences. The role of the 3PAO is to perform an independent assessment of the CSO by a given CSP. If the CSP has the ability to rate a 3PAO it might have an unintended consequence of potentially diluting the assessment. An alternative approach is to allow an Agency to rate the performance of a 3PAO. I believe this will be infinitely more valuable to a prospective CSP. Ultimately, the quality of the SAR provided by the 3PAO directly impacts the Agency. So the Agency rating of a 3PAO will likely ensure the right incentives driving good behavior overall within the system. Another approach might be to allow both a CSP rating and a Agency rating for a 3PAO that allows the market to reach their own conclusions. Hope this is helpful.",
+      "author": "gpalstackarmorcom",
+      "created_at": "2025-04-12T04:28:17Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOKttEc4Axyan",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/32#discussioncomment-13051559",
+      "body": "There has been a lot of good discussion on this topic in the last month but we are going to close this one for now. We will open up new posts for commenting accordingly around different facets of this topic when the time is right, or you can when it is right for you, fellow community members!",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-05-06T15:06:47Z",
+      "replies": []
+    }
+  ]
+}

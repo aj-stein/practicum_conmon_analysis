@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOxfoic4AgAIH",
+  "url": "https://github.com/FedRAMP/community/discussions/17",
+  "title": "InfusionPoints Command Center on XBU40 ~ FedRAMP 20x Phase One Pilot Draft Submission",
+  "body": "In line with the FedRAMP 20x vision for 100% machine-verifiable compliance, we've spent the last couple of sprints developing tons of validation checks, an AuditShield KSI dashboard, and a point-in-time KSI Validation report for our Command Center SaaS. We've also been working this week with our friends at Fortreum on attesting that our validation checks are sufficient for the KSIs. We're looking forward to feedback from the group!\r\n\r\nCloud Service Provider: InfusionPoints\r\nCloud Service Offering: InfusionPoints \u2013 Command Center is a cloud-native NextGen Governance, Risk, and Compliance (GRC) app hosted in AWS GovCloud (US) that streamlines and orchestrates all aspects of FedRAMP and DoD ATOs including:\r\n\r\n- Continuous Monitoring\r\n- Audit Orchestration\r\n- User Management\r\n- Ticketing\r\n- Document Management\r\n\r\nHosting Platform: AWS GovCloud (US)\r\n3PAO: Fortreum\r\nFedRAMP Audit: FedRAMP Moderate, DoD CC SRG Impact Level 4\r\nCommercial Audit: ISO 27001:2022\r\n\r\n[Link to Phase One Pilot Draft Submission](https://github.com/InfusionPoints/infpts_fedramp20x_draft)",
+  "author": "InfusionPoints",
+  "created_at": "2025-05-24T02:01:44Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Ayycz",
+      "url": "https://github.com/FedRAMP/community/discussions/17#discussioncomment-13313843",
+      "body": "Jason/Ethan/Team InfusionPoint.  We have you in the active review queue.  We should push something here in the next day or two.  ",
+      "author": "paulagosta",
+      "created_at": "2025-05-29T20:32:43Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay6jZ",
+      "url": "https://github.com/FedRAMP/community/discussions/17#discussioncomment-13347033",
+      "body": "Jason/Ethan/Team InfusionPoints\r\n\r\nFirst off, I am a huge fan of these dashboards.  Judging from how you have these set up, you are clearly tracking a lot of the changes happening on the Rev 5 side of the house. You have it set up in a fashion that complies with some of the other new standards being published to include [RFC-0011 FedRAMP Pilot Standard for Storing and Sharing Authorization Data](https://www.fedramp.gov/updates/rfcs/0011) and the  [FedRAMP RFC-0008 Continuous Reporting Standard](https://www.fedramp.gov/updates/rfcs/0008), which is key.  \r\n\r\nI also appreciate how you pre-staged the 3PAO to attest to the \u201ccoverage and veracity\u201d of your automated assessments. \r\n\r\nAs I look at your report formatting, when does the \"ksi_validation_status\": turn from false to true. Is this upon automated validation from internal automated tools?  Or does this turn to true once it is 3PAO assessed?  I believe it is the former, but if that is the case, where does the report take into account the veracity of each automated attestation?  \r\n\r\nI am curious into what the end-state for the 3PAO coverage portion of the assessment looks like, but it may be too early for that.  \r\n\r\nFor the technical validation example in IR.2, how does this roll up to the report?  I can see where you are pulling your backup/recovery policy info, but where does this get measured against your RTO/RPO?  I get that when you establish these technical policies it will most likely be in line with those objectives, but how do you account for this in an automated fashion?    \r\n\r\nWe would love to see more of the individual tech validation examples and if you are able the output of what those would look like when run.  \r\n\r\nPaul",
+      "author": "paulagosta",
+      "created_at": "2025-06-02T18:36:56Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ay9t0",
+          "url": "https://github.com/FedRAMP/community/discussions/17#discussioncomment-13359988",
+          "body": "Hi Paul,\r\nMany thanks for the feedback. As you can see, we've been heads down working on this. \r\n\r\n> Judging from how you have these set up, you are clearly tracking a lot of the changes happening on the Rev 5 side of the house.\r\n\r\nAs you've noticed, we built command center all around the Rev5 process, pre-dating the 20x efforts. We had always envisioned the audit shield feature for automated evidence collection, but 20x have made its development our top priority in recent sprints. I also believe that the ConMon module will continue to be super important for stakeholders with perhaps less emphasis on SSP generation and its parameters, etc.\r\n\r\n> As I look at your report formatting, when does the \"ksi_validation_status\": turn from false to true. Is this upon automated validation from internal automated tools? Or does this turn to true once it is 3PAO assessed? I believe it is the former, but if that is the case, where does the report take into account the veracity of each automated attestation?\r\n\r\nOur vision is that the ksi_validation_status is independent of the 3PAO attestation such that as much of the entire body of evidence as possible can be validated in real-time at any time. (We're doing it live!) The 3PAO then comes in to look under-the-hood at the validation check methods in use and the resulting outputs at audit time. So their opinions and feedback is all combined in their letter / report. We also plan to add a 3PAO reviewer role in command center so that audit feedback can be added to each KSI check and rolled up into a report for version 0.2. We're also adding a Trust Center view that is publicly visible.\r\n\r\n> For the technical validation example in IR.2, how does this roll up to the report? I can see where you are pulling your backup/recovery policy info, but where does this get measured against your RTO/RPO? I get that when you establish these technical policies it will most likely be in line with those objectives, but how do you account for this in an automated fashion?\r\n\r\nThis will be more visible in our final submission coming soon, but for each check we will have a criteria that is compared against. \r\n\r\n> We would love to see more of the individual tech validation examples and if you are able the output of what those would look like when run.\r\n\r\nWe will have a public-facing and stakeholder-only side of our submission. The stakeholder-side will include all of the technical checks that we are doing. \r\n\r\nThanks again, and our formal submission should be out soon!\r\n\r\n![image](https://github.com/user-attachments/assets/a18f3c6e-9e52-4910-ab2e-d517584c313a)\r\n\r\n\r\n",
+          "author": "InfusionPoints",
+          "created_at": "2025-06-03T19:50:24Z"
+        }
+      ]
+    }
+  ]
+}

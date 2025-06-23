@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOMDw3M4AfOWx",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/16",
+  "title": "Recurring meeting registration link is live!",
+  "body": "Hi everyone!\r\nFor anyone who wants to register for the biweekly automating assessment townhall series, you can [register here.](https://gsa.zoomgov.com/meeting/register/FpW3sJuBRxag_1Mz49J0Cw) The registration link on the README has also been updated to reflect this recurring meeting series. \r\n\r\nAs previously stated, these townhall meetings will be primarily for recapping themes and updates from the GitHub Discussion board, as well as possible demos, updates from the PMO, etc. \r\n\r\n**Everything that happens in the meetings will also be posted here, in GitHub discussions, to allow for maximal transparency and participation.** You do not need to attend the meetings to stay up to date, and recordings will be posted on the [repository README.](github.com/fedramp/automating-assessment-cwg/README.md)",
+  "author": "kyhu65867",
+  "created_at": "2025-04-09T21:18:47Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwxFz",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/16#discussioncomment-12783987",
+      "body": "Next meeting is April 16th! \r\n@kyhu65867 I would love to present the case for open source collaboration for OSCAL usage to achieve our automation outcomes. I have a presentation that discusses the strategy to build out OSCAL automation not to create an SSP in JSON, but rather to use automation to express compliance from automated control testing, one that is interoperable across frameworks and organizations due to adoption of a common data model and method for exchange through common APIs. We want to build conformance expression, not machine readable versions of point-in-time artifacts. \r\nI have a deck that I work from that I can share, and the project we are working under is OSCAL Compass as part of CNCF. Let me know!",
+      "author": "au-der",
+      "created_at": "2025-04-09T21:56:20Z",
+      "replies": []
+    }
+  ]
+}

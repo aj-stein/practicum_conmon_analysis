@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOKttEc4AfISC",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/25",
+  "title": "Gitlab Security Operational Risk Management (StORM) Program & Procedures",
+  "body": "What I moved too and will continue using.\r\n\r\nhttps://handbook.gitlab.com/handbook/security/security-assurance/security-risk/storm-program/\r\n",
+  "author": "austinsonger",
+  "created_at": "2025-04-03T00:59:37Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4Awf__",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/25#discussioncomment-12713983",
+      "body": "Thanks for sharing! Do you have any use case stories you can share where you applied this successfully?",
+      "author": "sam-aydlette",
+      "created_at": "2025-04-03T13:34:00Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOKttEc4AxyaH",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/25#discussioncomment-13051527",
+      "body": "Thanks for posting information about  your use of StORM, @austinsonger. We will open up new posts for commenting accordingly around different facets of this topic when the time is right, or you can when it is right for you, fellow community members!",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-05-06T15:04:11Z",
+      "replies": []
+    }
+  ]
+}

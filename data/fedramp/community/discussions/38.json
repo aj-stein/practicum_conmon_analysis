@@ -1,0 +1,97 @@
+{
+  "id": "D_kwDOOxfoic4AgJCt",
+  "url": "https://github.com/FedRAMP/community/discussions/38",
+  "title": "Balancing FedRAMP Rev5 against improvements to FedRAMP 20x",
+  "body": "This post provides a bit more detail on our planned approach to Rev5 improvements to begin the public conversation that will continue throughout upcoming Rev5 balance improvement tests and releases. **All of this is subject to change as the environment, priorities, and decisions shift; [FedRAMP's standard disclaimers apply](https://www.fedramp.gov/disclaimers/).** \r\n\r\n_Note: This thread is open for discussion but is not a formal Request For Comment._\r\n\r\n-----\r\n\r\n## Balancing FedRAMP Rev5 against improvements to FedRAMP 20x\r\n\r\nFedRAMP\u2019s primary focus this year is the development of FedRAMP 20x: a modern cloud-native approach to the security assessment and authorization of cloud services used by federal agencies. This approach will open the federal market for new businesses and enable rapid adoption of emerging best-in-class commercial services by the government, but there are close to 500 cloud service providers used by the government today that are heavily invested in the traditional Rev5 approach. \r\n\r\nThe Rev5 approach will become imbalanced, unfair, and ineffective compared to 20x if Rev5 continues unchanged. A new approach prioritizing innovative solutions for incremental delivery, testing, evaluation, and improvement can take risks during development that are unacceptable for an established approach like Rev5; changes to Rev5 must be made carefully, deliberately, with intent to minimize disruption and unpredictable impacts.\r\n\r\nOur approach to Rev5 balance improvement assumes that improvements designed for 20x should be made available for Rev5 when feasible and appropriate so Rev5 will continue to be a viable path for FedRAMP authorization while 20x is developed and expanded. As improvements are drafted for 20x, FedRAMP will consider their application for Rev5 as optional balance improvements:\r\n\r\n- **Rev5 Balance Improvement Test:** Limited release of optional improvements to test and evaluate the impact, effectiveness, and benefit of the improvement for Rev5. These will often be called \u201cbeta tests\u201d for simplicity.\r\n\r\n- **Rev5 Balance Improvement Release:** Formal wide release of an improvement made available for all Rev5 authorized parties; such releases will typically be optional but may be required when absolutely necessary.\r\n\r\n## Minimizing impact to existing investment\r\n\r\nIn general, FedRAMP intends to minimize any **required** changes to Rev5 authorization (initial or ongoing) for cloud service providers. We anticipate the following approach for Rev5 Balance Improvement Tests and Releases:\r\n\r\n- They will be optional whenever they can reasonably be made optional\r\n- They will be rolled out carefully and intentionally, with backup options when feasible\r\n- We will provide as much guidance as we can about adoption for all necessary parties prior to wide release \r\n\r\nIn general, we expect balance improvements to be positive changes that cloud service providers choose to adopt but understand there are often business reasons to maintain the status quo. \r\n\r\n## Managing impact to agencies\r\n\r\nThings are a bit different within the government - laws, policies, and administration priorities rule the day. Federal agencies will be impacted by changes to FedRAMP and government policy just as they always have been. FedRAMP is working closely with OMB OFCIO, the FedRAMP Board, the FedRAMP Technical Advisory Group, and the FedRAMP Agency Liaisons group to manage the impact to agencies. OMB OFCIO and the FedRAMP Board are also working with the CIO and CISO councils to support. \r\n\r\nFedRAMP has been working to improve collaborative continuous monitoring to make it easier for all agencies to meet their statutory obligations to monitor the security of cloud services that are used in federal information systems, but many agencies and cloud service providers still rely on a single lead agency to do most of the work for continuous monitoring. If a cloud service provider is still relying on a single lead agency for continuous monitoring, FedRAMP will expect the cloud service provider to coordinate with their lead agency on their participation in Rev5 Balance Improvement Tests and Releases until they transition to full collaborative continuous monitoring. \r\n\r\nFor agencies, we anticipate the following approach for Rev5 Balance Improvement Tests and Releases:\r\n\r\n- CSPs will be required to obtain permission and support from their lead agency and/or FedRAMP to participate in Balance Improvement Tests\r\n- FedRAMP will provide additional support to agencies and CSPs during Balance Improvement Tests\r\n- FedRAMP will provide as much guidance as we can about adoption for all necessary parties prior to wide release\r\n\r\n## Phased rollouts\r\n\r\nRev5 Balance Improvement Tests and Releases will generally be made available in a carefully phased rollout. The duration of these phases will vary by projected risk and impact, and some releases may skip some of these phases or add new phases if necessary. In general, Rev5 Balance Improvement Releases will follow these phases:\r\n\r\n1. **Development:** An initial standard, requirement, or change is developed (including public comment) and prepared for Rev5 testing if relevant.\r\n\r\n2. **Closed Beta:** A Balance Improvement Test will be available to limited invite-only participants based on agency needs and the risk tolerances of the CSP and lead agency to begin testing the release.\r\n\r\n3. **Open Beta:** A Balance Improvement Test will be available to limited volunteer participants in a carefully structured environment while the release is tuned and finalized.\r\n\r\n4. **Wide Release:** The Balance Improvement Release is made available for any cloud service provider to adopt along with a supporting framework to simplify the process based on learning and improvements made during testing.\r\n\r\n## Managing optional feature sets\r\n\r\nThe current Rev5 ecosystem for FedRAMP authorizations doesn\u2019t have a lot of variance - everyone has pretty much met the same requirements and implemented the same things in the same way from an assessment standpoint, which makes it simple for agencies. Optional Balance Improvement Releases will make things a bit more complicated as CSPs start to pick and choose which releases they adopt and when.\r\n\r\nFedRAMP will need to develop an approach to help stakeholders manage and leverage these different feature sets. Working with stakeholders on innovative solutions to monitor, understand, and apply different Rev5 feature sets based on Balance Improvement Releases will be a key aspect of early testing. This may start with something as simple as specific identifiers for which optional Balance Improvement Releases are adopted by the CSP in the FedRAMP Marketplace and authorization package materials.\r\n\r\n## What\u2019s next\r\n\r\nWe\u2019re planning out our roadmap based on current staffing and the projected impact of these improvements. The following released Standards and RFCs will form the likely basis for the next Rev5 Balance Improvement Tests & Releases:\r\n\r\n- [20x Minimum Assessment Scope](https://www.fedramp.gov/20x/standards/20x-mas/) (closed beta starting in July)\r\n- [Significant Change Notification Standard](https://www.fedramp.gov/rfcs/0007/) (closed beta starting in July)\r\n- [Continuous Reporting Standard](https://www.fedramp.gov/rfcs/0008/) (pending analysis)\r\n- [Storing and Sharing Authorization Data Standard](https://www.fedramp.gov/updates/rfcs/0011) (pending analysis)\r\n\r\nThis is just the beginning, but it will also give us plenty of opportunity to work with our stakeholders to refine and improve this approach.\r\n",
+  "author": "pete-gov",
+  "created_at": "2025-06-06T17:01:41Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AzJ_o",
+      "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13410280",
+      "body": "It looks directionality on-point.  Look forward to the details.",
+      "author": "nickson56",
+      "created_at": "2025-06-09T13:36:44Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzNGw",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13423024",
+          "body": "I agree completely. Really excited to see the details coming out of the closed beta items starting next month. Ideally, these will be very valuable as on-ramps into the 20X authorization process once the Rev. 5 auths are transitioned in the future. ",
+          "author": "C-Cruse-MSI",
+          "created_at": "2025-06-10T15:45:46Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzfxP",
+      "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13499471",
+      "body": "I'm just getting up to speed with the latest blog posts and appreciate all the great work being done. As I'm catching up, I wanted to clarify a couple of points regarding the Cloud Service Providers (CSPs) that are eligible to participate in the upcoming Beta phase for Rev 5 improvements.\r\n\r\nAre CSPs required to be fully FedRAMP Authorized at this stage, or is a \u201cFedRAMP Ready\u201d designation sufficient for them to take part? Additionally, I want to confirm whether only CSPs that have an agency sponsor are eligible to participate in this Beta round, or if there\u2019s any flexibility there.",
+      "author": "KimberlyDE",
+      "created_at": "2025-06-17T17:03:35Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzgAj",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13500451",
+          "body": "The question around FedRAMP Ready is excellent and one I will admit we have not explicitly considered in advance. I'm inclined to say that it makes a lot of sense for FedRAMP Ready folks to participate in the Beta phases if they are interested, but I need to talk this over a bit more with my team. Same for active authorized CSPs without lead sponsors.\r\n\r\nWhen we post formal requirements/etc. for each Beta phase, I will make sure it's clear either way. Thank you for flagging!",
+          "author": "pete-gov",
+          "created_at": "2025-06-17T19:02:39Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Azisg",
+      "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13511456",
+      "body": "As an organization maintaining several Rev5 agency authorizations, we support this path. We expect that leveraging these new streamlined processes would reduce overhead both for us as a CSP as well as all the agencies we engage with as a part of multi-agency continuous monitoring. To this end, we suggest considering giving CSPs the opportunity to self-enroll in these Rev5 Balance Releases ahead of the proposed phased rollout, provided the CSPs have agency approval documented in their continuous monitoring charters. Alternatively, we would welcome quicker adoption of the Balance Releases and would be interested in joining a closed beta phase once more information is available.",
+      "author": "bhildebrandt-adobe",
+      "created_at": "2025-06-18T16:33:30Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzjUH",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13513991",
+          "body": "It is fantastic feedback that we should start taking Open Beta applications well in advance of finishing Closed Beta. Rolling beta applications are certainly a common play in industry. And we should certainly encourage folks to let us know if they are interested in Closed Betas in advance of their being officially open. Thanks for suggesting this! (informally, doesn't hurt to just drop us a note at rev5@fedramp.gov either way, though we're not fully set up to process that inbox yet, someone will see it)\r\n\r\nOverall, this idea is new (to FedRAMP at least) so we're going to start carefully and gauge impact/effort/risk/etc. and adjust. Six months from now there will hopefully be a bunch of 20x improvements that need to be balanced over to Rev5, so running these deliberate balance improvement tests will be a continuous effort.\r\n\r\n\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-18T21:45:53Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoWO",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13534606",
+          "body": "Thank you, Pete! We appreciate your work to ensure that Rev5 Balance Improvements are rolled out in a timely manner that reduces disruptions. We will certainly reach out to show interest in closed betas as future ones come up based on product fit and feasibility. ",
+          "author": "bhildebrandt-adobe",
+          "created_at": "2025-06-20T22:22:27Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzlNV",
+      "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13521749",
+      "body": "First, kudos on the proposed updates to the significant change notification process and scope interpretation technical assistance! \r\n\r\nThinking about continuous reporting requirements (including significant change process) and recognizing providers may have multiple monthly meetings with various customers, GovRAMP is available for our member providers and federal agencies to leverage to streamline reporting in a centralized portal. This would enable providers to schedule their meetings to coincide with an established reporting frequency (i.e. no more than X days after reporting) with the added validation of the GovRAMP PMO\u2019s review.  FedRAMP team members could also be included as desired. This is entirely free for the public sector to leverage. \r\n\r\nFor providers in both the FedRAMP Marketplace and GovRAMP program, a pilot could be beneficial to explore. As always, happy to discuss further. \r\n",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-06-19T15:37:32Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Aznd5",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13531001",
+          "body": "> For providers in both the FedRAMP Marketplace and GovRAMP program, a pilot could be beneficial to explore.\r\n\r\nGSA can't endorse or provide support that would give any non-governmental entity an unfair advantage but in general we **strongly** support and encourage industry stakeholders to partner up and work on shared pilots and solutions via whatever mechanisms make the most sense to them! It is much more effective than individual providers trying to figure things out on their own. \ud83d\ude80 ",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T13:44:28Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AznkQ",
+      "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13531408",
+      "body": "Excellent work, team! I really appreciate the KSI approach\u2014it clearly enhances the PMO\u2019s ability to assess compliance and manage risk across CSPs\u2019 SaaS and other cloud offerings.\r\n\r\nQuick clarification: As both a CSP and a 3PAO, are we correct in assuming that we must continue to manage risk and compliance in alignment with NIST 800-53 and 800-53A, and still develop the full FedRAMP package\u2014including the SSP, SAR, test case workbooks, plans, policies, and procedures? (This also includes generating OSCAL outputs for the SSP, POA&M, and SAR.)\r\n\r\nFrom my understanding, the KSI framework serves as an overlay after completing the standard FedRAMP requirements, helping to streamline and summarize the package for a more efficient assessment and authorization process. Is that accurate?\r\n\r\nFollow-up question: As a GRC platform provider, should we plan to develop a KSI-compatible output that maps findings into the KSI structure to take advantage of automation and reporting efficiencies?\r\n\r\nAdditionally, one of the challenges in the past has been the strict requirement to adhere to FedRAMP\u2019s standardized templates\u2014such as the SSP, appendices, and POA&M. Would the KSI framework provide more flexibility in how we generate and present these outputs, particularly from a GRC tooling perspective?\r\n\r\nThanks in advance for the clarification\u2014I'm trying to work backwards from the desired end state to determine how our FedRAMP-accredited GRC platform should evolve its workflows and reporting to align with the advancements introduced in FedRAMP 20x. Many thanks again for all the hard work going into this!",
+      "author": "Balsinawi",
+      "created_at": "2025-06-20T14:26:49Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzpLH",
+          "url": "https://github.com/FedRAMP/community/discussions/38#discussioncomment-13537991",
+          "body": "20x vs Rev5 are separate paths to authorization. The 20x process is still being developed as part of the Phase One Pilot and will ultimately build an overall package that is very different from a Rev5 package. Both paths will be open for some time, meaning a cloud service provider will be able to choose which type of path and package they wish to pursue. KSIs will **not** be ported back to the Rev5 based process, unlike other 20x improvements.\r\n\r\nAll of FedRAMP's pilots and beta tests are designed to support innovative solutions that allow a lot more freedom than normal to develop special structures, patterns, etc., but the intent is to drive towards a more standardized solution before wide release based on what we learn. I don't think we'll ever drive back towards \"fill out this spreadsheet exactly like this\" but there will certainly be standard expectations.\r\n\r\nYou can get a good feel for where we're going right now by digging into the **other** standards that we're updating as those will trickle down to Rev5. Significant Change Notifications, Continuous Reporting Standards, Storing and Sharing Authorization Data Standards, etc. are all going to benefit from new capabilities added to GRC tools.",
+          "author": "pete-gov",
+          "created_at": "2025-06-21T14:17:06Z"
+        }
+      ]
+    }
+  ]
+}

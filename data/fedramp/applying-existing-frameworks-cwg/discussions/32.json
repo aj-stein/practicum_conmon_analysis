@@ -1,0 +1,9 @@
+{
+  "id": "D_kwDOOMfSVs4AfnCx",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/32",
+  "title": "ISO/IEC oriented primarily, though also SOC 2",
+  "body": "As many of our customers are international or non-US, ISO standards such as ISO/IEC 27001:2022, ISO/IEC 42001:2024 (AI/ML), ISO 9001, ISO 13485 (medical device quality) are all maintained. We embrace a Common Control Framework (CCF) to maximize the overlap with all standards and our FedRAMP \"Moderate\" authorization. We manage the CCF via our Governance, Risk and Compliance (GRC) platform...with the evidence provided fitting the most stringent standard requirements. ",
+  "author": "lorenbuhle",
+  "created_at": "2025-05-06T17:11:01Z",
+  "comments": []
+}
