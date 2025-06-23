@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOK0ax84AfbrW",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/30",
+  "title": "Significant Change Notification Standard Release and Questions",
+  "body": "Today, FedRAMP released the draft \u201cFedRAMP Significant Change Notification Standard\u201d as part of our formal Request for Comment.  This document creates a new Significant Change Notification standard that replaces all previous FedRAMP guidance related to Significant Change Requests for all FedRAMP authorizations and certifications.  \r\n\r\nYou can find the draft standard https://www.fedramp.gov/rfcs/0007/\r\n\r\nFirst off, we would like to thank everyone who provided input into pain points and suggestions on the current SCR process in the previous discussion forum(s).  \r\n\r\nThis new standard is intended to provide a high level set of standards, but leave flexibility in terms of implementation.  Below are some questions that will help us gauge if we hit the mark or not.  We would appreciate your input.  \r\n\r\nHow do you adapt your current change management and potentially continuous monitoring processes to ensure proper categorization and notification of changes happen within the directed standard?\r\n\r\nDoes this increase or decrease complexity in current change processes?\r\n\r\nDoes this process provide the right balance of agility and security?\r\n\r\nWhat new pain points will this standard bring?\r\n\r\nRemember, you still have opportunities to provide input into this standard.  Please utilize the published RFC guidance to submit formal responses to our team.  \r\n",
+  "author": "paulagosta",
+  "created_at": "2025-04-24T17:22:36Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84AxXDV",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/30#discussioncomment-12939477",
+      "body": "The change types definitions will be helpful moving forward in clarifying the SCR types but I believe some examples will be helpful in differentiating \"adaptive\" and \"transformative\" changes as this new guidance becomes standardized. \r\n\r\nAny idea if there are plans to update the SCR language within the SAP and SAR templates to clarify the different types of changes with \"Adaptive\" and \"Transformative\" to standardize the templates?",
+      "author": "bthomas85",
+      "created_at": "2025-04-24T20:00:40Z",
+      "replies": []
+    }
+  ]
+}

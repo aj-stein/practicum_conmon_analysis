@@ -1,0 +1,66 @@
+{
+  "id": "D_kwDOOMfSVs4AfMMg",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10",
+  "title": "What existing frameworks provide good coverage for Continuity Planning?",
+  "body": "What frameworks capture Continuity Planning (business continuity / disaster recovery) well?\r\n\r\nAre any well adapted to cloud native and/or highly available environments?",
+  "author": "emu-gov",
+  "created_at": "2025-04-07T20:11:00Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AwtH8",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12767740",
+      "body": "ISO 22301 does a pretty good job. ",
+      "author": "rebdave",
+      "created_at": "2025-04-08T17:06:31Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwtYM",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12768780",
+      "body": "HITRUST has domains specifically for BC, DR, and Incident Management.",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-08T18:28:59Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awwjm",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12781798",
+      "body": "There are a few for sure, like HITRUST as mentioned above, as well as ISO and CMMC and obviously NIST. In some cases, SOC reports (high level, and depends on scope). CobIT as well. SOX also has a tie in via IT General Controls related to financial controls, so there's an indirect connection there. Point being, many control frameworks address in some fashion BCP/DR controls.",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-09T17:44:44Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw2oD",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12806659",
+      "body": "GovRAMP in similar ways as FedRAMP with the addition of our continuous monitoring escalation process that serves government agencies well.",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-11T16:54:36Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw4mL",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12814731",
+      "body": "- BCI provides a comprehensive set guidelines for continuity management, including best practices and methodologies.\r\n- Cloud Adaption: The guidelines can be tailored to include considerations for cloud services and technologies, ensuring that FedRAMP can maintain continuity in cloud-native architectures.",
+      "author": "Kask253",
+      "created_at": "2025-04-12T17:03:02Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxJAY",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12881944",
+      "body": "The SCF has full coverage down to the AO level. ",
+      "author": "ddriggers82",
+      "created_at": "2025-04-18T21:56:06Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxJ3o",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/10#discussioncomment-12885480",
+      "body": "This  (AO level ) capability allows  FedRAMP to tailor  the solution to a specific area in scope, allowing for precise and effective engagement within that defined department.",
+      "author": "Kask253",
+      "created_at": "2025-04-19T15:09:37Z",
+      "replies": []
+    }
+  ]
+}

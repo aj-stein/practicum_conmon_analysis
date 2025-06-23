@@ -1,0 +1,103 @@
+{
+  "id": "D_kwDOOxfoic4AgAV0",
+  "url": "https://github.com/FedRAMP/community/discussions/28",
+  "title": "Ongoing Q&A for 20xP1 formal release standards",
+  "body": "- **Updated on 2025-06-18 to include releases from 2025-06-17.**\r\n\r\nAs of 2025-06-17, the following **three** standards for 20x have been published as the basis for formal submissions and pilot authorizations for 20x Phase One (20xP1).\r\n\r\n- [Minimum Assessment Standard (MAS)](https://www.fedramp.gov/20x/standards/mas/): Defines the minimum set of information resources that must be included in a FedRAMP assessment for cloud services handling federal information.\r\n\r\n  - **Release:** 25.06A\r\n  - **Published:** 2025-06-17  \r\n  - **Designator:** MAS\r\n  - **Description:** Minor non-breaking updates for clarity and formatting; renamed to Minimum Assessment Standard to avoid confusion with the Scope of FedRAMP as defined by M-24-15;reframed FRR-MAS-01 to explicitly note that this identifies the cloud service offering\r\n\r\n- [Key Security Indicators (KSI)](https://www.fedramp.gov/20x/standards/ksi/): Specifies critical security activities and outcomes that must be consistently implemented and monitored.\r\n\r\n  - **Release:** 25.05B\r\n  - **Published:** 2025-06-18  \r\n  - **Designator:** KSI\r\n  - **Description:** Initial release of Key Security Indicators (fixed incorrectly published 25.05A)\r\n  - **Note:** Version 25.05B should be materially the same as the original released KSIs from May 30. Previously, 25.05A was published based on the new FRMR standard on 2025-06-17 that accidentally included a number of the wrong KSIs due to Pete copy/pasting from the wrong document. This was pointed out by Matt Hungate @ Schellman and fixed on 2025-06-18.\r\n\r\n- [Significant Change Notification Requirements (SCN)](https://www.fedramp.gov/20x/standards/ksi/): Defines requirements for reporting _significant changes_ once a cloud service offering receives FedRAMP authorization.\r\n\r\n  - **Release:** 25.06A\r\n  - **Published:** 2025-06-17  \r\n  - **Designator:** SCN\r\n  - **Description:** Initial release of Significant Change Notification Requirements\r\n\r\nThere's also a consolidated guidance, definitions, and rules package that has everything you need to know in one place (without all the boring introduction stuff):\r\n\r\n- [FedRAMP 20x Low Definitions and Rules](https://www.fedramp.gov/20x/guidance/): This page brings together the essential definitions and operational rules from the MAS, KSI, and other relevant 20x guidance.\r\n\r\n  - **Release:** 25.06A\r\n  - **Published:** 2025-06-17  \r\n  - **Designator:** FRMR-LOW\r\n  - **Description:** Combined FedRAMP 20x Low Requirements\r\n\r\n-----\r\n\r\nIf you have questions about the final materials, their application in the pilot, or just want to chat about this whole situation, please use this thread! :D",
+  "author": "pete-gov",
+  "created_at": "2025-05-29T18:47:56Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Ay589",
+      "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13344573",
+      "body": "@pete-gov we've reviewed the updated MAS and we still have questions for clarification around this item:\r\n\r\nFRR-MAS-AY-02: Software produced by cloud service providers that is delivered separately for installation on agency systems and not operated in a shared responsibility model (typically including agents, application clients, mobile applications, etc. that are not fully managed by the cloud service provider) is not a cloud computing product or service and is entirely outside the scope of FedRAMP under the FedRAMP Authorization Act. All such software is therefore outside the Minimum Assessment Scope.\r\n\r\nOur service offering includes clients on all platforms (vr, phones, tablets, desktops, etc... they are primarily distributed to users through public sources such as the Apple App Store, Google Play Store, etc...) that are used for consuming content that is managed and provided by our cloud services. People also author and publish content using the Unity3D software, which is not directly part of our offering. Is it possible for us to participate in this phase of FedRAMP 20x considering that we have software outside of a website but that it is directly connected to and managed by our cloud services? Our decision to move forward with submitting a package is hinging on this detail. We'd love to discuss this more with our team if you are available outside of this discussion group if the answer is not a simple yes or no. Also relating to \"cloud service provider\" is that verbiage referring to our infrastructure provider like AWS or us as the provider?",
+      "author": "davegreco",
+      "created_at": "2025-06-02T14:24:43Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ay6BY",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13344856",
+          "body": "The nuance here depends significantly on the actual infrastructure and capabilities of your platforms and offerings. For example, a fancy notes app that lets people take notes on their phone without shipping that information anywhere would be entirely outside the scope of FedRAMP - see [M-24-15](https://www.fedramp.gov/assets/resources/documents/FedRAMP_Policy_Memo.pdf) and our [draft technical assistance on this topic in RFC-0010](https://www.fedramp.gov/rfcs/0010/) for more.\r\n\r\nIf the notes app came with a cloud service that backed up and stored all of the notes that people took on their phones and that notes app wanted to get government customers, then the app itself would not be inside the scope of FedRAMP but the cloud service that stored those notes would be (because if a government employee puts an official note into the app and it goes off into the cloud service then government information is now in that cloud service). \r\n\r\n\"Cloud service provider\" in the context of most FedRAMP materials means the entity accountable for operating the specific cloud service offering (i.e. a business that sells a notes app). Infrastructure providers are third-party information resources. \r\n\r\nYou can shoot me a note (pete@fedramp.gov) with more information about your business model for a more nuanced take but the MAS is designed to be broadly applicable - if you wanted a government customer where their users would store government information in a cloud service that you operate and issues with confidentiality/integrity/availability of that information would have a low or higher impact for the government then it's a cloud service within the scope of FedRAMP.",
+          "author": "pete-gov",
+          "created_at": "2025-06-02T14:48:19Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay9ja",
+      "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13359322",
+      "body": "@pete-gov we found one minor typo in KSI-CMT 02 \"Execute changes **though** redeployment of version controlled immutable resources rather than direct modification wherever possible\"\r\n\r\n\"though\" should likely be \"through\"\r\n\r\nCorrected sentence:\r\nExecute changes **through** redeployment of version controlled immutable resources rather than direct modification wherever possible\r\n\r\nIt looks like this typo was present in the draft 25.04 version as well and carried over to the new 25.05 version. \r\n\r\n-- Isaac Teuscher (Paramify)",
+      "author": "iteuscher",
+      "created_at": "2025-06-03T18:24:51Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ay9kX",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13359383",
+          "body": "Amazing how things like this slip through so many rounds of edits and comments! And now we need a hotfix release system for KSIs. \ud83d\ude06  I've updated this in our formal version and we'll include it in a future rollup; in this case the intent seems clear enough that I don't think we need to hotfix it in all the public 25.05 versions.\r\n\r\nThank you for the flag!\r\n\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-03T18:31:02Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ay9o9",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13359677",
+          "body": "Yeah that makes sense! Happy to help.",
+          "author": "iteuscher",
+          "created_at": "2025-06-03T19:06:03Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzTza",
+      "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13450458",
+      "body": "@pete-gov will the standards be the same for Phase 2 (moderate) as well? ",
+      "author": "lsouders05",
+      "created_at": "2025-06-12T15:31:22Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzUR7",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13452411",
+          "body": "Phase 2 will change based on what happens during Phase 1. ;)",
+          "author": "pete-gov",
+          "created_at": "2025-06-12T19:00:14Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzirX",
+      "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13511383",
+      "body": "Yesterday FedRAMP published updated materials based on our transition to reproducible [FedRAMP Machine-Readable Docs](https://github.com/FedRAMP/docs/) and initial 20xP1 feedback through the end of Sprint 1. These materials are now linked in the OP.\r\n\r\nWe received the following question about this update via email that I am also answering here for transparency:\r\n\r\n> I noticed that a new version was recently published, which includes changes from the version finalized on May 29.\r\n> \r\n> To provide some context, we\u2019ve been tracking the following versions:\r\n> \r\n>  - April 24 draft version\r\n>  - May 29 final v1\r\n>   - June 17 final v2\r\n>\r\n> We currently have multiple FedRAMP 20x assessments underway using the May 29 version and are seeking official guidance on how CSPs and 3PAOs should account for these ongoing updates in their planning and validation efforts.\r\n\r\nFedRAMP does not plan to make material changes to the KSIs during the actual 20xP1 pilot itself. The [current guidance on the 20xP1 page](https://www.fedramp.gov/20x/phase-one/) stands - participants may submit a formal 20xP1 submission using 25.04 KSIs but will be expected to update to 25.05 KSIs to receive authorization.\r\n\r\n**Related:** Yesterday's update of the [Minimum Assessment Standard](https://www.fedramp.gov/20x/standards/mas/) _does_ make material changes and updates it to Release 25.06A. However, these are not breaking changes - no one has to do anything different as a result of these changes, they simply adapt some of the wording for clarity based on further public feedback on related RFCs.\r\n\r\n**edit:** Looks like we have some rogue KSIs that made it into the JSON data for the FRMR 25.05A release. Fixing.\r\n**edit2:** KSIs have been fixed as 25.05B. It would appear that halfway through porting these over to JSON, I started copy/pasting from the wrong KSI document. That's awkward. Huge thanks to Matt Hungate @ Schellman for flagging this!\r\n \r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-18T16:24:55Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzoC3",
+      "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13533367",
+      "body": "I can't speak for agency personnel, but from knowing that some agencies are handling 100+ authorizations to their name with minimal (and likely even less as of late) security / compliance staff, if the current ideas around Trust Repositories are implemented for 20xP1 and future pilot programs, have considerations been made around the added difficulty agencies will have with accessing so many different repositories?\r\n\r\nFor example, if 20-30 different CSPs go with the pilot program and an agency uses their CSOs, that's 20-30 different logins and portals that agency personnel would need to access and juggle. Follow this over a long enough time period and it could easily become untenable for agencies to manage every month.",
+      "author": "badgerinspace",
+      "created_at": "2025-06-20T18:52:02Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AzoHV",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13533653",
+          "body": "> have considerations been made around the added difficulty agencies will have with accessing so many different repositories?\r\n\r\nYes - this is one of the reasons we're prioritizing GRC and related automation tools in the 20x pilot, in alignment with direction from OMB in M-24-15. OMB has directed agencies to budget for and procure GRC automation tools that can automatically ingest these materials but currently there is no standard for supplying, maintaining, or sharing data in a way that an automation tool can go consume. \r\n\r\nAs we build standards for storing and sharing authorization data, continuous reporting, significant change notifications, etc. around machine-readable artifacts, we also support a growing GRC automation community that has a path to FedRAMP authorization (via program authorization) and a desire to build automating tooling to support these standards and integrate all of these various data sources for agencies.\r\n\r\nThat entire ecosystem needs to be **built.** The previous plan was for the government to build a centralized cloud service offering to try to do that, but with changes in direction from a new administration we're setting the standards so private innovation can provide the solution. That's why we're so focused on all these machine readable pilots and beta tests.",
+          "author": "pete-gov",
+          "created_at": "2025-06-20T19:37:47Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzoRF",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13534277",
+          "body": "Defining the standards makes sense, but I would advocate for one centralized Trust Repository (portal) for GRC tools to standardize against. Assuming the goal would be to automate the ingest of this data, as well as the automated analysis, allowing any number of potential portals with different logins / requirements / APIs would delay adoption of such automated outputs and potentially fragment the market. GRC tool A might work with 5 different portals, but then an agency might need to buy GRC tool B as well, to work with 5 other portals. However if one portal is used and all data is hosted there, that's one API that any number of GRC tools could code against.\r\n\r\nAt risk of sounding like I don't know what I'm talking about, having never directly interacted with Connect.gov, if it were to be updated to provide API hooks for GRC tools, it seems like the existing ATO'd system could be repurposed for FedRAMP's automation goals and speed up adoption.",
+          "author": "badgerinspace",
+          "created_at": "2025-06-20T21:19:35Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AzpKP",
+          "url": "https://github.com/FedRAMP/community/discussions/28#discussioncomment-13537935",
+          "body": "> Defining the standards makes sense, but I would advocate for one centralized Trust Repository (portal) for GRC tools to standardize against.\r\n\r\nA centralized service for this sounds great in theory, but it doesn't work in practice due to cost, complexity, overhead, unpredictability, and general issues around government IT acquisitions. I know because FedRAMP already tried to do this; the [\"FedRAMP Platform\"](https://www.fedramp.gov/2024-09-03-the-missing-piece-of-our-modernization-puzzle-the-fedramp-platform/) was a [major 2024 roadmap initiative](https://www.fedramp.gov/2024-03-28-a-new-roadmap-for-fedramp/) that was canceled in February as the new administration directed reductions in unnecessary spending because the overall project would've cost more than FedRAMP's _entire current budget._\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-21T14:07:36Z"
+        }
+      ]
+    }
+  ]
+}

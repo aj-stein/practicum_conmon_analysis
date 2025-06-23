@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOKttEc4AfoWn",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/44",
+  "title": "Continuous reporting: blog or social network?",
+  "body": "I have been thinking more of this question that came to me as I reviewed the different threads in preparation of tomorrow's townhall meeting, particularly https://github.com/FedRAMP/continuous-reporting-cwg/discussions/26. If you are security person that produces or consumes that data be it in a cloud service provider, a 3PAO that does boots on the ground assessment, or an agency security official that needs to vet a system you bought or buy beyond just checking the marketplace listing, how do you see continuous reporting?\r\n\r\nI could see two extremes with something in between.\r\n\r\n1. Continuous reporting is like a blog, comments disabled, no analytics: I have some role in the continuous reporting (or maybe the current FedRAMP Rev5 Continuous Monitoring Process), but for me it's like reading a blog. I can consume the information from it, maybe not exactly how I want it written or formatted, but I cannot provide feedback and I can post to my own blog with my take and put my views out there in the world but I don't know who reads or how to improve.\r\n1. A social network, like BlueSky or Mastodon (something federated): I can frequently read or write small bits of information and link to other content, I can repost content to show I read it or see value in it, I can interact with a network of people around a theme or a very specific piece of data and tack information onto the previous message about it. \r\n1. Something in between.\r\n\r\nWe would love to hear your thoughts. After you vote, it would be great to read your thought process and some details that motivate your choice.",
+  "author": "aj-stein-gsa",
+  "created_at": "2025-05-07T20:04:40Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4Ax9SU",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/44#discussioncomment-13096084",
+      "body": "It has to be in between if not outside the park completely.  I think of this more as a dashboard that identifies compliance versus non compliance.  Kinda like an ongoing, automated SPRS environment.  \n\nFor example, MFA enforced versus enabled.  Show the count of users with each.  Another example, security training completed.  Those that completed versus those that have not.  \n\nAs a CSP, I want my dashboard to present the best picture of me.\n\nAs a 3PAO, I want to understand where I need to look for explanations around non compliance. \n\nAs an agency, I want to see what I feel is important to me.  \n\nIt is updated daily with a trend analysis over time.   If the CSP is going closer to zero, all the better. Less concerns.  If the other way, more issues discovered, that's a concern for everyone.  \n\nIt's best to keep this as simple as possible to be fully utilized.  Anything complicated will distract people and cause burnout. ",
+      "author": "Christcpd",
+      "created_at": "2025-05-09T21:37:51Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Ax9T_",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/44#discussioncomment-13096191",
+          "body": "Edit: I realize I misread the in between part in your first statement, but I guess I still wonder what outside the ballpark would mean for how you interact with it. Would love to tease out more of what you meant by that. I'll also leave my original reply below.\n\nJust to be clear on the metaphor, as I don't disagree with your other points, @Christcpd, is whether or not you see interacting with continuous reporting as making data available read-only and passively consume or you more actively interact with the data and want to engage the people making it (probably those in the CSP for the most part but maybe not always). So far the few people that voted said they passively consume. That doesn't preclude how it is presented, dashboard or otherwise you represent it, but I was just trying to tease that aspect out with the metaphor.",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-09T21:57:59Z"
+        }
+      ]
+    }
+  ]
+}

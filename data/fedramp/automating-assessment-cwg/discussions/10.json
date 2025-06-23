@@ -1,0 +1,179 @@
+{
+  "id": "D_kwDOOMDw3M4AfJNf",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10",
+  "title": "Starting small - continuous validation prototyping",
+  "body": "I'm a huge fan of prototyping around simple use cases and I think there are some awesome options to ground this discussion around that approach. Instead of starting with the entire world of everything that could be automated, I wanted to try a tightly scoped initial approach. \r\n\r\nAs I have time over the next few days I'm going to work on some prototypes to answer the following question and I think it would be really interesting to see how others would approach it.\r\n\r\n-----\r\n\r\n# Problem Statement\r\n\r\nI have a simple application deployed on cloud native services on a major IaaS offering. My information storage includes:\r\n\r\n1. A few hundred files stored in a single object storage location. \r\n2. Tens of thousands of database records stored in a cloud native database. \r\n\r\n**How can I prove programmatically that all information in the above locations is encrypted?**\r\n\r\n# Acceptance Criteria\r\n\r\nResult should be a machine readable file that includes:\r\n\r\n- Top level determination whether or not all data is encrypted\r\n- Inventory of storage locations and their encryption type\r\n\r\n\r\n\r\n\r\n",
+  "author": "pete-gov",
+  "created_at": "2025-04-03T20:52:28Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AwhN4",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12718968",
+      "body": "If its a major cloud, every major cloud has cloud shell access.\r\nYou'd simply have to query the storage bucket and DBs using the native CLIs that are already pre-installed in the cloud shell.\r\nPick output type `json`",
+      "author": "ethanolivertroy",
+      "created_at": "2025-04-03T21:24:24Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwhOF",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12718981",
+          "body": "```\r\n{\r\n    \"encrypted\": true,\r\n    \"storage_inventory\": [\r\n        {\r\n            \"storage_type\": \"S3\",\r\n            \"name\": \"your-bucket-name\",\r\n            \"encrypted\": true,\r\n            \"encryption_type\": \"AES256\"\r\n        },\r\n        {\r\n            \"storage_type\": \"RDS\",\r\n            \"name\": \"your-db-identifier\",\r\n            \"encrypted\": true,\r\n            \"encryption_type\": \"AWS KMS\"\r\n        }\r\n    ]\r\n}\r\n```",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:26:51Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhOo",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12719016",
+          "body": "```\r\n#!/bin/bash\r\n# Save as check-encryption.sh\r\n\r\necho \"Encryption Status Report\" > encryption_report.json\r\necho \"{\" >> encryption_report.json\r\necho \"  \\\"encrypted\\\": true,\" >> encryption_report.json\r\necho \"  \\\"storage_inventory\\\": [\" >> encryption_report.json\r\n\r\n# Detect which cloud we're on\r\nif command -v aws &> /dev/null; then\r\n  # AWS checks\r\n  bucket=\"your-bucket-name\"\r\n  echo \"Checking AWS S3 bucket: $bucket\"\r\n  if aws s3api get-bucket-encryption --bucket $bucket &> /dev/null; then\r\n    encryption=$(aws s3api get-bucket-encryption --bucket $bucket --query \"ServerSideEncryptionConfiguration.Rules[0].ApplyServerSideEncryptionByDefault.SSEAlgorithm\" --output text)\r\n    echo \"  {\" >> encryption_report.json\r\n    echo \"    \\\"storage_type\\\": \\\"S3\\\",\" >> encryption_report.json\r\n    echo \"    \\\"name\\\": \\\"$bucket\\\",\" >> encryption_report.json\r\n    echo \"    \\\"encrypted\\\": true,\" >> encryption_report.json\r\n    echo \"    \\\"encryption_type\\\": \\\"$encryption\\\"\" >> encryption_report.json\r\n    echo \"  },\" >> encryption_report.json\r\n  else\r\n    echo \"  {\" >> encryption_report.json\r\n    echo \"    \\\"storage_type\\\": \\\"S3\\\",\" >> encryption_report.json\r\n    echo \"    \\\"name\\\": \\\"$bucket\\\",\" >> encryption_report.json\r\n    echo \"    \\\"encrypted\\\": false,\" >> encryption_report.json\r\n    echo \"    \\\"encryption_type\\\": \\\"None\\\"\" >> encryption_report.json\r\n    echo \"  },\" >> encryption_report.json\r\n    # Update overall status\r\n    sed -i 's/\\\"encrypted\\\": true/\\\"encrypted\\\": false/' encryption_report.json\r\n  fi\r\n  \r\nelif command -v az &> /dev/null; then\r\n  # Azure checks\r\n  storage_account=\"yourstorageaccount\"\r\n  echo \"Checking Azure Storage Account: $storage_account\"\r\n  encryption=$(az storage account show --name $storage_account --query \"encryption.services.blob.enabled\" --output tsv)\r\n  if [ \"$encryption\" = \"true\" ]; then\r\n    echo \"  {\" >> encryption_report.json\r\n    echo \"    \\\"storage_type\\\": \\\"Azure Blob Storage\\\",\" >> encryption_report.json\r\n    echo \"    \\\"name\\\": \\\"$storage_account\\\",\" >> encryption_report.json\r\n    echo \"    \\\"encrypted\\\": true,\" >> encryption_report.json\r\n    echo \"    \\\"encryption_type\\\": \\\"Azure Storage Service Encryption\\\"\" >> encryption_report.json\r\n    echo \"  },\" >> encryption_report.json\r\n  else\r\n    echo \"  {\" >> encryption_report.json\r\n    echo \"    \\\"storage_type\\\": \\\"Azure Blob Storage\\\",\" >> encryption_report.json\r\n    echo \"    \\\"name\\\": \\\"$storage_account\\\",\" >> encryption_report.json\r\n    echo \"    \\\"encrypted\\\": false,\" >> encryption_report.json\r\n    echo \"    \\\"encryption_type\\\": \\\"None\\\"\" >> encryption_report.json\r\n    echo \"  },\" >> encryption_report.json\r\n    # Update overall status\r\n    sed -i 's/\\\"encrypted\\\": true/\\\"encrypted\\\": false/' encryption_report.json\r\n  fi\r\n  \r\nelif command -v gcloud &> /dev/null; then\r\n  # GCP checks\r\n  bucket=\"your-bucket-name\"\r\n  echo \"Checking GCP Storage bucket: $bucket\"\r\n  encryption=$(gcloud storage buckets describe gs://$bucket --format=\"value(encryption.defaultKmsKeyName)\")\r\n  encryption_type=\"Google-managed encryption key\"\r\n  if [ ! -z \"$encryption\" ]; then\r\n    encryption_type=\"Customer-managed encryption key (CMEK)\"\r\n  fi\r\n  echo \"  {\" >> encryption_report.json\r\n  echo \"    \\\"storage_type\\\": \\\"GCP Cloud Storage\\\",\" >> encryption_report.json\r\n  echo \"    \\\"name\\\": \\\"$bucket\\\",\" >> encryption_report.json\r\n  echo \"    \\\"encrypted\\\": true,\" >> encryption_report.json\r\n  echo \"    \\\"encryption_type\\\": \\\"$encryption_type\\\"\" >> encryption_report.json\r\n  echo \"  },\" >> encryption_report.json\r\nfi\r\n\r\n# Remove trailing comma and close JSON\r\nsed -i '$ s/,$//' encryption_report.json\r\necho \"  ]\" >> encryption_report.json\r\necho \"}\" >> encryption_report.json\r\n\r\necho \"Report generated: encryption_report.json\"\r\ncat encryption_report.json\r\n```",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:31:26Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhOy",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12719026",
+          "body": "Prowler is an open source tool that has quite a checks for encryption as well - https://github.com/prowler-cloud/prowler/blob/master/tests/providers/aws/services/s3/s3_bucket_kms_encryption/s3_bucket_kms_encryption_test.py",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T21:33:34Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhQs",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12719148",
+          "body": "Oooh, looks like we took a similar approach (though you actually connected the steps, noice) - and very similar simple output. Very curious to see how other folks would extend this or execute with native compliance tools/etc.",
+          "author": "pete-gov",
+          "created_at": "2025-04-03T21:49:21Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwsnZ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12765657",
+          "body": "We initially took an approach using the cloud-native tooling and APIs, but the maintenance burden of supporting this toolset across multiple clouds is not trivial, and there wasn't really a clean, maintainable way to assert opinions about how to represent attributes for different resource types across different contexts. An abstraction layer was needed, and we have found [steampipe](https://steampipe.io/ to serve nicely in that capacity. \r\n\r\n\u2705 Seamless multi-cloud support\r\n\u2705 Read-only\r\n\u2705 Its all exposed as SQL\r\n\u2705 Seamlessly query an arbitrary set of accounts/projects/subscriptions\r\n\u2705 JSON output\r\n\u2705 Open source; active community\r\n\r\nAn example of this is a query for S3 buckets where specific resource attributes are surfaced and normalized for inventory purposes:\r\n\r\n```sql\r\nselect \r\n    arn as inv_asset_id,\r\n    'TRUE' as inv_is_virtual,\r\n    case \r\n        when bucket_policy_is_public is true then 'PUBLIC ACCESS ALLOWED'\r\n        else 'Internal Access Only'\r\n    end as inv_is_public,\r\n    'Object Store' as inv_asset_type_and_function,\r\n    'No - Inherited from AWS' as inv_in_latest_scan,\r\n    case\r\n      when tags['DiagramLabel'] is not null then tags['DiagramLabel']\r\n      else '\"S3\"'\r\n    end as inv_diagram_label,\r\n    tags['InformationImpactLevel'] as inv_comments,\r\n    tags['Function'] as inv_function,\r\n    tags['SystemAdministrator'] as inv_system_administrator,\r\n    'securityhub' as inv_scanner,\r\n    server_side_encryption_configuration as encryption_config\r\nfrom aws_s3_bucket;\r\n```\r\n\r\nThere is an opinionated tagging/labeling convention underlying this approach, but the key thing about it is that we can represent a resource's attributes for FedRAMP inventory _directly on that resource_ and generate an inventory on demand. The inventory is simply an expression of the infrastructure state at time of query.\r\n\r\nRegarding the `server_side_encryption_configuration` which I normalized to  `encryption config`; it will be returned as a value that looks something like this: `{\"Rules\":[{\"ApplyServerSideEncryptionByDefault\":{\"KMSMasterKeyID\":null,\"SSEAlgorithm\":\"AES256\"},\"BucketKeyEnabled\":false}]} `. In this case encryption is enabled but a CMK is not in use. Generally CMK usage is mandated, but fortunately we can trivially process that JSON into something a little more human friendly to aid evaluation:\r\n\r\n```sql\r\nselect \r\n    -- Extract SSE Algorithm\r\n    server_side_encryption_configuration->'Rules'->0->'ApplyServerSideEncryptionByDefault'->>'SSEAlgorithm' as sse_algorithm,\r\n    -- Extract KMS Master Key ID\r\n    server_side_encryption_configuration->'Rules'->0->'ApplyServerSideEncryptionByDefault'->>'KMSMasterKeyID' as kms_key_id,\r\n    -- Extract BucketKeyEnabled value\r\n    (server_side_encryption_configuration->'Rules'->0->>'BucketKeyEnabled')::boolean as bucket_key_enabled\r\nfrom aws_s3_bucket;\r\n```\r\n\r\nIn fact, we can automate that evaluation, and express opinions about how the bucket _should_ be configured as [powerpipe](https://hub.powerpipe.io/) [benchmark checks](https://hub.powerpipe.io/mods/turbot/steampipe-mod-aws-compliance/benchmarks/benchmark.foundational_security_s3). \r\n\r\nThis is part of what I was attempting to surface in https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/15; there has from my perspective been a longstanding gap in FedRAMP's guidance regarding:\r\n1. Which specific resource types are in scope for the inventory\r\n2. What specific attributes need to be expressed for each resource type\r\n3. How those attributes should be normalized\r\n\r\nIn my view, the inventory is fairly fundamental to all this. If FedRAMP wants to move towards continuously validating the configuration of a class of $THING (whether that that thing be DynamoDB tables, RDS, EC2, Compute VMs, GCS buckets, etc) then:\r\n1. Assert that all instances of $THING within the system be represented on inventory\r\n2. Assert what attributes of $THING need to be expressed in inventory, and how (this can be neatly expressed for the most part as pure SQL if using steampipe)\r\n3. Optionally, assert expected values of attribute(s) for $THING e.g. `the normalized expression of KMSMasterKeyID\":` cannot be `null`\r\n\r\nIt probably goes without saying, but I think that the spreadsheet-bound view of the inventory needs to be discarded for this kind of approach to realize much of its potential. \r\n\r\n",
+          "author": "atfurman",
+          "created_at": "2025-04-08T14:24:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwxpR",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12786257",
+          "body": "I'll echo the vote for Steampipe as a great interface to assess and report on inventory and configuration ",
+          "author": "trumant",
+          "created_at": "2025-04-10T04:09:27Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwhQd",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12719133",
+      "body": "This is an _extremely_ oversimplified example I spun up on AWS:\r\n\r\n1. An s3 bucket named `pwx-fedramp-test`\r\n\r\nValidation:\r\n```\r\naws s3api get-bucket-encryption --bucket pwx-fedramp-test | jq '.ServerSideEncryptionConfiguration.Rules[0].BucketKeyEnabled'\r\ntrue\r\n```\r\n\r\n2. An rds instance named `pwx-db-fedramp-test-instance-1`\r\n\r\nValidation:\r\n```\r\naws rds describe-db-instances | jq '.DBInstances[0].StorageEncrypted'\r\ntrue\r\n```\r\n\r\nUnderstood this is a very simple use case and without any actual automation, I could submit a validation report as follows... maybe we'll use YAML instead of JSON for the giggles?\r\n\r\n```\r\nstorage_encrypted: true\r\nstorage_inventory:\r\n  object:\r\n  - name: pwx-fedramp-test\r\n    type: s3\r\n    encrypted: true\r\n  database:\r\n  - name: pwx-db-fedramp-test-instance-1\r\n    type: rds\r\n    encrypted: true\r\n```\r\n\r\nThat's excessively simple, but it shows an example report for a simple service that doesn't require anything particularly fancy. I'm obviously skipping the step of automating the querying with a bash script or similar as well as validating the entire inventory, but this was intended to just ponder the vibes of a simple use case.",
+      "author": "pete-gov",
+      "created_at": "2025-04-03T21:47:30Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwhSX",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12719255",
+          "body": "I think it would be pretty easy to implement for cloud-native offerings in a major cloud. All the tools are already there to show the implementation.\r\n\r\nWhat I've been thinking about is trying to figure out is how do we make sure the validation report is genuine and someone didn't just open up vscode and write up some compliant json/yaml?\r\n\r\nI was thinking maybe some sort of hashing for the script to ensure the output is actually authentic?\r\n\r\nObviously 3PAOs could just observe the run with a shoulder surf to validate the results before capturing the output. But how else could that be done?\r\n\r\nThe CSO could just create an 'auditor' read-only account in their AWS/Azure/GCP/etc environment and provide FedRAMP/3PAO with an API token to run a cronjob let's say monthly? Then send a flamer when encryption spits back `false`\r\n\r\n![your encryption just broke](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzg0NXNyODl0OXZ5NHd4anVtdXVndjcxc3l1bTQ3Z3lwYjVnZXN2NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dYwzJnEeTXAOQMMh2P/giphy.gif)\r\n\r\n\r\n",
+          "author": "ethanolivertroy",
+          "created_at": "2025-04-03T22:07:23Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awhwb",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12721179",
+          "body": "> That's excessively simple, but it shows an example report for a simple service that doesn't require anything particularly fancy. I'm obviously skipping the step of automating the querying with a bash script or similar as well as validating the entire inventory, but this was intended to just ponder the vibes of a simple use case.\r\n\r\nI have some follow-up considerations not to overly complicate it, but some practical considerations if I had to use it some more.\r\n\r\n1. We cool knowing the foundational storage is encrypted a certain way (e.g. S3), nothing about the individual objects inside of them?\r\n1. Do we need to know the time this report occurred? Or maybe even like some placeholder to say it came before or after the last report?\r\n1. Do we need to know PeteSoft runs on AWS or some other cloud service offering from a different CSP? Maybe it runs on multiple services. If so, we definitely need to know each one then?\r\n1. Do we need to explain that `type: s3` or `type: rds` belong to AWS or a specific \"tier\" of AWS cloud service offerings? (I think Amazon calls them partitions, [turns out they still do](https://github.com/boto/botocore/blob/71c41781a74c55e9f64c2424d6c11513b9ee704d/botocore/data/partitions.json); RDS on GovCloud is a partition separate from AWS Commerical)\r\n1. What's if PeteSoft's simple service has one security nerd that is part of a engineering team of four or five people, and they heard it is good sense to separate some of their app into multiple AWS accounts for defense in depth, do we need to be able to know how the different stuff in different accounts compose into once nice Petesoft app? I could see two different views for this, curious on what you think.",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-04T03:43:43Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awhrr",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12720875",
+      "body": "> Result should be a machine readable file that includes:\r\n> \r\n> Top level determination whether or not all data is encrypted\r\n\r\nDo we need a true/false answer if we answer the following below and N/N 100% have answers that mean encrypted?\r\n\r\n> Inventory of storage locations and their encryption type\r\n\r\nDoes \"encryption\" just mean \"the lower level\" storage or can also mean DB \"database-level\" encryption? Row-level encryption? Or \"AJ, that's all far too complicated, I really just want to see a report of whatever the managed service says is encrypted,\"  @pete-gov?",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-04-04T03:24:10Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwwQs",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12780588",
+          "body": "> Does \"encryption\" just mean \"the lower level\" storage or can also mean DB \"database-level\" encryption? Row-level encryption? Or \"AJ, that's all far too complicated, I really just want to see a report of whatever the managed service says is encrypted,\" @pete-gov?\r\n\r\nI think that's a really good question and the type of thing my devs would ask if given this as a task. ",
+          "author": "kamamanh",
+          "created_at": "2025-04-09T15:58:29Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awivx",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12725233",
+      "body": "Each CSP offering the object store or database store should provide an API to query the status of the encryption settings as part of the service itself. The CSP providing the SaaS on top of that service would simply point to the service used and allow it to be checked via the hyperscalers API.\r\n\r\nI'm envisioning a section in OSCAL for validation. The section would reference the control(s), identify the API call, secrets to use, and expected response. The 3PAO would only need to validate this one time that it was implemented correctly and thereafter we just enable clients to invoke on-demand or have it invoked as part of a compliance dashboard the client has access to.",
+      "author": "dljenkins",
+      "created_at": "2025-04-04T11:40:03Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwtP4",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12768248",
+          "body": "Is the expectation here that it is an API of the IaaS solution (ie, a govcloud query string with AWS IAM user/credentials?), or that the CSP would be building an application/API to provide that? ",
+          "author": "kamamanh",
+          "created_at": "2025-04-08T17:48:27Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awtk0",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12769588",
+          "body": "CSP would provide the APIs in OSCAL format. Industry can make tools to consume this, invoke the APIs, and build dashboards from the results. Below is a quick sample of what I'm thinking where the configuration of each tests also has assertions to confirm the response.\r\n\r\n```\r\n{ \"validation\" :\r\n\t\"secrets\": {\r\n\t\t\"db2-api-key\" : {\r\n\t\t\t\"type\":\"aws-secrets-manager\",\r\n\t\t\t\"secretName\": \"arn:aws:secretsmanager:us-east-1:db2-api-key\",\r\n\t\t\t\"region\":\"us-gov-east-1\",\r\n\t\t\t\"value\":\"\"\r\n\t\t}, \r\n\t\t\u2026\r\n\t},\r\n\t\"tests\": [\r\n\t\t{\r\n\t\t\t\"name\": \"test name\",\r\n\t\t\t\"type\": \"cloud-native-configured | auto-validation | agentic-enforcement |infra-as-code\",\r\n\t\t\t\"controls\": [\"ca-2_a\", \"ca-3_c\", \"si-2_a\", \"si-2_b\"],\r\n\t\t\t\"protocol\": \"https\",\r\n\t\t\t\"get\" : \"xxx.yyy.zzz/test1,\r\n\t\t\t\"headers\": {\r\n\t\t\t\t\"apiKey\": {path: \"#/validation/system/secrets/db2-api-key/value\"},\r\n\t\t\t\t\"Content-Type\": {value: \"xxx\"},\r\n\t\t\t\t\u2026\r\n\t\t\t},\r\n\t\t\t\"params\": {\r\n\t\t\t\t\"paramName\": \"param-value\",\r\n\t\t\t\t\u2026\r\n\t\t\t},\r\n\t\t\t\"response\": {\r\n\t\t\t\t\"_comments\": \"must support int, long, string, date/time plus a date function, basic math functions, and date add/subtract days\",\r\n\t\t\t\t\"assertTrue\": {path: \"#/response/status\"},\r\n\t\t\t\t\"assertEqual\": {path: \"\", value: \"\"},\r\n\t\t\t\t\"assertNotEqual\": {path: \"\", value: \"\"},\r\n\t\t\t\t\"assertGreaterThan\": {path: \"Date(#/response/body/modified-at\", value: \"Date('now)+365\"}\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n```",
+          "author": "dljenkins",
+          "created_at": "2025-04-08T19:55:21Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwtlM",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12769612",
+          "body": "My personal impression very generally from skimming: I like the JSON structure, but it is not OSCAL (or approximating) and I think that is a good thing for this exploration and longer-term evaluation. We can keep it simple. \ud83d\ude04 ",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-08T19:58:14Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awtms",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12769708",
+          "body": "Agreed, it's not OSCAL it's JSON that could be adopted by OSCAL :)",
+          "author": "dljenkins",
+          "created_at": "2025-04-08T20:10:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwvuF",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12778373",
+          "body": "@dljenkins This is great.  I had a similar idea but you fleshed out it probably better than I could have. Qq: Are you suggesting that the API acts as an abstraction layer for querying the CSP's underlying infrastructure state directly? Or the state is pre-compiled and reported to the API?\r\n\r\n### 1\r\n```mermaid\r\nsequenceDiagram\r\n    title On-Demand Query Approach\r\n    participant Auditor\r\n    participant ReportingAPI\r\n    participant Infrastructure\r\n\r\n    Auditor->>ReportingAPI: Request CSP Security Posture\r\n    note right of ReportingAPI: Reporting API kicks off a fresh<br/>check of Infrastructure state\r\n    ReportingAPI->>Infrastructure: Query S3 encryption, SG rules,<br/>EBS encryption, etc.\r\n    Infrastructure->>ReportingAPI: Return current posture data\r\n    ReportingAPI->>Auditor: Return current posture data\r\n```\r\n### 2\r\n```mermaid\r\nsequenceDiagram\r\n    title Compiled & Published State Approach\r\n    participant Auditor\r\n    participant ReportingAPI\r\n    participant Compiler\r\n    participant PostureDB\r\n    participant Infrastructure\r\n\r\n    note over Compiler: Periodically compile posture<br/>from Infrastructure\r\n    Compiler->>Infrastructure: Gather posture data (S3, SG, EBS, etc.)\r\n    Infrastructure->>Compiler: Return posture data\r\n    Compiler->>PostureDB: Store compiled posture state\r\n\r\n    note over Auditor, ReportingAPI: Auditor requests last compiled state\r\n    Auditor->>ReportingAPI: Request CSP Security Posture\r\n    ReportingAPI->>PostureDB: Retrieve latest compiled data\r\n    PostureDB->>ReportingAPI: Return compiled posture\r\n    ReportingAPI->>Auditor: Return compiled posture\r\n```",
+          "author": "vennemp",
+          "created_at": "2025-04-09T13:13:34Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwwMl",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12780325",
+          "body": "When we're building out these ideas, let's not forget to factor in risk and cost.  The more complex you make the system, the more things you have to scan, STIG, patch, pay usage for, etc.   But also, just having a public API available to query the full security posture of a CSO's infrastructure makes my GRC heart seize. \r\n\r\n\r\n\r\n",
+          "author": "kamamanh",
+          "created_at": "2025-04-09T15:37:41Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwwTq",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12780778",
+          "body": "Fair point about the API - while not explicitly mentioned, I was assuming the public API would have some level of authentication on it - ideally OIDC/OAUTH2 tied to agency's IdP.  ",
+          "author": "vennemp",
+          "created_at": "2025-04-09T16:12:17Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwwW9",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12780989",
+          "body": "I think that its a mix of 1 & 2. We should allow for realtime requests for posture data, but the CSP should be able to cache results to prevent being overtaxed. The cache time would likely vary based on the impact the requests may have on the system, so would be realtime all the time and others may have a cache cycle of days or weeks.",
+          "author": "dljenkins",
+          "created_at": "2025-04-09T16:27:57Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwwkO",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12781838",
+          "body": "> I was assuming the public API would have some level of authentication on it - ideally OIDC/OAUTH2 tied to agency's IdP.\r\n\r\n@vennemp - I did assume there will be auth of some kind, but an agency's IdP brings in other complications:  the 3PAO now needs agency level access, rather than CSP access, and also the API either needs to exist in each agency/customer environment, or needs to be able to tie to many different IdPs simultaneously.  If it's in the agency/customer environment, is the scope of access just to the agency components within the CSP, or are we having to look at giving the agency environment access to things that would normally be outside their tenant and it's permission set or visibility?  \r\n\r\nIf we scope the API to just what is in the agency/customer environment, it's easier from a technical standpoint to hand off all auth to the agency's IdP. We make access a customer responsibility, and the CSP is happy to not have to manage that.  Scoping to just the agency's view would be great from a least privilege perspective - Agency A doesn't need to know the security posture of Agency B's environment. But the 3PAO is then logging into all of those APIs to collate data for audit. Or there needs to be a separate API for CSP level view.  And there's the question about whether the Agency wants/needs to see the security posture of things that are outside the normal permission set of it's environment/application to get an understanding of the posture of the CSO as a whole.  \r\n\r\nFor example, if each customer environment is made up of a container pod (or VM pool), a DB, some storage that is typically the scope of what the processes running inside that pod can see.  Customer A's pod can't see Customer B's pod.  But it is also likely that neither of those pods can see the database tied to the SIEM or vuln management system.  An auditor would want to know that the DBs in all those places are properly encrypted.  So does the auditor access Customer A API, Customer B API, and also a CSP internal API?  (And get logins from all those agencies - this will not scale well).  Does the Agency Customer care only about encryption of their own DB and not of the SIEM? Or do they want to see both, because the SIEM affects the overall security posture of the CSO that their Customer pod lives in? \r\n\r\nI imagine that what is easier for one CSP will be hard for another based on the number of agencies and differences in the way their CSO is structured and segmented.  \r\n",
+          "author": "kamamanh",
+          "created_at": "2025-04-09T17:48:32Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awy3P",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/10#discussioncomment-12791247",
+          "body": "@kamamanh you raised some good points.\r\n\r\n1. Perhaps a better option would be to integrate with login.gov and authorizing pre-defined identities(or maybe tiered - e.g., all .gov identities have some visibility into security posture).  E.g., pete@gsa.gov and brian@gsa.gov can use login.gov but only pete would get authorized.  Login.gov does support non .gov identities, 3PAOs could just register there.  Unsure on claims provided by login.gov but would hope you could enforce PIV/CAC for .gov identities and phishing-resistant MFA for commercial identities.  (I was not required to register a PIV/FIDO2 authenticator on my account creation - but would hope CSP could enforce that in claims issued).\r\n2. Your point on multi-tenancy is well-taken.  Would prefer to be customer-specific (but that adds complexity).  Using the claims from login.gov identities you could include only customer-relevant data (i.e., filter on email domain).  Would require consistent tagging/metadata on infrastructure - shared infrastructure components would be included automatically.  \r\n3. Your mention of shared services made think.   Security posture would be included in all reports.  But also some reporting metrics on how tenants are at least logically separated - e.g.., unique Splunk Indexes, unique Agent Groups.\r\n4. How would usage of SaaS be reflected? Like what if I'm using MongoDB for DBaaS, Splunk Cloud for a SIEM, or Okta Gov for privileged user authn? You wouldn't have visibility into lower-level configurations (unless you had a login.gov account and that SaaS provider gave you access through THEIR API for reporting).  But that doesn't preclude you from secure configuration at SaaS level too.  Unfortunately there is pandemic of shortage on security benchmarking for SaaS apps - SCUBA only gives explicit guidance on O365, i'm not aware of a single CIS benchmark (other than Major CSPs like Google, AWS, Azure, OCI), and aware of only a fews STIGs (Entra ID, MS Defender, TrendMicro TippingPoint, and another widely used SaaS that isn't publicly available yet)",
+          "author": "vennemp",
+          "created_at": "2025-04-10T12:36:37Z"
+        }
+      ]
+    }
+  ]
+}

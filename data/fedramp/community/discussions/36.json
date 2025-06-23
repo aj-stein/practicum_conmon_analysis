@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOxfoic4AgFbf",
+  "url": "https://github.com/FedRAMP/community/discussions/36",
+  "title": "KSI Comparison Tool (draft KSIs -> new updated KSIs)",
+  "body": "If it's useful to anyone transitioning work done for the old draft KSIs 25.04 (April, 2025) to the new version 25.05 (May, 2025) I put together a comparison of the changes made to the KSIs. Available as an interactive website [here](https://iteuscher.github.io/fedramp20x/KSI_comparison/KSI_comparison.html). Standalone HTML file can be downloaded [here](https://github.com/paramify/fedramp-20x-pilot/blob/main/KSI_comparison/KSI_comparison.html).\r\n\r\nor a spreadsheet... \r\n[ksi_comparison.csv](https://github.com/user-attachments/files/20579493/ksi_comparison.csv)\r\n\r\nThere are brief notes showing the changes made to the wording where applicable and mapping from the old KSI IDs to the new KSI IDs. Let me know if you have any questions or find changes that should be made.\r\n\r\nIn total here are the changes:\r\n    Modified: 30\r\n    Reordered: 2\r\n    Added: 6\r\n    Removed: 3\r\n    Same: 13\r\n\r\n![Screenshot 2025-06-03 at 12 35 07\u202fPM](https://github.com/user-attachments/assets/a3ffa7a7-55d5-47ff-b1f8-f34dd4999031)\r\n\r\nI couldn't bring myself to only include the spreadsheet as it feels antithetical to the goals of 20x :) \r\n\r\n-- Isaac Teuscher (Paramify)",
+  "author": "iteuscher",
+  "created_at": "2025-06-03T19:15:59Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Ay9qd",
+      "url": "https://github.com/FedRAMP/community/discussions/36#discussioncomment-13359773",
+      "body": "That's awesome @iteuscher \ud83d\ude4c\ud83c\udffe   Thanks for sharing",
+      "author": "Rene2mt",
+      "created_at": "2025-06-03T19:21:29Z",
+      "replies": []
+    }
+  ]
+}

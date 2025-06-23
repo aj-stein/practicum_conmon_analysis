@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOK0ax84AfKA0",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/24",
+  "title": "What If Boundary Diagrams Could Be Automated?",
+  "body": "Most CSP's spend a large percentage of overall FedRAMP authorization time creating and perfecting the Boundary Diagram.   From the initial creation to the back/forth with the 3PAO to the back/forth with FedRAMP to the updates needed with every change, the amount of time that needs to be spent just keeping the Boundary Diagram up to date is enormous.   Given that the inventory and network layout for a CSP's Cloud Service Offering is fully available through the Cloud Provider's API, how much time do CSP's think could be saved if there was an open source tool available that could:\r\n\r\n*  Create a basic boundary diagram using the cloud provider API\r\n*  Add in a depiction of any external dependencies using the data in [Table 7.1 of the SSP](https://www.fedramp.gov/assets/resources/templates/FedRAMP-High-Moderate-Low-LI-SaaS-Baseline-System-Security-Plan-(SSP).docx)\r\n*  Automatically include depiction of remote access based on your choice of the most common reference architectures for secure FedRAMP authorizable remote access to cloud infrastructure (there are not more than a handful of choices)\r\n*  Allow you to customize the diagram for any special use cases\r\n\r\n\r\n\r\n",
+  "author": "cybersechawk",
+  "created_at": "2025-04-04T17:01:48Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84Awjvl",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/24#discussioncomment-12729317",
+      "body": "It's a bummer you closed this one, @cybersechawk, I was curious to read more from you and others on this topic!\r\n\r\n**EDIT:** Nevermind, I see you meant to open it in https://github.com/FedRAMP/automating-assessment-cwg/discussions/14.",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-04-04T18:15:09Z",
+      "replies": []
+    }
+  ]
+}

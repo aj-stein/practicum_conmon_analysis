@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOK0ax84AfiHt",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/32",
+  "title": "Container Security Requirements Question",
+  "body": "Hey all! I wanted to bring up a question regarding container security requirements.\r\n\r\nWith regards to pipelines - do the FedRAMP products have to have a separate pipeline or do CSPs just need to have a completely separate container registry for the product(s) they are getting assessed and ATO'd?\r\n\r\nWith the way I read the last requirements doc it sounds like CSPs just need a separate repository (makes sense) and not a separate pipeline for the product.\r\n\r\nThanks all!",
+  "author": "jschavel",
+  "created_at": "2025-04-30T16:01:57Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84AxlW-",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/32#discussioncomment-12998078",
+      "body": "I would not imagine a separate pipeline for a baseline that is used globally. Especially when the containers are managed in a Dev environment as part of your SDLC. I'd be interested to hear the PMO's POV on your question. ",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-04-30T19:42:16Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOK0ax84AxyuC",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/32#discussioncomment-13052802",
+      "body": "Where I get my images from does not require FedRAMP ATO unless that is a cloud service that has direct connections into the boundary, which I would not recommend. All images require FIPS compliance with certificates that are listed in the CVMP site for both DaR and DiT. I deployed Solo Gloo Mesh for DiT for Node to Node communications in EKS. SDLC is not required to have a separated ATO that I have ever seen and I will be shocked at a different answers there. As long as you are watching for EOL, have plans and workflows to upgrade/updates, monitoring/scanning for CVEs, and tracking on the POA&M. My SLDC workflows have no customer data or metadata involved. All configurations and testing are applied in my staging zone within the boundary. \r\n\r\n",
+      "author": "Feldman31337",
+      "created_at": "2025-05-06T17:00:42Z",
+      "replies": []
+    }
+  ]
+}

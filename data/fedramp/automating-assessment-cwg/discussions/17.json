@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOMDw3M4AfPMf",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/17",
+  "title": "Critical Pieces of a Control",
+  "body": "This has been an ongoing idea I've had.  It ties into the heavy SSP documentation burden, the use of AI to fill in the narratives, and essentially turning controls into boilerplate 'mad libs.'\r\n\r\nOne of the things I've found in my time as an assessor, is that most controls boil down into a handful of key salient points.\r\n\r\nFor example, consider:\r\nCM-3 for change control (and yes I'm slightly oversimplifying, but not by much)\r\nIf you know the change control ticketing process (e.g. Jira), the approval process (CCB), and the approval criteria, and can demonstrate those, you basically pass CM-3, because the rest of the control requirements naturally follow from those key points.\r\n\r\nSo if I wanted to automate an SSP to create a narrative, I'd identify the key points per control, and again, in mad libs fashion, plug those into my boilerplate.  But even there, the narrative is not really interesting.  It's just context at best, fluff at worst, surrounding those key facts.\r\n\r\nExpanding this into automating assessment.  If you can check those key facts, you can evaluate the control pretty easily.  Granted, it might not be as easy to script a way to confirm a CCB meeting, but if we had a way to standardize what a CCB meeting looked like in an automatable fashion then maybe we have something.\r\n\r\nAs another example, SI-4, monitoring.  The key salient points:\r\n- what is the monitoring tool(s) (usually it's processed at the SIEM level which ingesting individual tools, and alerts on weird activity)\r\n- definitions of abnormal activity (usually out of the box definitions built in to the SIEM)\r\n- mechanisms (alerting) taken upon detecting abnormal activity.\r\n\r\nYes, there is nuance to this, and we need to account for that, but I'd also say a lot of the details are standard fare for most of the monitoring solutions.  Sort of like how you get the RA-5 requirement on \"enumerating platforms, software flaws, and improper configurations; formatting checklists and test procedures; and measuring vulnerability impact\" automatically by using a well known tool (e.g. Nessus, Qualys, Rapid7, etc).  I can't recall anyone ever failing that aspect of RA-5, ever.  \r\n\r\nForgive the ramble\r\n\r\nTL;dr-\r\nIdentify the discrete underlying facts that define controls, then automate the checking of those key facts, avoiding unnecessary excess verbiage in the control language.\r\n\r\n\r\n\r\n",
+  "author": "jsantore-cgc",
+  "created_at": "2025-04-10T16:06:00Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4Aw2RA",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/17#discussioncomment-12805184",
+      "body": "I agree with your observations assuming 1 thing: \"the key points per control\" == how the control addresses the threat model.\r\n\r\nEvery 3PAO auditor should start by asking: Show me your threat model. \r\n\r\n If they don't have that, cancel the assessment.",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-04-11T14:46:15Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Aw2Ra",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/17#discussioncomment-12805210",
+      "body": "> script a way to confirm a CCB meeting,\r\n\r\nactually with LLMs that is recently quite easy - record the session and generate a transcript and then have LLM summarize the action items.",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-04-11T14:47:32Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxzGj",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/17#discussioncomment-13054371",
+      "body": "I agree with this idea. Didn't the PMO allude to this process in their 20x intro deck? JIRA for the change = true/yes? ",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-05-06T19:52:58Z",
+      "replies": []
+    }
+  ]
+}

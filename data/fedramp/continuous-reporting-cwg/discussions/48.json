@@ -1,0 +1,9 @@
+{
+  "id": "D_kwDOOKttEc4AfzTf",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/48",
+  "title": "Trust centers, what say you?",
+  "body": "Has anyone in the community implemented a trust center for a cloud service provider or specific service offering? There are a few well-known vendors out there, and some custom built-ones, but they often summarize different themes at an accessible domain like `trust.example.com`. They usually include features like the list below.\r\n\r\n- status badges that identify product(s) support for different regulatory and compliance requirements\r\n- summaries about product(s) implementation of common security capabilities, geared towards answering third-party risk management questionnaires\r\n- mechanisms for partial or complete access to supporting documentation for customers that need to comply with regulation and compliance frameworks\r\n- a listing of different customers with related use cases for the product(s)\r\n- a mechanism for subscribing to status updates to this information\r\n\r\nIf you have implemented them for providers in the past:\r\n\r\n- What about them worked well for you?\r\n- What about them did not work well for you?\r\n- What data would you share with them?\r\n- What data would you not share with them?\r\n\r\nIf you did not implement them, but consumed them as an assessor, potential customer, or other stakeholder outside a CSP:\r\n\r\n- What about them worked well for you?\r\n- What about them did not work well for you?\r\n- What information did you often not receive from a trust center you felt necessary to actually make informed decisions about the product(s)?\r\n- What information did you often receive, but providers gave to you anyway, that did not help you make informed decisions about product(s)?\r\n\r\n",
+  "author": "aj-stein-gsa",
+  "created_at": "2025-05-16T20:14:35Z",
+  "comments": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "D_kwDOOMDw3M4AfnKN",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28",
+  "title": "Use of External Cloud Services that are NOT FedRAMP Authorized",
+  "body": "Will the FedRAMP PMO's position around use of External Cloud Services that are NOT FedRAMP Authorized change? We are used to looking at only cloud services that are ATO'd at the same categorization as our offering. \r\n\r\nWill the PMO be updating the FedRAMP boundary guidance specifically relating to the PMO's previous/current position on the use of non-FedRAMP authorized cloud services for CSP owned data that is used to support the automation of assessments with an external auditor (3PAO) or other use cases?\r\n\r\nWill there be any change on using external cloud products that connect to our boundary but only have a SOC2 or other report? \r\n\r\nAs an example, there are only a handful of a GRC tools in-process or authorized under FedRAMP. Are we limited to using only those or self-hosted our own? ",
+  "author": "sfc-gh-schaudhry",
+  "created_at": "2025-05-06T19:43:21Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4Ax2UB",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28#discussioncomment-13067521",
+      "body": "Great questions @sfc-gh-schaudhry. I don't think there has been an official statement yet to that effect from the FedRAMP PMO; however, comments from Pete and others in the CWG meetings have said they want to move in the direction that a GRC tool (or similar) may not need full authorization since it may not directly handle federal data. For example the [\"Automating Assessment Recap 2\" Meeting recording](https://youtu.be/IIRoPUykBRo?feature=shared&t=1679) at 27:56 where Pete alludes to it.\r\n\r\n> Q: The GRC tools that a CSP is using to capture evidence in an automated way, do the tools need to already be FedRAMPed?\r\n> A from Pete:  No... this idea that GRC tools have to be FedRAMPed at the same impact level as the system that they're reviewing is not necessarily something that's going to stick around for much longer...\r\n\r\nThe RFC 0005 Minimum Assessment Scope Standard (Boundary) https://www.fedramp.gov/rfcs/0005/ is a step towards reducing the strictness of requiring a full ATO at the same authorization level for everything that touches your FedRAMP offering but is not official yet since it's an RFC and is focusing on Low initially. \r\n\r\nHope that helps a bit. \r\n\r\n-- Isaac Teuscher (Paramify)",
+      "author": "iteuscher",
+      "created_at": "2025-05-07T20:05:10Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AyNrq",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28#discussioncomment-13163242",
+      "body": "In the future....\r\n\r\nOne concept behind the 20x project is that by eliminating the need for an agency sponsor and reducing the complexity and resource burden for an authorization, it would become feasible for a CSP using External Cloud Services that are NOT FedRAMP Authorized to just work with those vendors to achieve FedRAMP authorization. Obviously we don't have any empirical data to support or disprove this theory. We would be very interested to hear from people about this idea.",
+      "author": "dan-fedramp",
+      "created_at": "2025-05-15T20:20:26Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AyNtM",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28#discussioncomment-13163340",
+          "body": "Side thought here, and goes to your point about no longer needing agency sponsors.\r\n\r\nHistorically, one of the barriers to entry was requiring a government customer (e.g. a sponsor).  But if your CSO is really being consumed by other CSPs, but not necessarily a government customer, it was impossible to get a sponsor.  \r\n\r\nThink supporting tools (like Okta for example).  Yes, in this case, the government does use it, but I'd guess they get much more business from the government adjacent customers like other CSPs.    (disclaimer: I have no relationship with Okta; I'm juse using them as an example here).  \r\n\r\nIn fact, my favorite situation was a big medical company (not government), requiring contractually, for a CSO to 'get FedRAMP' without any government agency directly involved.\r\n\r\nKeep these use cases in mind when we consider these sorts of scenarios.  \r\n\r\nOh, because I was curious:\r\nOkta Moderate aka Okta IDaaS Regulated Cloud has, if I did the math correctly, something like 150 dependent products (e.g. CSOs), and only 36 agencies (and that's a LOT of agencies).\r\n\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-15T20:34:01Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AyN5o",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28#discussioncomment-13164136",
+          "body": "Thinking in the future theoretically... it would be fun to have a FedRAMP referral program where if enough CSPs upvote or request a specific provider be prioritized for FedRAMP they could have resources or priority to go through the authorization process more quickly. For example if a CSO is used frequently by CSPs who have government customers (as @jsantore-cgc described above) that CSO could have support from the PMO (authorization, $, consulting, etc) to get through the FedRAMP process. I'm thinking of how CISA is planning to give resources and support to open source software projects that they deem important to national critical infrastructure. (See [CISA OSS Roadmap](https://www.cisa.gov/sites/default/files/2024-02/CISA-Open-Source-Software-Security-Roadmap-508c.pdf)) This would be especially useful for open source projects that don't have internal business funding to work towards FedRAMP authorization. \r\n\r\n-- Isaac Teuscher (Paramify)",
+          "author": "iteuscher",
+          "created_at": "2025-05-15T22:10:33Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AyOo8",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/28#discussioncomment-13167164",
+          "body": "While the 20x initiative is a commendable undertaking, many companies anticipate that the complete transition to FedRAMP authorized External SaaS services will require a significant amount of time and resources.\r\n\r\nI request that the PMO consider relaxing this requirement and allow agencies to make risk-based determinations. Introducing a risk-based scoring system could further assist agencies in selecting CSP.\r\n\r\n-- Vijay Gajula(Verily)",
+          "author": "vrgajula",
+          "created_at": "2025-05-16T06:59:32Z"
+        }
+      ]
+    }
+  ]
+}

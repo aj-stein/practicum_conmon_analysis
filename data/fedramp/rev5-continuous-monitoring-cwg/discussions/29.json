@@ -1,0 +1,41 @@
+{
+  "id": "D_kwDOOK0ax84AfTsV",
+  "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29",
+  "title": "No more CVEs? What does this mean?",
+  "body": "With the funding for MITRE CVE program going away and the database turning off, what happens next? \n\nDo we no longer have CVEs to remediate starting tomorrow?\n\nhttps://www.nextgov.com/cybersecurity/2025/04/mitre-backed-cyber-vulnerability-program-lose-funding-wednesday/404585/ ",
+  "author": "ajay-stratus",
+  "created_at": "2025-04-15T22:17:34Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOK0ax84AxCKi",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29#discussioncomment-12853922",
+      "body": "[sad]   Luke Holian reacted to your message:\r\n________________________________\r\nFrom: ajay-stratus ***@***.***>\r\nSent: Tuesday, April 15, 2025 10:17:58 PM\r\nTo: FedRAMP/rev5-continuous-monitoring-cwg ***@***.***>\r\nCc: Subscribed ***@***.***>\r\nSubject: [FedRAMP/rev5-continuous-monitoring-cwg] No more CVEs? What does this mean? (Discussion #29)\r\n\r\n\r\n[External Email]\r\n\r\n________________________________\r\nWith the funding for MITRE CVE database going away and the database turning off, what happens next?\r\n\r\nDo we no longer have CVEs to remediate starting tomorrow?\r\n\r\nhttps://www.nextgov.com/cybersecurity/2025/04/mitre-backed-cyber-vulnerability-program-lose-funding-wednesday/404585/<https://www.nextgov.com/cybersecurity/2025/04/mitre-backed-cyber-vulnerability-program-lose-funding-wednesday/404585/>\r\n\r\n\u2014\r\nReply to this email directly, view it on GitHub<https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29>, or unsubscribe<https://github.com/notifications/unsubscribe-auth/BCVZE6QS2Q73A3L4IS7JST32ZWARNAVCNFSM6AAAAAB3GYCBHGVHI2DSMVQWIX3LMV43ERDJONRXK43TNFXW4OZYGIYDOMJSGU>.\r\nYou are receiving this because you are subscribed to this thread.Message ID: ***@***.***>\r\n",
+      "author": "Luke-Holian",
+      "created_at": "2025-04-16T11:58:05Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOK0ax84AxCug",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29#discussioncomment-12856224",
+          "body": "Extended at the last minute...\n\nhttps://www.nextgov.com/cybersecurity/2025/04/cisa-extends-mitre-backed-cve-contract-hours-its-lapse/404601/",
+          "author": "mjprager",
+          "created_at": "2025-04-16T14:55:27Z"
+        },
+        {
+          "id": "DC_kwDOOK0ax84AxCum",
+          "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29#discussioncomment-12856230",
+          "body": "\"Before CISA's announcement, a group of CVE Board members announced the launch of the CVE Foundation, a non-profit organization established to secure the CVE program's independence in light of MITRE's warning that the U.S. government might not renew its contract for managing the program.\"",
+          "author": "KHFedR",
+          "created_at": "2025-04-16T14:55:51Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOK0ax84AxlZX",
+      "url": "https://github.com/FedRAMP/rev5-continuous-monitoring-cwg/discussions/29#discussioncomment-12998231",
+      "body": "This can be archived. ",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-04-30T19:59:21Z",
+      "replies": []
+    }
+  ]
+}

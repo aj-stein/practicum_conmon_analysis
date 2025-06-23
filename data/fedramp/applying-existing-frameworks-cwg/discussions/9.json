@@ -1,0 +1,71 @@
+{
+  "id": "D_kwDOOMfSVs4AfMLX",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9",
+  "title": "What can't or shouldn't be automated and why?",
+  "body": "FedRAMP 20x seeks to automate as much as possible, but technical, ethical, or assurance challenges may necessitate human intervention. \r\n\r\nWhat items in your opinion *can't* or *shouldn't* be attested by machine and why?",
+  "author": "emu-gov",
+  "created_at": "2025-04-07T19:49:44Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4Awqcn",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12756775",
+      "body": "User and System audits.\r\nInventory reviews.\r\nPolicy Reviews.\r\nEvent (Incident) Response (SOAR is dead)\r\n\r\nAll require human judgement.  \r\n\r\nAlthough, Agentic AI could be deployed.  \"Time based action to review existing policy document against new developments and model training, make appropriate updates, and submit for approval.\"  \r\n\r\nAgain, Agentic AI: \"Review user access, compare to users of similar job title from HR system, and output recommendations.\"\r\n\r\nUsing AI, it is possible to get the compliance aspect to about 5% of effort.  BUT, that takes third parties to create that level of automation.\r\n",
+      "author": "Christcpd",
+      "created_at": "2025-04-07T22:03:19Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwtvJ",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12770249",
+          "body": "AI automation of user audits is a really interesting idea that I could see saving internal teams a lot of time potentially. It is something traditionally done by human judgement, but in practice how many times have we asked for justification of a user's access only to be told by their manager \"I don't know what they use that for but I'm sure they need it!\" which arguably is less helpful than automation (in my opinion).",
+          "author": "CJ-J-J",
+          "created_at": "2025-04-08T21:14:50Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awv8p",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12779305",
+          "body": "I think this is one where it's difficult for me to see AI doing it because it is traditionally a human judgement thing, and also so many things in an audit require context.\r\n\r\nIn a perfect world where someone requests/approves access for themselves, and they're granted it, how does automation judge if that's appropriate? Engineer x got root access, it was documented in a ticket with the note \"Engineer x needs root access to fix 'specific issue'\"\r\n\r\nAutomation can tell if a justification is there, it can tell if there's an expiration or parameters around the elevation, but there's question around it like:\r\n1. Did they really NEED root access for this?\r\n2. If you look at the number of people with root access, maybe that's a little worrying if there's a lot of them \r\n3. They maybe needed access, but the justification documented in the ticket is really bad (eg. I don't know what they use that for but I'm sure they need it!\")\r\n\r\nIt seems difficult, at least for this example and examples of this nature, for me to imagine a non-human considering the context around it and coming to sound judgement.\r\n\r\n",
+          "author": "gorkhalee",
+          "created_at": "2025-04-09T14:24:50Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwwBN",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12779597",
+          "body": "Those are all great points. Can you see a world where automation/AI at least cuts down on a lot of the manual labor by auditors? There will almost certainly be weird/fringe cases that require human understanding of context, but if it could reduce the amount of hours spent reviewing things I can see that as a net benefit. Curious to hear all opinions though, keep them coming!",
+          "author": "CJ-J-J",
+          "created_at": "2025-04-09T14:47:13Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AwwJf",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12780127",
+          "body": "Cut down on work absolutely, I think if the overall goal was \"Do FedRAMP as is, but automate what you can\" I would have a much easier time thinking through it. My mindset has automation's main purpose ingesting and verifying things that are quantifiable/things with parameters.\r\n\r\neg:\r\nCheck IdP for password length\r\nCheck account expiration time thresholds \r\nCheck that vuln scanners are set to autoupdate prior to scans\r\nCheck this policy to make sure retention requirements are set to xyz\r\n\r\nSo anything that is a binary \"yes/no\", or a button you can click, seems appropriate for automation. \r\n\r\nI'm also not the MOST savvy person when it comes to what AI/automation is capable of though, so would welcome other opinions!",
+          "author": "gorkhalee",
+          "created_at": "2025-04-09T15:27:14Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwsOx",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12764081",
+      "body": "Just the way my mind works, I am thinking through the existing FedRAMP Mod controls (if they were all automated.\r\n\r\nThese are some of the things that come to mind in terms of what presents difficulties to automated assessments:\r\n- Physical controls (MA/MP/PE/PS) - obvious reasons\r\n- Controls that interact with humans (termination processes, sanctions, PS type controls) -- a lot these have some level of subtext that aren't strictly binary (eg. we have reworked our organization to only allow this subset of engineers to work on the FR system), and I find these controls tend to have more to the story than what is documented in procedures.\r\n- IR controls tend to be more human oriented (do these people know what process to follow in the event of an Incident), so more difficult to automate. You can have runbooks, but do employees know the process, is the process fleshed out and comprehensive? \r\n- POAMs require some level of human review, especially for Deviation Requests. \r\n- Across control families, interviews tend to be more helpful for asking questions about processes, as not every process (IR, CM, SA [third party acquisition etc.]) necessarily aligns with the way it is documented. Most CSPs I've worked with have discrepancies between the documented processes and how an employee actually does things.\r\n\r\n",
+      "author": "gorkhalee",
+      "created_at": "2025-04-08T12:24:55Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aws3F",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12766661",
+      "body": "Any form of exercise/training would need to be validated by a person to determine if the exercise/training was sufficient.\r\nIn theory the access form reviews and change ticket reviews to determine if the needed parties reviewed and approved them could be done by AI but I assume that would be too difficult to implement since everyone has different titles.\r\nAll PE controls will need a human being reviewing unless CSPs want to give a tool access to their surveillance and building maintenance tools.\r\nI think all documentation review could be assisted by AI but will still probably require some form of human. Unless you have it where the AI tool is going to compare entries in the SSP to the policy/procedure to see if different tools/processes are mentioned.\r\nWill probably need a human to review output but AI would be able to most likely be used to determine AU related evidence like are all the inventoried hosts being checked and are there queries to meet certain controls for monitoring/alerting.\r\nPotentially all controls which are not applicable or there is no evidence of something (\"We don't have any mobile devices or have had no incidents\") so the human assessor has to think about what could be used to show that the CSP is doing something. I think automation will struggle with that.\r\nSR family is more subjective so would probably need a human being to review.\r\n\r\nSorry, I flip flopped between can and can't. ",
+      "author": "ChanceofClouds",
+      "created_at": "2025-04-08T15:41:53Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awwmj",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/9#discussioncomment-12781987",
+      "body": "Really depends on your definition of \"automation\"? In the context of a KSI approach, I envision that there will be KSIs that are truly automated results from the CSP, and results shared to an online tool (CSP Security Posture Dashboard) via APIs. I also see that the CSP can have manual metrics calculated within their environments, but the results are shared via an API to an online dashboard. Based on the KSIs defined for what I recommend a Control Domain presentation of KSI results, a CSP should be able to label via dashboard-prompted selections how that KSI is measured, whether manual or automated. All results though, whether CSP manual measures or automated ones, are communicated via a structured API, auto-populating fields on the Dashboard. \r\n\r\nIn the context of the purpose of this CWG, not only should CSPs be allowed to describe KSI implementation via smart labels, we should also be able to indicate if a KSI is independently validated through another existing control framework, i.e. ISO assessments, HITRUST assessment, etc., and the results of those independent tests shared, i.e. being able to indicate as an example - Pass/Fail, Good/Bad, etc., and when that independent validation occurred. All through an API though that is structured to consistently share KSI results. The real question is - \"Are we willing to accept and trust independent validations from auditors/assessors of another control framework?\" \r\n\r\nThese determinations should be driven by CSPs to define through selections in the online tool the nature of how the results of a KSI are presented, whether it's a manual or automated result, and whether it's covered by an independent validation by some auditor/assessor from another control framework (similar to the concept of how FedRAMP uses the \"Inheritance\" concept, in essence). \r\n\r\nThe minimum set of KSIs established by FedRAMP will basically drive what can and cannot be automated, and the solution of presenting those results should expect to have both CSP manual and automated measures to share via an API. ",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-09T18:03:25Z",
+      "replies": []
+    }
+  ]
+}

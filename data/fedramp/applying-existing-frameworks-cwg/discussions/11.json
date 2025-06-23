@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOMfSVs4AfMMm",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/11",
+  "title": "Apr 8 Kick-off meeting Q&A thread",
+  "body": "Q&A thread in support of the 8 April Kick-off meeting",
+  "author": "emu-gov",
+  "created_at": "2025-04-07T20:12:39Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AwtXK",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/11#discussioncomment-12768714",
+      "body": "Hello all, is there a public accessible FedRAMP 20X roadmap or timeline that details when to expect updates/decision points that align with this (FedRAMP20X) effort? ",
+      "author": "BV1722",
+      "created_at": "2025-04-08T18:24:06Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awtfa",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/11#discussioncomment-12769242",
+          "body": "There is no public roadmap or timeline currently published.\r\n\r\nThe [20x FAQ](https://www.fedramp.gov/20x/faqs/) or [Phase 1 explanation](https://www.fedramp.gov/20x/phase-one/) may help to outline some of the short-term goals.",
+          "author": "emu-gov",
+          "created_at": "2025-04-08T19:17:49Z"
+        }
+      ]
+    }
+  ]
+}

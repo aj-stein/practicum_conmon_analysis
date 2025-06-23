@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOMfSVs4Afg8W",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/27",
+  "title": "FedRAMP 20x Phase One Pilot & KSI Standard RFC",
+  "body": "The FedRAMP 20x [Phase One Pilot](https://www.fedramp.gov/20x/phase-one/) will be kicking off shortly. A Request for Comment (RFC-0006) has been published for a draft standard on [Key Security Indicators (KSIs)](https://www.fedramp.gov/rfcs/0006/), if you have feedback, please check out the [RFC-0006 thread](https://github.com/FedRAMP/rfcs/discussions/18).\r\n\r\n@pete-gov will be discussing the Pilot and answering questions on tomorrow\u2019s (30 Apr) Automating Assessments CWG townhall - [meeting registration](https://gsa.zoomgov.com/meeting/register/FpW3sJuBRxag_1Mz49J0Cw).\r\n\r\nAs part of the pilot, we will be evaluating if any existing SOC 2 Type 2 documentation can be leveraged for validating KSIs. \r\n- *Please note we are not establishing full reciprocity, only evaluating if existing documentation can be used as validation evidence.*",
+  "author": "emu-gov",
+  "created_at": "2025-04-29T16:59:01Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AxiK3",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/27#discussioncomment-12985015",
+      "body": "What documentation in SOC 2 report can be used to satisfy the  [Key Security Indicators (KSIs)](https://www.fedramp.gov/rfcs/0006/)?  We are looking for reuse of existing materials and not applying a mapping or reciprocity approach.",
+      "author": "audreamichellewhite",
+      "created_at": "2025-04-29T20:12:29Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AxidH",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/27#discussioncomment-12986183",
+          "body": "I don\u2019t believe you will be able to rely on a SOC 2 report or any other commercial framework\u2019s report without doing a mapping to KSIs (unless I am misunderstanding what is meant by mapping). Section 4 of a SOC 2 Type 2 report will have all the controls and the results of an auditor\u2019s testing for each control. This could be used, but a mapping would have to be done manually or with AI to determine which controls satisfy a KSI. \r\n\r\nAs mentioned in other threads, the scope of a SOC 2 Type 2 audit (or any other commercial framework audit) would have to be validated to ensure it covered the same infrastructure, software, people and data in scope for the federal environment. I don\u2019t think that can be validated just by looking at a report.",
+          "author": "troyfine",
+          "created_at": "2025-04-29T22:21:19Z"
+        }
+      ]
+    }
+  ]
+}

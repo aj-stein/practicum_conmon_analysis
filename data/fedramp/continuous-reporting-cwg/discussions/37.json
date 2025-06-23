@@ -1,0 +1,26 @@
+{
+  "id": "D_kwDOOKttEc4AfZws",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/37",
+  "title": "Start small and prove possibilities",
+  "body": "Thinking about an iterative approach and what might be achievable in shorter horizon, might a discussion about what could be quicker wins be beneficial? It seems that proving out the potential could go a long way. Perhaps using the existing mappings of the MITRE ATT&CK to NIST 800-53 work and identify the highest value controls that have a potential for using automated tools to provide real-time alignment could be a starting point. \r\n\r\nSam pointed out in another thread that the challenge of risk research and aligning with it is the idea that threat actors will evolve based on public data to prioritize actions against controls that fall lower on the list. No disagreement here. Knowing ongoing public funding for this kind of research is a question, could there also be a chance to consider how continuous reporting might include attack attempts against control types? It doesn't necessarily get at impact of a successful intrusion but could be correlated elsewhere.\r\n\r\nIn the GovRAMP model today, government members may request access of the PMO prior to contracting with a CSP to view elements of their package and conmon. This is only provided when the CSP grants access to that specific government, but it allows for informed decisions about product selection. Ultimately, continuous reporting could take that to a new level but for the moment it seems like creating some pieces that allow agencies to begin to simplify reviews and develop support for the real-time approach from providers and the products they use could get this work on track.",
+  "author": "GovRAMP-Fred",
+  "created_at": "2025-04-22T21:46:44Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4AxWtU",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/37#discussioncomment-12938068",
+      "body": "Could not agree more! There's fantastic work to build on from FedRAMP actually from 2022: https://github.com/GSA/threat-analysis/tree/main",
+      "author": "irinad101010",
+      "created_at": "2025-04-24T17:04:04Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOKttEc4AxyVv",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/37#discussioncomment-13051247",
+      "body": "Thanks for the feedback @GovRAMP-Fred and your thoughts to about our prior work, @irinad101010. We will definitely keep that in mind. I am going to close this topic out for now as there has been limited follow up after the initial post two weeks ago.",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-05-06T14:43:38Z",
+      "replies": []
+    }
+  ]
+}

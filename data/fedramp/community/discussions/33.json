@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOxfoic4AgAjM",
+  "url": "https://github.com/FedRAMP/community/discussions/33",
+  "title": "FedRAMP 20x Draft Pilot Submission - JupiterOne",
+  "body": "# Project Introduction: FedRAMP 20x Compliance with JupiterOne\r\n\r\nThis project demonstrates a modern, automated approach to FedRAMP 20x compliance leveraging JupiterOne-style JSON representations of Key Security Indicators (KSIs) and their continuous validation.\r\n\r\nFedRAMP 20x aims to transform federal cloud security assessments through five key goals:\r\n\r\n1. **Simplify automated application and validation** of security requirements by enabling over 80% of controls to be validated automatically without narrative explanations.\r\n\r\n2. **Leverage existing industry investments** by using well-established security frameworks and policies, reducing the documentation burden and promoting reusable, community-driven templates.\r\n\r\n3. **Enable continuous, hands-off monitoring** of security posture through standardized, machine-readable validation mechanisms and real-time evidence collection.\r\n\r\n4. **Build trust through direct business engagement** by fostering transparent, auditable workflows between cloud providers, agencies, and third-party assessors while maintaining intellectual property control.\r\n\r\n5. **Support rapid, continuous innovation** by replacing static checkpoints with automated, real-time compliance checks and streamlined change management.\r\n\r\nOur approach uses machine-readable JSON files that encode KSIs with:\r\n\r\n- Precise, executable JupiterOne Query Language (J1QL) validations for automated evidence collection.\r\n- Human-readable `query_nlp` descriptions for clarity and auditability.\r\n- Git-tracked evidence references, including commit SHAs and timestamps, ensuring traceability and version control.\r\n- Integration points for 3PAO assessment workflows to enable collaborative, transparent validation.\r\n\r\nTogether, these elements provide a fully auditable, continuously monitored compliance solution designed to fulfill FedRAMP 20x\u2019s vision of automated, transparent, and scalable security assurance. This project serves as a foundation for organizations seeking to modernize their FedRAMP submissions and embrace trust-centered compliance leveraging existing commercial tools and community standards.\r\n\r\nWe welcome feedback and collaboration to refine this approach as part of the broader FedRAMP 20x ecosystem.\r\n\r\nPublic Repo Draft Pilot (expected to be moved to JupiterOnein June) https://github.com/ChrisD-J1/FedRAMP20X",
+  "author": "ChrisD-J1",
+  "created_at": "2025-05-30T00:30:43Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Ay1BG",
+      "url": "https://github.com/FedRAMP/community/discussions/33#discussioncomment-13324358",
+      "body": "\"query\": \"Find user where mfa.enabled = true and mfa.type = 'phishing-resistant'\",\r\n\r\nWouldn't you want that to be two statements that stand on their own?  As written, it will find where the union of those two are but not the outliers.\r\n\r\nShould be \"query\": \"Find user where mfa.enabled = false\"\r\nand then \"query\": \"Find user where mfa.type != 'phishing-resistant'\"",
+      "author": "Christcpd",
+      "created_at": "2025-05-30T18:33:03Z",
+      "replies": []
+    }
+  ]
+}

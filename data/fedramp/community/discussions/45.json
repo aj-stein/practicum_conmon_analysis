@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOxfoic4AgUe6",
+  "url": "https://github.com/FedRAMP/community/discussions/45",
+  "title": "What is the status of OSCAL and Digital Authorization Package Pilot",
+  "body": "What is the stance of these working groups on OSCAL and the digital authorization package pilot?\r\n\r\nIt seems like the OSCAL Implementers meetings and efforts just evaporated with no discussion. \r\n\r\nIs there still an effort to to develop the SSP validations etc for OSCAL?",
+  "author": "mmaesc1",
+  "created_at": "2025-06-19T13:25:34Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AzndV",
+      "url": "https://github.com/FedRAMP/community/discussions/45#discussioncomment-13530965",
+      "body": "Due to shifts in government priorities in late January, FedRAMP moved all of its primary efforts for automation to the development of a new process (FedRAMP 20x) and is no longer actively supporting the development of machine-readable packages or automation for Rev5 based authorizations. \r\n\r\nThe [FedRAMP in 2025](https://www.fedramp.gov/2025-03-24-FedRAMP-in-2025/) blog post from March 24 explained this as: _\"The new FedRAMP PMO is a much smaller team with all efforts focused on maximizing efficiency. We are now focused on clearing the agency authorization backlog and providing technical assistance and community support to set standards that enable private innovation to provide the solution. Nearly all other previously discussed work has been stopped.\"_\r\n\r\nEfforts to improve OSCAL and SSP automation for direct control implementations of SP 800-53 packages continue with industry however, and the [OSCAL Foundation](https://oscalfoundation.org/) is leading the charge on this. They have working groups and a wide base of support.\r\n\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-20T13:40:28Z",
+      "replies": []
+    }
+  ]
+}

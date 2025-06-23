@@ -1,0 +1,174 @@
+{
+  "id": "D_kwDOOMDw3M4AfKCg",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14",
+  "title": "What if Boundary Diagrams could be automated?",
+  "body": "Most CSP's spend a large percentage of overall FedRAMP authorization time creating and perfecting the Boundary Diagram. From the initial creation to the back/forth with the 3PAO to the back/forth with FedRAMP to the updates needed with every change, the amount of time that needs to be spent just keeping the Boundary Diagram up to date is enormous. Given that the inventory and network layout for a CSP's Cloud Service Offering is fully available through the Cloud Provider's API, how much time do CSP's think could be saved if there was an open source tool available that could:\r\n\r\n- Create a basic boundary diagram using the cloud provider API\r\n- Add in a depiction of any external dependencies using the data in Table 7.1 of the SSP\r\n- Automatically include depiction of remote access based on your choice of the most common reference architectures for secure FedRAMP authorizable remote access to cloud infrastructure (there are not more than a handful of choices with each major cloud provider)\r\n- Allow you to select from common reference architectures for depicting customer interaction with your product or create your own (e.g. agent installed on premise talks to services in boundary, customer and/or admin web page presented by services running in boundary) \r\n- Allow you to customize the diagram for any special use cases\r\n\r\n\r\n",
+  "author": "cybersechawk",
+  "created_at": "2025-04-04T17:41:19Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4Awj1m",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12729702",
+      "body": "I really would love to know in these threads, separate of FedRAMP's official requirements around an authorization boundary diagram, if individuals in CSPs and other stakeholders get value from the diagram so much they would do it without FedRAMP requirement to do so.\r\n\r\n(Setting the tone: I do not make policy in FedRAMP, none of us do it on GitHub when we do so, and I am talking about a hypothetical future state because I have been interested in this topic for some time. \ud83d\ude04)",
+      "author": "aj-stein-gsa",
+      "created_at": "2025-04-04T19:00:53Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awj_k",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12730340",
+          "body": "@aj-stein-gsa I love my diagrams, and I would say that they are not used enough.... especially as a visual representation of what I am trying to communicate and/or accomplish.  I will have my diagram before having my program.  \r\n\r\nThat being said, I am concerned that there are times where the boundary diagram, data flow diagrams, interconnection diags, etc... are not an accurate representation of the actual boundary, and may over-report or under report.  \r\n\r\nWhat may be really cool, would be \r\n## **CSPs using their data to generate Diagrams.**  \r\n\r\nThe example OSCAL snippet may be long, but what it does is provide a **logical representation of what should already be in diagram** UUID 123.\r\n\r\nThis way, the boundary diagrams dont have to be interpreted, instead, only your package code is interpreted.  \r\n\r\nBelow is an example of OSCAL code that I used to create a the data-flow boundary diagram in GPT.  Yes, it is super basic, and I dont know what a serwice is, but it took a 30 second prompt, and was able to save me some time because I had the code.  \r\n\r\nOn  the flipside, Validators like Sponsors, and the FedRAMP PMO's office, should do the same, but with the submission code provided and validate that the two diagrams match.   \r\n\r\n## Future State\r\nA step further would be leverage automation to do that generation and validation headless, and report it as a **KSI**.  \r\nThis would reduce LOE all around.  \r\n\r\n\r\n## Diagram generated from OSCAL\r\n\r\n![image](https://github.com/user-attachments/assets/94af2ff5-fa64-46ba-a7a0-e8a12a5eee5b)\r\n\r\n## OSCAL\r\n```\r\n{\r\n    \"system-security-plan\": {\r\n        // metadata etc... \r\n        \"system-characteristics\": {\r\n        // required stuff like desc, system id, etc....\r\n        \"data-flow\": {\r\n            \"diagrams\": [\r\n                {\r\n                    \"description\": \"Data Flow Diagram for Interconnection\",\r\n                    \"links\": [\r\n                        {\r\n                            \"href\": \"123\"//Fragment UUID/ uri-reference to backmatter\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        },\r\n        \"system-implementation\": {\r\n            \"components\": [\r\n                {\r\n                    \"uuid\": \"456\",//uuid of component (should change when data changes)automated\r\n                    \"type\": \"service\",//automated\r\n                    \"title\": \"Backup Service\",//automated\r\n                    \"description\": \"Description of how service is used in boundary\",//maybe automated, probably human\r\n                    \"props\":[\r\n                        {\r\n                            \"name\": \"label\",\r\n                            \"value\": \"bk-ser\"\r\n                        }\r\n                    ],\r\n                    \"links\": [\r\n                        {\r\n                            \"href\": \"101112\",\r\n                            \"rel\": \"used-by\",\r\n                            \"text\": \"Interconnection Outside of the boundary\"\r\n                        }\r\n                    ],\r\n                    \"status\": \"operational\",//list of options to determine if in prod and approved. Selection automated\r\n                    \"protocols\": {\r\n                        \"port-ranges\": [\r\n                            {\r\n                                \"start\": 8443, \r\n                                \"end\": 8443,\r\n                                \"transport\": \"tcp\"\r\n                            }\r\n                        ]\r\n                    }\r\n                },\r\n                {\r\n                    \"uuid\": \"789\",//uuid of component (should change when data changes)automated\r\n                    \"type\": \"validation\",//automated\r\n                    \"title\": \"CMVP for Data in transit\",//automated\r\n                    \"description\": \"Crypto Details\",//maybe automated, probably human\r\n                    \"props\":[\r\n                        {\r\n                            \"name\": \"label\",\r\n                            \"value\": \"R2345\"\r\n                        }\r\n                    ],\r\n                    \"links\": [\r\n                        {\r\n                            \"href\": \"101112\",\r\n                            \"ref\": \"used-by\",\r\n                            \"text\": \"Interconnection Outside of the boundary\"\r\n                        },\r\n                        {\r\n                            \"href\": \"131415\",\r\n                            \"text\": \"link to NIST CMVP\"\r\n                        }\r\n                    ],\r\n                    \"status\": \"operational\",//list of options to determine if in prod and approved. Selection automated\r\n                },\r\n                {\r\n                    \"uuid\": \"101112\",//uuid of component (should change when data changes)automated\r\n                    \"type\": \"interconnection\",//automated\r\n                    \"title\": \"Interconnection to Backup provider\",//automated\r\n                    \"description\": \"Description of how service is used in boundary\",//maybe automated, probably human\r\n                    \"props\":[\r\n                        {\r\n                            \"name\": \"label\",\r\n                            \"value\": \"Inter-25\"\r\n                        },\r\n                        {\r\n                            \"name\": \"public\",\r\n                            \"value\": \"yes\"\r\n                        },\r\n                        {\r\n                            \"name\": \"direction\",\r\n                            \"value\": \"outgoing\"\r\n                        },\r\n                        {\r\n                            \"name\": \"ipv4-address\",\r\n                            \"value\": \"10.10.10.10\", \r\n                            \"class\": \"local\"\r\n                        },\r\n                        {\r\n                            \"name\": \"ipv4-address\",\r\n                            \"value\": \"11.11.11.11\", \r\n                            \"class\": \"remote\"\r\n                        },\r\n                        {\r\n                            \"name\": \"isa-remote-system-name\",\r\n                            \"value\": \"Backup.com\"\r\n                        }\r\n                    ],\r\n                    \"links\": [\r\n                        {\r\n                            \"href\": \"123\",\r\n                            \"text\": \"Data-Flow Diagram\"\r\n                        },\r\n                        {\r\n                            \"href\": \"456\",\r\n                            \"text\": \"Interconnection Outside of the boundary\"\r\n                        },\r\n                        {\r\n                            \"href\": \"789\",\r\n                            \"rel\": \"validation\",\r\n                            \"text\": \"Cryptographic Module\"\r\n                        }\r\n                    ],\r\n                    \"status\": \"operational\",//list of options to determine if in prod and approved. Selection automated\r\n                }\r\n            ]\r\n        }\r\n    }\r\n}\r\n```\r\n",
+          "author": "Telos-sa",
+          "created_at": "2025-04-04T20:34:20Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwkHA",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12730816",
+          "body": "> @aj-stein-gsa I love my diagrams, and I would say that they are not used enough.... especially as a visual representation of what I am trying to communicate and/or accomplish. I will have my diagram before having my program.\r\n\r\nI understand the sentiment.\r\n \r\n> That being said, I am concerned that there are times where the boundary diagram, data flow diagrams, interconnection diags, etc... are not an accurate representation of the actual boundary, and may over-report or under report.\r\n> \r\n> What may be really cool, would be\r\n>\r\n> ## Diagram generated from OSCAL\r\n> ![image](https://private-user-images.githubusercontent.com/127163717/430532163-94af2ff5-fa64-46ba-a7a0-e8a12a5eee5b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDM3OTk5NjYsIm5iZiI6MTc0Mzc5OTY2NiwicGF0aCI6Ii8xMjcxNjM3MTcvNDMwNTMyMTYzLTk0YWYyZmY1LWZhNjQtNDZiYS1hN2EwLWU4YTEyYTVlZWU1Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwNFQyMDQ3NDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ZjdkNzZjMThiNzA1OTBjMWQ2ZmNmMDBmZWFkNDA4NmM4YTQ0YWYzODRjZjYxNWM5ZTEwYzhlMGFlOTk0NGZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.vUA_3bQ0RMv2K0kqcjNXnwB4blWNvpv80IfWGm6v204)\r\n\r\nAt a personal level, as an \"OSCAL aficionado\" \u2122\ufe0f, I love the hustle. One of the challenges I have observed from machine-generated diagrams (fun fact, we can generate _a lot of stuff_ with metaschema-framework tooling by introspecting OSCAL and this underlying Metaschema DSL, it is a pretty indicative example of the struggle) is the sheer immensity of the data and how to organize and filter it, all while making it programmatically accessible. It is an apple to oranges to comparison, except in the number of items will be an order of magnitude larger with a realistic production CSP deployment. So my parenthetical comment, we can generate a giant Mermaid diagram for the whole OSCAL data model and it is sooo teensy tiny from the number of data points and it nearly hangs mermaid.live.  Are you using this approach for your current system that is sizable? Do you have shared experiences like I describe, or is your experience entirely different?",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-04T21:59:22Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw2Tv",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12805359",
+          "body": "I would say STATIC diagrams are useless. But with the ability to generate these on the fly (graph databases and visualization and LLMs) *dynamic* diagrams are super useful.\r\n\r\nI don't do ANYTHING these days without either a Cypher query and graph review and/or LLM generating a mermaid diagram on the fly. My old brain just can't do things faster than GPUs.",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T14:59:25Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw2fW",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12806102",
+          "body": "> I don't do ANYTHING these days without either a Cypher query and graph review and/or LLM generating a mermaid diagram on the fly. My old brain just can't do things faster than GPUs.\n\nIt would be nice to see an example of what infra you're loading into Neo4J.\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-11T16:02:09Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw3RQ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12809296",
+          "body": "> It would be nice to see an example of what infra you're loading into Neo4J.\r\n\r\nWill do! I saw somewhere in one of these discussions in the 4 wgs someone put out a hypothetical CSO - I'll xform that in to IaC code and use that as a nice lab env that can be shared with working code.  I saw the other thread somewhere here on lab environments so maybe I'll play with that to tie it all together!",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T23:17:08Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxiVu",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12985710",
+          "body": "> ... separate of FedRAMP's official requirements around an authorization boundary diagram, if individuals in CSPs and other stakeholders get value from the diagram so much they would do it without FedRAMP requirement to do so.\r\n\r\nYes, I think so. One benefit of the boundary diagram is it's useful for internal team members who don't need all the details in the SSP but are necessary to consult for decision making. For example: GRC/FedRAMP team talking with DevOps/IT team to make architecture choices. The diagram (if kept high-level) is more approachable for technical but non-GRC team members who need to be aware of how the FedRAMP offering is architected. From the GRC/FedRAMP side, the boundary adds value by making those internal conversations easier. ",
+          "author": "iteuscher",
+          "created_at": "2025-04-29T21:14:19Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwkFM",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12730700",
+      "body": "I would like to invite @tnguyendmv to chime in here-- I remember having a lively discussion with him around using SysML3 to generate diagrams!",
+      "author": "kyhu65867",
+      "created_at": "2025-04-04T21:36:14Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwwcG",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12781318",
+      "body": "Diagrams are always one of the first things that get created. That said, they are typically not a fully accurate reflection of the environment that gets built. Remember the days of Rational Rose and Object Oriented Programming, the goal was to always have a model that was truly reflective of what we implemented. I'm not sure we every really got there, close, but not without lots of pain.\r\n\r\nThere are some OEM products that do a really good job of laying out what an environment looks like just from the logging data. If we did any sort of automated diagrams, then they should be generated from actually system data. I have zero desire to \"code\" a diagram in OSCAL so a tool can generate the picture. I would much rather just draw the diagram.",
+      "author": "dljenkins",
+      "created_at": "2025-04-09T17:01:25Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awwfg",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12781536",
+          "body": "> There are some OEM products that do a really good job of laying out what an environment looks like just from the logging data. If we did any sort of automated diagrams, then they should be generated from actually system data.\r\n\r\nCan you provide some examples of such products? I just want to make sure we are on the same page.",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-09T17:20:40Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aww0e",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12782878",
+          "body": "https://github.com/patrickchugh/terravision This is the only one I have ever used so no idea how it compares to others but its decent. ",
+          "author": "osteth",
+          "created_at": "2025-04-09T19:26:48Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwzT-",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12793086",
+          "body": "https://www.ibm.com/products/turbonomic/full-stack provides what they call an \"Application Stack\", it is interactive and allows you to see all the components in your environment, drill in, view connections. The diagram is not the purpose of the product, but is an example of products that use logging data to layout the environment.",
+          "author": "dljenkins",
+          "created_at": "2025-04-10T15:08:05Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxiT3",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12985591",
+          "body": "I've also used Cloud Mapper [https://github.com/duo-labs/cloudmapper](https://github.com/duo-labs/cloudmapper) which is a little old and not updated today but does a fine job of giving an interactive diagram of cloud assets, how they are connected and findings based on account users, permissions, etc. ",
+          "author": "iteuscher",
+          "created_at": "2025-04-29T21:04:38Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Aw2TG",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12805318",
+      "body": "Diagrams can and are automated: LLMs + Mermaid and drawio XML. Done.  \r\n\r\nVendor tools do more and more with LLM features so eventually if they get an ATO ...",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-04-11T14:56:41Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw8FW",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12829014",
+          "body": "@sunstonesecure-robert \r\n\r\nI was looking at Mermaid just the other day.  I'm going to try and recreate the old FedRAMP Job Aid as an example (in my copious free time).  If we can create that as a structure, I think that we can then do two things.  Have CSPs create their diagrams as Mermaid/XML which would allow 2 things (using a standard template):\r\na- actual ability to create standardized diagrams from a known good state that should all look the same\r\nb- allow for an automated review of the 'diagram' by parsing the XML.  ",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-14T13:01:38Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw8Fv",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12829039",
+          "body": "Way way early first pass of a FedRAMP Mermaid diagram structure.  Still needs lots of work, but illustrates the point.\r\n\r\n`graph TD\r\n    subgraph FedRAMP_System [FedRAMP System]\r\n        FS1[System Boundary Document]\r\n\r\n        subgraph Authorization_Boundary [Authorization Boundary]\r\n            AB1[Boundary Overview]\r\n\r\n            subgraph Web_Tier [Web Tier]\r\n                WT1[Load Balancer]\r\n                WT2[Web Server Cluster]\r\n\r\n                subgraph Web_Server_1 [Web Server 1]\r\n                    WS1a[Nginx]\r\n                    WS1b[Security Agent]\r\n                    WS1c[Log Forwarder]\r\n                end\r\n\r\n                subgraph Web_Server_2 [Web Server 2]\r\n                    WS2a[Nginx]\r\n                    WS2b[Security Agent]\r\n                    WS2c[Log Forwarder]\r\n                end\r\n            end\r\n\r\n            subgraph App_Tier [Application Tier]\r\n                AT1[App Server Cluster]\r\n\r\n                subgraph App_Server_1 [App Server 1]\r\n                    AS1a[API Processor]\r\n                    AS1b[Encryption Module]\r\n                    AS1c[Metrics Agent]\r\n                end\r\n\r\n                subgraph App_Server_2 [App Server 2]\r\n                    AS2a[API Processor]\r\n                    AS2b[Encryption Module]\r\n                    AS2c[Metrics Agent]\r\n                end\r\n            end\r\n\r\n            subgraph Data_Tier [Data Tier]\r\n                DT1[Database Cluster]\r\n\r\n                subgraph Primary_DB [Primary Database]\r\n                    DB1a[PostgreSQL]\r\n                    DB1b[Audit Logger]\r\n                    DB1c[Backup Agent]\r\n                end\r\n\r\n                subgraph Replica_DB [Replica Database]\r\n                    DB2a[PostgreSQL Replica]\r\n                    DB2b[Audit Logger]\r\n                    DB2c[Backup Agent]\r\n                end\r\n            end\r\n        end\r\n    end`",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-14T13:03:20Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Aw_s8",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12843836",
+      "body": "Just a drive-by hot take that I've always found overall diagrams for complex systems to be valuable only when they are abstract and high level; the expectation of a single diagram that goes into extreme detail always struck me as a waste of time and effort. Personally I've found maintaining (automated) lists of resources, connections, etc. as code driven documents to be far more useful when I need to punch into what is happening within a system. ",
+      "author": "pete-gov",
+      "created_at": "2025-04-15T15:30:48Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw_yk",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12844196",
+          "body": "@pete-gov unfortunately, historically that was not the approach.  In my 3PAO days, all FedRAMP review sessions (RARs and SARs) easily spent at least half of the session focused on deep dives into the diagrams.  I've also seen multiple cycles of the same diagrams!  First there is the back and forth on the RAR diagrams.  And then 6 months to a year later, when we submitted the full SAR with essentially the same diagram, we went through the same diagram deep dive again, with even more iterations.  And I get it; the ABD serves as a a pictoral summary of essentially a 400+ page SSP, and all parties wanted a detailed critical analysis of the system and that took the form of the ABD review.  \r\n\r\nBut yeah, I completely agree with your take.  Maybe we should revert back to first principles and say 'what are we trying to accomplish with a given artifact?'  Not to side track too much on the old RARs, but at one point, it was supposed to be a 2 or so week snapshot of the overall maturity of a system as an indicator of how ready they were to pursue FedRAMP.  Over the years, we had massive scope creep and RARs went from 'FedRAMP Ready' to essentially 'FedRAMP Perfect' with a really high threshold and zero tolerance for any risk acceptance whatsoever.   \r\n \r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-15T16:06:46Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw_7k",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12844772",
+          "body": "I agree with @pete-gov take on what should be the case, but I've spent many years as an auditor and external advisor before working on the CSP side and I can say that diagram deep-dives have been one of the single longest conversations and points of emphasize in every audit I've been a part of. We've been taught to expect certain things from these diagrams and as recently as the last year been asked to provide even **more** detail to them. The way I view diagrams, especially an ABD that crosses AWS and GCP and has dozens of products involved in it is a starting point for a conversation. It's a high-level visual representation of what we're going to be discussing and used as a platform to jump into the nitty gritty details that are likely captured in other diagrams or documented elsewhere. ",
+          "author": "AnievesPANW",
+          "created_at": "2025-04-15T17:00:16Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxAjZ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12847321",
+          "body": "> jsantore-cgc: In my 3PAO days, all FedRAMP review sessions (RARs and SARs) easily spent at least half of the session focused on deep dives into the diagrams. I've also seen multiple cycles of the same diagrams!\r\n\r\nYes - I have always found this disturbing and believe there is ample opportunity to change that mindset and approach. ;) 100% agree on talking through this from first principles and proposing a world where a system diagram is a reference tool for discussion rather than something that is negotiated over.\r\n\r\n> AnievesPANW: The way I view diagrams, especially an ABD that crosses AWS and GCP and has dozens of products involved in it is a starting point for a conversation. It's a high-level visual representation of what we're going to be discussing and used as a platform to jump into the nitty gritty details that are likely captured in other diagrams or documented elsewhere.\r\n\r\nYes! That's the dream IMO. As an SRE my approach would be to look at the diagram to where where Box X connects then immediately dive into the detailed configuration and inventory information around Box X to understand what it's doing - rather than expect all of that information to be on a diagram.",
+          "author": "pete-gov",
+          "created_at": "2025-04-15T21:51:38Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxKPW",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12886998",
+          "body": "yes, I agree with keeping boundary diagrams high-level.   You already should have the detail needed in either the ports/protocols table, the cryptography table, the inventory and/or the external services table.    As for the configuration, it is defined by STIGS/CIS L2 and should be just verified by the 3PAO against that standard.   \r\n\r\nThe diagram should just be a high-level simplification of this underlying detail.   \r\n     ",
+          "author": "cybersechawk",
+          "created_at": "2025-04-19T20:37:37Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxiUA",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/14#discussioncomment-12985600",
+      "body": "I think we should be looking into [mermaid.js](https://mermaid.js.org/) to create diagrams. The latest AI models, such as GPT o3 and Gemini 2.5 Pro do a good job of generating the marmaid.js code. It's also a good way to go from AWS / Azure Account Artifacts -> Diagram with little effort. \r\n\r\nYou can prompt your diagrams into existence without too much effort too!",
+      "author": "shrav",
+      "created_at": "2025-04-29T21:05:19Z",
+      "replies": []
+    }
+  ]
+}

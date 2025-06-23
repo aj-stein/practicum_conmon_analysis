@@ -1,0 +1,117 @@
+{
+  "id": "D_kwDOOMfSVs4AfOV4",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15",
+  "title": "Mapping Cloud Security Frameworks: Leveraging Existing NIST 800-53 Translations",
+  "body": "I found these mappings ( [ISO](https://csrc.nist.rip/files/pubs/sp/800/53/r5/upd1/final/docs/sp800-53r5-to-iso-27001-mapping.docx), [CIS](https://www.cisecurity.org/insights/white-papers/cis-controls-v8-1-mapping-to-nist-sp-800-53-rev-5), and [CCM](https://cloudsecurityalliance.org/artifacts/ccm-v4-0-fedramp-mapping)) for existing frameworks to NIST 800-53.   I am curious is there are any other framework mappings for frameworks currently used by CSPs.  FedRAMP's goal is to use to use these as part of our analysis.  We don't want to have another mapping exercise, but I think it would be helpful to look at previous work for our discussion.",
+  "author": "audreamichellewhite",
+  "created_at": "2025-04-09T20:52:44Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AwxAo",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12783656",
+      "body": "> I found these mappings ( [ISO](https://csrc.nist.rip/files/pubs/sp/800/53/r5/upd1/final/docs/sp800-53r5-to-iso-27001-mapping.docx), [CIS](https://www.cisecurity.org/insights/white-papers/cis-controls-v8-1-mapping-to-nist-sp-800-53-rev-5), and [CCM](https://cloudsecurityalliance.org/artifacts/ccm-v4-0-fedramp-mapping)) for existing frameworks to NIST 800-53.   I am curious is there are any other framework mappings for frameworks currently used by CSPs.  FedRAMP's goal is to use to use these as part of our analysis.  We don't want to have another mapping exercise, but I think it would be helpful to look at previous work for our discussion.\n\nI can provide you the HITRUST mappings to the FedRAMP rev5 baselines. ",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-09T21:09:52Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Awzwz",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12794931",
+          "body": "That would be much appreciated, thank you!",
+          "author": "emu-gov",
+          "created_at": "2025-04-10T17:54:15Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awzyv",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12795055",
+          "body": "What email would you like me to send them to?",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-10T18:06:30Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Aw2RR",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12805201",
+          "body": "Is this something we can post publically?  I think is may be helpful to the discussions!",
+          "author": "audreamichellewhite",
+          "created_at": "2025-04-11T14:47:04Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AwzPR",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12792785",
+      "body": "This is the official mapping document you can download from the AICPA's website if you are a member. This maps the NIST 800-53 r5 to the SOC 2 Trust Services Criteria. I understand this isn't mapped to the FedRAMP controls and baselines, but the point here is that because the controls aren't defined, organizations that are already undergoing SOC 2 and FedRAMP would be able to use the FedRAMP controls and reference the FedRAMP controls by control ID within the SOC 2 report by mapping them to Trust Services Criteria. If FedRAMP works with the AICPA, they can create an official mapping that CPA firms could use. I understand there are other hurdles that need to be overcome in terms of qualification of auditors and ensuring the scope of the SOC 2 audit would need to cover the appropriate system for FedRAMP, but this is true with any commercial framework. I do think it would be very easy to see the FedRAMP controls that were tested in a SOC 2 report and the results of that testing if the issued SOC 2 report referenced the FedRAMP control IDs. \r\n\r\n[tsc_to_nist_800-53.xlsx](https://github.com/user-attachments/files/19686716/tsc_to_nist_800-53.xlsx)\r\n\r\n",
+      "author": "troyfine",
+      "created_at": "2025-04-10T14:43:48Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AwzSx",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12793009",
+          "body": "@troyfine can you upload the Rev 4 to SOC 2 mapping you and I worked on a while ago?  It's a bit out of date, since it was Rev 4, but I think it might be helpful.  (Or did you upload that to the other thread, I don't recall).  \r\n\r\nThe idea here was to ensure that the SOC2 controls were defined in the context of the 800-53 requirements.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-10T15:02:29Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4Awzpi",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12794466",
+          "body": "I believe this is it.\r\n\r\n[mapping-tsc-to-nist-800-53-criteria.xlsx](https://github.com/user-attachments/files/19689008/mapping-tsc-to-nist-800-53-criteria.xlsx)\r\n",
+          "author": "patkompleye",
+          "created_at": "2025-04-10T17:05:15Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awz1j",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12795235",
+      "body": "GovRAMP baseline requirements align with FedRAMP with minor differences that include:\r\n\r\n1)\tPIV interoperability and Encryption (FIPS 140-2).  While GovRAMP doesn\u2019t require FIPS validation, the requirements include validation of modern data encryption.\r\n2)\tGovRAMP Moderate removed 4 controls required by FedRAMP Moderate and modified parameters for 5 controls.  \r\n3)\tGovRAMP Low Impact removed 3 controls required by FedRAMP Low and modified parameters for 2 controls.  \r\n\r\nThese differences could be handled with an overlay if needed/desired by federal agencies. For example:\r\n\r\nA FedRAMP overlay to GovRAMP Moderate Impact would include validation of these 4 additional controls: CA-08 (02), IA-02 (12), IA-08 (01), SA-04 (10) and review of modified parameters for the following 5 controls: CP-09 (08), IA-02 (06), MP-05, SC-08 (01), SC-13.\r\n\r\nA FedRAMP overlay to GovRAMP Low Impact would include validation of these 3 controls: IA-02 (12), IA-08 (01), SA-04 (10) and review of modified parameters for the following 2 controls: SC-08 (01) and SC-13.\r\n\r\nView baseline requirements and parameters at https://govramp.org/rev-5-templates-and-resources/",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-10T18:28:09Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4Axt95",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-13033337",
+          "body": "GovRAMP uses the same approach as the \"legacy FedRAMP\".   I hope that if we can validate FedRAMP KSIs through technical means, that GovRAMP would adopt the same approach.   ",
+          "author": "judgesma",
+          "created_at": "2025-05-04T21:38:33Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Awz2P",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12795279",
+      "body": "GovRAMP also launched a framework harmonization Task Force focused on CJIS-Alignment in 2024 and released a CJIS-Aligned Overlay to Moderate Impact Level in January 2025.  This was done to help streamline conformance for service providers and third-party assessment organizations (3PAOs) supporting state and local governments working to meet Criminal Justice Information Services (CJIS) security requirements. This effort went beyond mapping to examine specific control parameters. View more along with the CJIS-Aligned overlay at https://govramp.org/cjis-aligned-task-force/. ",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-04-10T18:33:04Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4Aw_cJ",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12842761",
+      "body": "@audreamichellewhite and @emu-gov, here are the HITRUST mappings to the FedRAMP rev 5 baselines. We have full coverage of the baselines.\r\n\r\n[FedRAMP r5 HITRUST Cross-Reference.xlsx](https://github.com/user-attachments/files/19759616/FedRAMP.r5.HITRUST.Cross-Reference.xlsx)\r\n",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-15T14:03:36Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AxQDk",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12910820",
+          "body": "@ryantpatrick @Leah-GovRAMP would y'all mind giving a short presentation on the next CWG meeting (6 May) about your work on this?",
+          "author": "emu-gov",
+          "created_at": "2025-04-22T13:43:49Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AxQJ4",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12911224",
+          "body": "Happy to. Could you provide the meeting logistics in terms of timing and if there's a different zoom link we should use? Feel free to email me at leah@govramp.org if needed. Thank you.",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-04-22T14:19:53Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AxQWq",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/15#discussioncomment-12912042",
+          "body": "Yes, absolutely. Can you please any relevant info to me as well: ryan.patrick@hitrustalliance.net\n\n@Leah-GovRAMP, I'll email you separately to chat through it.",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-22T15:19:25Z"
+        }
+      ]
+    }
+  ]
+}

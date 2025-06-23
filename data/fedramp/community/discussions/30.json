@@ -1,0 +1,320 @@
+{
+  "id": "D_kwDOOxfoic4AgAYa",
+  "url": "https://github.com/FedRAMP/community/discussions/30",
+  "title": "General Q&A for Applying Existing Frameworks in the 20x pilot",
+  "body": "This thread will serve as the dedicated space for questions related to Applying Existing Frameworks in the 20x Phase One pilot.\r\n\r\nFor Q&A and related general questions about Automating Assessment in the 20x Phase One pilot, please see the Automating Assessment working group area: https://github.com/FedRAMP/automating-assessment-cwg/discussions/categories/20x-phase-one-pilot\r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond. The FedRAMP PMO will work to answer these as we are able.\r\n\r\nYou can also start new threads to discuss specific topics. Just be sure to use the \"20x Phase One Pilot\" Category so other pilot participants can find your question.",
+  "author": "dan-fedramp",
+  "created_at": "2025-05-06T16:20:16Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Axyxe",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13053022",
+      "body": "Hello, what is the timeframe for 20x Phase One Pilot participation? Is there a NLT date a CSO would need to sign up by? \r\n\r\nThank you!",
+      "author": "BV1722",
+      "created_at": "2025-05-06T17:23:39Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxyzZ",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13053145",
+          "body": "@BV1722 according to the Phase Pilot site: \"The proposed FedRAMP 20x Phase One Key Security Indicators have been published for public comment in RFC-0006. The comment period will be open for 30 days. FedRAMP expects to rapidly integrate comments to formalize final Key Security Indicators and begin accepting Phase One pilot submissions for review within a week of finishing the RFC. Pilot submissions will be reviewed in order of submission so participation during the public comment period is encouraged.\"\r\n\r\nhttps://www.fedramp.gov/20x/phase-one/",
+          "author": "ryantpatrick",
+          "created_at": "2025-05-06T17:38:16Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Axy0l",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13053221",
+          "body": "Thanks @ryantpatrick. \r\n\r\nOnce the submission period starts, do we know how long it will be open for and is there a limit to the number of submissions? \r\n\r\n",
+          "author": "BV1722",
+          "created_at": "2025-05-06T17:43:04Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Axy1M",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13053260",
+          "body": "I haven't seen any details on that yet, @BV1722 ",
+          "author": "ryantpatrick",
+          "created_at": "2025-05-06T17:45:07Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax2U2",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13067574",
+          "body": "> Thanks @ryantpatrick.\r\n> \r\n> Once the submission period starts, do we know how long it will be open for and is there a limit to the number of submissions?\r\n\r\nFormal closing dates or limits have not been determined or published. FedRAMP will adjust if it ends up with an embarrassment of riches with submissions but the web page will be the source of truth for this information. For now under the Phase One Timeline it states:\r\n\r\n\"FedRAMP will continue to accept Phase One submissions while preparing for Phase Two. Phase One submissions will remain open based on demand.\"\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-07T20:09:46Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AxyzO",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13053134",
+      "body": "Why was SOC 2 Type 2 selected as the first assessment type for the pilot since it will likely create more work for the FR PMO staff or federal agency staff to decipher its mapping and relation to KSIs?",
+      "author": "ryantpatrick",
+      "created_at": "2025-05-06T17:37:26Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ax1c-",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13063998",
+          "body": "regarding the SOC 2 Type 2 report, the CSP might decipher its mapping and relation to KSIs. If the CSP feels that some part of their SOC 2 assessment demonstrates compliance with a specific KSI Validation, they would provide some indication in their submission such as a direct quote from the SOC 2 Type 2 report or perhaps using artifacts created for the SOC 2 assessment. The goal is to re-use the investment the CSP has already made in the SOC 2 certification, not necessarily the report itself.",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-07T14:07:27Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax10J",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13065481",
+          "body": "@dan-fedramp could a 3PAO leverage the test results from a SOC 2 Type 2 report without reviewing evidence as support for a KSI being met?",
+          "author": "troyfine",
+          "created_at": "2025-05-07T16:13:59Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax2Km",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13066918",
+          "body": "That is a tough question to answer in a general way. It is up to the 3PAO to determine what they will accept as evidence. ",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-07T18:59:23Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax2RJ",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13067337",
+          "body": "@dan-fedramp, I guess this logic could apply to any commercial framework and not just SOC 2 if the onus is still on the 3PAO to validate anything that could potentially meet the KSIs. I guess it begs the question, how is this any different from how the validation happens today?",
+          "author": "ryantpatrick",
+          "created_at": "2025-05-07T19:43:32Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax2V9",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13067645",
+          "body": "> Why was SOC 2 Type 2 selected as the first assessment type for the pilot since it will likely create more work for the FR PMO staff or federal agency staff to decipher its mapping and relation to KSIs?\r\n\r\nOne of FedRAMP's core goals is to open government access to cloud services that wouldn't otherwise be available for federal procurements. SOC 2 is generally considered to be the most accessible and most commonly used commercial security framework for businesses that haven't already invested in a path towards being available to federal agencies. We need to understand how it can be effectively applied against our key security indicators _(or NOT)_ as an early step, which is why it is prioritized for Phase One. ",
+          "author": "pete-gov",
+          "created_at": "2025-05-07T20:17:13Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax4aN",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13076109",
+          "body": "@ryantpatrick and @pete-gov that's exactly the point I mentioned in another thread (https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/28)\r\n\r\n> This actually brings up another point regarding additional frameworks, and perhaps a greater philosophical underlying issue.\r\n>\r\n>At what point is a assessor's (FedRAMP 3PAO, SOC2 auditor, ISO auditor, HITRUST, etc) validation deemed sufficient? I ask this, because historically in the pre-20x world, where packages had essentially three levels of review (or more), even the 3PAO validation was often questioned. Obviously, it is the AO's or FedRAMP's prerogative to review and perform a deep dive into the package, but I think the thought is to have a lighter touch review than in the past, hence the much faster package reviews happening today.\r\n>\r\n>So I think it's important to understand at what point an auditor's evaluation is deemed acceptable. And yes, we have R311 and A2LA for FedRAMP 3PAOs, but I think determing the level of trust we are going to grant credence to the opinion of an auditor from another framework is a valuable exercise. Just like we offer presumption of adequacy for an ATO to be reused, should we have some way to presume adequacy and trust for non-FedRAMP auditors? This would prevent the re-evaluation of a SOC2 report by an A2LA accredited FedRAMP 3PAO. Which is mostly rework, more money, and more time, and not necessarily an improvement in the overall security posture of the CSO.\r\n>\r\n>Or is this a rabbithole where we start having AICPA authorized SOC 2 assessors being required to follow R311 (or a subset thereof?) or certain KSIs require less rigor (e.g. a SOC 2 auditor's opinion on training vs SOC 2 auditor's opinion on encryption)?\r\n\r\nIf we are not willing to accept the opinion of an AICPA accredited auditor (probably with some caveats, see below) of a SOC 2, SOC 2 becomes a non-starter, since it would require an A2LA accredited 3PAO to recheck/redo things, which negates most of the point.  This holds for ANY and ALL other frameworks, including ISO, HITRUST, etc.\r\n\r\nTo be clear, I don't agree with  I think SOC 2 has value, but we may need *formal and defined* requirements or circumstances that would allow a SOC 2 opinion to be deemed acceptable and leveraged.  So either accept it at face value, or have some mechanism by which we 'certify' the auditor (e.g. parts of R311).  \r\n\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-08T13:18:55Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax4pK",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13077066",
+          "body": "> If we are not willing to accept the opinion of an AICPA accredited auditor (probably with some caveats, see below) of a SOC 2, SOC 2 becomes a non-starter, since it would require an A2LA accredited 3PAO to recheck/redo things, which negates most of the point. This holds for ANY and ALL other frameworks, including ISO, HITRUST, etc.\r\n\r\nThink incremental, not full solution.\r\n\r\nEven if all we achieve is that a business with a SOC 2 is able to feel a bit more confident about starting on FedRAMP _and considers doing it where they wouldn't before_, that's a win at scale. If someone with a SOC 2 might have a head start where they're likely to meet say 5 KSIs because they made changes to their processes for SOC 2 and now just need to tweak some docs and have a FedRAMP 3PAO review it, that's a win at scale.\r\n\r\nNobody is trying to move FedRAMP to a world where someone with an external certification will magically receive FedRAMP authorization. We're just trying to make it easier for companies to use their existing investments to make progress instead of starting from scratch. That's why we're focusing on the most common existing investments companies have made that don't traditionally align with FedRAMP first.\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-08T14:34:06Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax5Fr",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13078891",
+          "body": "If a SOC 2 Type 2 report included a mapping of the KSIs to controls tested during the audit and included testing procedures that covered the KSI validation procedures, could a 3PAO review the report and test results and rely on the report to prove that a KSI was met, assuming the 3PAO agreed with the tests performed and trusted the competency of the auditors that performed the SOC 2 Type 2 audit? Assume for this question, the SOC 2 Type 2 was completed 3 months ago.",
+          "author": "troyfine",
+          "created_at": "2025-05-08T16:47:51Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax5kV",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13080853",
+          "body": "@pete-gov \r\n\r\nFirst let me quote the pilot eligibility stuff, as I want to try and think through this:\r\n\r\n> Who Should Participate\r\n> The FedRAMP 20x Phase One pilot is open to the public and there are **no specific eligibility requirements** to participate, but FedRAMP expects cloud service providers that meet the following criteria are best positioned to qualify for authorization during Phase One:\r\n> \r\n> Deployed on an existing FedRAMP authorized cloud service offering, using primarily cloud-native services from the host provider\r\n> Service is provided only via the public internet (browser and/or APIs)\r\n> **Has completed a SOC 2 Type 2 audit** or federal agency ATO process within the last 12 months\r\n> Has a 3PAO ready to conduct a pilot 20x assessment informed by the Key Security Indicators\r\n\r\nAh, so it's recommended but not strictly required. Makes sense, I misread that at first glance.\r\n\r\n> Even if all we achieve is that a business with a SOC 2 is able to feel a bit more confident about starting on FedRAMP _and considers doing it where they wouldn't before_, that's a win at scale. \r\n\r\nJust a few thoughts as I think this through:\r\na- if all we are trying to do is boost confidence, that's not SOC 2 specific.  That could be ANY framework, or generically 'reasonably mature security posture.'  We're not actually *applying an existing framework* though.  And that's ok, but wanted to be clear.\r\nb- from my experience, the main barriers to FedRAMP are less about confidence security wise, and more about is there a sufficient goverment/government adjacent market to justify the effort, and can we get an agency sponsor (which this pilot solves).  If the market is there, then people tend to do the analysis on what is necessary to get FedRAMP authorized, and then proceed.  Some gamble on a market that never materializes (hence the old RARs that sit on the marketplace for a few years and then drop off).  The barrier to entry is more the effort, time, and price necessary to make a FedRAMP compliant system (as opposed to a generically secure system which most people already strive for).\r\nc- I guess what I'm saying is that a SOC 2 is a generically secure system, as opposed to a FedRAMP compliant system.  But it's not entirely clear if it's intended as a stepping stone to FedRAMP.  I actually think it could be, but to do so, it would be helpful if we make that bridge explicit.  I'd rather pay a 3PAO for a gap analysis and/or KSI assessment right off the bat.  The SOC 2 doesn't offer much concrete value to me unless it\u2019s given some level of formal credit; otherwise it feels more like a vague gut check.  And that's true of any other framework.\r\n\r\n>If someone with a SOC 2 might have a head start where they're likely to meet say 5 KSIs because they made changes to their processes for SOC 2 and now just need to tweak some docs and have a FedRAMP 3PAO review it, that's a win at scale.\r\n\r\nOk, so the goal here is 'hey, by doing a SOC 2, you are probably close to a few KSIs.'  That's fair, and I think valuable.  The follow up exercise is probably identifying which KSIs are close given a general SOC 2, and then developing a mechanism to self identify any delta.   \r\n \r\n> Nobody is trying to move FedRAMP to a world where someone with an external certification will magically receive FedRAMP authorization. We're just trying to make it easier for companies to use their existing investments to make progress instead of starting from scratch. That's why we're focusing on the most common existing investments companies have made that don't traditionally align with FedRAMP first.\r\n\r\nI'm just still trying to clarify what the tangible value is in focusing on SOC 2 specifically, versus other frameworks.  I understand the confidence and general having a mature security posture.  I'm trying to find a way (if one exists) to show a concrete, useful, actionable benefit from having a SOC 2 as a stepping stone to full FedRAMP.\r\n\r\nAlso, please don't take this as being argumentative;  there's obviously a reason we have a dedicated workgroup for 'applying existing frameworks' and that the pilot has a SOC 2.  I guess I interpreted the intent to 'give credit' (even if partial) to other frameworks and it sounds like that's not the case.  Maybe I'm missing something.  For what it's worth, I'm actually a proponent for 'giving some credit' to other frameworks.  What, and how, and how much are different discussions, and I think worth having.\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-08T20:52:45Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax5sy",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13081394",
+          "body": "@pete-gov @jsantore-cgc  SOC 2 is a very versatile framework.  CSPs can obtain a SOC 2 which is based on NIST 800-53 controls.  CPA firms have the obligation to assign competent resources for the audit.  Also from a regulatory standpoint SOC 2 reports exists as a response to Sarbanes Oxley Section 404 - Internal Control and FedRAMP in response to FISMA and multiple executive orders.  I believe that none of the other frameworks/standards mentioned above are linked to a regulation.   I agree that a KSI/test workbook is required to be able to obtain consistent results.",
+          "author": "patkompleye",
+          "created_at": "2025-05-08T22:03:03Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax5zi",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13081826",
+          "body": "> @jsantore-cgc - I'm trying to find a way (if one exists) to show a concrete, useful, actionable benefit from having a SOC 2 as a stepping stone to full FedRAMP.\r\n\r\nThis is it, exactly. FedRAMP has been directed to [\"leverage existing industry investments in security by inheriting best-in-class commercial security frameworks\"](https://www.fedramp.gov/20x/). Therefore, we are trying to find a way (if one exists) to show a concrete, useful, actionable benefit from having these as a stepping stone to full FedRAMP. \r\n\r\nWe can not reasonably try to do this for all commercial security frameworks in Phase One and are working on a timetable that does not allow us to reasonably determine the ones most likely to work. SOC 2 is the most prevalent in our target demo and the one everyone always asks about first. We have plenty of time to get to the others in future phases!",
+          "author": "pete-gov",
+          "created_at": "2025-05-08T23:14:59Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8nY",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13093336",
+          "body": "@pete-gov Could a 3PAO treat a SOC 2 report or any other commercial framework as evidence of a KSI being met? For example, if there is a control for \u201cAll employees must complete security awareness training on an annual basis\u201d and the auditor noted that this control was in place and was operating effectively, could the 3PAO treat the test results from the SOC 2 report as evidence of a KSI being met?\r\n\r\nWould this be a concrete benefit of using a commercial framework?",
+          "author": "troyfine",
+          "created_at": "2025-05-09T15:37:42Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8si",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13093666",
+          "body": "> @pete-gov Could a 3PAO treat a SOC 2 report or any other commercial framework as evidence of a KSI being met? For example, if there is a control for \u201cAll employees must complete security awareness training on an annual basis\u201d and the auditor noted that this control was in place and was operating effectively, could the 3PAO treat the test results from the SOC 2 report as evidence of a KSI being met?\r\n> \r\n> Would this be a concrete benefit of using a commercial framework?\r\n\r\nThis makes sense to me, though we'll need to see it applied in practice and want a FedRAMP 3PAO to make an assessment based on the information available to them on whether or not the SOC 2 evidence is sufficient/etc.",
+          "author": "pete-gov",
+          "created_at": "2025-05-09T16:06:38Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyYdu",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13207406",
+          "body": "@pete-gov When you say \"...want a FedRAMP 3PAO to make an assessment...\"; are you referring to every time a SOC2 report is used, or only once during this FR20X pilot to determine if it is a viable way forward?   If it is every future assessment, then it really doesn't reduce effort if an auditor's report must be reassessed by a \"FedRAMP 3PAO\"",
+          "author": "judgesma",
+          "created_at": "2025-05-20T13:42:35Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ax8Aq",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13090858",
+      "body": "Would you accept a GovRAMP RAR or SAR for the pilot, as this assessment lines up even more readily with FedRAMP Low?",
+      "author": "Leah-GovRAMP",
+      "created_at": "2025-05-09T13:19:09Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ax8KU",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13091476",
+          "body": "@Leah-GovRAMP \r\nI like this idea, actually.  Although I have a general 'we should get rid of RARs altogether' mindset (and I say that as a person where has personally done a whole bunch and was familiar with the process.  I just think the underlying goal had massive scope creep and it wasn't doing what it was supposed to be doing).\r\n\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-09T13:48:48Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8bv",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13092591",
+          "body": "I understand. GovRAMP's use of the Ready status has iterated differently than FedRAMP's intent. Many of our participating governments use Ready as a terminal status - -meaning they don't always require full authorization based on the level of risk. Often it is used as an alternative to Low Impact.  With that - I don't envision GovRAMP getting rid of RARs in the foreseeable future -- although it could evolve to be more aligned with the SAR format.  For that reason - accepting a GovRAMP RAR may be a worthwhile pilot for FedRAMP as an alternative for Low.",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-05-09T14:43:25Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8jf",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13093087",
+          "body": "Ooh.  This is a good idea!  Repurposing the use of a RAR at the FedRAMP level for... something akin to KSIs.  \r\n\r\nI've also noticed that the GovRAMP RAR has migrated away from the old FedRAMP RAR narrative format and into more of a mini-SRTM with some other tabs (and kudos for that).  \r\n\r\nSide question for anyone who may know.  Does DoD still require a DoD RAR?  They used it mostly as an architecture overview before proceeding to a full SAR.\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-09T15:17:51Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ax8sL",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13093643",
+          "body": "> Would you accept a GovRAMP RAR or SAR for the pilot, as this assessment lines up even more readily with FedRAMP Low?\r\n\r\nThe [submission requirements are listed on the Phase One pilot page](https://www.fedramp.gov/20x/phase-one/) - it needs to be a machine readable package based on FedRAMP Key Security Indicators (with some other supporting bits). \r\n\r\nIf participants rely on materials produced for other existing commercial security certifications (SOC 2 or otherwise), we hope they would explain how those materials were applied to the Key Security Indicators so everyone can learn from that!",
+          "author": "pete-gov",
+          "created_at": "2025-05-09T16:05:08Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AySM3",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13181751",
+          "body": "Folks - just went through the 107 SKIs, which align to NIST / FedRAMP Low Base Line. Our company has just completed both a FedRAMP  Moderate RAR as well as the DoD FedRAMP Moderate Equivalency, latest versions both. I determined to pull forward the evidence / artifacts used to demonstrate compliance to the 326 Controls and 698 objectives from the MBL. Interesting is that your SKI are asking for a lot of evidence that is in a Policy / Procedure --- what gives with placing that into Machine Readable and  \"on-demand\"? I have created a single, rather verbose, document containing all the L Baseline artifacts we collected as part of our Moderate journey and am asking the Technical teams to identify what % can logically be pulled into a Machine Readable format that could be drawn upon on request from FedRAMP PMO. I have to tell you, from the SKI, you guys may want to think on how we present all Domain 6 / 7 / 8, and parts of  some of the others in a Machine Readable format. I do not think this is at all doable --- I mean, maybe list them out in a spreadsheet? Dunno... Anyway, the short runway you have asked to submit the entirety of the SKI in Machine Readable -- not based in reality. Cheers",
+          "author": "Cbat001",
+          "created_at": "2025-05-18T00:40:14Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyiqJ",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13249161",
+          "body": "It's not based on reality, none of this time frame is.......it's going to become large companies forcing \"group think\" on everybody. Doing quick/fast \"correct\" audits is an oxymoron.  Guess we will see what happens.  ",
+          "author": "JChristo6532",
+          "created_at": "2025-05-23T17:07:55Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyR8D",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13180675",
+      "body": "@pete-gov \r\nWe are trying to determine LoE for the Phase One Pilot. We are almost done with both our RAR and DoD's FedRAMP Moderate Equivalency. DoD's FedRAMP Equivalency requires the exact same SAR and full compliance with the 325 800-53 controls as FedRAMP's Moderate Base Line (this is why DoD named it FedRAMP Moderate Equivalency). DoD's FedRAMP Moderate Equivalency mandate also requires assessment by a FedRAMP approved 3PAO. Would this Body of Evidence suffice for a Phase One Pilot submission or do we have to spend time mapping these things the Key Security Indicators. That's a lot of work for someone who has just paid a 3PAO for both FedRAMP Ready and DoD's FedRAMP Moderate Equivalency. ",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-17T18:50:31Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyVPH",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13194183",
+          "body": "The Phase One Pilot submissions must be based on key security indicators, not traditional packages. This is a fully optional self-directed pilot open to companies who are interested in taking an innovative approach to understand the impact and feasibility of alternative approaches to security assessment and review. ",
+          "author": "pete-gov",
+          "created_at": "2025-05-19T13:37:56Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyWIN",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13197837",
+          "body": "Thanks Pete, understand.\r\n",
+          "author": "greg-egnyte",
+          "created_at": "2025-05-19T19:18:09Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyR8K",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13180682",
+      "body": "@pete-gov \r\nAlso, much of the documentation for the KSI's according to my team cannot be converted into machine readable format. What is your guidance for that? Thank you.\r\n",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-17T18:52:39Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyVS-",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13194430",
+          "body": "Hi @greg-egnyte,\r\n\r\nI would suggest posting here the specific elements you are having trouble with to see how other members of the community are addressing them.  ",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-19T13:56:23Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Aye8c",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13233948",
+      "body": "@dan-fedramp \r\nDan, I could have sworn I saw some recent replies when I was on this discussion yesterday morning. There was even a draft response from Vanta. Have these been moved to another discussion/thread?",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-22T12:12:17Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Aye9D",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13233987",
+          "body": "> Dan, I could have sworn I saw some recent replies when I was on this discussion yesterday morning. There was even a draft response from Vanta. Have these been moved to another discussion/thread?\r\n\r\nAh, woops, I see the confusion - this is the Applying Existing Frameworks community working group. The threads and conversations about automating assessments are in the Automating Assessment working group: https://github.com/FedRAMP/automating-assessment-cwg/discussions/categories/20x-phase-one-pilot\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-22T12:16:07Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Aye_E",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234116",
+          "body": "@pete-gov Pete, I checked that discussion and its not there. I'm sure this discussion is missing some comments. What I'm seeing is it skipping from 5 days ago to my comment this morning. I read this discussion yesterday morning and there were a bunch more comments including a draft submission from Vanta and, I think, one more company. They said things like \"we are leading the way in publicly submitting our response\" and there were kudos from your side.",
+          "author": "greg-egnyte",
+          "created_at": "2025-05-22T12:29:06Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyfAL",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234187",
+          "body": "I edited my reply, which may not have come through if you're using email notifications. There are multiple working groups for discussing different aspects of the pilot. This working group, Applying Existing Frameworks, has less overall activity than the working group focused on Automating Assessment.",
+          "author": "pete-gov",
+          "created_at": "2025-05-22T12:35:22Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyfEg",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234464",
+          "body": "I wonder if it is time to consolidate the working groups?  Between the RFC's and 4 Working Groups - there are comments about KSIs, requirements, and the pilot that span across all threads. I, too, have difficulty keeping up with what is where.  As a result, our team started aggregating our working group/RFC reporting by topic area v. working group. ",
+          "author": "Leah-GovRAMP",
+          "created_at": "2025-05-22T12:58:12Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyfZi",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13235810",
+          "body": "> I wonder if it is time to consolidate the working groups?\r\n\r\nAgree - we've been talking just a bit about this. I'm leaning towards combining into a 20x focused group and a rev 5 focused group that will both allow a bit more freedom and focus, while reducing the burden of keeping up for all of us.\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-22T14:37:36Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyfCO",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234318",
+      "body": "@dan-fedramp \r\n@pete-gov \r\nIt was definitely this discussion group. I check these every day now. Do you see the response submission from Vanta on this one. Is it possible I am seeing something different. That had some extremely useful info (which of course is what we all are seeking). This would be the discussion group for submitting your response publicly so I'm sure it was this one. Hate to keep harping but need to supply that information to my team.",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-22T12:46:50Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyfDe",
+          "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234398",
+          "body": "Greg, everything you're describing matches the other working group: https://github.com/FedRAMP/automating-assessment-cwg/discussions/categories/20x-phase-one-pilot",
+          "author": "pete-gov",
+          "created_at": "2025-05-22T12:52:28Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyfCr",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13234347",
+      "body": "@dan-fedramp @pete-gov \r\nI also posting some additional questions on this thread yesterday asking for a deadline for submissions but don't see that? ",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-22T12:48:33Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay5sJ",
+      "url": "https://github.com/FedRAMP/community/discussions/30#discussioncomment-13343497",
+      "body": "With the initial release of the [formal 20xP1 submission requirements (including Q&A in this thread)](https://github.com/FedRAMP/community/discussions/34) and an updated Q&A thread on the [20xP1 release standards (25.05) for KSIs and MAS here](https://github.com/FedRAMP/community/discussions/28), I'm closing out these older threads to avoid any confusion.\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-02T12:58:04Z",
+      "replies": []
+    }
+  ]
+}

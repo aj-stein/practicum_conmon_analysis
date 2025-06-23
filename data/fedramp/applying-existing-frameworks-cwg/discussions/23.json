@@ -1,0 +1,49 @@
+{
+  "id": "D_kwDOOMfSVs4AfZlH",
+  "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23",
+  "title": "Do any existing commercial frameworks output report information into a machine readable format?",
+  "body": "If so, what formats are being used?\r\n\r\nIf not, what methods is the community using to import content into GRC systems?",
+  "author": "emu-gov",
+  "created_at": "2025-04-22T17:16:27Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMfSVs4AxQ-I",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23#discussioncomment-12914568",
+      "body": "@emu-gov, HITRUST offers a \"Results Distribution System\" (RDS) that allows for the transmission assessment results via JSON. We are working on adding OSCAL to the capability. HITRUST also has an integration app utilizing RDS available now for ServiceNow. Since the format is JSON, it can be consumed by most GRC platforms.",
+      "author": "ryantpatrick",
+      "created_at": "2025-04-22T20:13:36Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxT5p",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23#discussioncomment-12926569",
+      "body": "XLS or CSV uploads have worked for the majority of frameworks needing to be imported into a client's GRC systems (anecdotes, hyperproof, vanta, drata, compliance essentials, etc) ",
+      "author": "abr-cf",
+      "created_at": "2025-04-23T18:48:20Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMfSVs4AxT9A",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23#discussioncomment-12926784",
+          "body": "Is there effort in cleaning, structuring the data in order to import it?",
+          "author": "ryantpatrick",
+          "created_at": "2025-04-23T19:15:18Z"
+        },
+        {
+          "id": "DC_kwDOOMfSVs4AxT9R",
+          "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23#discussioncomment-12926801",
+          "body": "Always!! How/what varies between GRC tools ",
+          "author": "abr-cf",
+          "created_at": "2025-04-23T19:16:43Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMfSVs4AxheU",
+      "url": "https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/23#discussioncomment-12982164",
+      "body": "It's not about the framework but rather the GRC tool right?  All the evidence is collected and managed by the GRC tools.   The framework is just a description of what to collect.  \n\nTwo thoughts here.   First, do any existing frameworks have a machine readable descriptions for import into a GRC tool.   Second, what formats do existing GRC tools export findings and evidence to?\n\nThe latter question is the most important for the success of 20x implementation.   If the tool can't export, it will be rather pointless to use it other than to visually confirm compliance.  ",
+      "author": "Christcpd",
+      "created_at": "2025-04-29T14:55:24Z",
+      "replies": []
+    }
+  ]
+}

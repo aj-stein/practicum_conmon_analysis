@@ -1,0 +1,311 @@
+{
+  "id": "D_kwDOOxfoic4AgAH4",
+  "url": "https://github.com/FedRAMP/community/discussions/11",
+  "title": "General Q&A for Participation and Submission in the 20x pilot",
+  "body": "This thread will serve as the dedicated space for questions related to Automating Assessment and submissions for the 20x Phase One Pilot.\r\n\r\nFor Q&A and related general questions about Applying Existing Frameworks in the 20x Phase One pilot, please see the Applying Existing Frameworks working group area: https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/categories/20x-phase-one-pilot\r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond. The FedRAMP PMO will work to answer these as we are able.\r\n\r\nYou can also start new threads to discuss specific topics. Just be sure to use the \"20x Phase One Pilot\" Category so other pilot participants can find your question.",
+  "author": "dan-fedramp",
+  "created_at": "2025-05-06T16:18:29Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AxzB6",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13054074",
+      "body": "As this is a pilot and not necessarily a guaranteed path to authorization, I am hearing concerns from potential participants that volunteering for the pilot would effectively lock the CSP into the pilot path, preventing them from being responsive to agency customers that may be identified during the pilot.  \r\n\r\n**1. Can a pilot participant transition to a traditional Agency/800-53-based Moderate either during or at the end of phase one if a sponsor is identified that wants a traditional Agency Moderate?**\r\n\r\n**2. Does the PMO have any objection to a pilot participant simultaneously pursuing a traditional Agency/800-53-based Moderate in parallel to the pilot?**\r\n\r\nThe goal behind these questions is to understand the flexibility participants may have and the degree to which they are locked into to the pilot path once they are committed.\r\n\r\nThe answer to these questions will help CSPs better assess the benefits and risks associated with participation.",
+      "author": "brian-ruf",
+      "created_at": "2025-05-06T19:14:27Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxzGJ",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13054345",
+          "body": "*CSP response/I'm not the PMO*\r\n\r\n1. I would imagine these two initiatives would be handled in parallel. \r\n2. Since the pilot is only for FedRAMP Low, I do not think pursuing FR Moderate in parallel would be an issue. The timelines are also different and the FR PMO would like to enable more products for Govt use, which would imply they'd want you to pursue multiple angles to Authorization. ",
+          "author": "sfc-gh-schaudhry",
+          "created_at": "2025-05-06T19:49:14Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AxzMR",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13054737",
+          "body": "I can confirm that choosing to participate in the pilot does not preclude a CSP from pursuing a Rev 5 Agency Authorization at the same time or at a later date.",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-06T20:46:32Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AxzRg",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13055072",
+          "body": "Thank you both for the clarifications! This is very helpful!",
+          "author": "brian-ruf",
+          "created_at": "2025-05-06T21:31:23Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ax5IU",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13079060",
+      "body": "Can you please provide clarity on what, exactly is meant by a \"... **service via browser [that] does not include web** ... **applications** ...\" from slide 10 of the [Town Hall from 4/30](https://github.com/FedRAMP/automating-assessment-cwg/blob/main/townhall-slidedecks/4-30-2025-townhall-slides.pdf)?\r\n\r\nAre you referring to browser extensions or Windows/Mac-native \"web\" applications?\r\n\r\nAny clarification would be greatly appreciated",
+      "author": "tnnrjmsn-eit",
+      "created_at": "2025-05-08T17:04:34Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyGpg",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13134432",
+          "body": "The intention is to limit the pilot to services that do not require the installation of software or an agent by the customer. Systems that include software which runs on the customer's premises add security complexity to a system. We will start to address offerings that require this level of integration in future phases. ",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-13T17:13:46Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ax8rU",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13093588",
+      "body": "Confluent is gearing up to participate in the pilot! For background, we have a FedRAMP Ready product, Confluent Cloud for Government, that has also passed a full initial Moderate Assessment with a 3PAO recommendation. While awaiting an Agency ATO to achieve full Authorization, we are super interested in the pilot's potential to achieve FedRAMP Low, and eventually Moderate Authorization without one; since, we have private sector customers waiting in the wings to use our product as part of their FedRAMP stack.\r\n\r\nWe did have a couple of questions regarding future phases that we wanted to run by this group:\r\n- Are there any timelines available for the Phase Two Pilot?\r\n- Will the Phase Two Pilot also award Moderate FedRAMP Authorization, without an Agency ATO?\r\n\r\nAlso, in the spirit of contributing back, we think we have identified a solution [CloudQuery](https://github.com/cloudquery/cloudquery) (not an advertisement) that can aggregate a lot of the data and has query features that we think we can use to validate many of the KSIs.  \r\n",
+      "author": "lucashogue-confluent",
+      "created_at": "2025-05-09T15:59:01Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyGqK",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13134474",
+          "body": "The most recent information regarding the pilot schedule is at https://www.fedramp.gov/20x/phase-one/. We have not released any information about future phases yet.",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-13T17:18:56Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyJSo",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13145256",
+      "body": "@dan-fedramp The goal of FedRAMP 20x is to \"80%+ of requirements will have automated validation without the need to write a single word about how it works, compared to 100% of current controls requiring narrative explanations\", with that in mind, are KSIs going to be the only way a system's risk posture is assessed? I ask because one key part of FedRAMP Rev. 5 and FedRAMP 20x is keeping the Collaborative ConMon Meetings yet CA-7, the control this is mapped to in Rev. 5, isn't mentioned in the KSIs (potentially because this is an initial assessment opposed to ConMon, so there wouldn't be any meetings before authorization). Has FedRAMP PMO considered on what security controls/security indicators, which might require manual testing, that it intends to keep or do away with it? I ask because I think that would allow organizations to give better feedback on the KSIs since currently they might not say something due to them thinking it will be addressed later, or you might get the other reaction where you will get feedback on more things which you plan to cover later. Hopefully that wasn't too confusing to follow.",
+      "author": "ChanceofClouds",
+      "created_at": "2025-05-14T13:26:23Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyKQX",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13149207",
+          "body": "Good question. I think I understand but let me try and give you an answer. Then you can tell me how I did.\r\n\r\n\u201care KSIs going to be the only way a system's risk posture is assessed?\u201d\r\n\r\nShort answer, yes. When we started discussions about the 20x project we initially divided the KSIs into \u201cpolicy\u201d and \u201ctechnical\u201d KSIs. But we found that many of the security objectives we initially categorized as \u201cpolicy\u201d could actually be programmatically assessed. Our strong preference is for automated assessments so we decided to start from a position of assuming all KSIs can be validated autonomously. Our current pilot is, in part, intended to validate or disprove that hypothesis and we would expect to update the KSIs based on that validation.  \r\n\r\n\u201cHas FedRAMP PMO considered on what security controls/security indicators, which might require manual testing, that it intends to keep or do away with it?\u201d\r\n\r\nOne of the main goals of the 20x program is to eliminate requirements/controls that do not provide valuable information for determining risk. Further, we want to identify the minimal set of KSIs needed to support risk based decision making by the Authorizing Officials at federal agencies. \r\n\r\nLastly, I would remind everyone that the KSIs are not intended to be just an abstraction layer on top of the 800-53 controls. We want the focus to be on \u201cDo the KSIs help us define and understand the risk of using a cloud service?\u201d and not specifically on which controls are addressed by each KSI.",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-14T19:17:30Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyKrt",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13150957",
+          "body": "> just an abstraction layer on top of the 800-53 control\r\n\r\njust to clarify though - I'm reading this with the key word being \"just\", ie having an abstraction layer that includes data from NIST 800-53 controls is not a bad thing, correct?  It's a good thing, yes? AND you also want to ensure that OTHER automation-specific controls are also available to CSPs, yes?  \r\n\r\nSo as a concrete example, say CP-1, CP-2, CP-3, CP-4:\r\n\r\nPre-20x: spend a lot of time showing you have a policy, a procedure, a plan and training. \r\n\r\nPost-20x: fine to have those, and even fine to report a boolean status that those exist and are approved - but - the higher priority is do the system metrics, eg uptime and # incidents, and MTTF, etc demonstrate that those are WORKING to improve the posture of the system?\r\n\r\nFair interpretation?",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-14T22:30:21Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyNiq",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13162666",
+          "body": "@sunstonesecure-robert, You definitely have the right vibe here. Your example is spot on.  ",
+          "author": "dan-fedramp",
+          "created_at": "2025-05-15T19:05:10Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ayby2",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13221046",
+          "body": "Thank you for the response. Perfectly understand the intent of moving away from strict control testing/thought process. Below for further clarification:\r\n1. Should a KSI be added to document holding Agency Collaborative ConMon Meetings? It seems this is a vital concept as PMO takes a step back and agencies will need to work together to find a standard for what necessitates a CAP yet is not addressed by the current KSIs. Would it make sense to give that feedback now or later?\r\n2. While it might seem strange to note now what concepts are definitely not going to be included in KSIs even in further iterations, since you might think the current lack of inclusion states that already, I think it might be helpful to point out the items which won't most likely be added that way people can give feedback on why they think those should be included. For example, a security concept which I think is outdated and won't be brought up is SC-7(18): Fail Secure. Whenever it came up during testing, it was always stated that this is a control based on old technology and that this is all already built into new systems. Whereas I think a KSI should address Agency Collaborative ConMon Meetings. It is hard currently to determine what will be added at higher baselines and if something should be brought up now or later.\r\nHope this added some more clarity on the intent of my aim and wasn't just completely off the mark based on what you said.\r\n",
+          "author": "ChanceofClouds",
+          "created_at": "2025-05-21T14:17:13Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ayb-J",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13221769",
+          "body": "> 1. Should a KSI be added to document holding Agency Collaborative ConMon Meetings?\r\n\r\nKSIs are focused on initial authorization capabilities at the moment, while continuous monitoring and reporting requirements are being addressed via separate standards. We'll make sure folks understand their continuous monitoring expectations separately during the pilot phases.\r\n\r\n> 2. While it might seem strange to note now what concepts are definitely not going to be included in KSIs even in further iterations, since you might think the current lack of inclusion states that already, I think it might be helpful to point out the items which won't most likely be added that way people can give feedback on why they think those should be included.\r\n\r\nThere may be follow on technical assistance that explains why stuff is specifically excluded but generally I think we'll be focused primarily on what needs to be included from an effort/delivery standpoint.\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-21T15:25:08Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyV7Z",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13197017",
+      "body": "Some questions for the draft submission - we'll save the questions for final submission after we review all final guidance on the Github discussions:\r\n\r\n1. I presume it's ok from previous calls and discussions here to send a link to a *public* Github repo specific to this draft submission?  \r\n  - We intend for the draft today to show all the artifacts we propose, and a README.md of our overall thought process on each of the requirements for the pilot.\r\n\r\n2. Is the SOC2 a *hard* requirement for a *draft* submission? \r\n\r\n3. We are talking to several 3PAOs. For the *draft* is simply attesting that we have these 3PAOs engaged and are engaged in discussions on how they would validate things, is that sufficient for *Draft*?\r\n\r\n4. We plan to share all KSI assessment info completely open source - however - neither in the draft, nor in the final submission - did we want to publicly release the actual evidence data. Nor do we expect to release details in the metrics definitions that would give an attacker any helpful info.  For the draft, we expect to share only the high level definitions of the metrics and their mappings to the assessment plan for the KSIs. Enough detail to show that the 3PAO was able to see that we are accurately measuring the characteristics of the KSIs - not enough detail to give hackers any helpful hints. Have we missed the mark in this understanding - at least for the draft submission?\r\n\r\nLooking forward to contributing further to this effort!",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-05-19T18:04:07Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyWDp",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13197545",
+          "body": "Thank you for putting so much effort into this and being transparent and leading the way for others!\r\n\r\nThe requirements for draft submissions are extra vague for the intent of allowing people to just show what they've done without necessarily needing to feel like they are \"ready\" to be done. Incomplete drafts are strongly encouraged.\r\n\r\n> 1. I presume it's ok from previous calls and discussions here to send a link to a public Github repo specific to this draft submission?\r\n\r\nYes! In fact, as stated on the pilot page: \"FedRAMP will prioritize public package submissions for the 20x pilot effort to facilitate the most efficient feedback mechanisms.\" In short, we can't provide personalized feedback to private submissions to avoid conflicts or advantages, but we _can_ provide personalized feedback to public submissions in public. \r\n\r\nAs stated in [CISA BOD 20-01](https://www.cisa.gov/news-events/directives/bod-20-01-develop-and-publish-vulnerability-disclosure-policy), \"Cybersecurity is a public good that is strongest when the public is given the ability to contribute.\" [This post in the public submission thread has more details and background on why](https://github.com/FedRAMP/automating-assessment-cwg/discussions/38#discussioncomment-13196528) - note that we do expect providers to make risk determinations and obviously you should not publish something that will likely lead to compromise. \r\n\r\n> 2. Is the SOC2 a hard requirement for a draft submission?\r\n\r\nSOC2 is NOT a hard requirement - quoting the web page again, \"the FedRAMP 20x Phase One pilot is open to the public and there are no specific eligibility requirements to participate.\" \r\n\r\nThere is [additional background on why FedRAMP indicated providers with a SOC2 would be best positioned to qualify for authorization during Phase One here](https://github.com/FedRAMP/applying-existing-frameworks-cwg/discussions/31#discussioncomment-13053134) but it is not a requirement.\r\n\r\n> 3. We are talking to several 3PAOs. For the draft is simply attesting that we have these 3PAOs engaged and are engaged in discussions on how they would validate things, is that sufficient for Draft?\r\n\r\nYes. It's okay if drafts are incomplete or works in progress - you don't even necessarily need to have talked to a 3PAO at all, though we'd recommend the draft share how you plan to indicate and track a 3PAO's ultimate involvement. There is no 3PAO requirements for working on drafts.\r\n\r\n> 4. We plan to share all KSI assessment info completely open source - however - neither in the draft, nor in the final submission - did we want to publicly release the actual evidence data.  ...\r\n\r\nThat's fine. It would be helpful for folks to know why you made that decision and how you will make that information available as needed to auditors, how it will be maintained separately, etc. For the final submission, FedRAMP will need to have access to that evidence (as will agency reviewers) for authorization but cloud service providers retain control of their own intellectual property and are empowered to make decisions about who they share it with and how.\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-19T18:45:06Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyW7Q",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13201104",
+      "body": "## FedRAMP 20x \u2014 \u201cFine, We\u2019ll Go First\u201d Edition \r\n\r\nWe waited (politely) for another CSP to post their drafts\u2026 nobody did.\r\nSo\u2014true to Vanta fashion\u2014we\u2019re jumping in and making a splash.\r\n\r\n### What\u2019s new\r\n- **FedRAMP 20x _Draft_ Package**\r\n  Grab it at our Trust Center (https://trust.vanta.com) under Resources\r\n  \r\n  We hope this sets the tone and supports the community.\r\n  Feedback welcome\u2014be gentle, we\u2019re learning along with you all!\r\n",
+      "author": "cooper-vanta",
+      "created_at": "2025-05-20T03:04:39Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyYeq",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13207466",
+          "body": "@cooper-vanta \r\nInteresting.  Kudos for both being the first, and doing something thorough.  It's great to see an organization that put a lot of thought into this.  I have some follow up questions/thoughts (for both Vanta and FedRAMP).\r\n\r\n1) If the intent was to provide status of the KSIs (and validated by a 3PAO), I think this is spot on.  However, and this may be a big misunderstanding on my part, I always thought that the purpose was to have the output from various commands showing the actual technical validation of certain controls rather than just a status, and that's what always made me concerned about the viability of such a mechanism.    For example, the results of some sort of query against a given control.  Using the training KSI, showing the command pulling data from an LMS system showing that the 'role based training module' had 100 participation, or something like that.  So one or two levels deeper than this.  Not a criticism, by the way, more a calibration with the actual goal.  I might have been overthinking this.\r\n\r\n2) If this is what FedRAMP is looking for, it seems that this is essentially a replacement of the old SRTM/Test Case Workbook.  Rather than a 1400 item spreadsheet of doom, it seems sufficient for the 3PAO (and again, kudos to Schellman for their work here) to validate things and give them a pass/fail that is included in a JSON.  @FedRAMP people, is that the goal?  If so, big thumbs up from me.  That saves a ton of repetitive paperwork.  \r\n\r\n3) I see this as a high level status, but if an agency or customer wanted to drill down, and say 'ok, show me the encryption stuff', what and how would that look like?  Would that also be a machine readable thing, or that's where we revert back to SRTM, evidence, screenshots and the like.\r\n\r\n4) I like the fact that a 3PAO approved/reviewed this and how they did so.  One of my initial concerns was 'oh look, here's a status dashboard and surprise surprise, everything is green.'  The way Vanta and Schellman did this alleviated that concern.  \r\n\r\n\r\n",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-20T13:47:21Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyYrV",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13208277",
+          "body": "> FedRAMP 20x \u2014 \u201cFine, We\u2019ll Go First\u201d Edition\r\n\r\nThis is awesome - to support ongoing discussion and review, would you consider [posting a standalone thread in the 20x Phase One Pilot category here?](https://github.com/FedRAMP/automating-assessment-cwg/discussions/new?category=20x-phase-one-pilot) \r\n\r\nI don't want these to get buried in the Q&A thread!",
+          "author": "pete-gov",
+          "created_at": "2025-05-20T14:42:32Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyYqf",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13208223",
+      "body": "We'll Go Second :)\r\n\r\nInspired by Vanta's post above, [SunStone has published](https://github.com/SunStone-Secure-LLC/artemis-fedramp20x\r\n) a far less robust draft package and so also posting here for feedback.\r\n\r\nBut in the spirit of agile and fail fast, we'll share our initial example and approach and add to it continuously as we learn and get feedback. ",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-05-20T14:37:12Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyYra",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13208282",
+          "body": "> We'll Go Second :)\r\n\r\nAlso awesome! To support ongoing discussion and review, would you consider [posting a standalone thread in the 20x Phase One Pilot category here?](https://github.com/FedRAMP/automating-assessment-cwg/discussions/new?category=20x-phase-one-pilot) \r\n\r\nI don't want these to get buried in the Q&A thread!\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-20T14:43:06Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyY0b",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13208859",
+          "body": "new thread here: https://github.com/FedRAMP/automating-assessment-cwg/discussions/40",
+          "author": "cooper-vanta",
+          "created_at": "2025-05-20T15:40:16Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyZCQ",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13209744",
+      "body": "Do we have to participate in Phase One in order to participate in Phase Two?",
+      "author": "Chris-8658",
+      "created_at": "2025-05-20T17:18:04Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyZJD",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13210179",
+          "body": "> Do we have to participate in Phase One in order to participate in Phase Two?\r\n\r\nNo - Phase Two will also be open to the public. Participants who receive FedRAMP authorization during Phase One will be prioritized for Phase Two review however.",
+          "author": "pete-gov",
+          "created_at": "2025-05-20T18:00:21Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyZC_",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13209791",
+      "body": "@pete-gov We\u2019re currently in the process of having our 20x Pilot package evaluated by our 3PAO. Quick question: our repository is private due to the sensitive evidence it contains. Is the link \r\n\"https://github.com/FedRAMP/automating-assessment-cwg/discussions/new?category=20x-phase-one-pilot\" the only accepted method for submission?\r\n\r\nWe also have a public-facing dashboard available, but the evidence links within it point to authenticated resources in the private repo. Just want to confirm whether that approach is acceptable or if all evidence must be submitted exclusively through the formal 20x Submission package.\r\n\r\nhttps://meridian-knowledge-solutions.github.io/fedramp_20x_public_submission/",
+      "author": "aburroughs",
+      "created_at": "2025-05-20T17:24:20Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyZGX",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13210007",
+          "body": "We took a sort of hybrid approach after the same concerns. Looking forward to lively debate on how to share sensitive evidence that may aid attackers (or dispel such hand-wringing once and for all! We are all supposed to be zero trust after all, right?)",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-20T17:42:12Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyZTR",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13210833",
+          "body": "> @pete-gov Quick question: our repository is private due to the sensitive evidence it contains.\r\n\r\nPublic draft submissions are preferred. If it's public, we can publicly provide feedback and other responses to what we see in the materials to the benefit of all participants. For this reason, we will also prioritize public submissions. Note that _draft_ submissions do not need to be complete, you can separate out things that you don't think should be public. \r\n\r\nWe will also accept private submissions, however we will not be able to provide direct feedback and will only be able to publicly post general feedback. This ensures no one receives an unfair advantage in the feedback they receive from FedRAMP during the pilot. You can email 20x@fedramp.gov to coordinate delivery of a private draft package.\r\n\r\n**Regarding formal submissions:** For formal submissions, we expect participants to make the full package available to us (including evidence) in their own way. We will prioritize packages where the majority is available to the public. \r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-20T19:20:06Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyZLM",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13210316",
+      "body": "@pete-gov I'm moving our discussion and the remaining questions from the [FedRAMP RFC-0006: 20x Phase One Key Security Indicators](https://github.com/FedRAMP/rfcs/discussions/18#discussioncomment-13206258) thread to this space for easier tracking.  Below is a summary of the outstanding questions where we would appreciate FedRAMP\u2019s insights:\r\n\r\nFor CSPs and 3PAOs currently participating in 20x pilot assessments, we would welcome FedRAMP's thoughts on how KSIs are to be applied in practice during the pilot phase\u2014particularly in areas where statutory or policy-driven obligations (e.g., FIPS-validated encryption or incident reporting timeframes) are not explicitly referenced in the KSI language.\r\n\r\nSpecifically, we ask:\r\n\r\n1. Should assessors and CSPs assume that these federally mandated requirements remain in scope even if they are not included in the KSIs?\r\n2. Will FedRAMP provide supplemental guidance during the pilot that explicitly maps relevant mandates to the appropriate KSIs or support materials?\r\n\r\nWe raise these questions to ensure alignment and avoid divergence across pilot assessments\u2014particularly given that CSPs and 3PAOs may interpret the KSIs differently in the absence of clear technical references.\r\n",
+      "author": "mhungate-schellman",
+      "created_at": "2025-05-20T18:18:20Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyZV7",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13211003",
+          "body": "Thanks Matt! Appreciate your patience with the rigamarole.\r\n\r\n> For CSPs and 3PAOs currently participating in 20x pilot assessments, we would welcome FedRAMP's thoughts on how KSIs are to be applied in practice during the pilot phase\u2014particularly in areas where statutory or policy-driven obligations (e.g., FIPS-validated encryption or incident reporting timeframes) are not explicitly referenced in the KSI language.\r\n\r\nFair point - the KSIs generally avoid explicitly referencing things that may change outside of FedRAMP activities. These details will need to be supported with technical assistance and best practices before the 20x assessment process is formalized as a complete process.\r\n\r\nRegarding the Phase One pilot specifically:\r\n\r\n> 1. Should assessors and CSPs assume that these federally mandated requirements remain in scope even if they are not included in the KSIs?\r\n\r\nYes, though assessors and CSPs should apply reasonable frameworks related to this (e.g. FIPS-validated encryption may not be necessary in services that do not handle federal information and many policy related controls can be compensated for). Questions about specific scenarios can also be addressed publicly, but generally Low impact has a bit of leeway.\r\n\r\nWe would recommend that assessors err towards documenting potential issues and moving the package forward for FedRAMP's review during the pilot so we can weigh in directly when needed. We understand that the amount of ambiguity here means an assessor might not be comfortable making a recommendation without additional direct guidance.\r\n\r\n> 2. Will FedRAMP provide supplemental guidance during the pilot that explicitly maps relevant mandates to the appropriate KSIs or support materials?\r\n\r\nNo, supplemental guidance for this specific use case will not be available during Phase One and will be minimal during Phase Two. Determining the need for and appropriate coverage required for this type of supplemental guidance is part of the purpose of the pilot. \r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-20T19:37:02Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AybR_",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13218943",
+      "body": "@pete-gov \r\nWe will be submitting our response but have a few questions first\r\n\r\n1. We can't put our entire response in machine readable format. Is that OK\r\n2. Has anyone found a way to put their entire response in machine readable format and if so, how? We will attempt to follow suit.\r\n3. What is the deadline for Phase One Pilot submissions. It originally posted that they would be accepted after RFC0006 was closed on May 25th, but I saw that you announced you are accepting submissions (and see a few on here)\r\n4. If we submit and get turned down, will we know why?",
+      "author": "greg-egnyte",
+      "created_at": "2025-05-21T11:04:07Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ayb7U",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13221588",
+          "body": ">  1. We can't put our entire response in machine readable format. Is that OK\r\n\r\nThe [submission requirements on the phase one page](https://www.fedramp.gov/20x/phase-one/) outline a requirement for a machine-readable assessment file and what should be in it. This should be completed to the maximum extent possible, but if some things can't be included it's fair to document this separately and explain in the summary.\r\n \r\n>  3. What is the deadline for Phase One Pilot submissions. It originally posted that they would be accepted after RFC0006 was closed on May 25th, but I saw that you announced you are accepting submissions (and see a few on here)\r\n\r\nThe [Phase One timeline](https://www.fedramp.gov/20x/phase-one/) shows that May 19 was a goal for _draft_ submissions which are currently open, and does not indicate a deadline: \"FedRAMP will continue to accept Phase One submissions while preparing for Phase Two. Phase One submissions will remain open based on demand.\"\r\n\r\n>  4. If we submit and get turned down, will we know why?\r\n\r\nTo the greatest extent possible and reasonable, FedRAMP will work with pilot participants to iterate on their pilot package until they are able to qualify for the pilot authorization. Pilot submissions are not anticipated to be a \"one and done\" either you are qualified or not; iterative improvement is likely and expected.\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-21T15:09:05Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AybkI",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13220104",
+      "body": "We are unable to participate in FedRAMP20x Phase 1 due to the criteria of providing service only via the public internet (browser and/or APIs). However, we have a few questions regarding the potential for participating in FedRAMP20x Phase 2.\r\n\r\n-      Will Phase 2 have the same criteria of providing service only via the public internet (browser and/or APIs)?\r\n-      Are we required to have an agency sponsor in order to participate in Phase 2?\r\n-      Will we be allowed to participate if we are currently FedRAMP Authorized but have not completed a SOC 2 Type 2 audit or federal agency ATO process within the last 12 months?\r\n",
+      "author": "ddhusto",
+      "created_at": "2025-05-21T13:04:02Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ayb9Z",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13221721",
+          "body": "> We are unable to participate in FedRAMP20x Phase 1 due to the criteria of providing service only via the public internet (browser and/or APIs). However, we have a few questions regarding the potential for participating in FedRAMP20x Phase 2.\r\n\r\nFedRAMP is focused on Phase One right now and hasn't published any decisions about Phase Two beyond the following:\r\n\r\n1. It will target 20x Moderate\r\n2. Participants who receive 20x Low authorization will be prioritized for review in Phase Two\r\n\r\nYou'll need to stand by for formal information about Phase Two beyond that, though I'm willing to say that the plan is currently for Phase Two to look a lot like Phase One except just more KSIs to reach moderate.\r\n\r\nI would be curious to hear more about how you provide service in a way that doesn't meet the criteria if you'd be willing to provide context.",
+          "author": "pete-gov",
+          "created_at": "2025-05-21T15:21:04Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Aycd8",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13223804",
+          "body": "Our environment connects via ports using IP Address Allow Listing. In addition, we utilize cloud native services where it makes sense, but our main application is proprietary and not very cloud native.",
+          "author": "ddhusto",
+          "created_at": "2025-05-21T18:43:41Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyckA",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13224192",
+          "body": "> Our environment connects via ports using IP Address Allow Listing. In addition, we utilize cloud native services where it makes sense, but our main application is proprietary and not very cloud native.\r\n\r\nAh, copy, thanks for sharing that - I imagine Phase Two will likely open up to general \"provides services over the public internet\" but at the moment KSIs are planned in a way where a lot of security is inherited from the FedRAMP authorized PaaS/IaaS. Definitely stick around and see though!",
+          "author": "pete-gov",
+          "created_at": "2025-05-21T19:18:05Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AygDu",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13238510",
+      "body": "Hi all, we're throwing our hat in the ring to take part in the pilot program: https://github.com/FedRAMP/automating-assessment-cwg/discussions/44\r\n\r\nWe've been keeping up with the 20x progress over the last few months and are excited to participate. We currently manage an existing FedRAMP authorization are are excited to expand our offerings. \r\n\r\nOur 20x submission details are available here: https://github.com/KMI-Learning/FedRAMP-20x-Pilot -- this is a draft of our vision where we will begin building out the solution over the coming weeks following the KPI final draft release.  ",
+      "author": "lowtopp",
+      "created_at": "2025-05-22T19:33:37Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AygIq",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13238826",
+      "body": "**3PAO\u2019s role in the pilot: Will they validate ONLY the KSIs?**\r\n\u2022 If yes, does the 3PAO only validate the KSIs and NOT the NIST controls?\r\n\u2022 If yes, does the 3PAO generate a report attesting that they validated it?\r\n\u2022 What kind of submission(s) will be necessary from 3PAOs to be authorized?\r\n**\u201cTo qualify\u2026provide a machine readable package\u2026for a significant portion of the FedRAMP Key Security Indicators (KSIs)\u2026\u201d**\r\n\u2022 What does the \u201cpackage\u201d consist of? Just evidence?\r\n\u2022 What if KSI evidence cannot be provided in machine-readable format? Rejected?\r\n\u2022 Will screenshots, tickets, SOC2 reports, etc. be accepted (not machine-readable)?\r\n**New requirements/controls in RFC 0006 for Low baseline (e.g., AC-23, AT-6).**\r\n\u2022 Was that the intention?\r\n**Is this \u201cconditional authorization\u201d a new type of ATO FedRAMP is rolling out?**\r\n\u2022 What happens to currently Low authorized CSPs?\r\no Should they forgo their Low assessment and do the KSI model? OR\r\no Should they continue with their Con Mon?\r\n**RE: cloud native architecture**\r\n\u2022 What is the expectation of defense in depth to which a CSP must adhere?\r\n\u2022 Does the FedRAMP Subnetting Whitepaper still apply as guiding principle?\r\n**New KSI states that vulnerability scans now target publicly accessible components.**\r\n\u2022 Previously, ALL assets were subject to authenticated vulnerability scanning- correct?\r\no Unscanned internal components opens the door to significant security risk.\r\nDo SBOM principles apply to containerized images pulled into registries from external supply chain providers (e.g. RapidFort, Chainguard)?\r\n\u2022 Many CSPs leverage this service as a central repository\r\n\u2022 CSPs would be burdened instead of the supply chain provider reporting SBOM status of all cataloged images provided to Federal customers as standard oversight practice.\r\n**No Zero-Trust Architecture (ZTA) applied to IA:**\r\n\u2022 As a community we should be eliminating inherently unsafe VPN services.\r\n**Wiz and AWS Audit Manager are already doing automated self-auditing**\r\n\u2022 \u201cClose\u201d to what 20x is looking for BUT these are fundamentally different systems.\r\no Wiz output is DIFFERENT than AWS Audit Manager output.\r\n\u2022 What is the expected data model to follow and how will FedRAMP ingest results?\r\n\u2022 Right now, there is no standard or output expectations for automated systems.\r\n\u2022 Acceptance criteria for post-automation workflow package(s) and deliverables?\r\n**KSI and Modernization**\r\n\u2022 Who is responsible for curating the standards and adapting to ecosystem changes?\r\n**KSIs and Shared Service Model**\r\n\u2022 Should there be more focus on CSPs and supply chain(s) rather than CSP consumers?\r\n\u2022 ISC2\u2019s CCSP focuses much of its content on understanding shared service model.\r\n\u2022 FedRAMP has yet to adopt this, impacting strength for evaluating security inheritance.\r\n\u2022 There is no KSI that focuses on the shared service model.\r\n\u2022 CSPs complain that FedRAMP is expensive. Understood- resulting from re-scrutinizing a subset of inherited controls and no due diligence pressure on the underlying CSP to fix.\r\no Example: virtual hosts provided by underlying CSPs for container services.\r\no Most underlying CSPs provide images that customers have no ability to edit.\r\no ONLY customer responsibility is to ensure they are hitting \u201cupdate\u201d button on time\r\n\u2022 While aggressive scans are run on these nodes and instruction is given to fix issues or work with the CSP if no capability to edit exists, FedRAMP does not ensure suppliers fix.\r\n\u2022 Deeper suppliers providing secure images (e.g. RapidFort, Chainguard) are not FedRAMP accredited or audited; yet, can be the most fundamentally important contributor to the security of the ecosystem.\r\n**3PAOs with Automation or GRC systems.**\r\n\u2022 KSIs can be met through an automated \"SRTM\"\r\no Request for Information (RFI) front-end from 3PAOs allows for submission of implementation state and evidence (as applicable)\r\no 3PAO would evaluate the uploaded KSI(s) responses and artifacts\r\n\uf0a7 Completed SRTM: machine-readable KSI report for FedRAMP 20x.\r\n\uf0a7 Output results into GitHub as markup language\r\n\uf0a7 Output of automation scripts is factored into the overall markup report\r\n\u2022 Reduces the need for external or zipped artifacts.\r\n\u2022 GitHub already used and understood by FedRAMP\r\n\u2022 Machine readable output in a format FedRAMP is using.\r\no This process can accelerate the FedRAMP program exponentially and meets all the fundamental goals of the RFC.\r\no Workload for FedRAMP is highly minimized.\r\n\uf0a7 FedRAMP gets markup report (Github) with 3PAO evaluation with artifacts.\r\n\uf0a7 FedRAMP ONLY needs to review the report and approve the report.\r\no Github does everything you need.\r\n\uf0a7 Preserves integrity of the reports (all changes are tracked)\r\n\uf0a7 A bottomless repository\r\n\uf0a7 Integrates with every automation known to man.\r\n\u2022 Scripts used can also be opened as a community pool.\r\no Process can pre-reject packages if they fail KSIs so FedRAMP saves time.\r\n\uf0a7 \u201cApprove\u201d button OR \u201cReject\u201d button with some rationale input.\r\no Visual dashboard showing FedRAMP what the queue looks like.\r\n\uf0a7 FedRAMP can log in themselves, see dashboards, and mark certain CSPs as priority.\r\n**KSI-Specific Questions:**\r\n\u2022 KSI-CNA, Part 2: Configure firewalls/proxy servers to limit inbound and outbound traffic.\r\no Is there a priority to focus on internal traffic, external to internal traffic, or both?\r\n\u2022 KSI-IAM, Part 2: Enforce strong passwords.\r\no Passkeys, biometrics, hardware security keys, SSO, and behavioral biometrics are replacing traditional passwords. Consider enforcing strong passwords by migrating beyond traditional passwords with modern authentication methods.\r\no What are the parameters for \u201cstrong passwords\u201d (upper/lower, alphanumeric, special character, length, etc.)?\r\n\u2022 For KSI-MLA, Part 2: Regularly review and audit logs.\r\no What is the time frame meant by \u201cregular\u201d?\r\n\u2022 KSI-SC, Part 1: Harden and review network and system configurations.\r\no Is there a specific standard required to be used (CIS, STIG, etc.)?\r\n\u2022 KSI-SC, Part 2: Encrypt all network traffic.\r\no Difficult for internal-originating DNS queries as well as Certificate Revocation List distribution. Both of these common data flows are unencrypted.\r\n\uf0a7 Cloud platforms (AWS, Azure, GCP) don't offer a cloud-native method for encrypting these data flows- only installing an on-prem solution such as BIND or a Windows Server running the DNS role.\r\n\uf0a7 Encrypting these data flows isn't a new requirement- required by Executive Orders as well as NIST SP 800-207\r\n\u2022 Still not implemented by any FedRAMP CSP.\r\n**Numerous KSI\u2019s \u2013 Encryption (FIPS 140)**\r\no Do the encryption requirements (FIPS not noted) need to be FIPS 140-2 and/or FIPS 140-3 (and no historical)?",
+      "author": "drewforbes",
+      "created_at": "2025-05-22T20:18:07Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AygQU",
+          "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13239316",
+          "body": "Whew, okay, this has a ton of questions that I'm not going to be able to get to directly. In general, I'm going to re-frame and emphasize two key points outlined on the [20x Phase One pilot page](https://www.fedramp.gov/20x/phase-one/):\r\n\r\n1. The purpose of the pilot is to assess the feasibility of this general approach. This includes understanding where there are gaps, where additional questions need to be answered, and what it might take to answer them. That is why this is a Phase One pilot, not a formal authorization path.\r\n\r\n2. The approach is intended to be designed in collaboration with industry stakeholders and agency experts. FedRAMP expects industry stakeholders to have, present, test, and demonstrate strong opinions that will help us assess the feasibility of this approach. \r\n\r\nFedRAMP is explicitly limiting the amount of prescriptive direction in alignment with our core direction from leadership to enable private innovation to provide solutions.\r\n\r\nAs such, I'm really curious to hear what industry stakeholders and agency experts have to say on some of these topics. I'll pick out a few to weigh in on myself:\r\n\r\n> does the 3PAO only validate the KSIs and NOT the NIST controls?\r\n\r\nA good starting point here may be to review [SP 800-53A Assessing Security and Privacy Controls in Information Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) Chapter 3.5 on \"Assess Security and Privacy Capabilities\" and consider that application to the goals of this pilot.\r\n\r\nThe 20x package should be assessed and judged based on how effectively it meets the capabilities represented by the KSIs. If there is a specific failure, the root-cause NIST control may be determined and flagged if this is helpful. However, ultimately, the authorization decision (and thus the assessor's recommendation) should be made based on the capabilities represented by the KSIs.\r\n\r\nRegarding the other questions in this context, during the pilot we anticipate innovative solutions for how 3PAOs and CSPs cooperate on validation.\r\n\r\n>  \u201cTo qualify\u2026provide a machine readable package\u2026for a significant portion of the FedRAMP Key Security Indicators (KSIs)\u2026\u201d\r\n\r\nThere's additional information about expectations on the [20x Phase One pilot page](https://www.fedramp.gov/20x/phase-one/) and in the Q&A here. \r\n\r\n> New requirements/controls in RFC 0006 for Low baseline (e.g., AC-23, AT-6). Was that the intention?\r\n\r\nYes. The KSIs reflect the capabilities FedRAMP expects cloud service offerings to meet for a 20x Low authorization. It is not a direct rip and replace of previous baselines.\r\n\r\n> Is this \u201cconditional authorization\u201d a new type of ATO FedRAMP is rolling out?  What happens to currently Low authorized CSPs? Should they forgo their Low assessment and do the KSI model? OR  Should they continue with their Con Mon?\r\n\r\nFedRAMP does not have authority to do ATOs; FedRAMP authorizations are certifications that a cloud service completed a FedRAMP authorization process. It's a dictionary definition use of the word authorization and is not an ATO. \r\n\r\nThe 20x approach will result in Program Authorizations (as outlined in M-24-15) for qualifying participants. This pilot and the KSIs are entirely unrelated to the Rev 5 Agency Authorization path for FedRAMP authorization and such offerings are not affected by it in any way (though they may be affected by parallel modernization initiatives).\r\n\r\n> Does the FedRAMP Subnetting Whitepaper still apply as guiding principle?\r\n\r\nThis is a great specific question - for 20x pilot participants following the KSI approach, the Subnetting Whitepaper is somewhat explicitly overridden by the CNA KSIs. The Subnetting Whitepaper should not be applied. We'll make a note to include this in technical assistance.\r\n\r\n> New KSI states that vulnerability scans now target publicly accessible components.\r\n> SBOM principles\r\n> No ZTA applied to IA\r\n\r\nSome things will definitely changed based on public comment; all of these are likely candidates.\r\n\r\n> KSI and Modernization - Who is responsible for curating the standards and adapting to ecosystem changes?\r\n\r\nFedRAMP will maintain the standards.\r\n\r\n> KSIs and Shared Service Model\r\n\r\nWe tried to structure Phase One KSIs in a way that somewhat ignored requires that would typically be managed within the shared service model and replaced it with a global requirement that the cloud service offering use only FedRAMP authorized services.\r\n\r\nThis will be much more complicated to address when we move past SaaS that only use FedRAMP authorized IaaS/PaaS. Fantastic points on suppliers of secure images; another complicated thing to address separately, if possible.\r\n\r\n> KSI-CNA, Part 2: Configure firewalls/proxy servers to limit inbound and outbound traffic. o Is there a priority to focus on internal traffic, external to internal traffic, or both?\r\n\r\nGenerally these are equally important; preventing information from being exfiltrated during a compromise is an effective mitigation and compensating control that lowers overall risk.\r\n\r\n> \u2022 For KSI-MLA, Part 2: Regularly review and audit logs. o What is the time frame meant by \u201cregular\u201d?\r\n\r\nAt the moment this is a plain language word; CSPs should define the intervals/pattern they use backed by an appropriate risk based justification.\r\n\r\n> \u2022 KSI-SC, Part 1: Harden and review network and system configurations. o Is there a specific standard required to be used (CIS, STIG, etc.)?\r\n\r\nLooking forward to seeing how folks innovate here.\r\n\r\n> Numerous KSI\u2019s \u2013 Encryption (FIPS 140) o Do the encryption requirements (FIPS not noted) need to be FIPS 140-2 and/or FIPS 140-3 (and no historical)?\r\n\r\nFedRAMP's [policy for cryptographic module selection and use applies](https://www.fedramp.gov/rev5/fips/) to all FedRAMP authorizations at the moment, even though it's in the Rev 5 section; it's very important that the section on \"cases where a validated module is not necessary\" be applied. This allows for much more flexibility.\r\n\r\nFedRAMP may separately ease these requirements for Low.\r\n\r\nWhew, okay, think that got through most of it. Thanks for all the time and thought put into those questions!\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-05-22T21:14:20Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay5sL",
+      "url": "https://github.com/FedRAMP/community/discussions/11#discussioncomment-13343499",
+      "body": "With the initial release of the [formal 20xP1 submission requirements (including Q&A in this thread)](https://github.com/FedRAMP/community/discussions/34) and an updated Q&A thread on the [20xP1 release standards (25.05) for KSIs and MAS here](https://github.com/FedRAMP/community/discussions/28), I'm closing out these older threads to avoid any confusion.\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-02T12:58:11Z",
+      "replies": []
+    }
+  ]
+}

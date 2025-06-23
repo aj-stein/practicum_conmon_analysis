@@ -1,0 +1,260 @@
+{
+  "id": "D_kwDOOMDw3M4AfH3r",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7",
+  "title": "You have a security dashboard for your system-- what do you most want to see on it?",
+  "body": "We are interested in multiple perspectives here!",
+  "author": "kyhu65867",
+  "created_at": "2025-04-02T14:41:31Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4Awdm1",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12704181",
+      "body": "High up on my list is to see where the CSP is in adopting ZTA. ",
+      "author": "rebdave",
+      "created_at": "2025-04-02T17:24:56Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awdn5",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12704249",
+          "body": "I've seen people create a compliance dashboard on a SIEM tool (as opposed to a SecOps dashboard for day to day monitoring).  This compliance dashboard made it easy for an auditor to ensure that all the required event types (per AU-2, plus any controls with 'monitor, audit, or log' as part the requirement (so AC-6(9), SI-3, SI-4, SI-6, SI-7, etc.))  I think something like this would have some value.  We wouldn't want to actually ingest the events for automated assessment, but maybe some way to track this SIEM dashboard some how.",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-02T17:30:33Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awdn3",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12704247",
+      "body": "@kyhu65867  I know you mentioned no product pitches. Absolutely agree. However, several of us have internal, customer or fedramp projects which we already have in flight.  Those projects directly or partially can accelerate the gov's mission. We would love to post those examples here (without mentioning product names) so we can spark ideation. thoughts? See attached example for Dashboard. \r\n![image](https://github.com/user-attachments/assets/19b7560e-34c5-4dd1-979a-519b00030207)\r\n",
+      "author": "Quzara",
+      "created_at": "2025-04-02T17:30:29Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwdsA",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12704512",
+          "body": "Of course you are welcome to share projects and products that you are working on! The FedRAMP PMO just will not be endorsing anything, but we will certainly ask questions and provide a forum for collaboration and feedback on existing industry tools and best practices. ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-02T17:46:30Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AwdrY",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12704472",
+      "body": "Based on existing internal agency dashboarding, recommend the following. Each should be capable of breaking down/filtered to gather specific information from the asset level within the authorized boundary. \r\n\r\n- Vulnerability/Patch compliance (KEV, C-CAR, ED, general CVSS posture)\r\n- Configuration compliance (STIG, CIS, etc.)\r\n- Assessment compliance (pass, fail)\r\n- POA&M status (open, delayed, DR, OR, etc.)\r\n- Log Alerts\r\n\r\nFor areas in vuln management, we also can track mean time to remediate, riskiest assets, KEV compliance - these views provide insight into the basic risk management of a system beyond basic point in time assessments. If integrated with automated assessments of the technical aspects of a given control set, we can see pass/fail of controls have an impact on compliance level in other areas, allowing better risk decisions to be made.\r\n\r\nAs said in the meeting, if the focus is not on how they do it, then it needs to be on how well they do it and how consistent they are. If not, then how they do it matters.",
+      "author": "TWeikle",
+      "created_at": "2025-04-02T17:44:41Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awdzv",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12705007",
+          "body": "Well said.  We are interested in outcomes here.  Having a great procedure you never follow is not worth much. But It also seems reasonable to accept that if you are doing something well **consistently**, then you probably have a pretty good process for how to do it.  \r\n\r\nI am also a strong advocate for Configuration Compliance. Using well vetted images and configurations defined in code minimizes the need for more detailed scans of specific instances. Especially in a cloud platform where those instances are ephemeral and may exist for only minutes or seconds sometimes.",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-02T18:23:04Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Aw3CA",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12808320",
+          "body": ">  if you are doing something well consistently, then you probably have a pretty good process for how to do it.\r\n\r\nyes...but, the good guy has to be perfect every single time - the bad guy just has to wait for ONE flub\r\n\r\n> defined in code\r\n\r\nTHIS.  How much pain would we save everyone if we just required IaC and be done with the Word docs.",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-11T20:22:35Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awd4-",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12705342",
+      "body": "This is an old example, and we currently handle a bit differently, but I always felt it was a pretty good reference as a starting point.\r\n\r\n![image](https://github.com/user-attachments/assets/70ead780-c0bc-47d1-aac3-2475762bdaae)\r\n\r\nSource:  https://www.fedramp.gov/assets/resources/documents/CSP_Continuous_Monitoring_Strategy_Guide.pdf\r\n\r\nI would want to see in addition, the following on an exec dashboard:\r\n* High-level inventory information (e.g. #VMs vs Container Images )\r\n* Programmatic confirmation STIG/CIS2 hardening and FIPS across inventory\r\n* Chart summarizing VM and container vuln management (crit/high/mod/low)\r\n* Sig changes\r\n\r\n\r\n\r\n",
+      "author": "cybersechawk",
+      "created_at": "2025-04-02T18:40:37Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AweLP",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12706511",
+      "body": "I'll call it a CSP Security Posture Dashboard, and I think this should be within a FedRAMP Authorization Workflow Tool. It would be sad to see it only as a \"report\". I guess that's my first wish, build a workflow tool that is centered around a CSP Security Posture Dashboard and driven by an authorization workflow engine that connects all of the roles through the authorization process. (i.e. CSP role, FedRAMP role, Agency role, 3PAO role, etc). \r\n\r\nUpdates to the Dashboard are through APIs, automated, based on CSP compliance mechanisms. It seems reasonable for it to obtain the following:\r\n\r\n- KSI results by NIST 800-53 Control Domains (i.e. Access Control, Incident Response, Risk Assessment - the typical control family names that we all know and love) - notice, I'm advocating a Control Domain presentation, not nitty-gritty control-by-control. Each Control Domain should have KSI's defined for it. The Dashboard would then present results per Control Domain. \r\n- Current Snapshot (last refresh) and starting to build Trends over Time. \r\n- POAM - current counts and trends over time, especially around risk mitigation timeframes, inventory to scan accuracy and completeness at that very moment and scan. \r\n- Aggregate scoring (A, B, C, etc; 1, 2, 3, etc., Good, Bad, Ugly (lol), you get my drift.) Definitions for scoring so everyone understands what they mean. This scoring presentation is important to support making risk decisions - should be easily viewable, yet informative with depth to it. \r\n- One-stop show for all relevant stakeholders. The Dashboard, updated by CSP automation/code, is a living entity, represents where a CSP is at based on a defined refresh frequency, and can be viewed by relevant stakeholders. CSP can invite Agencies to see their Security Posture Dashboard to support Agency ATO decisions. The Dashboard should track current ATOs, pending ATOs, etc. \r\n\r\n",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-02T21:10:01Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awg6K",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717706",
+          "body": "I like this a lot-- particularly the aggregate scoring idea. Who do you think would make the decisions for what constitutes different scores? Another question I have as we move forward is if it would be worth it to have different \"views\" for the different stakeholders or if it would make more sense to follow more of a transparency model. For example-- should FedRAMP have access to the same information as a prospective agency buyer, or as an agency customer? Certain agency stakeholders may want more granular visibility, where other stakeholders may just want a broad overview. ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-03T18:39:43Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwhEa",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12718362",
+          "body": "Great questions @kyhu65867! To your first question, I think that is going to depend on the specific KSI. Giving the CSP flexibility on determining what makes the most sense is ideal, however, FedRAMP should try to avoid the \"how\" to report on a KSI, so that ingenuity and innovation sparks with the CSP. The CSP will be forced to determine the best approach of how measure a KSI. I would expect to see variation amongst CSPs on this, and rightly so, as environments will be different. I think that's a good thing...allowing creativity to flourish.\r\n\r\nAs far as your 2nd question - I believe a Security Posture Dashboard should present and accommodate both - an aggregate summary view and a Detailed view. As I've advocated for, moving to a Control Domain presentation of results can accommodate both an aggregate view and detailed KSI view for each Control Domain. I also can envision that on a detailed page, we allow the CSP to describe each KSI's automation method, as well as an overall Control Domain description of how the CSP addresses the KSIs, i.e. explaining the tools they use, the methods they use to, and perhaps exact details of how the metric is devised. This will then accommodate all types of user needs as well as all types of automation mechanisms used (i.e Pure Technical, Compliance-as-Code, Hybrid (meaning both manual and automated methods). \r\n\r\nThis type of approach can really make the Security Posture Dashboard a useful tool to present the right amount of information to reasonably determine an authorization decision. In theory :-)",
+          "author": "JosephScarzone",
+          "created_at": "2025-04-03T20:00:37Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awjjj",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12728547",
+          "body": "@kyhu65867 Been thinking...had an idea come to me last night. To alleviate fear and anxiety around feeling like we have to design perfect baseline of KSIs, covering everything we can think of, we need to allow flexibility because you bring up a good point about how Agencies could want to see more or different metrics/information and how would a CSP or even FedRAMP handle that in relation to the Dashboard. \r\n\r\nLet's pretend we have an online CSP Security Posture Dashboard, and let's assume we take a Control Domain approach that I've been advocating in presenting results of KSIs, and in the detail page that lays out the KSIs for a particular Control Domain, let's say IR or AC, which form the initial baseline KSIs for that Control Domain, and so on that page, we should add a section where the CSP can **Add a KSI**, which when clicked, the CSP can Define the KSI, select the type of metric (count, percentage, average, etc.), and provide a fairly clear and detailed description of how the CSP performs the metric. Let's assume we have APIs and code built smartly that will easily allow the adding of things in a structured manner, making it seamless in the interaction between the CSP and the FedRAMP tool. \r\n\r\nThe main page of the Dashboard should also have a section for CSP-Added KSIs and show aggregate scoring (current and trend).\r\n\r\nThis will solve the problem statement of \"what do we do when the Agency wants more data/metrics from a CSP?\" AND... worthy to be noted, CSPs may want to create an additional set of KSI's because they may want to demonstrate further information and metrics to both FedRAMP and Agencies regarding the status of their security posture. We want to encourage this mindset. \r\n\r\nOver time, we will see such an advancement in the KSI population that can be leveraged to further enhance the baseline set of KSIs. Here's the point - we can't think of every possible scenario, and that's ok. Building flexibility in the process to add a KSI on the fly by any CSP for any Agency, and for any reason, will allow us to implement faster. Speed to market in some situations is a better way, and in this case, where we can enhance on the fly, and constantly evolve and improve, means we can experience ROI in a real direct way and much faster than maybe any of us anticipated or thought possible. \r\n\r\nAnyway, my 2cents for whatever its worth. Hope it helps. :-)\u00a0\r\n\r\n\r\n",
+          "author": "JosephScarzone",
+          "created_at": "2025-04-04T16:45:14Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awjrt",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12729069",
+          "body": "I like this idea a lot.  Assuming we have a standard data format for KSIs then CSPs and Agencies can write their own which would be seamlessly merged with existing FedRAMP standards.  We should definitely be focused on compliance as code for both the definition of requirements and the verification of implementation.",
+          "author": "dan-fedramp",
+          "created_at": "2025-04-04T17:48:06Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwkGZ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12730777",
+          "body": "@JosephScarzone this is terrific and potentially worthy of its own thread! In this case, KSI development can be inherently innovative, collaborative, and potentially reach outside of just the FedRAMP ecosystem. If we were to take this approach, each specific KSI would matter a bit less than what makes a KSI-- for example, the type of measurement, the expected result, the frequency of measurement, description of the methodology, etc. This is a great opportunity for us to define multiple KSI fields that limit the reliance on narrative and help us pivot towards compliance as code, like Dan mentioned. \r\n\r\nThanks for your input!",
+          "author": "kyhu65867",
+          "created_at": "2025-04-04T21:51:40Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AykZg",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-13256288",
+          "body": "> standard data format for KSIs\r\n\r\n*cough* OSCAL *cough*",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-24T12:07:08Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awee0",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12707764",
+      "body": "@kyhu65867 @TWeikle @jsantore-cgc @JosephScarzone @dan-fedramp @cybersechawk @Quzara @rebdave\r\n\r\n\r\n### **Key Elements to Include:**\r\n\r\n1. **Comprehensive Control Domain View:**  \r\n   - As mentioned by @JosephScarzone, presenting results by **Control Domains** (Access Control, Risk Assessment, Incident Response, etc.) is essential. This high-level structure makes it easier for stakeholders to understand security posture across broader categories without getting lost in granular control-by-control details.  \r\n   - Allowing drill-down capabilities for detailed analysis when necessary would provide both accessibility and depth.  \r\n\r\n2. **Dynamic Compliance Assessment:**  \r\n   - Tracking of **Vulnerability/Patch Compliance** (e.g., KEV, C-CAR, CVSS), **Configuration Compliance** (STIG, CIS, FIPS compliance), and **POA&M Status** is a must.  \r\n   - Automated evidence ingestion from CSP compliance mechanisms via APIs is critical to keeping the dashboard updated in near-real-time.  \r\n\r\n3. **Trend Analysis and Historical Comparisons:**  \r\n   - The ability to **view trends over time** rather than just point-in-time snapshots provides valuable insights into improvement areas or regression.  \r\n   - Example Metrics: Mean Time to Remediate (MTTR), number of high/critical vulnerabilities over time, status of overdue POA&Ms, compliance drift analysis.  \r\n\r\n4. **Unified Dashboard for All Stakeholders:**  \r\n   - A single, integrated dashboard view that accommodates **CSPs, Agencies, FedRAMP PMO, and 3PAOs**.  \r\n   - Allowing CSPs to grant permissioned access to agencies for reviewing Security Posture could simplify the authorization process and improve transparency.  \r\n\r\n5. **Aggregated Scoring System:**  \r\n   - Implementing a straightforward scoring system (e.g., A, B, C, 1-5, Good/Bad/Ugly) to provide at-a-glance understanding of compliance status.  \r\n   - Supporting scoring criteria with detailed explanations to ensure clarity and consistency in assessment.  \r\n\r\n6. **Compliance-as-Code Integration:**  \r\n   - Implementing **Compliance-as-Code** mechanisms to verify configurations and adherence to standards (e.g., STIGs, CIS Benchmarks) continuously.  \r\n   - Allowing CSPs to automate remediation processes based on findings directly from the dashboard.  \r\n\r\n7. **Supporting Dynamic, Ephemeral Environments:**  \r\n   - Ensuring compatibility with ephemeral resources such as containers and serverless functions, which require unique approaches to assessment and monitoring.  \r\n   - Implementing APIs for real-time checks rather than periodic scanning to provide accurate, up-to-date compliance status.  \r\n",
+      "author": "austinsonger",
+      "created_at": "2025-04-03T01:13:37Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awf4Y",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12713496",
+      "body": "### eMASS Considerations\r\n\r\nIf we go down this path of re-designing FedRAMP, we must consider eMASS. For those of us who have to work in that system, it's a complete duplication of effort of the SSP and SAR results and POAM. **eMASS needs to be aligned to whatever process we put in place.** As I've been strongly advocating to shift to a Control Domain approach, if this concept moves forward (which would simplify matters greatly), we have to ensure eMASS takes the same approach and allow automatic updates from the CSP Security Posture Dashboard. This is critical to maintain the efficiency and automation we are looking to implement. ",
+      "author": "JosephScarzone",
+      "created_at": "2025-04-03T12:52:54Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AwgWP",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12715407",
+          "body": "@JosephScarzone Absolutely.  The bigger issue is that DISA and FedRAMP are not always in sync.  (we won't even talk about the CMMC 'FedRAMP Equivalent' thing that came out without any FedRAMP input).   Anything we do for FedRAMP should be easily mappable to eMASS (or vice versa).  I'd go so far as to almost make that a strict requirement.  \r\n\r\n@pete-gov @kyhu65867 do we know if any DISA folks are part of these working groups, and if not, I'd recommend finding a way to invite/include them.  ",
+          "author": "jsantore-cgc",
+          "created_at": "2025-04-03T15:32:37Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awhn9",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12720637",
+          "body": "Honestly. We should be working with https://p1.dso.mil/ which provides so many things to get service providers started.",
+          "author": "austinsonger",
+          "created_at": "2025-04-04T02:59:48Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awhqq",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12720810",
+          "body": "> Honestly. We should be working with https://p1.dso.mil/ which provides so many things to get service providers started.\r\n\r\nCan you tell us more about what they can provide? I thought they do not offer much to larger industry, even civilian US government, unless you are working with some element of the US military. I can download containers and see some of their GitLab repositories, but is there something else you can think of?",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-04T03:20:03Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awf9H",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12713799",
+      "body": "What controls? Well I have some ideas...but I don't want to mimic today, I want to consolidaye and simplify.  I want controls to roll up to these categories for products and PaaS offerings on CSPs that are already vetted.\n\nA. Encryption\n\nAt Rest: Validate volumes/databases use FIPS 140-2/3 encryption.\n\nIn Transit: Ensure TLS\u202f1.2+ for external endpoints.\n\nSecrets Management: Enforce rotation intervals (e.g., 90\u202fdays) and secure vaults.\n\nB. Phishing-Resistant MFA\n\nRequire MFA for privileged access and ideally all users, with a focus on FIDO2/WebAuthn or similarly robust methods.\n\nC. Zero-Trust Architecture\n\nCheck for micro-segmentation (no flat networks), dynamic per-request verifications, and strict least-privilege (role-based) access controls.\n\nD. High-Risk Event Logging & Auditing\n\nLog/admin changes, security group modifications, etc., in a SIEM or central aggregator.\n\nTrigger automated alerts for suspicious activity (e.g., repeated failed logins) and ensure an incident response workflow is in place.\n\nSounds like this wouldn't be too hard.\n\nE: CVEs\n\nWe can pull data from something like Heimdall, which my org uses, and use the data to pull back the number of Critical, High, Medium, and Low CVEs and send that to the 3PAO too.\n\nI want to see scores, not pass or fail but notional results, that say \"we are X% compliant, and because different Federal Agencies likely have different risk tolerances let them decide what % is good. Maybe we can have a lower bar for all agencies.\n\n2. We could just have a hypothetical endpoint, like get GET /fedramp-metrics that 3PAOs can hit and get a JSON response:\n\na. controlsChecked vs. controlsPassed vs. controlsFailed gives a quick overview.\n\nb. Each controlResults[] entry shows a short explanation of pass/fail.\n\nc. Linking to a remediationURL provides direct instructions or next steps in a code-friendly (not doc-heavy) manner.\n\nd. A separate POST /fedramp-metrics could let a 3PAO or auditor annotate official acceptance or provide comments.",
+      "author": "CKHogueSpears",
+      "created_at": "2025-04-03T13:18:19Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awg7V",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717781",
+          "body": "One idea that I've heard tossed around is scoring different categories differently, like the CIA triad, having a confidentiality, integrity, and availability score for different offerings. Different agencies have different needs, so often a one size fits all score may not fully answer all of their questions. What are some other categories that could be scored differently to give more quantitative insight? ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-03T18:45:45Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awgi_",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12716223",
+      "body": "I would want to show case the key controls what agencies need to know about. This would include AC, IA, CM, SC, SA, SI, RA, AU, CP, IR. have an API that is consumable for the agency and the FedRAMP PMO to enable the CSP to send or the agency to pull updates for control implementation status and ConMon updates from the CSP itself. The data updates can be in real-time or scheduled. Let the agency use their tools to query data from your CSP's source data.",
+      "author": "mtrulock",
+      "created_at": "2025-04-03T16:24:50Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Awg6B",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717697",
+          "body": "Also, what is a standard consumable data format which is preferred by agencies?",
+          "author": "mtrulock",
+          "created_at": "2025-04-03T18:38:46Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awg8f",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717855",
+          "body": "From what I understand, agencies don't necessarily have a singular preferred data format. Even now, everything is passed back and forth in spreadsheets and word documents. One of our tasks in this working group is to push the envelope forward, and I like what you're thinking around FedRAMP authorization via API calls!\r\n\r\nAnother thing to think about is that some of the NIST 800-53 controls aren't data friendly-- answering them is often nuanced and requires some narrative. How can we keep the spirit behind the controls while making them fit into an automation-friendly framework?",
+          "author": "kyhu65867",
+          "created_at": "2025-04-03T18:53:34Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awg8n",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717863",
+          "body": "Probably a different answer for every agency. I know we are set up through our GRC to ingest a number of different inputs, but for control parameters we have OSCAL and JSON, plus one or two one off custom formats.",
+          "author": "TWeikle",
+          "created_at": "2025-04-03T18:54:12Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awg9S",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12717906",
+          "body": "> From what I understand, agencies don't necessarily have a singular preferred data format. Even now, everything is passed back and forth in spreadsheets and word documents. One of our tasks in this working group is to push the envelope forward, and I like what you're thinking around FedRAMP authorization via API calls!\r\n> \r\n> Another thing to think about is that some of the NIST 800-53 controls aren't data friendly-- answering them is often nuanced and requires some narrative. How can we keep the spirit behind the controls while making them fit into an automation-friendly framework?\r\n\r\nWe developed cloud based technical assessments to respond to a number of the NIST controls. The technical aspects (account lock out, session termination, etc.) can be more easily defined and would be similar to configuration checks. The non-technical stuff is policy and admin based which is very difficult to check, but there might be an avenue with the ability to ingest SOPs and other guidance documents and have some kind of AI/ML process to review and verify language within meets the 53A intent.",
+          "author": "TWeikle",
+          "created_at": "2025-04-03T18:57:18Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AwpTH",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12752071",
+          "body": "I think we need a validation section in OSCAL. This section would define where to pull secrets from, API-based tests to run, anticipated results with assertions (similar to asserts in JUnit), controls represented by each test, and components the test is aligned with if not the whole system. This would then become an on-demand executable validation of the security posture of the system.\r\n\r\n3PAO would review that the test(s) associated to each control for a given component/system to ensure the test(s) validate that the control is implemented. This review would occur initially, and then only when significant changes are made or when components changed such that the validation method changes.\r\n\r\nThe CSP could provide a dashboard whereby it executes the validations on a regular basis to keep the dashboard up to date. It could also be executed by the client on-demand. CSP may provide cached results for x hrs to prevent overtaxing from multiple agencies making the on-demand requests.",
+          "author": "dljenkins",
+          "created_at": "2025-04-07T14:19:38Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awpa7",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12752571",
+          "body": "> I think we need a validation section in OSCAL. This section would define where to pull secrets from, API-based tests to run, anticipated results with assertions (similar to asserts in JUnit), controls represented by each test, and components the test is aligned with if not the whole system. This would then become an on-demand executable validation of the security posture of the system.\r\n \r\nIt would nice to read more detail on how you would envision this working. In a previous role, I attempted to work with NIST staff and community members around adding these constructs to OSCAL, called \"rules\" in early designs in https://github.com/usnistgov/OSCAL/issues/1058 and cross-referenced issues. There was not enough community input and engagement with tool integration, so the work languished. It appears the upstream NIST community is very quiet, so maybe this community could revive it as OSCAL enhancements, or maybe something separate from OSCAL that could be stitched together later?\r\n\r\n> 3PAO would review that the test(s) associated to each control for a given component/system to ensure the test(s) validate that the control is implemented. This review would occur initially, and then only when significant changes are made or when components changed such that the validation method changes.\r\n\r\nHow do you envision they do that? If we use your JUnit comparison, how would the test and tests results be exchanged without pre-existing relationships across staff in different organizations upfront that is not automation friendly?\r\n\r\n> The CSP could provide a dashboard whereby it executes the validations on a regular basis to keep the dashboard up to date. It could also be executed by the client on-demand. CSP may provide cached results for x hrs to prevent overtaxing from multiple agencies making the on-demand requests.\r\n\r\nHow do you envision agencies can consume these dashboards at scale if they have to use more and more of them proportial to the number of services they use in their portfolio?",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-04-07T14:57:34Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4Awpo5",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12753465",
+          "body": "> How do you envision they do that? If we use your JUnit comparison, how would the test and tests results be exchanged without pre-existing relationships across staff in different organizations upfront that is not automation friendly?\r\n\r\n3PAO's review evidence of a controls implementation today. In the future, the 3PAO would need to not only look at the results but the implementation of the tests to see what the test is actually looking at and concurring that it is a sufficient form of testing.\r\n\r\nAn OSCAL validation would have a secrets section and a tests section. The secrets would point to secrets manager and name of the secret, the secret name would be referenced in the tests so execution of the tests by an authorized entity would be able to get the secret like an APIKey to connect.\r\n\r\nThe test section would have url, protocol, headers, params, and a response section. In the response section, we could use the assert style statements encoded in JSON to check the response of the API that was invoked. We don't want this to get over complicated, so suggest supporting basic comparisons of boolean, int, float, string, date with date functions for addition/subtraction.\r\n\r\n> How do you envision agencies can consume these dashboards at scale if they have to use more and more of them proportial to the number of services they use in their portfolio?\r\n\r\nDashboards should be populated from metrics returned via APIs. If we used OSCAL formatted testing/validation, then the agency would have the ability to invoke the APIs directly or use a CSP provided dashboard. Industry could look at supporting multi-service dashboards, e.g. combing multiple OSCAL Validations from multiple services into a single dashboard. In addition, the agency could create their own dashboard using the APIs. I think industry tools would be better suited and  would be more efficient, but the option would be open.",
+          "author": "dljenkins",
+          "created_at": "2025-04-07T16:11:17Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Awq66",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12758714",
+      "body": "There are a number of suggestions to include content more relevant to ConMon vs. assessments.  Correct me if I am wrong, but the objective for this working group is to automate the collection of data (a point-in-time activity) to determine compliance.  There is no reason that the data collected cannot be passed to multiple dashboards (one of which supports ConMon), but there is a separate working group established for ConMon requirements.\r\n\r\nIf we do need a dashboard for point-in-time assessments (e.g., initial, annual, SCR), I suggest we exclude features related to ConMon reporting (e.g., POA&M, compliance trends).",
+      "author": "gmengelberg",
+      "created_at": "2025-04-08T03:08:21Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4Aw8bH",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-12830407",
+          "body": "My understanding is we are looking to automate assessments. Automating the collection of data is at least a step and potentially an approach of collecting and caching data. But we have to go further and look at automating the validation of the collected data thereby automating the assessment itself. Our goal should be to automate everything possible such that we limit manual inspections to the exception.",
+          "author": "dljenkins",
+          "created_at": "2025-04-14T14:47:29Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4Ayjru",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/7#discussioncomment-13253358",
+      "body": "All of our XccelerATOr and XBU40 customers get our command center dashboards as well as our custom Graylog / OpenSearch Dashboards. Just a couple of our Command Center dashboards here:\r\n![cc_auditshield](https://github.com/user-attachments/assets/1fe55a20-01a6-41e0-92b1-2ace6fa751e3)\r\n\r\n![cc_conmon](https://github.com/user-attachments/assets/dea9524f-3f56-4914-8cce-615e2717e27c)\r\n\r\n",
+      "author": "shr0p",
+      "created_at": "2025-05-24T01:36:18Z",
+      "replies": []
+    }
+  ]
+}

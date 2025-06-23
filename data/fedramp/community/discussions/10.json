@@ -1,0 +1,132 @@
+{
+  "id": "D_kwDOOxfoic4AgAH1",
+  "url": "https://github.com/FedRAMP/community/discussions/10",
+  "title": "FedRAMP PMO Draft 20x Pilot Feedback Megathread",
+  "body": "The FedRAMP Program Management Office is excited to announce that we have already received multiple submissions for the FedRAMP 20x Phase One Pilot.  For those organizations that have stepped up first, we greatly appreciate this demonstration of innovation.  \ud83d\udc90 \r\n\r\nWe are going to use this discussion thread \ud83e\uddf5 to provide overarching feedback as our review teams start to delve into each of the packages. \ud83c\udf81 \r\n",
+  "author": "emu-gov",
+  "created_at": "2025-05-20T20:27:22Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AyZdZ",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13211481",
+      "body": "Day 1 observations:  There were a few themes that emerged as our review teams started to analyze the submissions that were provided.  \r\n\r\n-  Submissions of machine readable files vs code snippets within documents. If you have developed or are leveraging a publicly available schema we also would like to see the raw files.  We did have some submissions who provided snapshots of their schema, which makes the review and analysis process challenging. \r\n\r\n- OSCAL still prevails.  All of the submissions that we have received thus far have leveraged OSCAL as the starting point for machine readability in order to answer the KSIs.\r\n\r\n- Inclusion of additional information which may be helpful in establishing context like links to external standards or CSP policies, but are not evaluated by FedRAMP or 3PAO. We may need to add a new section or provide a way to make this clear for agencies. \r\n\r\n- Diversity of repository types.  We have received both GitHub submissions as well as internal Cloud Service Provider Trust Centers.  If you are part of the Rev 5 working group, you know that we are actively working on a new Standard for Sharing and Storing Authorization Data (S3AD).  The leveraging of internal trust centers and open source repositories allows us to validate some assumptions as we develop this new standard which is expected to drop later this week or early next week.   \r\n",
+      "author": "paulagosta",
+      "created_at": "2025-05-20T20:30:18Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ayckt",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13224237",
+      "body": "For today\u2019s recap, we wanted to bring into the spotlight one of the public submissions and use it as a point of community discussion.  \r\n\r\nVanta Trust Management Platform.  Instead of leaving our comments within this megathread, we opted to place them in the discussion forum where they posted their submission.  You can see their initial submission, along with our commentary [here](https://github.com/FedRAMP/automating-assessment-cwg/discussions/40).",
+      "author": "paulagosta",
+      "created_at": "2025-05-21T19:22:56Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AycqU",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13224596",
+          "body": "Ditto for [SunStone Artemis](https://github.com/FedRAMP/automating-assessment-cwg/discussions/39) - keep up the great work and keep those draft packages coming y`all!",
+          "author": "emu-gov",
+          "created_at": "2025-05-21T19:49:51Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyifH",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13248455",
+      "body": "For today\u2019s recap, we wanted to bring into the spotlight another one of the public submissions and use it as a point of community discussion.\r\n\r\nConfluent. \r\n\r\nInstead of leaving our comments within this megathread, we opted to place them in the discussion forum where they posted their submission. You can see their initial submission, along with our commentary https://github.com/FedRAMP/automating-assessment-cwg/discussions/42.\r\n\r\nThank you all for the participation.  \r\n",
+      "author": "paulagosta",
+      "created_at": "2025-05-23T15:46:22Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyjRz",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13251699",
+      "body": "As I've been reviewing the submission and reflecting on the broader goals of the automating-assessment-cwg, I'm curious about the current thinking on the assessment processes themselves. While the machine-readable output is a critical component, I'm also wondering about the steps involved in gathering the evidence and performing the assessments that feed into these machine-readable artifacts. It appears that there is still a high degree of manual or semi-manual approaches driving the underlying assessment activities.\r\n\r\nAre there plans or thoughts on how these assessment execution steps could be further automated with 3PAO validation? Perhaps there are specific areas where the community could contribute ideas, tools, or efforts to help streamline these processes even more?\r\n\r\nReally appreciate the submissions and all the amazing work here and I'm excited to see how it evolves!",
+      "author": "rpalmer-gsa",
+      "created_at": "2025-05-23T22:19:13Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AyvD9",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13299965",
+          "body": "can we say that an assessment process that is not automated does not assess a KSI per the goals defined:\r\n\r\n\"FedRAMP 20x encourages the development of truly automated security _assessment_ with continuous validation and enforcement\"  - [Motivation and Rationale](https://www.fedramp.gov/rfcs/0006/)\r\n\r\n\"...demonstrates a continuous, _automated validation_...\" [Introduction](https://www.fedramp.gov/rfcs/0006/)\r\n\r\n\"...provide a concrete approach to evaluating cloud security risks that can often be _automatically derived_ from technical configurations...\" [Introduction](https://www.fedramp.gov/rfcs/0006/)\r\n\r\ntherefore I see those as \"nice to have\" optional things to do - but the only required assessments can and should be automated (for cloud native systems)",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-05-28T17:27:44Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyvaN",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13301389",
+          "body": "@rpalmer-gsa @emu-gov @paulagosta Any idea when our submission will be reviewed? I imagine the KSI closing is taking precedent (as it should). Just wanted to get some feedback as we have also been under assessment by 3PAO.  \r\n\r\nhttps://github.com/FedRAMP/automating-assessment-cwg/discussions/43",
+          "author": "aburroughs",
+          "created_at": "2025-05-28T19:49:42Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyyXm",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13313510",
+          "body": "@aburroughs your package has had eyes on it and feedback is being consolidated for posting.",
+          "author": "emu-gov",
+          "created_at": "2025-05-29T19:43:09Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyyaT",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13313683",
+          "body": "Thank you! Technically we are currently in process of re-writing logic to streamline our CLI only approach. So may not be much to review at the moment. ",
+          "author": "aburroughs",
+          "created_at": "2025-05-29T20:09:19Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyzNe",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13316958",
+          "body": "@emu-gov Ok URL has been updated in submission so the fully automated version is now live! ",
+          "author": "aburroughs",
+          "created_at": "2025-05-30T03:15:22Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ay0mI",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13322632",
+          "body": "@rpalmer-gsa You got me thinking about what does \"continuous\" really mean in the context of 20x.  To me, continuous mean ongoing scheduled tasks given a set timer.  Is that what 20x means?  Or is it more of a generate the findings once a month?  Once a week?  Once a day?  Once an hour?\r\n\r\nGiven automation, not sure not having automation really improves anything over FedRAMP 1.0, these tasks can be targeted for 1 hour intervals with immediate notifications of a failed control.  Perhaps the KSIs each have their own timer associated so that one control would be checked hourly and another daily?\r\n\r\nFedRAMP has traditionally let the organization define those times.  Perhaps this project is a way to community source timers for KSIs?",
+          "author": "Christcpd",
+          "created_at": "2025-05-30T15:16:22Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay1XS",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13325778",
+      "body": "@Christcpd \r\n\r\nI think scans triggered by a frequent timer (e.g., hourly, daily) is better than a monthly scan generally. However, I certainly think there are a lot of other potential approaches that could work as well. Ultimately it's about ensuring that any issues are able to be addressed rapidly to minimize the chance of a security impact to the system.\r\n\r\nWhen I'm driving my car I'm continuously evaluating the environment around me based on changes, rather than a periodic interval. The light changes I go, the car in front of me stops I brake. I might however only check the tires when I get in the car. \r\n\r\nWhat if validations could work the same way? Instead of just detecting issues after they've already happened, what if the automated evaluation is baked into the changing state of the system? When code deploys, when configurations update, appropriate scans and validations are triggered? \r\n\r\nPerhaps a combination of both or a mix with something entirely different? Going to be interesting to see all the amazing ways the community works towards continuous automated validation.\r\n",
+      "author": "rpalmer-gsa",
+      "created_at": "2025-05-30T21:49:01Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay_lZ",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13367641",
+      "body": "If any of this was mentioned in the working group sessions, my apologies for asking them here.\r\nI have a few clarifying questions after reviewing the pilot materials and was expecting onto lean on any FedRAMP Low authorizations, for clarifications, that were granted starting June 2 this week.\r\n\r\n1) What is the realistic outlook for any participants achieving a FedRAMP Low Authorization following June 2?\r\n\r\n2) The use of \u201cmight\u201d throughout the documentation, rather than the more standard \u201cmust\u201d language typical in FedRAMP, introduces ambiguity for both participants and assessors. Should we interpret this to mean that any approach with sufficient justification \"may\" be acceptable?\r\n\r\n3) Since the Key Security Indicators (KSIs) appear closely tied to FedRAMP Low controls, I\u2019ve been using those controls and evidence expectations as my framework. Is this a shared understanding, or has alternative guidance been suggested?\r\n\r\n4) The language around \u201cmachine-readable format of their choosing\u201d raises a question that despite NIST having provided a usable template aligned with 800-53 Rev. 5, would it be more effective to simply specify one format, either OSCAL or JSON, XML, YAML to avoid complexity and inconsistency?\r\n\r\nAppreciate any clarification or direction, thank you!",
+      "author": "ChrisD-J1",
+      "created_at": "2025-06-04T12:30:28Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4Ay_7M",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13369036",
+          "body": "Hi Chris - \r\n\r\n>     1. What is the realistic outlook for any participants achieving a FedRAMP Low Authorization following June 2?\r\n\r\nBased on draft submissions I'd say quite likely.\r\n\r\n>     2. The use of \u201cmight\u201d throughout the documentation, rather than the more standard \u201cmust\u201d language typical in FedRAMP, introduces ambiguity for both participants and assessors. Should we interpret this to mean that any approach with sufficient justification \"may\" be acceptable?\r\n\r\nI just did a quick ^f and don't see \"might\" appearing in the KSIs, MAS, or Phase One pilot page except in a reference to how someone might approach the pilot? If you're referencing that page, it uses \"might\" because there it's explicitly a theoretical example and not a guide.\r\n\r\n>     3. Since the Key Security Indicators (KSIs) appear closely tied to FedRAMP Low controls, I\u2019ve been using those controls and evidence expectations as my framework. Is this a shared understanding, or has alternative guidance been suggested?\r\n\r\nKSIs are not intended to simply be a grouping of controls that are addressed. The KSI validations summarize the expected capabilities that should be met. The underlying controls, as a grouping, can provide insight into how that capability would be met. This does not mean the underlying controls must be individually assessed and applied.\r\n\r\nChapter 3.5 in the SP 800-53A has a bit more details that are worth considering, especially this note:\r\n\r\n\"Traditionally, assessments have been conducted on a control-by-control basis and produce results that are characterized as pass (i.e., control satisfied) or fail (i.e., control not satisfied). **However, the failure of a single control or, in some cases, the failure of multiple controls may not affect the overall security and privacy capability required by an organization. **\"\r\n \r\n>     4. The language around \u201cmachine-readable format of their choosing\u201d raises a question that despite NIST having provided a usable template aligned with 800-53 Rev. 5, would it be more effective to simply specify one format, either OSCAL or JSON, XML, YAML to avoid complexity and inconsistency?\r\n\r\nA primary purpose of the pilot is to encourage innovative approaches; specifying an approach would defeat this purpose. An outcome of the pilot will be understanding the most effective approaches that truly work in practice so we can create informed standards from that. \r\n\r\nHope this helps clarify some bits!\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-06-04T14:47:56Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4Ay_8E",
+          "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13369092",
+          "body": "It does, thank you.",
+          "author": "ChrisD-J1",
+          "created_at": "2025-06-04T14:52:17Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4AzAb8",
+      "url": "https://github.com/FedRAMP/community/discussions/10#discussioncomment-13371132",
+      "body": "Here is some generalized feedback based on one of the non-public submissions for the FedRAMP 20X pilot. The organizations submission  provided a summary of how they intend to map controls to key security indicators (KSI) as discussed in the [RFC 0006](https://www.fedramp.gov/rfcs/0006/). The approach demonstrates alignment with  the FedRAMP 20X vision of automation-friendly processes, simplified capabilities, and secure-by-design approaches. The following are some feedback about the process/verification methodology outlined in the document.\r\n\r\nThe data schema and machine-readable assessment output require additional clarification. While the submitted data structure supports evidence capabilities for KSI validation, there are notable limitations. The high-level supporting evidence supplied in machine-readable formats lacks sufficient details on tools or configurations used for testing controls, and evidence showing traceability to specific control requirements.\r\n\r\nFor controls validated through AI methods, more information is needed regarding anomaly identification processes and specific elements assessors would examine. The example  provided, compiles controls using the AI-Validated method without demonstrating how these controls were validated or which controls apply to the listed KSI. For future submissions, additional details on AI-validation methodologies, particularly around ML/AI model architecture used for control validation.",
+      "author": "dhanbgurung",
+      "created_at": "2025-06-04T18:11:41Z",
+      "replies": []
+    }
+  ]
+}

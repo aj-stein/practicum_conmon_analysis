@@ -1,0 +1,72 @@
+{
+  "id": "D_kwDOOxfoic4AgAYc",
+  "url": "https://github.com/FedRAMP/community/discussions/31",
+  "title": "Let\u2019s talk about the Cybersecurity Education Key Security Indicator\u2026",
+  "body": "Would the same awareness training be given for both commercial and federal service support staff?\r\n\r\nHow is awareness training typically audited for a SOC2 Type 2 report?",
+  "author": "emu-gov",
+  "created_at": "2025-05-06T13:25:40Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4Axym8",
+      "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13052348",
+      "body": "Presumably everyone in scope for SOC2 at an organization would receive equivalent training. But validation that this training was provided to those supporting the FedRAMP environment can't be guaranteed, it's up to the SOC auditors and CSP to define the scope. And specific content requirements of the security awareness training program aren't spelled out by SOC2, so topics baked into the rev 5 FedRAMP baseline such as insider threat awareness would no longer be guaranteed.",
+      "author": "vanderson-fits",
+      "created_at": "2025-05-06T16:19:39Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Axyq9",
+      "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13052605",
+      "body": "FedRAMP also has role based training requirements.  SOC2 doesn't necessarily require training, but companies often use training to meet some of the COSO principles such as:  \r\n _The entity demonstrates a commitment to attract, develop, and retain, competent individuals in alignment with objectives_\r\nor\r\n_The entity holds individuals accountable for their internal control responsibilities in the pursuit of objectives._ \r\n\r\nIf a company's general security training covers insider threat and social engineering, it can be used for both assessments. \r\n",
+      "author": "KHFedR",
+      "created_at": "2025-05-06T16:41:21Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOxfoic4AxyrR",
+          "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13052625",
+          "body": "FedRAMP Moderate has Contingency Planning Training, Incident Response Training, Anti-Counterfeit Training, and Role Specific.  \r\n\r\nRegardless the training - evidence for training in my career has been a sample of in scope individuals, the completion evidence, evidence if/when we follow-up, what happens when a person doesn't complete training, and sometimes a content overview of what is covered in the training. ",
+          "author": "KHFedR",
+          "created_at": "2025-05-06T16:42:50Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AxyuR",
+          "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13052817",
+          "body": "I usually try and pack everything into a single training outline and make everyone who supports the FedRAMP environment use this.  It prevents chasing down different role based stuff for different teams (devops vs infosec, etc).  This is my generic outline.  Hopefully this will be useful.  For whatever this is worth.\r\n\r\n<h2>Intro</h2>\r\n<ol>\r\n  <li>What is FedRAMP</li>\r\n  <li>FedRAMP concepts (general, but also AT-3)\r\n    <ol type=\"a\">\r\n      <li>Definitions\r\n        <ol type=\"i\">\r\n          <li>Government data, metadata, strict definitions\r\n            <ol>\r\n              <li>Info about the environment is govt metadata and sensitive</li>\r\n            </ol>\r\n          </li>\r\n          <li>Handling government data/metadata</li>\r\n          <li>Authorization boundary (boundary diagram, defining scope)</li>\r\n          <li>POA&amp;M (controls, findings, remediation, deviations)</li>\r\n          <li>Configuration benchmark items</li>\r\n          <li>Scanning and inventory</li>\r\n        </ol>\r\n      </li>\r\n      <li>6 federal mandates</li>\r\n      <li>Third party services</li>\r\n      <li>Point-in-time with continuous monitoring vs period of time audit (e.g. SOC 2)</li>\r\n      <li>Initial, annual, SCR assessments</li>\r\n      <li>POA&amp;M management</li>\r\n      <li>Cryptography requirements</li>\r\n      <li>Specific things to be aware of in a RAMP environment vs general security</li>\r\n    </ol>\r\n  </li>\r\n</ol>\r\n\r\n<h2>General Security Awareness (AT-2)</h2>\r\n<ol>\r\n  <li>Phishing</li>\r\n  <li>Malware and ransomware</li>\r\n  <li>Access control\r\n    <ol type=\"a\">\r\n      <li>Passwords</li>\r\n      <li>MFA</li>\r\n    </ol>\r\n  </li>\r\n  <li>Secure workplace</li>\r\n  <li>Secure communications</li>\r\n  <li>Data protection hygiene\r\n    <ol type=\"a\">\r\n      <li>CUI</li>\r\n      <li>Privacy</li>\r\n      <li>Other data types</li>\r\n    </ol>\r\n  </li>\r\n  <li>Insider threat training (AT-2(2))</li>\r\n  <li>Social engineering and social mining training (AT-2(3))</li>\r\n</ol>\r\n\r\n<h2>Role-Based Training (AT-3)</h2>\r\n<ol>\r\n  <li>Boundary diagram review</li>\r\n  <li>Tech stack/tools</li>\r\n  <li>Specific tools in environment (e.g. Splunk, GitLab, TMDS)</li>\r\n  <li>Specific processes\r\n    <ol type=\"a\">\r\n      <li>Monthly conmon requirements</li>\r\n      <li>Incident process (IR-2)\r\n        <ol type=\"i\">\r\n          <li>Data spillage specific stuff (IR-9(2))</li>\r\n          <li>ITIL incident vs 'security incident' (what FedRAMP means)</li>\r\n        </ol>\r\n      </li>\r\n      <li>Contingency process (CP-3)\r\n        <ol type=\"i\">\r\n          <li>Simulated events (CP-3(1))</li>\r\n        </ol>\r\n      </li>\r\n      <li>Change control processes</li>\r\n    </ol>\r\n  </li>\r\n  <li>Supply chain specific (IR-6(3))\r\n    <ol type=\"a\">\r\n      <li>Lifecycle of EOL'd products (SA-22 related)</li>\r\n      <li>Anti-counterfeit training (SR-11(1))</li>\r\n      <li>Acquiring third-party tools and vetting process (SA-4, SA-5)</li>\r\n    </ol>\r\n  </li>\r\n</ol>",
+          "author": "jsantore-cgc",
+          "created_at": "2025-05-06T17:01:54Z"
+        },
+        {
+          "id": "DC_kwDOOxfoic4AyNPF",
+          "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13161413",
+          "body": "There is am specific POF as part oh the CC2.2 mentioned above that addresses this topic.  Each organization sets the training program based on their system's risk and management risk appetite.  Role based training is usually used to meet the requirement. \r\n\r\n\"Communicates Information to Improve Security Knowledge and Awareness \u2014 The entity communicates information to improve security knowledge and awareness and to model appropriate security behaviors to personnel through a security awareness training program.\"\r\n\r\n",
+          "author": "patkompleye",
+          "created_at": "2025-05-15T16:49:21Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOxfoic4Axyyi",
+      "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13053090",
+      "body": "This boils to scoping of the environment and the assessment. It is likely today that if a CSP has separate commercial and federal environment that they aren't overlaying all the same controls. But they are likely meeting all the controls (and this case security training) within the federal environment - and training the requisite staff accordingly.\r\n\r\nI guess the question is - is the FR PMO going to accept testing results outright or are CSPs going to have to provide supporting evidence as a part of the package? If the latter, then I think it would be difficult to accept SOC 2 because it is simply a pdf report.",
+      "author": "ryantpatrick",
+      "created_at": "2025-05-06T17:32:16Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyMLY",
+      "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13157080",
+      "body": "The Cybersecurity Education Key Security Indicator (KSI) measures how effectively organizations train staff to recognize threats. It reflects real-world readiness against phishing and social engineering. Companies like Sangfor emphasize education alongside tools like XDR, showing that informed users are as vital to defense as advanced cybersecurity technologies.",
+      "author": "priyasingh96",
+      "created_at": "2025-05-15T10:55:37Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ay5sM",
+      "url": "https://github.com/FedRAMP/community/discussions/31#discussioncomment-13343500",
+      "body": "With the initial release of the [formal 20xP1 submission requirements (including Q&A in this thread)](https://github.com/FedRAMP/community/discussions/34) and an updated Q&A thread on the [20xP1 release standards (25.05) for KSIs and MAS here](https://github.com/FedRAMP/community/discussions/28), I'm closing out these older threads to avoid any confusion.\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-02T12:58:15Z",
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "D_kwDOOKttEc4AfkJY",
+  "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40",
+  "title": "Hey, tell us about your continuous reporting and monitoring!",
+  "body": "Industry folk, how do you continuously monitor services you use in your own products? What is the frequency and duration of how you monitor services you use? How do you handle reporting?",
+  "author": "aj-stein-gsa",
+  "created_at": "2025-05-02T21:36:14Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOKttEc4Axydd",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13051741",
+      "body": "The most obvious example of a type of continuous reporting tool in broad use by industry is a SIEM. I'm not sure how that would translate into this use case though.\r\n\r\nI think where you need to start is to define who is going to consume these reports and what data would cause them to take some sort of action. When I was running Ops and Security for a SAAS, that was our starting point for any monitoring or reporting we would do.\r\n\r\nSo who are the consumers of this reporting? Agency ISO's? FedRAMP PMO? 3PAO's?   and what should trigger some sort of action from them? Variance from some of the KSI's you've mentioned in other working groups?  Once you figure that out, you can look into the possibility of how to get that data and iterate from there. At least that's the process I've seen be successful within organizations when establishing monitoring systems. ",
+      "author": "CEngel-FirstInfoTech",
+      "created_at": "2025-05-06T15:22:00Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4AxyoI",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13052424",
+          "body": "> The most obvious example of a type of continuous reporting tool in broad use by industry is a SIEM. I'm not sure how that would translate into this use case though.\r\n\r\nInteresting and very relatable take, thanks for commenting about your perspective.\r\n\r\n> I think where you need to start is to define who is going to consume these reports and what data would cause them to take some sort of action. When I was running Ops and Security for a SAAS, that was our starting point for any monitoring or reporting we would do.\r\n\r\nGood points. When working in SecOps for a SaaS, you would allow outside customers and tentative customers to see some subset of the information from a SIEM? If so, what data? Perhaps we can use that to inform what in the reports and the consumer.\r\n\r\n> So who are the consumers of this reporting? Agency ISO's? FedRAMP PMO? 3PAO's? and what should trigger some sort of action from them?\r\n\r\nWe in FedRAMP don't have a set answer around that yet. Comments and posts like yours inform how we best determine that as a community. What's your take?\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-06T16:26:11Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Axy5w",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13053552",
+          "body": "\"Good points. When working in SecOps for a SaaS, you would allow outside customers and tentative customers to see some subset of the information from a SIEM? If so, what data? Perhaps we can use that to inform what in the reports and the consumer.\"\r\n\r\nWe didn't really expose data to outside customers (outside of audits they did on us, which were annual, so not automated and not continuous), so that point didn't really come up. The closest we came would be to put together some metrics internally for reporting to our Executive Team.\r\n\r\n I think one of the big concerns that an outside customer would have is how to verify that the data being fed to them is accurate. Reporting only has value if the data source is trustworthy and reliable. As an axiom, that can't really be assumed with external parties, unless you have verification in place. With your current ConMon process for vulnerabilities you are getting the raw scan files in addition to the POA&M report, so you would have a mechanism for verification. I think you would need something that would perform a similar function here. With your audits, your 3PAO's demand evidence as verification, but that's a manual operation (and somewhat labor intensive). I'm not sure exactly how you'd approach that in a continuous reporting context since I'm assuming you'd want this to be an automated process.",
+          "author": "CEngel-FirstInfoTech",
+          "created_at": "2025-05-06T18:09:27Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Axy9v",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13053807",
+          "body": "> We didn't really expose data to outside customers (outside of audits they did on us, which were annual, so not automated and not continuous), so that point didn't really come up. The closest we came would be to put together some metrics internally for reporting to our Executive Team.\r\n\r\nUnderstood. What did those metrics look like? What \"worked\" from the metrics selected and collected and what didn't? Or did they not change over time and they were solid. There is a lot of overlap with the [Automating Assessment CWG posts](https://github.com/FedRAMP/automating-assessment-cwg/discussions) re this question, but one thing this CWG could benefit from is deeper thought and experimentation around how you roll up KSI data and what are meaningful measurements (even if only for executives to start). So, details welcome!\r\n\r\n> I think one of the big concerns that an outside customer would have is how to verify that the data being fed to them is accurate. Reporting only has value if the data source is trustworthy and reliable. As an axiom, that can't really be assumed with external parties, unless you have verification in place.\r\n\r\nTrue. If you're interested on how we incrementally build solutions to that higher level need, you are in the right place. That is a key focus of this CWG.\r\n\r\n> With your current ConMon process for vulnerabilities you are getting the raw scan files in addition to the POA&M report, so you would have a mechanism for verification. I think you would need something that would perform a similar function here. With your audits, your 3PAO's demand evidence as verification, but that's a manual operation (and somewhat labor intensive). I'm not sure exactly how you'd approach that in a continuous reporting context since I'm assuming you'd want this to be an automated process.\r\n\r\nWell, if you do not do now: how would you share pointers to evidence for certain customers or tentative customers to see such data, eventually with verification, to make a risk-informed decision, without implicitly trusting just the 3PAO as a strong indicator?\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-06T18:41:48Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4AxzGI",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13054344",
+          "body": "So working a bit from memory, as it's been a few years. The metrics we put together for internal reporting looked somethings like the following.    - Total Number of Reported Events\r\n                   - Identified Incidents\r\n                   - False Positives\r\n                   - True Positives\r\n                   - Actual Breaches\r\n                   - Average Time to Identify an Incident\r\n                   - Average Time to Resolve an Incident\r\n                   - Longest Time to Resolve an Incident\r\n                   - Number of Open Incidents at Time of Reporting \r\n                   - Oldest Open Incident at Time of Reporting\r\n                   - Number of Incidents that Resulted in Actionable Intelligence (e.g. a change to security controls, processes or monitoring).\r\n                   - Incident Impact - Service Interruption (hours)\r\n                   - Incident Impact - Data Exposure (records)            \r\n\r\nI may have missed some as again this is working from memory. As you can see, the reporting we did internally for Executives was really focused on Incidents and IR, as that's where real impact to the organization occurs. Some of these may be useful metrics for an external ISO in evaluating a vendors IR posture but obviously they would want to look at metrics for other control families as well. I hope this provides something useful.\r\n",
+          "author": "CEngel-FirstInfoTech",
+          "created_at": "2025-05-06T19:48:51Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4AxzQp",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13055017",
+          "body": "> So working a bit from memory, as it's been a few years. The metrics we put together for internal reporting looked somethings like the following\r\n> ...\r\n\r\nThanks, this feedback is very useful (to me personally, I hope others as well).\r\n\r\n> I may have missed some as again this is working from memory. As you can see, the reporting we did internally for Executives was really focused on Incidents and IR, as that's where real impact to the organization occurs. Some of these may be useful metrics for an external ISO in evaluating a vendors IR posture but obviously they would want to look at metrics for other control families as well. I hope this provides something useful.\r\n\r\nIt does. What do you (and hopefully others) think about sharing some or all of this information for customers and tentative customers to make risk-informed decisions about a cloud service offering?\r\n\r\nAre there certain categories you would likely or absolutely exclude from these stakeholders? Are there specific records and data elements you would likely or absolutely exclude from these stakeholders?\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-06T21:24:44Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOKttEc4AxzJX",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13054551",
+      "body": "We conduct daily vulnerability scans at every layer (Web App, OS, and Container). We have alerts set up internally within our native SIEM. We leverage native dashboards for reporting on all metrics around security. \r\n\r\nThe biggest trend I've seen is the need to move from a cadence model to a continuous model (i.e. rather than monthly to far more frequent). ",
+      "author": "sfc-gh-schaudhry",
+      "created_at": "2025-05-06T20:18:16Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4AxzQQ",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13054992",
+          "body": "Thanks for the context, @sfc-gh-schaudhry. How do you share that information internally with stakeholders? Do you share with customers or tentative customers? What do the notifications include or not include?",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-06T21:19:20Z"
+        },
+        {
+          "id": "DC_kwDOOKttEc4Ax2Pp",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13067241",
+          "body": "We have a central SIEM (our Product) that we use to manage internal permissions and access at the table and column level. It is verbose enough that our Global RBAC policy applies to each team and location (US limited access). \r\n\r\nThis information is internal only -- customers and tentative customers must use the FR repo (USDA Connect or our FRH repo) to access vuln metrics. We do have the ability to share through our Product but do not at this time. \r\n\r\nAs for back-end SIEM logs, that remains internal and only provided during FR audits. On the front-end, customers have access to all their logs and events within the Product. \r\n\r\nDid that answer your questions?",
+          "author": "sfc-gh-schaudhry",
+          "created_at": "2025-05-07T19:32:32Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOKttEc4Ax5Rw",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13079664",
+      "body": "While not industry, it seems many of the answers are internal based siem products that are customized to present data for monitoring and a common response from GSA is around how to surface that data for customers or potential customers. \r\n\r\nMy take, make the data available in a FedRAMP PMO dashboard. The working group can determine some kind of minimal set of KSI and FedRAMP should be capable of hosting something centralized so agencies can make risk based decisions on leveraging a CSP.  It can be inclusive of the marketplace and would be a good enforcement mechanism for maintaining status, and would push CSPs to ensure they are meeting the minimum standards if they want to ensure they are a viable option. ",
+      "author": "TWeikle",
+      "created_at": "2025-05-08T18:12:24Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4Ax5ht",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13080685",
+          "body": "> While not industry, it seems many of the answers are internal based siem products that are customized to present data for monitoring and a common response from GSA is around how to surface that data for customers or potential customers.\r\n\r\nWell, more FedRAMP than the large organization of TTS, FAS, or GSA agency-wide, but yes we work there. To be clear about our FedRAMP perspective, we have to service agency customers in GSA outside of FedRAMP to provide them a marketplace listing and information to make informed decisions about cloud service offerings they use in other GSA programs. I am sure you know that, just want to make it clear for others following on.\r\n\r\n> My take, make the data available in a FedRAMP PMO dashboard. The working group can determine some kind of minimal set of KSI\r\n\r\nWell, we strongly encourage you to head on over [to the draft RFC for those very Key Security Indicators in draft](https://github.com/FedRAMP/rfcs/discussions/18) for public comment when you can.\r\n\r\n> and FedRAMP should be capable of hosting something centralized so agencies can make risk based decisions on leveraging a CSP. It can be inclusive of the marketplace and would be a good enforcement mechanism for maintaining status, and would push CSPs to ensure they are meeting the minimum standards if they want to ensure they are a viable option.\r\n\r\nDoes it have to be centralized and hosted by the FedRAMP PMO in particular? I noticed you echoed this theme in another comment as well. Can you give more explanation and detail as to why that is important or integral to you?\r\n\r\nI would also love to get more feedback about what, as an agency official, you would want to see in a dashboard to make an risk-informed decision about what cloud service offerings in your agency, that would be great!\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-08T20:35:50Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOKttEc4AyDPs",
+      "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13120492",
+      "body": "So it occurs to me that there is a little bit of wrinkle in the way FedRAMP wants to use Continuous Reporting from how something like a SIEM or similar monitoring tool would typically be employed by an organization internally. With SIEM's an organization is typically going to limit the scope to their own services, devices, infrastructure, etc. This makes sense because its what the people receiving the report can directly act upon. With Continuous Reporting, FedRAMP wants to empower consumers of FedRAMP authorized services to make accurate risk based decisions about use of those services. That's great, but it means if you want an accurate picture you have to find a way of factoring in all the other FedRAMP Authorized services that the CSP being examined is dependent upon and it's not uncommon for CSPS to have numerous dependencies. \r\n\r\nDo dependent services become their own KSI for a reporting service? If so how do you handle weighting them? Obviously if CSP has one dependent service at it's rated at 1 and another CSP has 7 dependent services and 6 of them are perfect 10's but the last is the same service that has a 1, the risk is pragmatically identical though the numbers don't look the same. What about a CSP with 10 dependent services 4 of which are at 3's. How's the risk compare?\r\n\r\nIf you aren't turning dependent services into a KSI (which may actually be a better option) then how are you presenting that information to the person evaluating the service, because it definitely represents a significant risk factor? I'm not sure I have good answers but it's an interesting problem to consider.",
+      "author": "CEngel-FirstInfoTech",
+      "created_at": "2025-05-12T16:02:13Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOKttEc4AyJyJ",
+          "url": "https://github.com/FedRAMP/continuous-reporting-cwg/discussions/40#discussioncomment-13147273",
+          "body": "> So it occurs to me that there is a little bit of wrinkle in the way FedRAMP wants to use Continuous Reporting from how something like a SIEM or similar monitoring tool would typically be employed by an organization internally. With SIEM's an organization is typically going to limit the scope to their own services, devices, infrastructure, etc. This makes sense because its what the people receiving the report can directly act upon. With Continuous Reporting, FedRAMP wants to empower consumers of FedRAMP authorized services to make accurate risk based decisions about use of those services. That's great, but it means if you want an accurate picture you have to find a way of factoring in all the other FedRAMP Authorized services that the CSP being examined is dependent upon and it's not uncommon for CSPS to have numerous dependencies.\r\n\r\nI completely agree with this interpretation and hope we tease this out through successive phases of piloting.\r\n\r\n> Do dependent services become their own KSI for a reporting service? If so how do you handle weighting them? Obviously if CSP has one dependent service at it's rated at 1 and another CSP has 7 dependent services and 6 of them are perfect 10's but the last is the same service that has a 1, the risk is pragmatically identical though the numbers don't look the same. What about a CSP with 10 dependent services 4 of which are at 3's. How's the risk compare?\r\n\r\nThese are all good questions. At this phase of 20x, there are no definitive answers to them yet. (I do have some personal opinions on how I think it should or could work, but we have to evaluate those in the pilots with great people in the community like yourself.)\r\n\r\n> If you aren't turning dependent services into a KSI (which may actually be a better option) then how are you presenting that information to the person evaluating the service, because it definitely represents a significant risk factor? I'm not sure I have good answers but it's an interesting problem to consider.\r\n\r\nAbsolutely agree with your perspective here, so the pilots (maybe not in phase one, but in subsequent phases) will be a great venue to dive deeper into these considerations and converge on the approach(es), I am glad you are focused on this as well!\r\n",
+          "author": "aj-stein-gsa",
+          "created_at": "2025-05-14T16:07:04Z"
+        }
+      ]
+    }
+  ]
+}

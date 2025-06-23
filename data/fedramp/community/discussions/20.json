@@ -1,0 +1,34 @@
+{
+  "id": "D_kwDOOxfoic4AgAJ-",
+  "url": "https://github.com/FedRAMP/community/discussions/20",
+  "title": "Automating Assessment for Identity and Access Management KSI Validations (KSI-IAM)",
+  "body": "### Context\r\nThe draft Key Security Indicators (KSIs) have been released! Week to week, we will focus on one security area and discuss automation ideas for the validations.\r\n### KSI-IAM for Identity and Access Management reads:\r\n\"A secure cloud service offering will protect user data, control access, and implement zero trust practices.\"\r\n### Validations include:\r\n1. Enforce phishing-resistant multi-factor authentication (MFA)\r\n2. Enforce strong passwords\r\n3. Use secure API authentication methods via industry standard protocols\r\n4. Use a least-privileged, role-based, and just-in-time security model\r\n## Questions for the Community\r\n- Which validations are conducive to automation, and which ones are not?\r\n- What auto-generated evidence can be applied to each validation?\r\n- How might 3PAOs assess these validations/evidence?\r\n",
+  "author": "kyhu65867",
+  "created_at": "2025-05-28T15:56:07Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AyvFT",
+      "url": "https://github.com/FedRAMP/community/discussions/20#discussioncomment-13300051",
+      "body": "for *cloud native* (using AWS as an example)\r\n\r\n* CAN BE AUTOMATED:\r\n  - Enforce phishing-resistant multi-factor authentication (MFA): use CloudTrail MFA attributes to see what form factor was used, eg:\r\n    ``` \r\n        \"MFAIdentifier\": \"arn:aws:iam::999999999999:mfa/mfa-device\" (where mfa-device could be yubikeys, etc)\r\n    ```\r\n  - Enforce strong passwords: use [AWS Config checks](https://docs.aws.amazon.com/config/latest/developerguide/iam-password-policy.html) on password complexity (even though research shows that passwords are completely broken, outdated and insecure - don't use passwords - use PKI, FIDO2 devices and biometrics, *please*)\r\n  - Use secure API authentication methods via industry standard protocols: check that IdentityCenter and/or Cognito user pools with SAML and/or OIDC is configured\r\n  - Use a least-privileged, role-based, and just-in-time security model: use IAM Access Analyzer\r\n\r\nBoth Azure and GCP also have these similar tools for evidence automation and for gathering data for controls (static config check)( and KSIs (Operational metrics and measurement)\r\n\r\n* CANNOT BE AUTOMATED:\r\n  - NONE\r\n\r\n*  might 3PAOs assess these validations/evidence?\r\n\r\nEasy - 3PAOs get AWS SecurityAuditor assume role permission with condition on duration for 24 hours and can run their CLI or API scripts to gather the above data and anything else they see as relevant from the CLI and APIs, as well as the underlying Lake or CW alert data for the KSIs.\r\n\r\nship it!\r\n",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-05-28T17:36:40Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4AyvPt",
+      "url": "https://github.com/FedRAMP/community/discussions/20#discussioncomment-13300717",
+      "body": "For evaluating some of these against Okta configurations, its relatively straightforward\r\n\r\n> 1. Enforce phishing-resistant multi-factor authentication (MFA)\r\n> 2. Enforce strong passwords\r\n\r\nOn the Okta side, both of these are relatively easy to automate as well. Match users / groups to the policies attributed to them, and ensure that things like \r\n```json\r\n\r\n{\r\n  \"signon\": {\r\n    \"access\": \"ALLOW\",\r\n    \"requireFactor\": true,\r\n}\r\n\r\n{\r\n  \"settings\": {\r\n  \"password\": {\r\n      \"age\": {\r\n        \"expireWarnDays\": 0,\r\n        \"historyCount\": 24,\r\n        \"maxAgeDays\": 60,\r\n        \"minAgeMinutes\": 1440\r\n      },\r\n      \"complexity\": {\r\n         dictionaryExclusions,  # Make sure all of these\r\n         characterUsage,          # meet some minimum \r\n         length                           # requirements\r\n      },\r\n}\r\n``` \r\nand that they have an appropriate factor enabled (I think `push` or `webauthn` were the supported ones?)\r\n\r\n> 3. Use secure API authentication methods via industry standard protocols\r\n\r\nDoes this apply to only access for engineers internally? Does this include access control for end users / customers? What about internal systems (i.e, internal system A authorizing to logging system B). \r\n\r\nI'd assume we can leverage some of the Okta authorization as evidence, and then verify some of the SSO integration with AWS / Kubernetes for engineer access. For customers, and / or access between internal systems, it gets a bit more complicated. \r\n\r\n> 4. Use a least-privileged, role-based, and just-in-time security model\r\n \r\nSame as above, is there a boundary that this applies to? We have JIT access to not only the CSP, but internal infrastructure and other systems. What does validation for a \"negative\" case here look like? Assuming an SSO integration to something like AWS, do we verify group assignments in Okta as an example? Maybe logs from the system managing JIT assignments, or configuration from that system showing what mappings are allowed and their expirations?\r\n",
+      "author": "robwittman",
+      "created_at": "2025-05-28T18:51:48Z",
+      "replies": []
+    },
+    {
+      "id": "DC_kwDOOxfoic4Ayx_0",
+      "url": "https://github.com/FedRAMP/community/discussions/20#discussioncomment-13311988",
+      "body": "Closing this out to realign discussion with the next phase and final / formalized KSIs.",
+      "author": "pete-gov",
+      "created_at": "2025-05-29T16:42:46Z",
+      "replies": []
+    }
+  ]
+}

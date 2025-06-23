@@ -1,0 +1,130 @@
+{
+  "id": "D_kwDOOMDw3M4AfUZz",
+  "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19",
+  "title": "Q&A for April 16th Townhall",
+  "body": "This thread will serve as the dedicated space for questions from the 4/16 kick-off meeting.\r\n\r\nThe intent is for this community to be self-driven, so if you know the answers to a question that has been posted feel free to respond. The FedRAMP PMO will work to answer these as we are able.",
+  "author": "kyhu65867",
+  "created_at": "2025-04-16T14:51:09Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOMDw3M4AxDBN",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857421",
+      "body": "I apologize if this is already being done but is it possible to post the slide deck before the meetings?",
+      "author": "ChanceofClouds",
+      "created_at": "2025-04-16T16:37:18Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AxDJL",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857931",
+          "body": "Good idea! We can do this in future :)",
+          "author": "kyhu65867",
+          "created_at": "2025-04-16T17:28:29Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDrZ",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12860121",
+          "body": "I posted the slidedeck FYI @ChanceofClouds. [You can find it here](https://github.com/FedRAMP/automating-assessment-cwg/blob/main/townhall-slidedecks/4-16-2025-townhall-slides.pdf)",
+          "author": "kyhu65867",
+          "created_at": "2025-04-16T22:06:30Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxIOY",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12878744",
+          "body": "Sorry, using this comment since I wasn't sure the best way to communicate this to the whole FedRAMP team. Is it possible this can be done for the other GitHub discussion forums as well?",
+          "author": "ChanceofClouds",
+          "created_at": "2025-04-18T14:13:46Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxIcm",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12879654",
+          "body": "I'll discuss with the other CWG community mediators \ud83d\ude04 ",
+          "author": "kyhu65867",
+          "created_at": "2025-04-18T15:51:01Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxDGV",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857749",
+      "body": "I disagree that \"CSPs know how best to secure their own systems\". I know this because they ask ME how to do that and I know NOTHING about their system - and yet - we find all sorts of first principle based- and cloud native API based-ways to do this together. \r\n\r\nSo...yes - the CSPs know more than the Agencies [know about the CSO]. But please - HELP the CSPs with guard rails and guidance on how to do this (and open source on how to check if they did it correctly). Do not give them just enough rope to get attacked.",
+      "author": "sunstonesecure-robert",
+      "created_at": "2025-04-16T17:13:09Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AxDHf",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857823",
+          "body": "@ProdSecCSP - that's fair. But - come to a CNCF Compliance WG call and we can discuss specific examples with the community. We can hash out where there are huge knowledge gaps that CSPs have and if you feel that your CSP(s) are doing a great job, that's great! We can use those patterns across CSPs. But if I can't convince you that there are pretty big areas CSPs struggle...I'll happily buy you a steak/vegan dinner!",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-16T17:19:53Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDIA",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857856",
+          "body": "@sunstonesecure-robert -I agree with your overall perspective, but your statement seems quite general. I would be interested to know how many CSPs you have worked with that lack knowledge about securing their own systems. 10%?50%? 75%? ",
+          "author": "ProdSecCSP",
+          "created_at": "2025-04-16T17:23:17Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDJ-",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857982",
+          "body": "> how many CSPs you have worked with that lack knowledge\r\n\r\nIt's obviously a biased sample since if they are overconfident and don't feel they need help, they aren't asking others for help.  I would say 100% of CSPs (who have asked for help) have silos of incomplete knowledge - but are lacking coordination and consistency. \r\n\r\n100% find new fixes/controls/enhancements during the FedRAMP process that they then back-port to their commercial environments. To me that is the proof point. ",
+          "author": "sunstonesecure-robert",
+          "created_at": "2025-04-16T17:33:35Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDKm",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12858022",
+          "body": "@sunstonesecure-robert - On a side note, we have worked with four different 3PAO firms that lack subject matter expertise about FedRAMP and our moderate offering that has been authorized for years. We continue to struggle in this area, and I know many of my counterparts in the industry do as well. I imagine your statement about \"CSPs knowing how best to secure their own systems\" is coming from an advisory perspective and not from that of a 3PAO assessor. We can agree to disagree, but the main focus of every working group in FR20x should be to address how we streamline the process and reduce costs.",
+          "author": "ProdSecCSP",
+          "created_at": "2025-04-16T17:37:15Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDRX",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12858455",
+          "body": "It's a mixed bag. Depends on the resources and training on both sides. The CSP, Advisor, and 3PAO will know more than the agency usually about the system. From what I have seen, the CSP/advisor personnel will know more about enacting security implementation and technologies whereas the 3PAO personnel will be more familiar with how to get a SME to show the screen/evidence they want. Additionally, the 3PAO personnel will usually know less about one specific tool but know something about more tools since they see more systems/organizations using a variety of tools. The 3PAO personnel would also know more about what FedRAMP PMO would have issues with which I guess wouldn't be as relevant anymore.",
+          "author": "ChanceofClouds",
+          "created_at": "2025-04-16T18:19:33Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxDJV",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12857941",
+      "body": "I'm concerned about two things:\r\na- starting with Low Impact.  I get that this is a starting place, but there are so few Low/LI-SaaS systems, that they are de facto almost unique cases.  I'd recommend instead taking a limited subset of the Moderate baseline.  I think this would be more actually useful in a shorter time frame.  \r\nb-  The decoupling a KSI from the 800-53 controls themselves reminds me a bit of the SOC 2 COSO principles.  I have no issues with that, but I worry about the legal requirements of 800-53 (e.g. FISMA) and the ability to pass a KSI, but not the underlying 800-53 controls.  Is that sufficient?\r\n\r\n",
+      "author": "jsantore-cgc",
+      "created_at": "2025-04-16T17:29:29Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AxDNb",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12858203",
+          "body": "I think start with Moderate or do full families/whatever types of controls assessing stick for a certain areas. At the same time, it can be decided which apply at what baseline, that way each CSP can begin working on updating.",
+          "author": "ChanceofClouds",
+          "created_at": "2025-04-16T17:53:21Z"
+        },
+        {
+          "id": "DC_kwDOOMDw3M4AxDu8",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12860348",
+          "body": "> I'm concerned about two things: a- starting with Low Impact. I get that this is a starting place, but there are so few Low/LI-SaaS systems, that they are de facto almost unique cases. I'd recommend instead taking a limited subset of the Moderate baseline. I think this would be more actually useful in a shorter time frame\r\n\r\nThis is sorta what we're doing; but for the pilot we'd only plan to do time limited Low impact authorizations in the first round. We don't _want_ too many people in the pilot tbh, gotta do this incrementally. It'll grow fast if it works.\r\n\r\n> I worry about the legal requirements of 800-53 (e.g. FISMA)\r\n\r\nFedRAMP is developing this process to be _consistent_ with NIST standards to meet legal requirements. FedRAMP has a fair bit of additional legal authority here for setting a standard that is accepted by agencies as long as it meets that consistency requirement. We'll navigate this on the gov side.\r\n\r\n",
+          "author": "pete-gov",
+          "created_at": "2025-04-16T22:45:39Z"
+        }
+      ]
+    },
+    {
+      "id": "DC_kwDOOMDw3M4AxDL8",
+      "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12858108",
+      "body": "Just wanted clarification on whether today's mention of \"Low Impact\" was strictly meant to cover the Low Baseline controls or just the LI-SaaS (Tailored Low Impact) controls.",
+      "author": "mgcas-mrunmayi",
+      "created_at": "2025-04-16T17:44:30Z",
+      "replies": [
+        {
+          "id": "DC_kwDOOMDw3M4AxDt8",
+          "url": "https://github.com/FedRAMP/automating-assessment-cwg/discussions/19#discussioncomment-12860284",
+          "body": "This is still pending finalization. :)",
+          "author": "pete-gov",
+          "created_at": "2025-04-16T22:34:47Z"
+        }
+      ]
+    }
+  ]
+}

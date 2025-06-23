@@ -1,0 +1,18 @@
+{
+  "id": "D_kwDOOxfoic4AgG4o",
+  "url": "https://github.com/FedRAMP/community/discussions/37",
+  "title": "Clarifying P1 Pilot Criteria [TERADATA]",
+  "body": "Hello FedRAMP Team,\r\n\r\nThank you for hosting the FedRAMP 20x initiative; we\u2019re excited about the direction this program is taking and the opportunity it presents to innovate within the authorization process. The team at Teradata is interested in potentially participating in the Phase 1 Pilot, though we are unsure if our offering fully aligns with the outlined criteria. We would greatly appreciate clarification on a few points to help us assess whether we\u2019re a strong candidate for participation:\r\n\r\nQuestion 1: How does the program define a \u201csimple\u201d offering for Phase 1 purposes?\r\nQuestion 2: Regarding the requirement that the offering be on a FedRAMP authorized platform; does this refer to the offering itself having FedRAMP authorization, or simply being hosted on a FedRAMP authorized environment (e.g., AWS GovCloud or AWS East/West)?\r\nQuestion 3: It was mentioned that the offering must be delivered solely over the internet. Could you expand on what this entails from an implementation or eligibility perspective?\r\n\r\nAdditionally, the offering we are considering presenting here already has FedRAMP Ready status on the market place.\r\n\r\nWe\u2019re very appreciative of your time and consideration, and we look forward to learning more about how we might contribute to this important initiative.",
+  "author": "jac74-jon33",
+  "created_at": "2025-06-04T18:56:11Z",
+  "comments": [
+    {
+      "id": "DC_kwDOOxfoic4AzAw_",
+      "url": "https://github.com/FedRAMP/community/discussions/37#discussioncomment-13372479",
+      "body": "Hey jac74-jon33! Phase One is deliberately ambiguous because it's about testing the feasibility of the approach and encouraging innovative solutions. Once Phase One bears fruit folks can expect a more clearly defined path to become available. \r\n\r\n> Question 1: How does the program define a \u201csimple\u201d offering for Phase 1 purposes?\r\n\r\nPlain language definition here such as \"1. easily understood or done; presenting no difficulty.\"\r\n\r\n> Question 2: Regarding the requirement that the offering be on a FedRAMP authorized platform; does this refer to the offering itself having FedRAMP authorization, or simply being hosted on a FedRAMP authorized environment (e.g., AWS GovCloud or AWS East/West)? \r\n\r\nThe KSIs for the Phase One pilot are not intended to assess underlying infrastructure. They're designed for a cloud-native service built on a FedRAMP authorized IaaS or PaaS, using FedRAMP authorized services of that IaaS or PaaS.\r\n\r\n> Question 3: It was mentioned that the offering must be delivered solely over the internet. Could you expand on what this entails from an implementation or eligibility perspective?\r\n\r\nThe current Phase One pilot page removed this to avoid confusion, but it meant exactly that; the KSIs are designed to assess only a typical cloud-native SaaS that is used via the web.\r\n\r\nHope that helps!\r\n",
+      "author": "pete-gov",
+      "created_at": "2025-06-04T21:19:04Z",
+      "replies": []
+    }
+  ]
+}
