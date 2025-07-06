@@ -81,7 +81,7 @@ def main() -> None:
   durations: int = 0
   authorizations: List[FedRAMPAuthorization] = []
   with (open("data/gsa/marketplace-fedramp-gov-data/data.json") as input_fd,
-        open("data/fedramp_atos.csv", "w", newline="") as output_fd):
+        open("data/fedramp_ato_durations.csv", "w", newline="") as output_fd):
     csv_field_names = [field.name for field in fields(FedRAMPAuthorization)]    
     csv_writer = csv.DictWriter(output_fd, fieldnames=csv_field_names)
     csv_writer.writeheader()
