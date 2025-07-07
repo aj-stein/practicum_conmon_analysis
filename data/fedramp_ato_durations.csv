@@ -1,0 +1,568 @@
+id,csp,cso,duration,reuse
+F1607067912,18F - 18F Cloud.gov,CG-TTS - Cloud.Gov,258,19
+FR2513049676,22nd Century Technologies Inc.,XtractIQ,32,0
+FR2335047392,"3rd Eye Technologies, Inc.",Mystic Message Archival,378,0
+FR2000174962,"Abbott, Inc.",LibreView for US Government,210,0
+FR2425960757,Abnormal AI ,Abnormal AI for Government,255,0
+FR2307441316,Absolute Security,Absolute Secure Endpoint Product Suite,812,1
+FR1707156421,Acadis,Acadis Readiness Suite,392,8
+F1511167634,"Accellion USA, LLC.",Kiteworks Federal Cloud,532,17
+F1404043549,Accenture Federal Services,Accenture Federal Cloud ERP,95,1
+FR1834336116,Accenture Federal Services,Accenture Extended Detection and Response (XDR) for government,414,2
+FR1704369518,Accenture Federal Services,Accenture Insights Platform (AIP) For Government,403,7
+FR2106555313,"AchieveIt Online, LLC",AchieveIt,231,0
+F1302201919,Acquia Inc.,Acquia Cloud,703,29
+FR2214062312,"Actsoft, Inc",Actsoft Workforce Manager for Gov.,570,0
+FR2104942200,"Acuant, Inc.","Connect, Ozone, & Facial Recognition System (COFRS)",359,0
+FR2212874638,"Acumen, LLC",SkyShaper Technologies ,153,0
+F1509037239,Adobe,Adobe Experience Manager Managed Services (AEMMS-GC),128,6
+FR1907354404,Adobe,Adobe Campaign,211,1
+FR1832870021,Adobe,Adobe Learning Manager,143,7
+F1509037236,Adobe,Adobe Connect Managed Services (ACMS-GC),128,4
+FR1820435961,Adobe,"Adobe Document Cloud including Adobe Acrobat, Adobe Acrobat Sign, and Adobe Acrobat Services (APIs)",21,9
+FR1820435960,Adobe,Adobe Creative Cloud for Enterprise,21,13
+FR1832869359,Adobe,Adobe Analytics,455,0
+FR2108360349,Adobe,Adobe Acrobat Sign for Government,77,10
+FR2322741394,AgileRank,Agile RTLS Suite (A-RTLS),161,0
+FR2322036060,"Aidin, Inc.",Aidin Post-Acute Referrals Module,452,0
+AGENCYHUDSAAS,AINS dba OPEXUS,AINS dba OPEXUS - eCase,430,47
+F1206061353,Akamai,Content Delivery Services,400,381
+FR2411862686,Alation,Alation Cloud Service,40,0
+FR2413241182,Altana,Altana for Government,223,0
+F1603047866,Amazon,AWS GovCloud,330,1105
+AGENCYAMAZONEW,Amazon,AWS US East/West,180,998
+FR2012366611,Amplifire,Amplifire,190,0
+F1210011608,Appian,Appian Cloud,407,27
+FR2318051429,Appian,Appian Government Cloud - High,581,0
+FR2431264500,AppOmni,AppOmni SaaS Security for Government,259,0
+F1603157879,Apptio an IBM company,Apptio for Technology Business Management and Cloud Financial Management (TBM) ,433,6
+FR2326654692,"Aprimo US, LLC",Aprimo,642,0
+FR2330939028,Aqua Security Software Inc.,Aqua Platform for Government,578,0
+FR1708752710,"Armedia, LLC",Armedia Content Cloud,992,1
+FR2031936863,Armis Federal LLC,Armis FedRAMP Edition (AFE),242,5
+FR2317139564,Articulate Global LLC,Articulate 360,374,4
+FR1908649566,Aruba Networks,Aruba Central,280,9
+FR2401839361,"Ask Sage, Inc.",Ask Sage,447,4
+FR1920363607,AT&T Cybersecurity,LevelBlue,226,38
+FR2412062433,Atlassian,Atlassian Government Cloud,246,1
+FR2403745080,ATOM EVSE,"Atom Power, Inc - ATOM EVSE",120,0
+FR2031222637,"Aurigo Software Technologies, Inc.",Masterworks Cloud Platform,1122,0
+FR1814168113,"Authentic8, Inc.",Silo,137,12
+FR2226322745,Autodesk,Autodesk for Government,758,0
+FR1923743650A,"Automattic, Inc.",WordPress VIP,489,7
+FR2427142353,"AutoRABIT Holding, Inc.",CodeScan,6,0
+FR2410056366,Avature Federal Platform,Avature Limited,309,0
+F1506046708,"Avaya, Inc.",Avaya Government Cloud,504,4
+FR2025827270,AvePoint Inc.,AvePoint Online Services for US Government (AOS-UG),266,6
+F1206191394,Avue Technologies,Avue Digital Services,184,1
+FR2333756970,Axiad IDS Inc.,Axiad Conductor,669,0
+FR1703752011,Axon,US Axon FedCloud - High,271,18
+FR2401047002,Axonius Federal Systems,Axonius Asset Cloud,490,1
+FR2430123303,Aztec Software,Aztec Learning System,270,0
+FR2128235497,"Bamboo Health, Inc.",PMP Government-Gateway,1235,0
+FR2221456469,"Bentley Systems, Incorporated",Bentley for Government,90,0
+FR2515673452,"Beryllium InfoSec, Inc.",Cuick Trac Managed Enclave (CTME),86,0
+FR2318956176,"BetterUp, Inc.",BetterUp for Government,457,0
+FR2231070252,BeyondTrust,Secure Remote Access,456,4
+FR1918442180,Bizagi Corp.,Bizagi Cloud for US Government,470,1
+F1302271924A,BlackBerry,BlackBerry Cloud - AtHoc Services for Government (High),164,20
+F1506076709,Blackboard,Blackboard Learn SaaS,272,4
+FR2410560133,BlackOhm,Omega Platform,355,0
+FR2424553196,BLINK CHARGING,BLINK GOV,339,0
+FR2035056105,Bluescape,Bluescape for Government,328,1
+F1510057481,BMC Software,BMC Helix,218,5
+FR2429249027,Bonterra,Apricot for Government,180,0
+FR1916254386,Boomi,AtomSphere,152,5
+FR2017462201,Booz Allen Hamilton,Supply Chain Master Catalog (SCMC) Government Cloud Solution,201,0
+F1212191840A,Box Inc.,Box Enterprise Cloud Content Collaboration Platform,1097,42
+FR2425374322,BP Pulse,Omega Charge Management System,307,0
+FR2522249893,Bridge Intelligence LLC. dba AssetIntel,Asset Management Suite (AMS),54,0
+FR2000939520,"Broad Institute, Inc.",Terra,178,1
+FR2232465502A,Broadcom,Symantec Gov Cloud Security (GCS) - High,127,0
+FR1923039219,"Canon U.S.A., Inc.",Canon Office Cloud – Managed Print Services,437,1
+FR2009476860A,Casepoint LLC,Casepoint Government,348,6
+FR2421035110,Cellebrite,Cellebrite Government Cloud (CGC),150,0
+FR2125059322,Center for Translational Data Science (CTDS),Gen3 Data Ecosystems Platform,361,1
+FR2110056334,"Center for Translational Data Science (CTDS), University of Chicago and Open Commons Consortium (OCC)",Gen3 Data Commons Service,44,0
+FR2317262742,Ceribell,Ceribell EEG,300,0
+FR2433976629,"Cervais, Inc.",Cylenium Cloud ,125,0
+F1609087941,CFI Group,Customer Feedback Management System (CFMS),1009,2
+FR2022243058,CGI Federal,Momentum Enterprise Suite,180,0
+F1206061350,CGI Federal,CGI Federal IaaS Cloud,231,11
+FR2018946952,CGI Federal,Sunflower Asset Management Cloud (SAMC),641,0
+FR2332984245,"ChargePoint, Inc.",CP Fed Cloud,146,0
+FR2328145448,"Chargie, LLC",Electric Vehicle Infrastructure Platform for Government,196,0
+FR2511048038,"Check Point Software Technologies, Inc.",Check Point Infinity Platform for Government,94,0
+FR2514624801,Checkmarx,Checkmarx One for Government (CXG),17,0
+FR2330728655,Chronus LLC,Chronus for Government,197,0
+FR1814240140,CircleCI,CircleCI Cloud,-1832,19
+FR2220549818,CirrusMD,CirrusMD Virtual Health Chat for Government,880,0
+FR2518163100,Cisco,Spaces for Government,94,0
+FR1823368486,Cisco AppDynamics,AppDynamics GovAPM,358,35
+F1605107897,Cisco Systems Inc.,Cisco Cloudlock for Government,578,35
+FR2304757473,Cisco Systems Inc.,Cisco Umbrella for Government,513,1
+FR2315535023,Cisco Systems Inc.,Cisco Meraki for Government,657,0
+F1604017885,Cisco Systems Inc.,Cisco Unified Communications Manager Cloud for Government (Cisco UCM Cloud for Government),288,7
+F1511207635,Cisco Systems Inc.,Webex for Government,285,34
+FR2523656707,"Cisco Systems, Inc.",Cisco ThousandEyes for Government,40,0
+FR2012534927,"Cisco Systems, Inc.",Cisco Catalyst SD-WAN for Government (SDWAN-G),422,3
+FR1819254092,Citrix,Citrix for Government,557,6
+FR2516834670,CivicPlus,Social Media Archiving,108,0
+FR2014656304,"Civis Analytics, Inc.",Civis Platform,1464,0
+FR2406760385,Clarivate Analytics US LLC,Clarivate Intellectual Property AI & Image Search Platform (CIPAI-ISP),212,0
+FR2210850126,"Cleartronic, Inc. dba. ReadyOp Communications, Inc.",ReadyOp,174,0
+FR2309544938,"Cloudera Government Solutions, Inc",Cloudera for Government,453,0
+FR2000863987,Cloudflare,Cloudflare for Government,532,49
+FR2303852859,Cocoon Data,SafeShare (SFS),376,0
+FR1910758409,Code42,Incydr Gov,321,1
+FR2013059515,Cofense,Cofense PhishMe,333,6
+FR2434758320,Cognitus Consulting LLC,LambdaX Contract Lifecycle Management (CLM) for Government,128,0
+FR2306445868,Cohesity,Cohesity Cloud Services for Government,356,1
+FR2128562231,Collabware,Collabspace,602,2
+FR1706403967,Collibra,Collibra Data Intelligence Cloud (CDIC),376,8
+FR2115384377,"Commvault Systems, Inc.",Commvault Cloud for Government,1088,4
+F1506246782,Complete Discovery Source,Complete Discovery Source Federal Cloud (CDS-F),1334,5
+FR2234550858,"Concur Technologies, Inc.",Concur Cloud for Public Sector,364,18
+FR2409863458,Confluent Inc.,Confluent Cloud for Government (CCG),160,0
+FR2207365631,Consensus Cloud Solutions,Enterprise Cloud Fax Government (ECFax),490,0
+FR1833967442,Contegix,Valiantys Federal (Formerly Contegix),182,11
+FR2325657620,Content Guru,Storm Cloud Contact Center,582,0
+FR1915750265,"Continuum GRC, Inc.",ITAM,327,0
+FR2200507410,Copado,Copado GovCloud,429,2
+FR2419424565,Cora Systems,Project Portfolio Management (PPM),144,0
+FR2407275137,Coralogix Inc.,Coralogix U.S. GovOps,464,0
+FR1722160191,CORAS,CORAS Federal,264,1
+FR2029183077,Cority Software Inc.,CorityOne,559,8
+F1509217359,Cornerstone OnDemand,Unified Talent Management Suite (CUTMS),299,18
+FR2323258199,"Cornerstone OnDemand, Inc.",Cornerstone Unified Talent Management Suite (CUTMS) – GovCloud,495,0
+F1206111371,"CoSo Cloud, LLC.",Knox Systems,1743,5
+F1308202329,Coupa Software Inc,Coupa Spend Management for Federal,504,2
+FR2122140784,Covergent Solutions Inc dba Exiger Government Solutions (EGS),Exiger Federal Cloud (EFC),461,2
+FR2416856649,Creative Veteran Productions,Federal Immersive Learning Management System (FED-ILMS),306,0
+FR1807853629A,"CrowdStrike, Inc.",CrowdStrike Falcon Platform for Government,464,41
+FR2135180018,CuraPatient,Composite Apps/ CuraPatient,240,0
+FR2001619337,CyberArk Software LTD,CyberArk Identity for Government,715,5
+FR2001619708,CyberArk Software LTD,CyberArk Endpoint Privilege Manager (EPM) for Government,715,5
+FR2108731521,CyLogic,CyCloud - VMware Cloud Foundation ( VCF ),104,0
+FR2310956122,"Cyware Labs, Inc.",Cyware Cyber Fusion Center (CFC),271,0
+FR2402468053,Darktrace Federal Inc.,Cyber AI Mission Defense and Email Protection,423,0
+F1404304159,DataBank Holdings,FedRAMP Compliant CloudPlus,430,8
+FR2525247858,"Databricks, Inc.",Databricks on Azure Commercial,13,0
+FR1834740315,"Databricks, Inc.",Databricks on AWS US East/West,357,7
+FR2324740262,"Databricks, Inc.",Databricks on AWS GovCloud,632,0
+FR2023864279,Datadog,Datadog for Government,253,92
+FR2023864279A,Datadog,Datadog for Government - High,60,0
+FR2112152882,Datavant,Datavant Cloud,182,0
+F1507317125,Decision Lens Inc.,Decision Lens Software,559,4
+FR2427252775,"Dejero Labs, Inc.",Dejero Control and Concentrator,361,0
+F1210161615,Deloitte,Evidence Management System (EMS),32,9
+FR2207247759,Deloitte GPS OpenCloud,Deloitte GPS OpenCloud,471,0
+F1606087903,Deltek - Replicon,Replicon Cloud Platform (Enterprise Time Tracking Platform),280,0
+FR2405880485,"Deltek, Inc.",Costpoint GovCon Cloud Moderate (CP GCCM),151,0
+FR2134254227,Devo,Devo.Gov-US,677,0
+FR2100845343,DevResults,DevResults,245,0
+FR2410651313,Dewberry,DimensionalView®,158,0
+FR2508262726,Dexcom Inc.,Dexcom Clarity for Government,164,0
+FR2414718666,Digital Science UK Limited,Overleaf,160,1
+FR2118743892,Digital.ai,Digital.ai Government Cloud,257,1
+FR1834172478,"Diligent, Inc.",Diligent One Platform (D1P),427,4
+FR1805752046,"Distributed Solutions, Inc.",AEON,319,3
+FR2000951694,DLH Corporation,DLH Infinibyte Cloud,756,0
+FR1814557199,"DNAnexus, Inc.",DNAnexus Platform,236,2
+FR2432940371,Docebo,Docebo Learning Platform for Gov (DCBO-GOV),232,0
+FR2419537309,"DocketScope, Inc.",DocketScope®,299,0
+F1609267945,DocuSign,"DocuSign Federal (eSignature, Gen, Negotiate)",297,46
+F1605027893,DocuSign,DocuSign CLM,844,41
+FR2514732308,"DOMA Technologies, LLC",DX Engage Government Platform,72,0
+F1507136931A,"Druva, Inc.",Druva Data Resiliency Cloud,554,11
+FR2410060106,"DTEX Systems, Inc.",DTEX InTERCEPT for Government,338,0
+FR1823149273,Duo Security (a Cisco Company),Duo Federal,373,214
+FR2016131254,Dynatrace,Dynatrace Platform,116,14
+F1603307884,"e-Builder, A Trimble Company",Trimble Unity Construct Government Edition,1575,0
+F1301251880,Economic Systems,Economic Systems Federal Human Resources Navigator,309,18
+FR2023601671,eGain Corporation,eGain Suite,195,1
+FR2024952734,Egnyte Inc.,Egnyte Platform,24,0
+FR2016962740,Eightfold AI Inc.,Eightfold Talent Intelligence Platform (TIP),1141,1
+FR2004446306,Elastic,Elastic Cloud,189,32
+FR2523939103,Elastic Cloud Hosted,Elasticsearch,5,0
+FR2404453515,"Embrava USA, Inc.",Embrava Device Management System (DMS),46,0
+FR2034966708,End To End Computing,Singularity,319,0
+FR2014363920,Enel X North America,Exchange Platform,136,0
+FR1930046270,EnergyCAP LLC.,EnergyCAP,118,2
+FR2330135650,"Eptura, Inc",Archibus,400,0
+FR2311952621,Ernst & Young LLP,EY Grants Accelerator,629,0
+FR1811073663A,ESRI,ArcGIS Online (AGO),475,16
+F1311252651,ESRI,Esri Managed Cloud Services Advanced Plus,218,5
+FR2523143582,ETHERFAX,ETHERFAX GovCloud,16,0
+F1412165928,Everbridge,Critical Event Management Suite,170,26
+FR2413540464,Everfox,Everfox ULTRA,135,0
+FR1916055736,"Everlaw, Inc.",Everlaw Platform,492,4
+FR2207359708,Evidence Prime,Laser AI,77,0
+F1305132147,Ex Libris,"Higher-Ed Platform (Alma, Primo, Leganto, Esploro)",440,10
+FR1827963145,"Exterro, Inc.",Exterro E-Discovery and Legal Software Platform,249,2
+FR2510664395,ExtraHop Networks,ExtraHop RevealX Federal,151,0
+FR2427818523,"Feith Sytems and Software, Inc.",RMA iQ™,294,0
+FR2311345531,Figma,Figma for Government,256,4
+FR1828574469,FM:Systems,FMS:Employee,98,4
+FR2324454026,FM:Systems,FMS:Workplace,640,1
+FR1932554201,Forcepoint,ONE – Security Service Edge (SSE) – CASB/DLP/SWG/ZTNA/RBI,390,0
+FR2031156016,"FormAssembly, Inc.",FormAssembly Gov Cloud,285,0
+FR2327655698,Gallery Systems,MCMS Next,674,0
+FR1834348080,"GDC Integration, Inc.",General Support System (GSS),825,2
+FR1829538820,General Services Administration,Login.gov,353,17
+FR2131766015,Genesys,Genesys Cloud CX,433,9
+FR1918150046,Geotab,Geotab Telematics Platform Government (GTP Gov),385,3
+FR2210851632,GetWellNetwork,GetWellNetwork  - Get Well Anywhere - Federal,764,0
+FR1812058188,GitHub,GitHub Enterprise Cloud,185,166
+FR2411959145,GitLab,GitLab Dedicated for Government,331,0
+FR2234334891,"Glassbeam, Inc.",Glassbeam Clinsights,561,0
+FR2035860874,"Global Telehealth Services, inc.",GTS VirtualHealth Platform (GTS-VP),926,0
+F1206081364,Google,Google Workspace,316,493
+FR1805751477,Google,Google Services (Google Cloud Platform Products and underlying Infrastructure),302,315
+FR2405153785,Google LLC,Google Cloud VMware Engine (GCVE),587,0
+FR1815734543,Gordian,Gordian Federal Cloud powered by RSMeans Data,612,4
+FR2422947547,GovCollab,GovCollab,100,0
+FR2002757173,"Government Retirement & Benefits, Inc.",GRB Platform,750,12
+FR2324055183,Govini,Ark.ai,112,0
+F1311252652,Granicus,GovDelivery Communications Cloud,422,42
+FR2521554684,H20.AI for Government,H2O.AI,61,0
+FR1919750997,HackerOne,HackerOne Continuous Security Testing Platform,364,40
+FR2411956235,"HB Healthcare Safety, SBC",Healthcare Safeware,473,0
+FR2135040486,HealthVerity,Privacy Preserving Records Linkage (PPRL),382,0
+FR1831429369,HireVue,Recruitment Assessments and Video Interviewing,268,4
+FR1728349078,Hootsuite,Hootsuite Enterprise,85,5
+FR2502963317,HP Inc.,HP Managed Services for Government,159,0
+F1408115175,Huddle US,Huddle Enterprise Cloud Content Collaboration and File Sharing Portal for Government,186,7
+FR1802451335,"Human Resources Technologies, Inc. (HRTec)",Federal High Impact Virtualized Environment (FedHIVE),880,1
+FR2333538201,"Hypori, Inc.",Hypori Government Cloud,202,0
+FR1728053006,IBM,IBM Maximo and TRIRIGA on Cloud for U.S. Federal,287,12
+F1206081363,IBM,SmartCloud for Government,513,6
+F1208031461,IBM,IBM Platform Services for Government,862,11
+F1211011660,IBM,IBM Cloud for Government,559,17
+FR2135730387,IBM,IBM Federal HR Cloud,552,4
+FR2504062150,IBM,IBM Federal ATOM,136,0
+FR2417469779,IBM Envizi ESG Reporting,IBM Envizi ,185,0
+FR2122038682,iBoss,iboss Government Cloud Platform (IGCP),349,1
+FR2022963780,Icertis Inc.,Icertis Contract Intelligence (ICI) for Government,39,0
+FR1718334757,ID.me,ID.me Identity Gateway,378,5
+FR2429166928,Ideagen,Ideagen Government Cloud,221,0
+F1512017638,IdeaScale,IdeaScale Gov,98,6
+FR2230244107,"Illumio, Inc.",Illumio Government Cloud,622,0
+FR2520254824,InEight,InEight Document,10,0
+FR2017257053,Infoblox,Infoblox Threat Defense,812,0
+FR1710033970,Infor,Infor Government Solutions (IGS) Software as a Service,350,0
+FR2029331613,Informatica LLC,Informatica Intelligent Cloud Services (IICS),117,4
+FR2321143030,"Information First, Inc.",Content Manager Records Management Application (RMA) Cloud Service Offering (CSO),269,0
+FR2520040378,Infotek Consulting LLC,Infotek Online Services for US Government,25,0
+FR1800263217,"Innovative Discovery, LLC",Innovative Driven Government Cloud (IDGC),280,2
+FR1821933307,"Innovest Systems, LLC",Trust & Wealth Management Solutions,314,0
+FR1724526654,Intelliworx,Intelliworx Cloud Workflow Platform,323,32
+FR2104636677,"Ipsos America, Inc.",Ipsos Research,306,0
+FR2031155471,Iron Mountain,Iron Mountain InSight,1482,0
+FR2514356645,Iron Mountain,Iron Mountain Insight on AWS,93,0
+FR2027958176,"Issio Solutions, Inc.",Issio Information System,298,0
+F1303221956,IT-CNP,GovDataHosting Cloud Platform,39,5
+FR2212912561,Itamar Medical,Itamar Dispatcher Cloud (IDC),121,0
+FR1816364586,Ivanti,Ivanti Neurons for ITSM (Formerly Service Manager),440,6
+F1507116930,Ivanti,Ivanti Neurons for MDM (Formerly MobileIron),351,3
+FR2324452533,Joint Commission Resources,Tracers with AMP®,241,0
+FR2102758152,Juniper Networks,Juniper Mist,765,0
+FR2128462521,"Juvare, LLC",Juvare Federal Cloud,549,2
+FR2032565438,"Kahua, Inc.",Kahua Federal Network (KFN),67,4
+FR2124663764,KBR Vaault,KBR,534,0
+FR2116544598,Keeper Security,Keeper Security Government Cloud Password Manager and Privileged Access Manager,117,95
+FR2335051964,Keyfactor,Keyfactor for Government,100,0
+FR2435353186,"Kiteworks USA, LLC",Kiteworks Secure Gov Cloud,136,0
+FR2118080669,"Knightscope, Inc.",Knightscope Autonomous Security Robot (Knightscope ASR),975,0
+FR2201340492,"KnowBe4, Inc.",KnowBe4 Platform (KSAT + PhishER),460,20
+FR2113552479,Knowledge Services,dotStaff,229,0
+FR2526240411,Koniag Government Services,Koniag Government Services Electronic Health Record System (KGS EHRS),13,0
+FR2406453618,LabArchives,LabArchives for Government (LG),389,0
+FR2422436886,Laerdal Labs D.C.,SimCapture Cloud Government,91,0
+FR2235154356,Lastwall Corp,IDCommand,94,0
+FR2120962552,LaunchDarkly,LaunchDarkly,540,24
+F1305012100,"Leidos Digital Solutions, Inc.",in3sight,282,2
+FR1830842316,"Leidos Digital Solutions, Inc.",IQ FedCloud,303,3
+FR2020767053,Level Access,Accessibility Management Platform (AMP),169,4
+FR2510634052,LexisNexis Legal and Professional,Lexis+® for Government,150,0
+FR2524251176,LMI Solutions,Atlas by LMI,11,0
+FR2428168490,LogicMonitor,LM for Gov,102,0
+F1603297883,"Lookout, Inc.",Lookout Security Platform,302,14
+FR2218073444,"Lucid Software, Inc.",Lucid GovSuite,383,7
+FR2229642430,Lumen,Cloud Contact Center,799,0
+FR1927682057,"M.C. Dean, Inc.",InfraLink,373,2
+FR2129953050,"Manhattan Associates, Inc.",Manhattan Government Cloud,458,0
+FR2226144516,"MARi, LLC",MARi,485,0
+FR2235965777,"Mark43, Inc.",Mark43 Public Safety Platform (PSP),516,0
+FR2514767720,Mastercard Cybersecurity,RiskRecon Cybersecurity & Privacy - Reporting and Scorecards,80,0
+FR2335153827,MasterControl,Quality Excellence Gov (Qx Gov),371,0
+FR2225648574,Mathematica Inc.,Mathematica Cloud Support System,828,2
+FR1728351539,MAXIMUS Inc.,Maximus Intelligent Virtual Assistant (MIVA) (formerly MIA),494,3
+F1303191948,MAXIMUS Inc.,MAXIMUS Cloud,2739,7
+FR2324445481,"MCG Energy Solutions, LLC",MCG Applications and Hosting,644,0
+FR1902240018,MDRC,SPROUT,133,1
+FR2332852130,Medallia Inc.,Mindful by Medallia,589,0
+FR1711262842,"Medallia, Inc.",Medallia GovCloud,104,12
+FR2004146362,"MediaLab, Inc.",MediaLab Federal,301,1
+FR2210666939,Melissa,Melissa GovCloud Address Suite,190,1
+FR2032665434,Menlo Security,Cloud Security Platform powered by Isolation Core,389,0
+FR2206159758,Merlin International,Constellation GovCloud (CGC),578,0
+FR2215946050,MicroFocus,"ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",425,0
+F1603087869,Microsoft,Azure Government (includes Dynamics 365),407,388
+FR1824057433,Microsoft,Microsoft Office 365 GCC High,1081,2
+MSO365MT,Microsoft,Microsoft 365 Government Community Cloud & Supporting Services,193,372
+F1209051525,Microsoft,Azure Commercial Cloud,231,533
+FR2126176344,MicroStrategy,MicroStrategy Cloud for Government,441,0
+F1311222650,MIS Sciences Corporation,GovPoint Cloud Services,631,7
+F1610037949,mLINQS,mLINQS Hosting Service,344,8
+FR2122150307,MongoDB,MongoDB Atlas for Government,604,19
+FR1711546389,Monster Government Solutions,Monster Hiring Management Enterprise (MHME),314,16
+FR2118055930,Motorola Solutions,Motorola Solutions Federal Cloud (MSFC),1351,0
+FR2332364851,Moveworks,Moveworks GovCloud,158,0
+FR2335850270,Movius Interactive Corporation,Movius MultiLine and Movius Decentralized Distributed Secure Communications,473,0
+F1506256801,"MSM Group, Inc.",iSite Contract Management Portal,967,0
+FR1818161169,MuleSoft,MuleSoft Government Cloud,483,74
+FR2304546222,My Business Matches,Vendor Event & Business Matchmaking Platform,724,0
+FR2226846287,National Institute of Building Sciences (NIBS),ProjNet™,846,0
+FR2224739070,National Resident Matching Program,iMatch,680,0
+FR2234963115,"NCR Government, LLC",NCR Government Cloud,662,0
+FR2119265538,NEOGOV,NEOGOV Cloud,928,0
+F1508127183,NetComm,Beacon,131,0
+FR2028977567,"NetDocuments Software, Inc.",NetDocuments Document Management System (DMS),234,3
+FR2105946715,"Netskope, Inc.",Netskope GovCloud,333,3
+FR1831538827,"Netskope, Inc.",Netskope OneCloud Government,404,1
+F1607057910,New Relic,New Relic,487,167
+FR2525662082,Nexthink,Infinity for Government (NXT-G),13,0
+FR1704655535,NICE CXone,NICE CXone Customer Experience Platform,508,11
+FR2430847803,NinjaOne,NinjaOne for Government,157,0
+FR2001462460,Nintex,Nintex Drawloop DocGen,162,1
+FR2133141131,Nintex,Nintex Automation Cloud for Government (NAC-G),377,1
+FR2213764335,Noblis,RunCyberAssurance,330,0
+FR2512056954,NORC,Data Enclave Gov,5,0
+FR2102036897,Nuance,Nuance Dragon,201,1
+FR2134455708,"Nucleus Security, Inc",Nucleus for Government (NucleusGov),666,1
+FR1734750951,OCLC Incorporated,WorldShare Management Services,155,6
+FR2500837260,Odaseva,Odaseva GovCloud,159,0
+F1512167750,Okta,Okta IDaaS Regulated Cloud,496,619
+FR2131856836,Okta,Okta IDaaS Government High Cloud (GHC),399,31
+FR1828848692,OneSpan Inc.,"OneSpan Sign, E-Signature and Digital Signature Service",284,2
+FR1721059275A,OneStream Software,OneStream Cloud - High,932,16
+FR2100059668,OnSolve LLC,OnSolve Platform for Critical Event Management,907,1
+FR2231648178,"Onspring Technologies, LLC",Onspring GovCloud,441,0
+FR2110251776,"Ontario Systems, LLC d/b/a Finvi",Ontario Cloud Federal (OCF),225,0
+FR2526948870,Ontic Technologies,Ontic for Government,4,0
+FR2203732438,OpenText,OpenText Cloud for Government,537,0
+F1301101857,OpenText,OpenText™ Core Application Security (Fortify On Demand),362,10
+FR2113346550,OpenWater Software,OpenWater Awards,84,1
+F1607077914A,Oracle,Oracle Enterprise Performance Management (EPM),1087,9
+F1508277234,Oracle,Government Cloud - Common Controls,419,30
+FR1900048743,Oracle,Oracle Cloud Infrastructure-Government Cloud,364,39
+F1209041518,Oracle,Federal Managed Cloud Services,328,8
+F1603227880,Oracle,Taleo Cloud - U.S. Government Cloud,356,2
+FR2430844572,Oracle,Oracle Guided Learning (OGL),157,0
+FR1712871948,Oracle,Aconex for Defense,290,0
+F1206061351,Oracle,Oracle Service Cloud (OSvC),448,10
+F1603257882,Oracle,Fusion Cloud,395,4
+FR2524416446,Orbus Software,OrbusInfinity Government,32,0
+FR2301844932,Orca Security,Orca Cloud Security Platform,847,0
+FR2222167230,OwnBackup,Own Government Cloud,331,5
+FR2409367364,Pagefreezer Software Inc.,Pagefreezer Website Archiving,544,0
+FR2310974411,PagerDuty,PagerDuty Operations Cloud,601,1
+FR2315464863,Palantir Technologies,Palantir Federal Cloud Service – Supporting Services (PFCS-SS),447,10
+FR2434554673,Palantir Technologies Inc.,Palantir Federal Cloud Service - High,447,16
+FR1912671248,Palantir Technologies Inc.,Palantir Federal Cloud Service – Moderate,293,5
+FR2317253567,"Palo Alto Networks, Inc.",GCS-HIGH,630,0
+FR1913470600,"Palo Alto Networks, Inc.",Palo Alto Networks Government Cloud Services,441,98
+FR2235229299,"Paperless Innovations, Inc.",Actus,469,0
+FR2428769635,Paramify,Paramify Cloud,142,0
+FR2326160742,PDRI by Pearson,Palladium (PerformanceFIT2),396,0
+FR2135637226,Pearson VUE,Pearson Federal Cloud System,1065,0
+F1306282198A,Pegasystems,Pega Cloud for Government,243,6
+FR2500967834,"Peniel Solutions, LLC",TransAccess GovCloud Records (GCR),46,0
+FR1716961549,Peraton Corporation,Next Generation Cloud Platform,372,0
+FR1818240234,Perceptyx,Perceptyx Insights Platform,425,0
+FR2202555908,Pexip Inc.,Pexip Government Cloud (PGC),449,2
+FR2102577114,Pitney Bowes,SendPro 360,277,9
+FR2101000225,PlanStreet,PlanStreet Case Management System,145,0
+FR2127765215,Point Blue Conservation Science,Point Blue Science Cloud,133,0
+FR2432218524,"Power Settlements Consulting and Software, LLC (PSCS), a subsidiary of Yes Energy, LLC",PowerCore™ (PC-GOV),247,0
+F1405214357,PowerTrain Inc.,PowerTrain Government Learning Enclave - SaaS,1212,17
+FR2406651384,Precisely Software,Data Integrity Suite,451,0
+FR2224752400,Privoro LLC,Privoro Fulcrum Cloud,579,0
+FR2516365096,"Procore Technologies, Inc",Procore for Government,6,0
+FR2434139202,Profit Apps Inc,Profit.co,142,0
+FR2300457485,Project Hosts Inc.,GSS One - AWS,928,0
+F1403283529A,Project Hosts Inc.,GSS One - Azure,524,0
+F1403283529,Project Hosts Inc.,GSS One - Azure,477,34
+FR2322855016,"ProjectTeam, Inc.",ProjectTeam for Government (Construction Project and Program Management),498,0
+F1304222071,"Proofpoint, Inc.",Proofpoint Email Archive,355,14
+FR1720461312,"Proofpoint, Inc.",Proofpoint Email and Information Protection Service,441,6
+FR1819168894,"Proofpoint, Inc.",Proofpoint Targeted Attack Protection,628,5
+F1608097919,PTC,PTC Cloud Services,445,2
+FR2511256483,"PTC, Inc.",PTC ServiceMax Federal,136,0
+FR2330638488,PTFS/Liblime,Bibliovation/Knowvation,409,0
+FR2113157410,Public Health Foundation,TRAIN Learning Network,417,0
+FR1924942935,"Qgenda, LLC",QGenda,256,0
+FR2125653037,Qlik Technologies Inc.,Qlik Cloud Government,175,3
+FR2313477206,Quadient inc.,S.M.A.R.T. - Federal Editions,640,1
+F1606097904,Qualtrics,Qualtrics XM Platform,750,33
+F1606097904A,"Qualtrics, LLC",Qualtrics XM Platform - High,145,0
+F1508207205,Qualys,Qualys Cloud Platform,181,303
+FR2231052341,"Qualys, Inc.",Qualys Government Platform,899,0
+F1605027892,QuestionMark,Questionmark Government,125,6
+FR2214150164,"Quzara, LLC.",Quzara Cybertorch (SOC-as-a-Service),824,0
+FR1733061545,"R&K Solutions, Inc",GoRPM,434,0
+F1510137547,Rackspace Government Solutions,Rackspace Government Cloud,612,25
+FR2516072131,Ramp,Ramp for Government (RampGov),12,0
+FR2422240916,Rapid7,InsightGovCloud,200,0
+FR1722838693,Rave Mobile Safety,Rave Safety Platform,374,2
+FR1726637760,REAN Cloud Inc.,American Heart Association Precision Medicine Platform (AHA-PMP),768,0
+FR2309954376,RecAccess,RecAccess,679,0
+F1309252456,Rectitude 369,Rectitude 369 Government Cloud (Formerly GDT),231,6
+FR2102031769,Red Hat,Red Hat OpenShift Service on AWS (ROSA),251,1
+FR2414158717,RegScale,RegScale CCM,32,0
+FR2004753002,Relativity ODA LLC,RelativityOne Government,318,11
+FR2413937284,Relias LLC,Relias Platform,502,0
+FR1815547467,Relocation Management Worldwide (RMW),Virtual Employee Network (VEN),424,0
+FR1915765924,Repario,Repario Government Solutions (RGS),259,0
+FR1931476240,Rescale,Rescale ScaleX Government,455,1
+FR2100757165,Research Dataware LLC,IRBNet on GovCloud,906,0
+FR2209555576,RingMD USA Inc.,RingMD Telemedicine,32,0
+FR2204842850,"Rosalind, Inc.",ROSALIND,1563,0
+FR2102652499,RSA Security LLC,RSA® ID Plus for Government,448,1
+FR2234256499,Rubrik,Rubrik Security Cloud - Government (RSC-G),566,0
+FR2001938710A,"SailPoint Technologies, Inc.",SailPoint Identity Security Cloud,748,4
+FR2003061248,Salesforce,Salesforce Government Cloud Plus,201,215
+FR2425742814,"San Luis Aviation, Inc.",ESChat,318,0
+FR1719841002,SAP National Security Services Inc. (SAP NS2),SAP NS2 Cloud Intelligent Enterprise,214,24
+F1602257856,SAP National Security Services Inc. (SAP NS2),DoD Cloud Intelligent Enterprise – DD-CIE,620,3
+FR2210352243,"SAS Institute, Inc.",SAS AI and Analytics for Government on FedRAMP,994,0
+FR1821062403,"Saviynt, Inc.",Saviynt Enterprise Identity Cloud (EIC),311,3
+FR2023666173,"Scale AI, Inc",Scale AI Data Platform,732,0
+FR2418039495,"ScienceLogic, Inc.",ScienceLogic Government Cloud,210,0
+FR2410866384,Second Front Systems,2F Game Warden,437,0
+FR2214346691,"Secunetics, Inc.",Gobo Framework (Gobo),136,1
+FR2409250874,"Security Centric, Inc.",StormCloud Gov,100,0
+FR2502182285,Security Control LLC (an ISI Company),Security Control Cloud Software Platform (SCCP),136,0
+FR2221161553,"SecurityScorecard, LLC",SecurityScorecard Security Ratings,156,0
+FR2518943913,SentiLink Corp,SentiLink,80,0
+FR1919071020A,SentinelOne,SentinelOne Singularity Platform High,503,15
+F1305072116,ServiceNow,Government Community Cloud,194,240
+FR2033152148,"Seven Bridges Genomics, Inc",Seven Bridges Platform,298,1
+FR2428549698,Siemens,EVGateway Digital Environment (EDE),370,0
+FR2428039108,Siemens AG,DepotFinity,328,0
+FR2231561929,Siemens Government Technologies ,Mendix Cloud for Government,0,0
+FR2028958787,"Signature Performance, Inc.",ClaimsXM,370,0
+FR1818459251,Sirsi Corporation (SirsiDynix),EOS.Web,485,5
+FR2118043605,Skillsoft,Percipio,199,11
+F1207261443,Skillsoft,Private Cloud,777,17
+F1506096710,Skyhigh Security,Skyhigh Security Service Edge (SSE) Government Cloud Services (Cloud Access Security Broker (CASB) & Secure Web Gateway (SWG) for Cloud) (Formerly McAfee MVISION),236,13
+FR2230252267,Slack Technologies,GovSlack,423,3
+FR1823447014,Slack Technologies,Slack,278,347
+FR1730866868,Smartsheet,Smartsheet Gov,157,32
+F1603077867,SMX (Formerly Smartronix),Elevate Intelligent Automation Platform (IAP),718,1
+FR1809360201,Snowflake Inc.,The Data Cloud on AWS US East/West,269,29
+FR1809360202A,Snowflake Inc.,The Data Cloud on Azure Government (High),35,0
+FR2308159208,Snowflake Inc.,The Data Cloud on AWS GovCloud (High),675,4
+FR2230451369,Snyk,Snyk for Government,797,0
+FR2334936522,"Socure, Inc.",Socure for Government (SocureGov),491,0
+FR2000945223,Software AG Government Solutions,ARIS Government Cloud,247,3
+FR2135915901,Solventum,Solventum RevCycle Health Services Platform,155,0
+FR2002367706,Somnoware Healthcare Systems,Somnoware,354,0
+FR2213722684,Spider Strategies,Spider Impact for Government,245,0
+FR2314156865,Splunk,Splunk Cloud Platform for FedRAMP High,569,4
+F1607197917,Splunk,Splunk Cloud Platform for FedRAMP Moderate,216,110
+FR2431252785,Splunk LLC,Splunk Observability Cloud for FedRAMP Moderate,234,0
+FR2035740126,"Sprinklr, Inc.",Sprinklr CXM for Government (CXM),125,2
+FR2135043135,"SRR International,Inc.",CloudLCMS,99,0
+FR2513256853,StackArmor,The Armory,100,0
+FR2130949241,StackArmor,Rally,231,0
+FR1722532017,stackArmor,Clarity,701,2
+FR2500938675,Steel Patriot Partners,Federal ZenGRC,159,0
+FR1918740338,Sumo Logic,Sumo Logic,609,90
+FR2134635186,Synack,On-Demand Security Testing Platform,683,2
+FR1901136437,Synergetics Incorporated,Open Federal Logistics Information System (OpenFLIS),666,2
+FR1730842236,"T-Metrics, Inc.",T-Metrics Cloud Contact Center (TCCC),394,2
+FR2428653856,Tactical Edge,Total Visibility Anywhere,266,0
+FR1913835324,"TalaTek, LLC",TalaTek intelligent Governance and Risk Integrated Solution (TiGRIS),233,3
+FR2213647361,Talkdesk,Talkdesk CX Cloud™ Government Edition,246,0
+FR2100740435,Tango,Tango,287,13
+FR2110342613,Tanium,Tanium Cloud for US Government (TC-USG),541,3
+FR1912051231,"TechTrend, Inc.",Federal GovCloud (FGC) DevSecOps,644,0
+FR1907847653,TeleTech (TTEC) Services Corporation,Humanify Enterprise - Government (Humanify Enterprise - G),316,13
+FR2403936773,Telos Corporation,Xacta SaaS,528,0
+FR2215045786,Tenable,Tenable Cloud Security for US Government - Ermetic,468,0
+FR1814276801,Tenable Public Sector (TPS),Tenable Government Solutions,420,104
+FR2514451787,Teradata Corporation,VantageCloud Lake,72,0
+FR1819057982,"The Coleridge Initiative, Inc.",Administrative Data Research Facility (ADRF),197,0
+FR2334748657,ThreatConnect,ThreatConnect For Government,141,0
+FR2118555665,Totara Learning Inc.,Totara Talent Development Government Cloud Platform,620,1
+FR2516140413,TransUnion,TruValidate Identity Verification,102,0
+F1602057825A,TRAPWIRE,TRAPWIRE Threat Detection and Analysis System ,629,0
+FR1935245314A,Trellix,Trellix GovCloud Security Platform,610,3
+F1512017637,Trellix,Trellix Email Security GovCloud,581,7
+FR2028534270,Trello,Trello Enterprise Cloud,75,1
+FR2514023311,Trenchant Analytics,AI for Federal Acquisitions (ACQBOT),72,0
+FR2226231529,Trend Micro Inc.,Trend Vision One for Government,675,0
+FR2226228379,Trend Micro Inc.,Trend Cloud One for Government,710,2
+FR2110836406,Trustwave Government Solutions,Trustwave Fusion,534,0
+FR2505553757,"Turning Point Global Solutions, L.L.C",Network Inventory and Optimization Solution (NiOS®),215,0
+FR2108649352,"Tyler Federal, LLC",Tyler Federal Product Suite,17,38
+SOCRATA,Tyler Technologies Data & Insights,"Tyler Data Platform, powered by Socrata",805,9
+FR2208555094,UberEther,IAM Advantage,364,1
+FR2132958724,UiPath,Automation Cloud Public Sector,715,4
+F1506046707,Unison,Contracting SaaS,779,7
+F1510017461,Unison,FedConnect,365,3
+FR2009746321,United Solutions,US AI,760,4
+AGENCYNITCIAAS,United States Department of Agriculture,USDA Digital Infrastructure Services Center,278,9
+FR2415334644,United States Department of Agriculture,AgCloud Managed Platform Services (AMPS),329,0
+AGENCYWC2,United States Department of the Treasury,Treasury Cloud Moderate,176,2
+FR1801046750,United States Department of the Treasury,Treasury Cloud (TCloud),528,5
+FR2125561001,"Unqork, Inc.",Unqork for Government,115,1
+FR2419559532,USDA DISC,Connect.gov,325,0
+FR2316433331,USU Solutions Inc.,USU IT Asset Management,776,0
+FR2514747735,"Valid Evaluation, Inc.",Valid Eval,108,0
+FR1817874315,Valimail,Valimail Enforce Platform,111,2
+FR2411443563,"Valley IT Solutions, LLC",Kernos,242,0
+FR2421252636,Varonis,Varonis Data Security Platform,323,1
+FR2421252644,Varonis,Varonis DatAdvantage Cloud,356,0
+FR2025456731,"Vaultara, LLC",Vaultara Flare Services,872,0
+F1605107898,"VBrick Systems, Inc.",VBrick Rev,353,7
+F1509237360,Veracode,Veracode Online Security Platform for Government,368,45
+FR2425035681,Verint,Verint Self-Service for Government,222,0
+FR2417145078,"Veritas Technologies, LLC",Alta SaaS Protection (ASP),293,0
+FR1804557312,"Veritone, Inc.",Veritone Intelligent Digital Evidence Management System (iDEMS) for Government,281,1
+FR2504944121,Verizon,Verizon Managed SD WAN,86,0
+FR2430553984,Verizon,Verizon Government Cloud,146,0
+FR2416859101,Verkada Inc,Verkada Command Platform,369,0
+FR2501644859,Vibrent Health,Digital Health Research Platform,174,0
+F1605037894,Virtru,Virtru Data Security Platform,147,0
+F1301091856,Virtustream,Federal Cloud (VFC),475,4
+FR2312052740,"VLogic Systems, Inc.",VLogicFM,21,0
+FR1916163735,"VMware, Inc.",VMware Government Services (VGS),712,5
+FR2433985791,Vyond,Vyond for Government,220,0
+FR2017459185,Vyopta Incorporated,Vyopta Collaboration Intelligence Platform,288,3
+FR1935661915,"WalkMe, Inc",WalkMe DAP,298,0
+FR2312063708,Wasabi Technologies,Wasabi GovCloud (WGC),180,0
+FR1825232355A,"WellHive Holdings, LLC",WellHive,59,0
+FR1825232355,"WellHive Holdings, LLC",WellHive,516,0
+FR1924344515,"Wellspring Worldwide, Inc.",Sophia Knowledge Management System,347,2
+FR2032042635,WidePoint Integrated Solutions Corp.,Intelligent Technology Management System (ITMS),1192,1
+FR2401742096,WillCo Tech,CyberSTAR™,385,0
+FR2106045767,WingSwept,Case Management & Tracking System (CMTS),334,4
+FR2308034636,"Wiz, Inc.",Wiz Moderate for U.S. Government,489,22
+FR2207643307,Wolters Kluwer,TeamMate+ FedRAMP,87,7
+FR2103344623,Workday Inc.,Workday Government Cloud (WGC),329,3
+FR1726564822,Workiva,Workiva Platform,436,10
+FR1730334049,Xerox Corporation,Xerox Managed Print Services for US Government,392,2
+FR1714261912,"XTec, Incorporated",AuthentX Cloud,463,1
+FR2113557839,Yello Dba Recsolu Inc,Yello Government Recruiting Solution,363,2
+FR1821856903,Zendesk,Zendesk Customer Support and Help Desk Platform,105,144
+FR2331349003,Zeva Incorporated,ZevaCrypt,467,0
+FR1731347234,Zimperium,Zimperium Mobile Endpoint Cyber Security,426,3
+FR2504771625,"ZL Technologies, Inc.",ZL Unified Archive (ZL UA),157,0
+FR1825941347A,"Zoom Video Communications, LLC",Zoom for Government,548,57
+FR2227062482,"Zscaler, Inc.",Zscaler Internet Access - Government (Secure Web Gateway - vTIC) - High,240,14
+FR1720454205,"Zscaler, Inc.",Zscaler Internet Access - Government (Secure Web Gateway - vTIC),609,37
+FR1719759604,"Zscaler, Inc.",Zscaler Private Access - Government (Zero Trust Networking - VPN Replacement),243,84
+FR2219763604,"Zscaler, Inc.",Zscaler Private Access - Government (Zero Trust Exchange - VPN Replacement),192,23
