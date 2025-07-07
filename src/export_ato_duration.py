@@ -11,6 +11,10 @@ from json import loads
 import logging
 from typing import Dict, List
 
+logger = logging.getLogger("export_ato_duration")
+logging.basicConfig(encoding="utf-8", level=logging.INFO)
+
+
 @dataclass
 class FedRAMPProduct:
   id: str
@@ -65,7 +69,11 @@ class FedRAMPAuthorization:
   csp: str
   cso: str
   duration: int = -1
+  count: int = 0
   reuse: int = 0
+  is_iaas: int|bool = 0
+  is_paas: int|bool = 0
+  is_saas: int|bool = 0
 
 def get_products(data: StringIO) -> List[FedRAMPProduct]:
   """Deserialize data from buffer or path load into Python dictionary.
@@ -94,7 +102,7 @@ def main() -> None:
       elif product.ip_agency_date != "Not Active":
         start_dt = datetime.fromisoformat(product.ip_agency_date)
       else:
-        logging.error(f"no computable start date for {product.id}, skipping")
+        logger.debug(f"no computable start date for {product.id}, skipping")
         continue
       try:
         end_dt = datetime.fromisoformat(product.fedramp_auth)
@@ -105,14 +113,24 @@ def main() -> None:
         id=product.id,
         csp=product.csp,
         cso=product.cso,
+        count=product.authorization,
         reuse=product.reuse,
-        duration=duration.days
+        duration=duration.days,
+        is_iaas=1 if "IaaS" in product.service_model else 0,
+        is_paas=1 if "PaaS" in product.service_model else 0,
+        is_saas=1 if "SaaS" in product.service_model else 0
       )
       authorizations.append(authorization)
       csv_writer.writerow(asdict(authorization))
   durations = [ato.duration for ato in authorizations]
   durations_average = sum(durations)/len(durations)
-  print(f"average duration for history of FedRAMP authorizations is {durations_average}")
+  ato_counts = [ato.count for ato in authorizations]
+  ato_counts_average = sum(ato_counts)/len(ato_counts)
+  reuses = [ato.reuse for ato in authorizations]
+  reuses_average = sum(reuses)/len(reuses)
+  logger.info(f"average duration for history of FedRAMP authorizations is {durations_average}")
+  logger.info(f"average authorization count for authorized FedRAMP products is {ato_counts_average}")
+  logger.info(f"average reuse count for authorized FedRAMP products is {reuses_average}")
 
 if __name__ == "__main__":
   main()
